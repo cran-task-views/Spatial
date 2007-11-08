@@ -44,7 +44,7 @@
       been written using sp classes. The <pkg>spsurvey</pkg> provides a
       range of sampling functions. The <pkg>trip</pkg> package extends sp
       classes to permit the accessing and manipulating of spatial data
-      for animal tracking. The <pkg>hdeco</pkg> package provides hierarchical decomposition of entropy for categorical map comparisons. The <pkg>GeoXP</pkg> package permits interactive graphical exploratory spatial data analysis.</p></li>
+      for animal tracking. The <pkg>hdeco</pkg> package provides hierarchical decomposition of entropy for categorical map comparisons. The <pkg>GeoXp</pkg> package permits interactive graphical exploratory spatial data analysis.</p></li>
 
       <li><p><b>Reading and writing spatial data</b>: Maps may be
       vector-based or raster-based. The <pkg>rgdal</pkg> package provides
@@ -157,7 +157,7 @@
     <pkg>fields</pkg>
     <pkg priority="core">geoR</pkg>
     <pkg>geoRglm</pkg>
-    <pkg>GeoXP</pkg>
+    <pkg>GeoXp</pkg>
     <pkg>gmt</pkg>
     <pkg>GRASS</pkg>
     <pkg>grasp</pkg>
