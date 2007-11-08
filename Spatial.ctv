@@ -38,13 +38,13 @@
       News</a>.  Some other packages have become dependent on these
       classes, including <pkg>rgdal</pkg> and <pkg>maptools</pkg>. An
       alternative approach to some of these issues is implemented in
-      the <pkg>PBSmapping</pkg> package.</p></li>
+      the <pkg>PBSmapping</pkg> package; <pkg>PBSmodelling</pkg> provides modelling support.</p></li>
 
       <li><p><b>Handling spatial data</b>: A number of packages have
       been written using sp classes. The <pkg>spsurvey</pkg> provides a
       range of sampling functions. The <pkg>trip</pkg> package extends sp
       classes to permit the accessing and manipulating of spatial data
-      for animal tracking. </p></li>
+      for animal tracking. The <pkg>hdeco</pkg> package provides hierarchical decomposition of entropy for categorical map comparisons. The <pkg>GeoXP</pkg> package permits interactive graphical exploratory spatial data analysis.</p></li>
 
       <li><p><b>Reading and writing spatial data</b>: Maps may be
       vector-based or raster-based. The <pkg>rgdal</pkg> package provides
@@ -55,7 +55,7 @@
       href="http://www.remotesensing.org/proj/">PROJ.4</a> projection
       support for vector objects. The Windows binary of <pkg>rgdal</pkg>
       includes a subset of possible data source drivers; if others
-      are needed, use FWTools conversion utilities. There are a
+      are needed, use FWTools conversion utilities; for NetCDF files, <pkg>ncdf</pkg> may be used. There are a
       number of other packages for accessing vector data on CRAN:
       <pkg>maps</pkg> (with <pkg>mapdata</pkg> and <pkg>mapproj</pkg>)
       provides access to the same kinds of geographical databases as
@@ -72,7 +72,8 @@
       the <pkg>RColorBrewer</pkg> package are very useful, and may
       be modified or extended using the <code>colorRampPalette</code>
       function provided with R. The <pkg>classInt</pkg> package provides
-      functions for choosing class intervals for thematic cartography.</p>
+      functions for choosing class intervals for thematic cartography.
+      The <pkg>gmt</pkg> package gives a simple interface between GMT map-making software and R. </p>
 
       <p>Integration with version 6.* of the leading open source
       GIS, GRASS, is provided in CRAN package <pkg>spgrass6</pkg>, using
@@ -88,11 +89,11 @@
       and spatial covariates. Its strengths are model-fitting and
       simulation, and it has a useful <a href="http://www.spatstat.org/">
       homepage</a>. It is the only package that will enable the user to fit
-      inhomogeneous point process models with interpoint interactions. The
+      inhomogeneous point process models with interpoint interactions. The <pkg>spatgraphs</pkg> package provides graphs, graph visualization and graph based summaries to be used with spatial point pattern analysis. The
       <pkg>splancs</pkg> package also allows point data to be analysed
       within a polygonal region of interest, and covers many methods,
-      including 2D kernel densities. The functions for binning points
-      on grids in <pkg>ash</pkg> may also be of interest.</p></li>
+      including 2D kernel densities. <pkg>ecespa</pkg> provides wrappers, functions and data for for spatial point pattern analysis, used in the book on Spatial Ecology of the ECESPA/AEET. The functions for binning points
+      on grids in <pkg>ash</pkg> may also be of interest. The <pkg>ads</pkg> package perform first- and second-order multi-scale analyses derived from Ripley's K-function. The <pkg>aspace</pkg> package is a collection of functions for estimating centrographic statistcs and computational geometries from spatial point patterns. <pkg>spatialkernel</pkg> provides edge-corrected kernel density estimation and binary kernel regression estimation for multivariate spatial point process data.</p></li>
 
       <li><p><b>Geostatistics</b>: The <pkg>gstat</pkg> package provides
       a wide range of functions for univariate and multivariate
@@ -101,10 +102,10 @@
       geostatistics. A similar wide range of functions is to be
       found in the <pkg>fields</pkg> package. The <pkg>spatial</pkg>
       package is available as part of the <pkg>VR</pkg> bundle
-      (shipped with base R), and contains several core functions.</p>
+      (shipped with base R), and contains several core functions. The <pkg>spBayes</pkg> package fits Gaussian univariate and multivariate models with MCMC.</p>
 
       <p> The <pkg>RandomFields</pkg> package provides functions for
-      the simulation and analysis of random fields. For diagnostics
+      the simulation and analysis of random fields, and variogram model descriptions can be passed between <pkg>geoR</pkg>, <pkg>gstat</pkg> and this package. For diagnostics
       of variograms, the <pkg>vardiag</pkg> package can be used. The
       <pkg>sgeostat</pkg> package is also available. Within the same
       general topical area are the <pkg>tripack</pkg> for triangulation
@@ -125,18 +126,18 @@
       models assume that the spatial dependence can be described by known
       weights. The <pkg>spgwr</pkg> package contains an implementation of
       geographically weighted regression methods for exploring possible
-      non-stationarity.</p></li>
+      non-stationarity. The <pkg>spatclus</pkg> package provides arbitrarily shaped multiple spatial cluster detection for case event data. </p></li>
 
       <li><p><b>Ecological analysis</b>: There are many packages
       for analysing ecological and environmental data. They include
-      <pkg>grasper</pkg> for environmental prediction using GAM,
+      <pkg>grasp</pkg> for environmental prediction using GAM,
       <pkg>ade4</pkg> for exploratory and Euclidean methods in the
       environmental sciences, <pkg>adehabitat</pkg> for the analysis of
       habitat selection by animals, <pkg>pastecs</pkg> for the regulation,
       decomposition and analysis of space-time series, <pkg>vegan</pkg>
       for ordination methods and other useful functions for community and
       vegetation ecologists, and many other functions in other contributed
-      packages. The <a href="Environmetrics.html">Environmetrics</a> Task
+      packages. <pkg>WeedMap</pkg> is a recent contribution for computing spatial predictions from exact count and a covariate. An off-CRAN package - <a href="http://www.leg.ufpr.br/Rcitrus/">Rcitrus</a> - is for the spatial analysis of plant disease incidence. <pkg>clustTool</pkg> is a GUI for clustering data with spatial information.The <a href="Environmetrics.html">Environmetrics</a> Task
       View contains a much more complete survey of relevant functions
       and packages.</p></li>
     </ul>
@@ -145,23 +146,32 @@
   <packagelist>
     <pkg>ade4</pkg>
     <pkg>adehabitat</pkg>
-    <pkg>ash</pkg>
+    <pkg>ads</pkg>
     <pkg priority="core">akima</pkg>
+    <pkg>aspace</pkg>
+    <pkg>ash</pkg>
     <pkg priority="core">classInt</pkg>
-    <pkg>DCluster</pkg>
+    <pkg>clustTool</pkg>
+    <pkg priority="core">DCluster</pkg>
+    <pkg>ecespa</pkg>
     <pkg>fields</pkg>
-    <pkg>geoR</pkg>
+    <pkg priority="core">geoR</pkg>
     <pkg>geoRglm</pkg>
+    <pkg>GeoXP</pkg>
+    <pkg>gmt</pkg>
     <pkg>GRASS</pkg>
-    <pkg>grasper</pkg>
+    <pkg>grasp</pkg>
     <pkg priority="core">gstat</pkg>
+    <pkg>hdeco</pkg>
     <pkg>mapdata</pkg>
     <pkg>mapproj</pkg>
     <pkg>maps</pkg>
+    <pkg>ncdf</pkg>
     <pkg priority="core">maptools</pkg>
     <pkg>pastecs</pkg>
     <pkg>PBSmapping</pkg>
-    <pkg>RandomFields</pkg>
+    <pkg>PBSmodelling</pkg>
+    <pkg priority="core">RandomFields</pkg>
     <pkg>RArcInfo</pkg>
     <pkg priority="core">RColorBrewer</pkg>
     <pkg>regress</pkg>
@@ -170,7 +180,11 @@
     <pkg>shapefiles</pkg>
     <pkg priority="core">sp</pkg>
     <pkg>spatialCovariance</pkg>
+    <pkg>spatialkernel</pkg>
+    <pkg>spatclus</pkg>
+    <pkg>spatgraphs</pkg>
     <pkg priority="core">spatstat</pkg>
+    <pkg>spBayes</pkg>
     <pkg priority="core">spdep</pkg>
     <pkg>spgrass6</pkg>
     <pkg>spgwr</pkg>
@@ -182,6 +196,7 @@
     <pkg>vardiag</pkg>
     <pkg>vegan</pkg>
     <pkg priority="core">VR</pkg>
+    <pkg>WeedMap</pkg>
   </packagelist>
 
     
