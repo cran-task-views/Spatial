@@ -1,7 +1,8 @@
 <CRANTaskView>
   <name>Spatial</name>
   <topic>Analysis of Spatial Data</topic>
-  <maintainer>Roger Bivand</maintainer>
+  <maintainer email="Roger.Bivand@nhh.no">Roger Bivand</maintainer>
+  <version>2007-11-08</version>
 
   <info>
     <p>Base R includes many functions that can be used for reading,
@@ -34,7 +35,7 @@
       are available from a repository for work in progress at the
       <a href="http://R-spatial.sourceforge.net/">R-spatial</a>
       Sourceforge home page. The <pkg>sp</pkg> package is discussed in a note in
-      <a href="http://cran.r-project.org/doc/Rnews/Rnews_2005-2.pdf">R
+      <a href="http://CRAN.R-project.org/doc/Rnews/Rnews_2005-2.pdf">R
       News</a>.  Some other packages have become dependent on these
       classes, including <pkg>rgdal</pkg> and <pkg>maptools</pkg>. An
       alternative approach to some of these issues is implemented in
