@@ -2,7 +2,7 @@
   <name>Spatial</name>
   <topic>Analysis of Spatial Data</topic>
   <maintainer email="Roger.Bivand@nhh.no">Roger Bivand</maintainer>
-  <version>2007-11-08</version>
+  <version>2008-04-28</version>
 
   <info>
     <p>Base R includes many functions that can be used for reading,
@@ -21,7 +21,8 @@
     mailing-list is a good place to begin for obtaining help and discussing
     questions about both accessing data, and analysing it. More
     information about the functions is available from the
-    <a target="_top" href="http://www.R-project.org/Rgeo/">Rgeo</a> website. The packages in this
+    <a target="_top" href="http://www.R-project.org/Rgeo/">Rgeo</a> website.
+    The packages in this
     view can be roughly structured into the following topics. If you think
     that some package is missing from the list, please let me know.</p>
     <ul>
@@ -34,18 +35,25 @@
       package has been published on CRAN, and wrapper packages
       are available from a repository for work in progress at the
       <a href="http://R-spatial.sourceforge.net/">R-spatial</a>
-      Sourceforge home page. The <pkg>sp</pkg> package is discussed in a note in
+      Sourceforge home page. The <pkg>sp</pkg> package is discussed in a
+      note in
       <a href="http://CRAN.R-project.org/doc/Rnews/Rnews_2005-2.pdf">R
       News</a>.  Some other packages have become dependent on these
       classes, including <pkg>rgdal</pkg> and <pkg>maptools</pkg>. An
       alternative approach to some of these issues is implemented in
-      the <pkg>PBSmapping</pkg> package; <pkg>PBSmodelling</pkg> provides modelling support.</p></li>
+      the <pkg>PBSmapping</pkg> package; <pkg>PBSmodelling</pkg> provides
+      modelling support. In addition, <pkg>GEOmap</pkg> provides mapping
+      facilities directed to meet the needs of geologists, and uses the
+      <pkg>geomapdata</pkg> package.</p></li>
 
       <li><p><b>Handling spatial data</b>: A number of packages have
       been written using sp classes. The <pkg>spsurvey</pkg> provides a
       range of sampling functions. The <pkg>trip</pkg> package extends sp
       classes to permit the accessing and manipulating of spatial data
-      for animal tracking. The <pkg>hdeco</pkg> package provides hierarchical decomposition of entropy for categorical map comparisons. The <pkg>GeoXp</pkg> package permits interactive graphical exploratory spatial data analysis.</p></li>
+      for animal tracking. The <pkg>hdeco</pkg> package provides hierarchical
+      decomposition of entropy for categorical map comparisons. The
+      <pkg>GeoXp</pkg> package permits interactive graphical exploratory
+      spatial data analysis.</p></li>
 
       <li><p><b>Reading and writing spatial data</b>: Maps may be
       vector-based or raster-based. The <pkg>rgdal</pkg> package provides
@@ -56,7 +64,8 @@
       href="http://www.remotesensing.org/proj/">PROJ.4</a> projection
       support for vector objects. The Windows binary of <pkg>rgdal</pkg>
       includes a subset of possible data source drivers; if others
-      are needed, use FWTools conversion utilities; for NetCDF files, <pkg>ncdf</pkg> may be used. There are a
+      are needed, use FWTools conversion utilities; for NetCDF files,
+      <pkg>ncdf</pkg> may be used. There are a
       number of other packages for accessing vector data on CRAN:
       <pkg>maps</pkg> (with <pkg>mapdata</pkg> and <pkg>mapproj</pkg>)
       provides access to the same kinds of geographical databases as
@@ -74,13 +83,16 @@
       be modified or extended using the <code>colorRampPalette</code>
       function provided with R. The <pkg>classInt</pkg> package provides
       functions for choosing class intervals for thematic cartography.
-      The <pkg>gmt</pkg> package gives a simple interface between GMT map-making software and R. </p>
+      The <pkg>gmt</pkg> package gives a simple interface between GMT
+      map-making software and R. </p>
 
       <p>Integration with version 6.* of the leading open source
       GIS, GRASS, is provided in CRAN package <pkg>spgrass6</pkg>, using
-      <pkg>rgdal</pkg> and <pkg>maptools</pkg> for exchanging data.
+      <pkg>rgdal</pkg> for exchanging data.
       Integration with legacy version 5.* GRASS, continues to be provided
-      in CRAN package <pkg>GRASS</pkg>.</p></li>
+      in CRAN package <pkg>GRASS</pkg>. <pkg>RPyGeo</pkg> is a wrapper
+      for Python access to the ArcGIS GeoProcessor, and <pkg>RSAGA</pkg>
+      is a similar shell-based wrapper for SAGA commands</p></li>
 
       <li><p><b>Point pattern analysis</b>: The <pkg>spatial</pkg>
       package is available as part of the <pkg>VR</pkg> bundle
@@ -90,11 +102,24 @@
       and spatial covariates. Its strengths are model-fitting and
       simulation, and it has a useful <a href="http://www.spatstat.org/">
       homepage</a>. It is the only package that will enable the user to fit
-      inhomogeneous point process models with interpoint interactions. The <pkg>spatgraphs</pkg> package provides graphs, graph visualization and graph based summaries to be used with spatial point pattern analysis. The
+      inhomogeneous point process models with interpoint interactions. The
+      <pkg>spatgraphs</pkg> package provides graphs, graph visualization
+      and graph based summaries to be used with spatial point pattern
+      analysis. The
       <pkg>splancs</pkg> package also allows point data to be analysed
       within a polygonal region of interest, and covers many methods,
-      including 2D kernel densities. <pkg>ecespa</pkg> provides wrappers, functions and data for for spatial point pattern analysis, used in the book on Spatial Ecology of the ECESPA/AEET. The functions for binning points
-      on grids in <pkg>ash</pkg> may also be of interest. The <pkg>ads</pkg> package perform first- and second-order multi-scale analyses derived from Ripley's K-function. The <pkg>aspace</pkg> package is a collection of functions for estimating centrographic statistcs and computational geometries from spatial point patterns. <pkg>spatialkernel</pkg> provides edge-corrected kernel density estimation and binary kernel regression estimation for multivariate spatial point process data.</p></li>
+      including 2D kernel densities. <pkg>ecespa</pkg> provides wrappers,
+      functions and data for for spatial point pattern analysis, used in the
+      book on Spatial Ecology of the ECESPA/AEET. The functions for binning
+      points
+      on grids in <pkg>ash</pkg> may also be of interest. The <pkg>ads</pkg>
+      package perform first- and second-order multi-scale analyses derived
+      from Ripley's K-function. The <pkg>aspace</pkg> package is a
+      collection of functions for estimating centrographic statistcs and
+      computational geometries from spatial point patterns.
+      <pkg>spatialkernel</pkg> provides edge-corrected kernel density
+      estimation and binary kernel regression estimation for multivariate
+      spatial point process data.</p></li>
 
       <li><p><b>Geostatistics</b>: The <pkg>gstat</pkg> package provides
       a wide range of functions for univariate and multivariate
@@ -103,11 +128,15 @@
       geostatistics. A similar wide range of functions is to be
       found in the <pkg>fields</pkg> package. The <pkg>spatial</pkg>
       package is available as part of the <pkg>VR</pkg> bundle
-      (shipped with base R), and contains several core functions. The <pkg>spBayes</pkg> package fits Gaussian univariate and multivariate models with MCMC.</p>
+      (shipped with base R), and contains several core functions. The 
+      <pkg>spBayes</pkg> package fits Gaussian univariate and multivariate
+      models with MCMC. <pkg>ramps</pkg> is a different Bayesian
+      geostatistical modelling package.</p>
 
       <p> The <pkg>RandomFields</pkg> package provides functions for
-      the simulation and analysis of random fields, and variogram model descriptions can be passed between <pkg>geoR</pkg>, <pkg>gstat</pkg> and this package. For diagnostics
-      of variograms, the <pkg>vardiag</pkg> package can be used. The
+      the simulation and analysis of random fields, and variogram model
+      descriptions can be passed between <pkg>geoR</pkg>, <pkg>gstat</pkg>
+      and this package. The
       <pkg>sgeostat</pkg> package is also available. Within the same
       general topical area are the <pkg>tripack</pkg> for triangulation
       and the <pkg>akima</pkg> package for spline interpolation. In
@@ -127,7 +156,8 @@
       models assume that the spatial dependence can be described by known
       weights. The <pkg>spgwr</pkg> package contains an implementation of
       geographically weighted regression methods for exploring possible
-      non-stationarity. The <pkg>spatclus</pkg> package provides arbitrarily shaped multiple spatial cluster detection for case event data. </p></li>
+      non-stationarity. The <pkg>spatclus</pkg> package provides arbitrarily
+      shaped multiple spatial cluster detection for case event data. </p></li>
 
       <li><p><b>Ecological analysis</b>: There are many packages
       for analysing ecological and environmental data. They include
@@ -138,7 +168,16 @@
       decomposition and analysis of space-time series, <pkg>vegan</pkg>
       for ordination methods and other useful functions for community and
       vegetation ecologists, and many other functions in other contributed
-      packages. <pkg>WeedMap</pkg> is a recent contribution for computing spatial predictions from exact count and a covariate. An off-CRAN package - <a href="http://www.leg.ufpr.br/Rcitrus/">Rcitrus</a> - is for the spatial analysis of plant disease incidence. <pkg>clustTool</pkg> is a GUI for clustering data with spatial information.The <a href="Environmetrics.html">Environmetrics</a> Task
+      packages. One such is <pkg>tripEstimation</pkg>, basing on the classes
+      provided by <pkg>trip</pkg>. <pkg>ncf</pkg> has entered CRAN recently,
+      and provides a
+      range of spatial nonparametric covariance functions. 
+      <pkg>WeedMap</pkg> is a recent contribution for computing
+      spatial predictions from exact count and a covariate.
+      An off-CRAN package - <a href="http://www.leg.ufpr.br/Rcitrus/">Rcitrus</a>
+      - is for the spatial analysis of plant disease incidence. 
+     <pkg>clustTool</pkg> is a GUI for clustering data with spatial 
+     information.The <a href="Environmetrics.html">Environmetrics</a> Task
       View contains a much more complete survey of relevant functions
       and packages.</p></li>
     </ul>
@@ -156,6 +195,8 @@
     <pkg priority="core">DCluster</pkg>
     <pkg>ecespa</pkg>
     <pkg>fields</pkg>
+    <pkg>GEOmap</pkg>
+    <pkg>geomapdata</pkg>
     <pkg priority="core">geoR</pkg>
     <pkg>geoRglm</pkg>
     <pkg>GeoXp</pkg>
@@ -172,11 +213,14 @@
     <pkg>pastecs</pkg>
     <pkg>PBSmapping</pkg>
     <pkg>PBSmodelling</pkg>
+    <pkg>ramps</pkg>
     <pkg priority="core">RandomFields</pkg>
     <pkg>RArcInfo</pkg>
     <pkg priority="core">RColorBrewer</pkg>
     <pkg>regress</pkg>
     <pkg priority="core">rgdal</pkg>
+    <pkg>RPyGeo</pkg>
+    <pkg>RSAGA</pkg>
     <pkg>sgeostat</pkg>
     <pkg>shapefiles</pkg>
     <pkg priority="core">sp</pkg>
@@ -193,8 +237,8 @@
     <pkg>spsurvey</pkg>
     <pkg>tgp</pkg>
     <pkg>trip</pkg>
+    <pkg>tripEstimation</pkg>
     <pkg priority="core">tripack</pkg>
-    <pkg>vardiag</pkg>
     <pkg>vegan</pkg>
     <pkg priority="core">VR</pkg>
     <pkg>WeedMap</pkg>
