@@ -2,7 +2,7 @@
   <name>Spatial</name>
   <topic>Analysis of Spatial Data</topic>
   <maintainer email="Roger.Bivand@nhh.no">Roger Bivand</maintainer>
-  <version>2008-06-26</version>
+  <version>2008-08-06</version>
 
   <info>
     <p>Base R includes many functions that can be used for reading,
@@ -17,14 +17,20 @@
     contributed packages address two broad areas: moving spatial data
     into and out of R, and analysing spatial data in R.</p>
 
-    <p>The <a href="https://www.stat.math.ethz.ch/mailman/listinfo/R-SIG-Geo/">R-SIG-Geo</a>
+    <p>The <a href="https://www.stat.math.ethz.ch/mailman/listinfo/R-SIG-Geo/">
+    R-SIG-Geo</a>
     mailing-list is a good place to begin for obtaining help and discussing
     questions about both accessing data, and analysing it. More
     information about the functions is available from the
     <a target="_top" href="http://www.R-project.org/Rgeo/">Rgeo</a> website.
     The packages in this
     view can be roughly structured into the following topics. If you think
-    that some package is missing from the list, please let me know.</p>
+    that some package is missing from the list, please let me know. Please 
+    also visit and contribute to the <a 
+    href="http://wiki.r-project.org/rwiki/doku.php?id=tips:spatial-data">
+    spatial data handling</a> and <a 
+    href="http://wiki.r-project.org/rwiki/doku.php?id=tips:stats-spatial">
+    spatial statistics</a> pages on the R Wiki.</p>
     <ul>
 
       <li><p><b>Classes for spatial data</b>: Because many of the
