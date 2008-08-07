@@ -2,7 +2,7 @@
   <name>Spatial</name>
   <topic>Analysis of Spatial Data</topic>
   <maintainer email="Roger.Bivand@nhh.no">Roger Bivand</maintainer>
-  <version>2008-08-06</version>
+  <version>2008-08-07</version>
 
   <info>
     <p>Base R includes many functions that can be used for reading,
@@ -84,8 +84,10 @@
       in Stata. It also provides interface functions between
       <pkg>PBSmapping</pkg> and <pkg>spatstat</pkg> and sp classes,
       in addition to <pkg>maps</pkg> databases and sp classes. There is
-      also an interface to GSHHS shoreline databases. For visualization,
-      the colour palettes provided in
+      also an interface to GSHHS shoreline databases. Handling spatial
+      data using the OpenGIS Simple Features Specification for SQL
+      with SQLite is supported in <pkg>SQLiteMap</pkg>.
+      For visualization, the colour palettes provided in
       the <pkg>RColorBrewer</pkg> package are very useful, and may
       be modified or extended using the <code>colorRampPalette</code>
       function provided with R. The <pkg>classInt</pkg> package provides
@@ -260,6 +262,7 @@
     <pkg>spgwr</pkg>
     <pkg priority="core">splancs</pkg>
     <pkg>spsurvey</pkg>
+    <pkg>SQLiteMap</pkg>
     <pkg>tgp</pkg>
     <pkg>trip</pkg>
     <pkg>tripEstimation</pkg>
