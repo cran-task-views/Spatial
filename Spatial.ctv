@@ -68,7 +68,10 @@
       vector formats. It contains functions to write raster
       files in supported formats. The package also provides <a
       href="http://www.remotesensing.org/proj/">PROJ.4</a> projection
-      support for vector objects. The Windows binary of <pkg>rgdal</pkg>
+      support for vector objects 
+      (<a href="http://spatialreference.org">this site</a> provides 
+      searchable online PROJ.4 representations of projections). 
+      The Windows binary of <pkg>rgdal</pkg>
       includes a subset of possible data source drivers; if others
       are needed, use FWTools conversion utilities; for NetCDF files,
       <pkg>ncdf</pkg> may be used. There are a
