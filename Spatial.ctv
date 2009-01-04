@@ -2,7 +2,7 @@
   <name>Spatial</name>
   <topic>Analysis of Spatial Data</topic>
   <maintainer email="Roger.Bivand@nhh.no">Roger Bivand</maintainer>
-  <version>2008-08-07</version>
+  <version>2009-01-04</version>
 
   <info>
     <p>Base R includes many functions that can be used for reading,
@@ -11,9 +11,20 @@
     with geographical locations, and where additional information about
     these locations may be retrieved if the location is recorded with
     care. Base R functions are complemented by contributed packages,
-    some of which are on CRAN, and others on the
+    some of which are on CRAN, and others are still in development. One
+    active location is <a target="_top" href="http://r-forge.r-project.org/">
+    R-Forge</a>, which lists "Spatial Data and Statistics" projects in its
+    <a target="_top" href="http://r-forge.r-project.org/softwaremap/trove_list.php">project tree</a>. Two promising packages on this site are 
+    <a target="_top" href="http://r-forge.r-project.org/projects/raster/">
+    raster</a> for basic spatial raster (grid) data access and manipulation, 
+    and <a target="_top" href="http://r-forge.r-project.org/projects/r-gis/">
+    Rgis</a>, which tries to bridge the gap between spatial data handling 
+    and good statistical and modeling tools. Some CRAN packages associated 
+    with <pkg>sp</pkg> are available from the
     <a target="_top" href="http://R-spatial.sourceforge.net/">R-spatial</a>
-    sourceforge repository. The
+    sourceforge repository.</p>
+
+    <p>The
     contributed packages address two broad areas: moving spatial data
     into and out of R, and analysing spatial data in R.</p>
 
@@ -67,7 +78,7 @@
       formats and <a href="http://www.gdal.org/ogr/">OGR</a>-supported
       vector formats. It contains functions to write raster
       files in supported formats. The package also provides <a
-      href="http://www.remotesensing.org/proj/">PROJ.4</a> projection
+      href="http://trac.osgeo.org/proj/">PROJ.4</a> projection
       support for vector objects 
       (<a href="http://spatialreference.org">this site</a> provides 
       searchable online PROJ.4 representations of projections). 
