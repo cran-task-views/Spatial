@@ -2,7 +2,7 @@
   <name>Spatial</name>
   <topic>Analysis of Spatial Data</topic>
   <maintainer email="Roger.Bivand@nhh.no">Roger Bivand</maintainer>
-  <version>2009-01-04</version>
+  <version>2009-02-20</version>
 
   <info>
     <p>Base R includes many functions that can be used for reading,
@@ -107,7 +107,8 @@
       function provided with R. The <pkg>classInt</pkg> package provides
       functions for choosing class intervals for thematic cartography.
       The <pkg>gmt</pkg> package gives a simple interface between GMT
-      map-making software and R. </p>
+      map-making software and R. <pkg>geonames</pkg> is an interface to 
+      the <a href="www.geonames.org">www.geonames.org</a> service.</p>
 
       <p>Integration with version 6.* of the leading open source
       GIS, GRASS, is provided in CRAN package <pkg>spgrass6</pkg>, using
@@ -157,12 +158,15 @@
       geostatistical modelling package.</p>
 
       <p> The <pkg>RandomFields</pkg> package provides functions for
-      the simulation and analysis of random fields, and variogram model
-      descriptions can be passed between <pkg>geoR</pkg>, <pkg>gstat</pkg>
-      and this package. The
-      <pkg>sgeostat</pkg> package is also available. Within the same
-      general topical area are the <pkg>tripack</pkg> for triangulation
-      and the <pkg>akima</pkg> package for spline interpolation. In
+      the simulation and analysis of random fields, and variogram
+      model descriptions can be passed between <pkg>geoR</pkg>,
+      <pkg>gstat</pkg> and this package. <pkg>SpatialExtremes</pkg>
+      proposes several approaches for spatial extremes modelling
+      using <pkg>RandomFields</pkg>. The <pkg>sgeostat</pkg> package
+      is also available. Within the same general topical area are the
+      <pkg>tripack</pkg> for triangulation and the <pkg>akima</pkg>
+      package for spline interpolation; the <pkg>MBA</pkg> package
+      provides scattered data interpolation with multilevel B-splines. In
       addition, there are the <pkg>spatialCovariance</pkg> package,
       which supports the computation of spatial covariance matrices
       for data on rectangles, the <pkg>regress</pkg> package building
@@ -180,7 +184,9 @@
       weights. The <pkg>spgwr</pkg> package contains an implementation of
       geographically weighted regression methods for exploring possible
       non-stationarity. The <pkg>spatclus</pkg> package provides arbitrarily
-      shaped multiple spatial cluster detection for case event data. </p></li>
+      shaped multiple spatial cluster detection for case event data. 
+      The <pkg>glmmBUGS</pkg> package is a helpful way of passing out spatial
+      models to WinBUGS.</p></li>
 
       <li><p><b>Spatial regression</b>:
       The <pkg>spdep</pkg> package can also be viewed from spatial 
@@ -202,21 +208,23 @@
       for analysing ecological and environmental data. They include
       <pkg>grasp</pkg> for environmental prediction using GAM,
       <pkg>ade4</pkg> for exploratory and Euclidean methods in the
-      environmental sciences, <pkg>adehabitat</pkg> for the analysis of
-      habitat selection by animals, <pkg>pastecs</pkg> for the regulation,
-      decomposition and analysis of space-time series, <pkg>vegan</pkg>
-      for ordination methods and other useful functions for community and
-      vegetation ecologists, and many other functions in other contributed
-      packages. One such is <pkg>tripEstimation</pkg>, basing on the classes
-      provided by <pkg>trip</pkg>. <pkg>ncf</pkg> has entered CRAN recently,
-      and provides a
-      range of spatial nonparametric covariance functions. 
-      <pkg>WeedMap</pkg> is a recent contribution for computing
-      spatial predictions from exact count and a covariate.
-      An off-CRAN package - <a href="http://www.leg.ufpr.br/Rcitrus/">Rcitrus</a>
-      - is for the spatial analysis of plant disease incidence. 
-     <pkg>clustTool</pkg> is a GUI for clustering data with spatial 
-     information.The <a href="Environmetrics.html">Environmetrics</a> Task
+      environmental sciences, <pkg>adehabitat</pkg> for the analysis
+      of habitat selection by animals, <pkg>pastecs</pkg> for the
+      regulation, decomposition and analysis of space-time series,
+      <pkg>vegan</pkg> for ordination methods and other useful
+      functions for community and vegetation ecologists, and many
+      other functions in other contributed packages. One such is
+      <pkg>tripEstimation</pkg>, basing on the classes provided by
+      <pkg>trip</pkg>. <pkg>ncf</pkg> has entered CRAN recently, and
+      provides a range of spatial nonparametric covariance functions.
+      <pkg>WeedMap</pkg> is a recent contribution for computing spatial
+      predictions from exact count and a covariate.  An off-CRAN package
+      - <a href="http://www.leg.ufpr.br/Rcitrus/">Rcitrus</a> - is for
+      the spatial analysis of plant disease incidence.
+     <pkg>clustTool</pkg> is a GUI for clustering data with spatial
+     information. The <pkg>tossm</pkg> offers tools for detecting
+     and managing genetic spatial structure in populations. The <a
+     href="Environmetrics.html">Environmetrics</a> Task
       View contains a much more complete survey of relevant functions
       and packages.</p></li>
     </ul>
@@ -236,9 +244,11 @@
     <pkg>fields</pkg>
     <pkg>GEOmap</pkg>
     <pkg>geomapdata</pkg>
+    <pkg>geonames</pkg>
     <pkg priority="core">geoR</pkg>
     <pkg>geoRglm</pkg>
     <pkg>GeoXp</pkg>
+    <pkg>glmmBUGS</pkg>
     <pkg>gmaps</pkg>
     <pkg>gmt</pkg>
     <pkg>GRASS</pkg>
@@ -248,6 +258,7 @@
     <pkg>mapdata</pkg>
     <pkg>mapproj</pkg>
     <pkg>maps</pkg>
+    <pkg>MBA</pkg>
     <pkg>ncdf</pkg>
     <pkg>ncf</pkg>
     <pkg priority="core">maptools</pkg>
@@ -266,6 +277,7 @@
     <pkg>shapefiles</pkg>
     <pkg priority="core">sp</pkg>
     <pkg>spatialCovariance</pkg>
+    <pkg>SpatialExtremes</pkg>
     <pkg>spatialkernel</pkg>
     <pkg>spatclus</pkg>
     <pkg>spatgraphs</pkg>
@@ -278,6 +290,7 @@
     <pkg>spsurvey</pkg>
     <pkg>SQLiteMap</pkg>
     <pkg>tgp</pkg>
+    <pkg>tossm</pkg>
     <pkg>trip</pkg>
     <pkg>tripEstimation</pkg>
     <pkg priority="core">tripack</pkg>
