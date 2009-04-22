@@ -2,7 +2,7 @@
   <name>Spatial</name>
   <topic>Analysis of Spatial Data</topic>
   <maintainer email="Roger.Bivand@nhh.no">Roger Bivand</maintainer>
-  <version>2009-02-20</version>
+  <version>2009-04-22</version>
 
   <info>
     <p>Base R includes many functions that can be used for reading,
@@ -20,9 +20,10 @@
     and <a target="_top" href="http://r-forge.r-project.org/projects/r-gis/">
     Rgis</a>, which tries to bridge the gap between spatial data handling 
     and good statistical and modeling tools. Some CRAN packages associated 
-    with <pkg>sp</pkg> are available from the
+    with <pkg>sp</pkg> are hosted on Sourceforge in the
     <a target="_top" href="http://R-spatial.sourceforge.net/">R-spatial</a>
-    sourceforge repository.</p>
+    project, and as yet unreleased source versions may checked out from
+    CVS there.</p>
 
     <p>The
     contributed packages address two broad areas: moving spatial data
@@ -108,7 +109,10 @@
       functions for choosing class intervals for thematic cartography.
       The <pkg>gmt</pkg> package gives a simple interface between GMT
       map-making software and R. <pkg>geonames</pkg> is an interface to 
-      the <a href="www.geonames.org">www.geonames.org</a> service.</p>
+      the <a href="www.geonames.org">www.geonames.org</a> service.
+      <pkg>RSurvey</pkg> may be used as a processing program for spatially
+      distributed data, and is capable of error corrections and data
+      visualization.</p>
 
       <p>Integration with version 6.* of the leading open source
       GIS, GRASS, is provided in CRAN package <pkg>spgrass6</pkg>, using
@@ -149,7 +153,9 @@
       a wide range of functions for univariate and multivariate
       geostatistics, also for larger datasets, while <pkg>geoR</pkg>
       and <pkg>geoRglm</pkg> contain functions for model-based
-      geostatistics. A similar wide range of functions is to be
+      geostatistics. Automated interpolation using <pkg>gstat</pkg>
+      is available in <pkg>automap</pkg>. A similar wide range of
+      functions is to be
       found in the <pkg>fields</pkg> package. The <pkg>spatial</pkg>
       package is available as part of the <pkg>VR</pkg> bundle
       (shipped with base R), and contains several core functions. The 
@@ -171,7 +177,10 @@
       which supports the computation of spatial covariance matrices
       for data on rectangles, the <pkg>regress</pkg> package building
       in part on <pkg>spatialCovariance</pkg>, and the <pkg>tgp</pkg>
-      package.</p></li>
+      package. The <pkg>Stem</pkg> package provides for the estimation of the
+      parameters of a spatio-temporal model using the EM algorithm, and
+      the estimation of the parameter standard errors using a
+      spatio-temporal parametric bootstrap</p></li>
 
       <li><p><b>Disease mapping and areal data analysis</b>:
       <pkg>DCluster</pkg> is a package for the detection of
@@ -186,7 +195,7 @@
       non-stationarity. The <pkg>spatclus</pkg> package provides arbitrarily
       shaped multiple spatial cluster detection for case event data. 
       The <pkg>glmmBUGS</pkg> package is a helpful way of passing out spatial
-      models to WinBUGS.</p></li>
+      models to WinBUGS, extended by <pkg>diseasemapping</pkg>.</p></li>
 
       <li><p><b>Spatial regression</b>:
       The <pkg>spdep</pkg> package can also be viewed from spatial 
@@ -217,6 +226,8 @@
       <pkg>tripEstimation</pkg>, basing on the classes provided by
       <pkg>trip</pkg>. <pkg>ncf</pkg> has entered CRAN recently, and
       provides a range of spatial nonparametric covariance functions.
+      <pkg>ModelMap</pkg> builds on other packages to create models
+      using underlying GIS data. 
       <pkg>WeedMap</pkg> is a recent contribution for computing spatial
       predictions from exact count and a covariate.  An off-CRAN package
       - <a href="http://www.leg.ufpr.br/Rcitrus/">Rcitrus</a> - is for
@@ -237,9 +248,11 @@
     <pkg priority="core">akima</pkg>
     <pkg>aspace</pkg>
     <pkg>ash</pkg>
+    <pkg>automap</pkg>
     <pkg priority="core">classInt</pkg>
     <pkg>clustTool</pkg>
     <pkg priority="core">DCluster</pkg>
+    <pkg>diseasemapping</pkg>
     <pkg>ecespa</pkg>
     <pkg>fields</pkg>
     <pkg>GEOmap</pkg>
@@ -262,6 +275,7 @@
     <pkg>ncdf</pkg>
     <pkg>ncf</pkg>
     <pkg priority="core">maptools</pkg>
+    <pkg>ModelMap</pkg>
     <pkg>pastecs</pkg>
     <pkg>PBSmapping</pkg>
     <pkg>PBSmodelling</pkg>
@@ -273,6 +287,7 @@
     <pkg priority="core">rgdal</pkg>
     <pkg>RPyGeo</pkg>
     <pkg>RSAGA</pkg>
+    <pkg>RSurvey</pkg>
     <pkg>sgeostat</pkg>
     <pkg>shapefiles</pkg>
     <pkg priority="core">sp</pkg>
