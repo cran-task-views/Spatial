@@ -109,7 +109,10 @@
       functions for choosing class intervals for thematic cartography.
       The <pkg>gmt</pkg> package gives a simple interface between GMT
       map-making software and R. <pkg>geonames</pkg> is an interface to 
-      the <a href="www.geonames.org">www.geonames.org</a> service.
+      the <a href="www.geonames.org">www.geonames.org</a> service. If the
+      user wishes to place a map backdrop behind other displays, the the
+      <pkg>RgoogleMaps</pkg> package for accessing 
+      Google Maps(TM) may be useful.
       <pkg>RSurvey</pkg> may be used as a processing program for spatially
       distributed data, and is capable of error corrections and data
       visualization.</p>
@@ -287,6 +290,7 @@
     <pkg priority="core">RColorBrewer</pkg>
     <pkg>regress</pkg>
     <pkg priority="core">rgdal</pkg>
+    <pkg>RgoogleMaps</pkg>
     <pkg>RPyGeo</pkg>
     <pkg>RSAGA</pkg>
     <pkg>RSurvey</pkg>
