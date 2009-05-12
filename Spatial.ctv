@@ -122,9 +122,11 @@
       for Python access to the ArcGIS GeoProcessor, and <pkg>RSAGA</pkg>
       is a similar shell-based wrapper for SAGA commands</p></li>
 
-      <li><p><b>Point pattern analysis</b>: The <pkg>spatial</pkg>
+      <li><p><b>Point pattern analysis</b>: The spatial
       package is available as part of the <pkg>VR</pkg> bundle
-      (shipped with base R), and contains several core functions. In
+      (a recommended package shipped with base R), and contains several 
+      core functions, including an implementation of Khat by its 
+      author, Prof. Ripley. In
       addition, <pkg>spatstat</pkg> allows freedom in defining the
       region(s) of interest, and makes extensions to marked processes
       and spatial covariates. Its strengths are model-fitting and
@@ -137,7 +139,7 @@
       <pkg>splancs</pkg> package also allows point data to be analysed
       within a polygonal region of interest, and covers many methods,
       including 2D kernel densities. <pkg>ecespa</pkg> provides wrappers,
-      functions and data for for spatial point pattern analysis, used in the
+      functions and data for spatial point pattern analysis, used in the
       book on Spatial Ecology of the ECESPA/AEET. The functions for binning
       points
       on grids in <pkg>ash</pkg> may also be of interest. The <pkg>ads</pkg>
@@ -156,7 +158,7 @@
       geostatistics. Automated interpolation using <pkg>gstat</pkg>
       is available in <pkg>automap</pkg>. A similar wide range of
       functions is to be
-      found in the <pkg>fields</pkg> package. The <pkg>spatial</pkg>
+      found in the <pkg>fields</pkg> package. The spatial
       package is available as part of the <pkg>VR</pkg> bundle
       (shipped with base R), and contains several core functions. The 
       <pkg>spBayes</pkg> package fits Gaussian univariate and multivariate
