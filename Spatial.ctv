@@ -2,7 +2,7 @@
   <name>Spatial</name>
   <topic>Analysis of Spatial Data</topic>
   <maintainer email="Roger.Bivand@nhh.no">Roger Bivand</maintainer>
-  <version>2009-04-22</version>
+  <version>2009-06-24</version>
 
   <info>
     <p>Base R includes many functions that can be used for reading,
@@ -232,9 +232,7 @@
       <pkg>trip</pkg>. <pkg>ncf</pkg> has entered CRAN recently, and
       provides a range of spatial nonparametric covariance functions.
       <pkg>ModelMap</pkg> builds on other packages to create models
-      using underlying GIS data. 
-      <pkg>WeedMap</pkg> is a recent contribution for computing spatial
-      predictions from exact count and a covariate.  An off-CRAN package
+      using underlying GIS data. An off-CRAN package
       - <a href="http://www.leg.ufpr.br/Rcitrus/">Rcitrus</a> - is for
       the spatial analysis of plant disease incidence.
      <pkg>clustTool</pkg> is a GUI for clustering data with spatial
@@ -317,7 +315,6 @@
     <pkg priority="core">tripack</pkg>
     <pkg>vegan</pkg>
     <pkg priority="core">VR</pkg>
-    <pkg>WeedMap</pkg>
   </packagelist>
 
     
