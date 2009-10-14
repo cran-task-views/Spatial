@@ -203,8 +203,14 @@
       models to WinBUGS, extended by <pkg>diseasemapping</pkg>.</p></li>
 
       <li><p><b>Spatial regression</b>:
-      The <pkg>spdep</pkg> package can also be viewed from spatial 
-      econometrics, and, as noted above, provides basic functions for
+      The choice of function for spatial regression will depend on the 
+      support available. If the data are characterised by point support
+      and the spatial process is continuous, geostatistical methods may be 
+      used, or functions in the <pkg>nlme</pkg> package. If the support
+      is areal, and the spatial process is not being treated as continuous,
+      functions provided in the <pkg>spdep</pkg> package may be used.
+      This package can also be seen as providing spatial econometrics
+      functions, and, as noted above, provides basic functions for
       building neighbour lists and spatial weights, tests for spatial
       autocorrelation for areal data like Moran's I, and functions for
       fitting spatial regression models. It provides the full range of
@@ -277,6 +283,7 @@
     <pkg>MBA</pkg>
     <pkg>ncdf</pkg>
     <pkg>ncf</pkg>
+    <pkg>nlme</pkg>
     <pkg priority="core">maptools</pkg>
     <pkg>ModelMap</pkg>
     <pkg>pastecs</pkg>
