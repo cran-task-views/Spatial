@@ -2,7 +2,7 @@
   <name>Spatial</name>
   <topic>Analysis of Spatial Data</topic>
   <maintainer email="Roger.Bivand@nhh.no">Roger Bivand</maintainer>
-  <version>2009-10-14</version>
+  <version>2009-10-28</version>
 
   <info>
     <p>Base R includes many functions that can be used for reading,
@@ -125,9 +125,8 @@
       for Python access to the ArcGIS GeoProcessor, and <pkg>RSAGA</pkg>
       is a similar shell-based wrapper for SAGA commands</p></li>
 
-      <li><p><b>Point pattern analysis</b>: The spatial
-      package is available as part of the <pkg>VR</pkg> bundle
-      (a recommended package shipped with base R), and contains several 
+      <li><p><b>Point pattern analysis</b>: The <pkg>spatial</pkg>
+      package is a recommended package shipped with base R, and contains several 
       core functions, including an implementation of Khat by its 
       author, Prof. Ripley. In
       addition, <pkg>spatstat</pkg> allows freedom in defining the
@@ -161,9 +160,8 @@
       geostatistics. Automated interpolation using <pkg>gstat</pkg>
       is available in <pkg>automap</pkg>. A similar wide range of
       functions is to be
-      found in the <pkg>fields</pkg> package. The spatial
-      package is available as part of the <pkg>VR</pkg> bundle
-      (shipped with base R), and contains several core functions. The 
+      found in the <pkg>fields</pkg> package. The <pkg>spatial</pkg>
+      package is shipped with base R, and contains several core functions. The 
       <pkg>spBayes</pkg> package fits Gaussian univariate and multivariate
       models with MCMC. <pkg>ramps</pkg> is a different Bayesian
       geostatistical modelling package.</p>
@@ -302,6 +300,7 @@
     <pkg>sgeostat</pkg>
     <pkg>shapefiles</pkg>
     <pkg priority="core">sp</pkg>
+    <pkg priority="core">spatial</pkg>
     <pkg>spatialCovariance</pkg>
     <pkg>SpatialExtremes</pkg>
     <pkg>spatialkernel</pkg>
@@ -321,7 +320,6 @@
     <pkg>tripEstimation</pkg>
     <pkg priority="core">tripack</pkg>
     <pkg>vegan</pkg>
-    <pkg priority="core">VR</pkg>
   </packagelist>
 
     
