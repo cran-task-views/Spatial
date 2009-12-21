@@ -2,7 +2,7 @@
   <name>Spatial</name>
   <topic>Analysis of Spatial Data</topic>
   <maintainer email="Roger.Bivand@nhh.no">Roger Bivand</maintainer>
-  <version>2009-10-28</version>
+  <version>2009-12-21</version>
 
   <info>
     <p>Base R includes many functions that can be used for reading,
@@ -67,11 +67,17 @@
       <li><p><b>Handling spatial data</b>: A number of packages have
       been written using sp classes. The <pkg>spsurvey</pkg> provides a
       range of sampling functions. The <pkg>trip</pkg> package extends sp
-      classes to permit the accessing and manipulating of spatial data
-      for animal tracking. The <pkg>hdeco</pkg> package provides hierarchical
+      classes to permit the accessing and manipulating of spatial data for
+      animal tracking. The <pkg>hdeco</pkg> package provides hierarchical
       decomposition of entropy for categorical map comparisons. The
       <pkg>GeoXp</pkg> package permits interactive graphical exploratory
-      spatial data analysis.</p></li>
+      spatial data analysis.</p> The <pkg>rgr</pkg> package by the
+      Geological Survey of Canada contains EDA functions for Applied
+      Geochemistry and interesting data sets. <pkg>spcosa</pkg> provides
+      spatial coverage sampling and random sampling from compact
+      geographical strata. The <pkg>UScensus2000</pkg>US Census 2000
+      Suite of packages makes the use of data from the 2000 US Census
+      more convenient.</p></li>
 
       <li><p><b>Reading and writing spatial data</b>: Maps may be
       vector-based or raster-based. The <pkg>rgdal</pkg> package provides
@@ -126,64 +132,72 @@
       is a similar shell-based wrapper for SAGA commands</p></li>
 
       <li><p><b>Point pattern analysis</b>: The <pkg>spatial</pkg>
-      package is a recommended package shipped with base R, and contains several 
-      core functions, including an implementation of Khat by its 
-      author, Prof. Ripley. In
-      addition, <pkg>spatstat</pkg> allows freedom in defining the
-      region(s) of interest, and makes extensions to marked processes
-      and spatial covariates. Its strengths are model-fitting and
-      simulation, and it has a useful <a href="http://www.spatstat.org/">
-      homepage</a>. It is the only package that will enable the user to fit
-      inhomogeneous point process models with interpoint interactions. The
-      <pkg>spatgraphs</pkg> package provides graphs, graph visualization
-      and graph based summaries to be used with spatial point pattern
-      analysis. The
+      package is a recommended package shipped with base R, and contains
+      several core functions, including an implementation of Khat
+      by its author, Prof. Ripley. In addition, <pkg>spatstat</pkg>
+      allows freedom in defining the region(s) of interest, and makes
+      extensions to marked processes and spatial covariates. Its
+      strengths are model-fitting and simulation, and it has a useful
+      <a href="http://www.spatstat.org/"> homepage</a>. It is the only
+      package that will enable the user to fit inhomogeneous point process
+      models with interpoint interactions. The <pkg>spatgraphs</pkg>
+      package provides graphs, graph visualization and graph based
+      summaries to be used with spatial point pattern analysis. The
       <pkg>splancs</pkg> package also allows point data to be analysed
       within a polygonal region of interest, and covers many methods,
-      including 2D kernel densities. <pkg>ecespa</pkg> provides wrappers,
-      functions and data for spatial point pattern analysis, used in the
-      book on Spatial Ecology of the ECESPA/AEET. The functions for binning
-      points
-      on grids in <pkg>ash</pkg> may also be of interest. The <pkg>ads</pkg>
-      package perform first- and second-order multi-scale analyses derived
-      from Ripley's K-function. The <pkg>aspace</pkg> package is a
-      collection of functions for estimating centrographic statistcs and
-      computational geometries from spatial point patterns.
-      <pkg>spatialkernel</pkg> provides edge-corrected kernel density
-      estimation and binary kernel regression estimation for multivariate
-      spatial point process data.</p></li>
+      including 2D kernel densities. <pkg>ecespa</pkg> provides
+      wrappers, functions and data for spatial point pattern analysis,
+      used in the book on Spatial Ecology of the ECESPA/AEET. The
+      functions for binning points on grids in <pkg>ash</pkg> may
+      also be of interest. The <pkg>ads</pkg> package perform first-
+      and second-order multi-scale analyses derived from Ripley's
+      K-function. The <pkg>aspace</pkg> package is a collection of
+      functions for estimating centrographic statistcs and computational
+      geometries from spatial point patterns.  <pkg>spatialkernel</pkg>
+      provides edge-corrected kernel density estimation and binary kernel
+      regression estimation for multivariate spatial point process
+      data. <pkg>DSpat</pkg> contains functions for spatial modelling
+      for distance sampling data, and <pkg>spatialsegregation</pkg> 
+      provides segregation measures for multitype spatial point 
+      patterns.</p></li>
 
-      <li><p><b>Geostatistics</b>: The <pkg>gstat</pkg> package provides
-      a wide range of functions for univariate and multivariate
+      <li><p><b>Geostatistics</b>: The <pkg>gstat</pkg> package
+      provides a wide range of functions for univariate and multivariate
       geostatistics, also for larger datasets, while <pkg>geoR</pkg>
       and <pkg>geoRglm</pkg> contain functions for model-based
       geostatistics. Automated interpolation using <pkg>gstat</pkg>
-      is available in <pkg>automap</pkg>. A similar wide range of
-      functions is to be
-      found in the <pkg>fields</pkg> package. The <pkg>spatial</pkg>
-      package is shipped with base R, and contains several core functions. The 
-      <pkg>spBayes</pkg> package fits Gaussian univariate and multivariate
-      models with MCMC. <pkg>ramps</pkg> is a different Bayesian
-      geostatistical modelling package.</p>
+      is available in <pkg>automap</pkg>. This family of packages is
+      supplemented by <pkg>intamap</pkg> with procedures for automated
+      interpolation and <pkg>psgp</pkg>, which implements projected
+      sparse Gaussian process kriging.  A similar wide range of
+      functions is to be found in the <pkg>fields</pkg> package. The
+      <pkg>spatial</pkg> package is shipped with base R, and contains
+      several core functions. The <pkg>spBayes</pkg> package fits Gaussian
+      univariate and multivariate models with MCMC. <pkg>ramps</pkg>
+      is a different Bayesian geostatistical modelling package.</p>
 
-      <p> The <pkg>RandomFields</pkg> package provides functions for
+      <p>The <pkg>RandomFields</pkg> package provides functions for
       the simulation and analysis of random fields, and variogram
       model descriptions can be passed between <pkg>geoR</pkg>,
       <pkg>gstat</pkg> and this package. <pkg>SpatialExtremes</pkg>
       proposes several approaches for spatial extremes modelling
       using <pkg>RandomFields</pkg>. The <pkg>sgeostat</pkg> package
-      is also available. Within the same general topical area are the
-      <pkg>tripack</pkg> for triangulation and the <pkg>akima</pkg>
-      package for spline interpolation; the <pkg>MBA</pkg> package
-      provides scattered data interpolation with multilevel B-splines. In
-      addition, there are the <pkg>spatialCovariance</pkg> package,
-      which supports the computation of spatial covariance matrices
-      for data on rectangles, the <pkg>regress</pkg> package building
-      in part on <pkg>spatialCovariance</pkg>, and the <pkg>tgp</pkg>
-      package. The <pkg>Stem</pkg> package provides for the estimation of the
-      parameters of a spatio-temporal model using the EM algorithm, and
-      the estimation of the parameter standard errors using a
-      spatio-temporal parametric bootstrap</p></li>
+      is also available. Within the same general topical area are
+      the <pkg>deldir</pkg> and <pkg>tripack</pkg> packages for
+      triangulation and the <pkg>akima</pkg> package for spline
+      interpolation; the <pkg>MBA</pkg> package provides scattered
+      data interpolation with multilevel B-splines. In addition,
+      there are the <pkg>spatialCovariance</pkg> package, which
+      supports the computation of spatial covariance matrices
+      for data on rectangles, the <pkg>regress</pkg> package
+      building in part on <pkg>spatialCovariance</pkg>, and the
+      <pkg>tgp</pkg> package. The <pkg>Stem</pkg> package provides
+      for the estimation of the parameters of a spatio-temporal
+      model using the EM algorithm, and the estimation of the
+      parameter standard errors using a spatio-temporal parametric
+      bootstrap. <pkg>CircSpatial</pkg> provides functions for circular
+      spatial data, and <pkg>FieldSim</pkg> is another random fields
+      simulations package.  </p></li>
 
       <li><p><b>Disease mapping and areal data analysis</b>:
       <pkg>DCluster</pkg> is a package for the detection of
@@ -219,8 +233,8 @@
       and spatial Durbin models. For larger data sets, sparse matrix 
       techniques can be used for maximum likelihood fits, while spatial two
       stage least squares and generalised method of moments estimators are
-      an alternative.
-      </p></li>
+      an alternative. Spatial count regression is provided using custom MCMC
+      by <pkg>spatcounts</pkg>.</p></li>
 
       <li><p><b>Ecological analysis</b>: There are many packages
       for analysing ecological and environmental data. They include
@@ -252,16 +266,20 @@
     <pkg>ade4</pkg>
     <pkg>adehabitat</pkg>
     <pkg>ads</pkg>
-    <pkg priority="core">akima</pkg>
+    <pkg>akima</pkg>
     <pkg>aspace</pkg>
     <pkg>ash</pkg>
     <pkg>automap</pkg>
+    <pkg>CircSpatial</pkg>
     <pkg priority="core">classInt</pkg>
     <pkg>clustTool</pkg>
     <pkg priority="core">DCluster</pkg>
+    <pkg priority="core">deldir</pkg>
+    <pkg>DSpat</pkg>
     <pkg>diseasemapping</pkg>
     <pkg>ecespa</pkg>
     <pkg>fields</pkg>
+    <pkg>FieldSim</pkg>
     <pkg>GEOmap</pkg>
     <pkg>geomapdata</pkg>
     <pkg>geonames</pkg>
@@ -275,6 +293,7 @@
     <pkg>grasp</pkg>
     <pkg priority="core">gstat</pkg>
     <pkg>hdeco</pkg>
+    <pkg>intamap</pkg>
     <pkg>mapdata</pkg>
     <pkg>mapproj</pkg>
     <pkg>maps</pkg>
@@ -287,6 +306,7 @@
     <pkg>pastecs</pkg>
     <pkg>PBSmapping</pkg>
     <pkg>PBSmodelling</pkg>
+    <pkg>psgp</pkg>
     <pkg>ramps</pkg>
     <pkg priority="core">RandomFields</pkg>
     <pkg>RArcInfo</pkg>
@@ -294,6 +314,7 @@
     <pkg>regress</pkg>
     <pkg priority="core">rgdal</pkg>
     <pkg>RgoogleMaps</pkg>
+    <pkg>rgr</pkg>
     <pkg>RPyGeo</pkg>
     <pkg>RSAGA</pkg>
     <pkg>RSurvey</pkg>
@@ -305,20 +326,25 @@
     <pkg>SpatialExtremes</pkg>
     <pkg>spatialkernel</pkg>
     <pkg>spatclus</pkg>
+    <pkg>spatcounts</pkg>
     <pkg>spatgraphs</pkg>
+    <pkg>spatialsegregation</pkg>
     <pkg priority="core">spatstat</pkg>
     <pkg>spBayes</pkg>
+    <pkg>spcosa</pkg>
     <pkg priority="core">spdep</pkg>
     <pkg>spgrass6</pkg>
     <pkg>spgwr</pkg>
     <pkg priority="core">splancs</pkg>
     <pkg>spsurvey</pkg>
     <pkg>SQLiteMap</pkg>
+    <pkg>Stem</pkg>
     <pkg>tgp</pkg>
     <pkg>tossm</pkg>
     <pkg>trip</pkg>
     <pkg>tripEstimation</pkg>
-    <pkg priority="core">tripack</pkg>
+    <pkg>tripack</pkg>
+    <pkg>UScensus2000</pkg>US Census 2000 Suite of R Packages
     <pkg>vegan</pkg>
   </packagelist>
 
