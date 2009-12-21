@@ -62,7 +62,8 @@
       the <pkg>PBSmapping</pkg> package; <pkg>PBSmodelling</pkg> provides
       modelling support. In addition, <pkg>GEOmap</pkg> provides mapping
       facilities directed to meet the needs of geologists, and uses the
-      <pkg>geomapdata</pkg> package.</p></li>
+      <pkg>geomapdata</pkg> package.</p>
+      </li>
 
       <li><p><b>Handling spatial data</b>: A number of packages have
       been written using sp classes. The <pkg>spsurvey</pkg> provides a
@@ -71,7 +72,7 @@
       animal tracking. The <pkg>hdeco</pkg> package provides hierarchical
       decomposition of entropy for categorical map comparisons. The
       <pkg>GeoXp</pkg> package permits interactive graphical exploratory
-      spatial data analysis.</p> The <pkg>rgr</pkg> package by the
+      spatial data analysis. The <pkg>rgr</pkg> package by the
       Geological Survey of Canada contains EDA functions for Applied
       Geochemistry and interesting data sets. <pkg>spcosa</pkg> provides
       spatial coverage sampling and random sampling from compact
