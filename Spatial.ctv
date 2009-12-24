@@ -76,7 +76,7 @@
       Geological Survey of Canada contains EDA functions for Applied
       Geochemistry and interesting data sets. <pkg>spcosa</pkg> provides
       spatial coverage sampling and random sampling from compact
-      geographical strata. The <pkg>UScensus2000</pkg>US Census 2000
+      geographical strata. The <pkg>UScensus2000</pkg> US Census 2000
       Suite of packages makes the use of data from the 2000 US Census
       more convenient.</p></li>
 
@@ -345,13 +345,13 @@
     <pkg>trip</pkg>
     <pkg>tripEstimation</pkg>
     <pkg>tripack</pkg>
-    <pkg>UScensus2000</pkg>US Census 2000 Suite of R Packages
+    <pkg>UScensus2000</pkg>
     <pkg>vegan</pkg>
   </packagelist>
 
     
   <links>
-   <a href="Environmetrics.html">CRAN Task View: Environmetrics</a>
+    <view>Environmetrics</view>
     <a target="_top" href="http://www.R-project.org/Rgeo/">Rgeo: Spatial Statistics with R</a>
     <a target="_top" href="http://R-spatial.sourceforge.net/">R-spatial Sourceforge home page</a>
     <a href="https://www.stat.math.ethz.ch/mailman/listinfo/R-SIG-Geo/">R-SIG-Geo mailing list</a>
