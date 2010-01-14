@@ -2,7 +2,7 @@
   <name>Spatial</name>
   <topic>Analysis of Spatial Data</topic>
   <maintainer email="Roger.Bivand@nhh.no">Roger Bivand</maintainer>
-  <version>2009-12-21</version>
+  <version>2010-01-14</version>
 
   <info>
     <p>Base R includes many functions that can be used for reading,
@@ -72,13 +72,16 @@
       animal tracking. The <pkg>hdeco</pkg> package provides hierarchical
       decomposition of entropy for categorical map comparisons. The
       <pkg>GeoXp</pkg> package permits interactive graphical exploratory
-      spatial data analysis. The <pkg>rgr</pkg> package by the
-      Geological Survey of Canada contains EDA functions for Applied
-      Geochemistry and interesting data sets. <pkg>spcosa</pkg> provides
-      spatial coverage sampling and random sampling from compact
-      geographical strata. The <pkg>UScensus2000</pkg> US Census 2000
-      Suite of packages makes the use of data from the 2000 US Census
-      more convenient.</p></li>
+      spatial data analysis. The <pkg>rgr</pkg> package by the Geological
+      Survey of Canada contains EDA functions for Applied Geochemistry and
+      interesting data sets. <pkg>spcosa</pkg> provides spatial coverage
+      sampling and random sampling from compact geographical strata. The
+      <pkg>UScensus2000</pkg>US Census 2000 Suite of packages makes the
+      use of data from the 2000 US Census more convenient. An important
+      data set, Guerry's "Moral Statistics of France", has been made
+      available in the <pkg>Guerry</pkg> package, which provides data
+      and maps and examples designed to contribute to the integration
+      of multivariate and spatial analysis.</p></li>
 
       <li><p><b>Reading and writing spatial data</b>: Maps may be
       vector-based or raster-based. The <pkg>rgdal</pkg> package provides
@@ -284,6 +287,7 @@
     <pkg>GEOmap</pkg>
     <pkg>geomapdata</pkg>
     <pkg>geonames</pkg>
+    <pkg>Guerry</pkg>
     <pkg priority="core">geoR</pkg>
     <pkg>geoRglm</pkg>
     <pkg>GeoXp</pkg>
@@ -322,7 +326,7 @@
     <pkg>sgeostat</pkg>
     <pkg>shapefiles</pkg>
     <pkg priority="core">sp</pkg>
-    <pkg priority="core">spatial</pkg>
+    <pkg>spatial</pkg>
     <pkg>spatialCovariance</pkg>
     <pkg>SpatialExtremes</pkg>
     <pkg>spatialkernel</pkg>
