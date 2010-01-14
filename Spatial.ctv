@@ -81,7 +81,10 @@
       data set, Guerry's "Moral Statistics of France", has been made
       available in the <pkg>Guerry</pkg> package, which provides data
       and maps and examples designed to contribute to the integration
-      of multivariate and spatial analysis.</p></li>
+      of multivariate and spatial analysis. The new <pkg>cshapes</pkg>
+      and <pkg>rworldmap</pkg> packages make available data sets for
+      conflict studies and environmental studies purposes - they are
+      linked as <pkg>rworldmap</pkg> suggests <pkg>cshapes</pkg>.</p></li>
 
       <li><p><b>Reading and writing spatial data</b>: Maps may be
       vector-based or raster-based. The <pkg>rgdal</pkg> package provides
@@ -277,6 +280,7 @@
     <pkg>CircSpatial</pkg>
     <pkg priority="core">classInt</pkg>
     <pkg>clustTool</pkg>
+    <pkg>cshapes</pkg>
     <pkg priority="core">DCluster</pkg>
     <pkg priority="core">deldir</pkg>
     <pkg>DSpat</pkg>
@@ -323,6 +327,7 @@
     <pkg>RPyGeo</pkg>
     <pkg>RSAGA</pkg>
     <pkg>RSurvey</pkg>
+    <pkg>rworldmap</pkg>
     <pkg>sgeostat</pkg>
     <pkg>shapefiles</pkg>
     <pkg priority="core">sp</pkg>
