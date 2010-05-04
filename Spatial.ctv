@@ -2,7 +2,7 @@
   <name>Spatial</name>
   <topic>Analysis of Spatial Data</topic>
   <maintainer email="Roger.Bivand@nhh.no">Roger Bivand</maintainer>
-  <version>2010-01-14</version>
+  <version>2010-05-04</version>
 
   <info>
     <p>Base R includes many functions that can be used for reading,
@@ -72,9 +72,7 @@
       animal tracking. The <pkg>hdeco</pkg> package provides hierarchical
       decomposition of entropy for categorical map comparisons. The
       <pkg>GeoXp</pkg> package permits interactive graphical exploratory
-      spatial data analysis. The <pkg>rgr</pkg> package by the Geological
-      Survey of Canada contains EDA functions for Applied Geochemistry and
-      interesting data sets. <pkg>spcosa</pkg> provides spatial coverage
+      spatial data analysis. <pkg>spcosa</pkg> provides spatial coverage
       sampling and random sampling from compact geographical strata. The
       <pkg>UScensus2000</pkg>US Census 2000 Suite of packages makes the
       use of data from the 2000 US Census more convenient. An important
@@ -323,7 +321,6 @@
     <pkg>regress</pkg>
     <pkg priority="core">rgdal</pkg>
     <pkg>RgoogleMaps</pkg>
-    <pkg>rgr</pkg>
     <pkg>RPyGeo</pkg>
     <pkg>RSAGA</pkg>
     <pkg>RSurvey</pkg>
