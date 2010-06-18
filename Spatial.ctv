@@ -170,7 +170,8 @@
       provides a wide range of functions for univariate and multivariate
       geostatistics, also for larger datasets, while <pkg>geoR</pkg>
       and <pkg>geoRglm</pkg> contain functions for model-based
-      geostatistics. Automated interpolation using <pkg>gstat</pkg>
+      geostatistics. Variogram diagnostics may be carried out with 
+      <pkg>vardiag</pkg>. Automated interpolation using <pkg>gstat</pkg>
       is available in <pkg>automap</pkg>. This family of packages is
       supplemented by <pkg>intamap</pkg> with procedures for automated
       interpolation and <pkg>psgp</pkg>, which implements projected
@@ -350,6 +351,7 @@
     <pkg>tripEstimation</pkg>
     <pkg>tripack</pkg>
     <pkg>UScensus2000</pkg>
+    <pkg>vardiag</pkg>
     <pkg>vegan</pkg>
   </packagelist>
 
