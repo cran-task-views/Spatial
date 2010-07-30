@@ -2,7 +2,7 @@
   <name>Spatial</name>
   <topic>Analysis of Spatial Data</topic>
   <maintainer email="Roger.Bivand@nhh.no">Roger Bivand</maintainer>
-  <version>2010-06-18</version>
+  <version>2010-07-30</version>
 
   <info>
     <p>Base R includes many functions that can be used for reading,
@@ -243,7 +243,6 @@
 
       <li><p><b>Ecological analysis</b>: There are many packages
       for analysing ecological and environmental data. They include
-      <pkg>grasp</pkg> for environmental prediction using GAM,
       <pkg>ade4</pkg> for exploratory and Euclidean methods in the
       environmental sciences, <pkg>adehabitat</pkg> for the analysis
       of habitat selection by animals, <pkg>pastecs</pkg> for the
@@ -297,7 +296,6 @@
     <pkg>gmaps</pkg>
     <pkg>gmt</pkg>
     <pkg>GRASS</pkg>
-    <pkg>grasp</pkg>
     <pkg priority="core">gstat</pkg>
     <pkg>hdeco</pkg>
     <pkg>intamap</pkg>
