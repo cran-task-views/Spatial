@@ -2,7 +2,7 @@
   <name>Spatial</name>
   <topic>Analysis of Spatial Data</topic>
   <maintainer email="Roger.Bivand@nhh.no">Roger Bivand</maintainer>
-  <version>2010-07-30</version>
+  <version>2010-09-05</version>
 
   <info>
     <p>Base R includes many functions that can be used for reading,
@@ -14,12 +14,7 @@
     some of which are on CRAN, and others are still in development. One
     active location is <a target="_top" href="http://r-forge.r-project.org/">
     R-Forge</a>, which lists "Spatial Data and Statistics" projects in its
-    <a target="_top" href="http://r-forge.r-project.org/softwaremap/trove_list.php">project tree</a>. Two promising packages on this site are 
-    <a target="_top" href="http://r-forge.r-project.org/projects/raster/">
-    raster</a> for basic spatial raster (grid) data access and manipulation, 
-    and <a target="_top" href="http://r-forge.r-project.org/projects/r-gis/">
-    Rgis</a>, which tries to bridge the gap between spatial data handling 
-    and good statistical and modeling tools. Some CRAN packages associated 
+    <a target="_top" href="http://r-forge.r-project.org/softwaremap/trove_list.php">project tree</a>. Some CRAN packages associated 
     with <pkg>sp</pkg> are hosted on Sourceforge in the
     <a target="_top" href="http://R-spatial.sourceforge.net/">R-spatial</a>
     project, and as yet unreleased source versions may checked out from
@@ -57,7 +52,13 @@
       note in
       <a href="http://CRAN.R-project.org/doc/Rnews/Rnews_2005-2.pdf">R
       News</a>.  Some other packages have become dependent on these
-      classes, including <pkg>rgdal</pkg> and <pkg>maptools</pkg>. An
+      classes, including <pkg>rgdal</pkg> and <pkg>maptools</pkg>. 
+      The <pkg>raster</pkg> package is a major extension of spatial data 
+      classes to virtualise access to large rasters, permitting large 
+      objects to be analysed, and extending the analytical tools available 
+      for both raster and vector data.</p>
+
+      <p>An
       alternative approach to some of these issues is implemented in
       the <pkg>PBSmapping</pkg> package; <pkg>PBSmodelling</pkg> provides
       modelling support. In addition, <pkg>GEOmap</pkg> provides mapping
@@ -66,14 +67,21 @@
       </li>
 
       <li><p><b>Handling spatial data</b>: A number of packages have
-      been written using sp classes. The <pkg>spsurvey</pkg> provides a
+      been written using sp classes. The <pkg>raster</pkg> package 
+      introduces many GIS methods that now permit much to be done with 
+      spatial data without having to use GIS in addition to R. 
+      <pkg>geosphere</pkg> permits computations of distance and area 
+      to be carried out on spatial data in geographical coordinates. 
+      The <pkg>spsurvey</pkg> provides a
       range of sampling functions. The <pkg>trip</pkg> package extends sp
       classes to permit the accessing and manipulating of spatial data for
       animal tracking. The <pkg>hdeco</pkg> package provides hierarchical
       decomposition of entropy for categorical map comparisons. The
       <pkg>GeoXp</pkg> package permits interactive graphical exploratory
       spatial data analysis. <pkg>spcosa</pkg> provides spatial coverage
-      sampling and random sampling from compact geographical strata. The
+      sampling and random sampling from compact geographical strata. </p>
+
+      <p>The
       <pkg>UScensus2000</pkg>US Census 2000 Suite of packages makes the
       use of data from the 2000 US Census more convenient. An important
       data set, Guerry's "Moral Statistics of France", has been made
@@ -134,7 +142,8 @@
       Integration with legacy version 5.* GRASS, continues to be provided
       in CRAN package <pkg>GRASS</pkg>. <pkg>RPyGeo</pkg> is a wrapper
       for Python access to the ArcGIS GeoProcessor, and <pkg>RSAGA</pkg>
-      is a similar shell-based wrapper for SAGA commands</p></li>
+      is a similar shell-based wrapper for SAGA commands. DIVAGIS may be 
+      integrated with R using <pkg>divagis</pkg>. </p></li>
 
       <li><p><b>Point pattern analysis</b>: The <pkg>spatial</pkg>
       package is a recommended package shipped with base R, and contains
@@ -145,12 +154,16 @@
       strengths are model-fitting and simulation, and it has a useful
       <a href="http://www.spatstat.org/"> homepage</a>. It is the only
       package that will enable the user to fit inhomogeneous point process
-      models with interpoint interactions. The <pkg>spatgraphs</pkg>
+      models with interpoint interactions. <pkg>MarkedPointProcesses</pkg> 
+      is another contemporary point pattern package. 
+      The <pkg>spatgraphs</pkg>
       package provides graphs, graph visualization and graph based
       summaries to be used with spatial point pattern analysis. The
       <pkg>splancs</pkg> package also allows point data to be analysed
       within a polygonal region of interest, and covers many methods,
-      including 2D kernel densities. <pkg>ecespa</pkg> provides
+      including 2D kernel densities. </p>
+
+      <p><pkg>ecespa</pkg> provides
       wrappers, functions and data for spatial point pattern analysis,
       used in the book on Spatial Ecology of the ECESPA/AEET. The
       functions for binning points on grids in <pkg>ash</pkg> may
@@ -187,7 +200,11 @@
       model descriptions can be passed between <pkg>geoR</pkg>,
       <pkg>gstat</pkg> and this package. <pkg>SpatialExtremes</pkg>
       proposes several approaches for spatial extremes modelling
-      using <pkg>RandomFields</pkg>. The <pkg>sgeostat</pkg> package
+      using <pkg>RandomFields</pkg>. In addition, <pkg>CompRandFld</pkg>, 
+      <pkg>constrainedKriging</pkg> and <pkg>geofd</pkg> provide 
+      alternative approaches to geostatistical modelling.</p>
+
+      <p>The <pkg>sgeostat</pkg> package
       is also available. Within the same general topical area are
       the <pkg>deldir</pkg> and <pkg>tripack</pkg> packages for
       triangulation and the <pkg>akima</pkg> package for spline
@@ -215,7 +232,8 @@
       models assume that the spatial dependence can be described by known
       weights. The <pkg>spgwr</pkg> package contains an implementation of
       geographically weighted regression methods for exploring possible
-      non-stationarity.
+      non-stationarity. The <pkg>sparr</pkg> package provides another
+      approach to relative risks.
       The <pkg>glmmBUGS</pkg> package is a helpful way of passing out spatial
       models to WinBUGS, extended by <pkg>diseasemapping</pkg>.</p></li>
 
@@ -238,7 +256,9 @@
       and spatial Durbin models. For larger data sets, sparse matrix 
       techniques can be used for maximum likelihood fits, while spatial two
       stage least squares and generalised method of moments estimators are
-      an alternative. Spatial count regression is provided using custom MCMC
+      an alternative. When using GMM, <pkg>sphet</pkg> can be used to 
+      accommodate both autocorrelation and heteroskedasticity. Spatial 
+      count regression is provided using custom MCMC
       by <pkg>spatcounts</pkg>.</p></li>
 
       <li><p><b>Ecological analysis</b>: There are many packages
@@ -276,18 +296,22 @@
     <pkg>automap</pkg>
     <pkg>CircSpatial</pkg>
     <pkg priority="core">classInt</pkg>
+    <pkg>CompRandFld</pkg>
+    <pkg>constrainedKriging</pkg>
     <pkg>clustTool</pkg>
     <pkg>cshapes</pkg>
     <pkg priority="core">DCluster</pkg>
     <pkg priority="core">deldir</pkg>
     <pkg>DSpat</pkg>
     <pkg>diseasemapping</pkg>
+    <pkg>divagis</pkg>
     <pkg>ecespa</pkg>
     <pkg>fields</pkg>
     <pkg>FieldSim</pkg>
     <pkg>GEOmap</pkg>
     <pkg>geomapdata</pkg>
     <pkg>geonames</pkg>
+    <pkg>geosphere</pkg>
     <pkg>Guerry</pkg>
     <pkg priority="core">geoR</pkg>
     <pkg>geoRglm</pkg>
@@ -303,18 +327,20 @@
     <pkg>mapproj</pkg>
     <pkg>maps</pkg>
     <pkg>MBA</pkg>
+    <pkg priority="core">maptools</pkg>
+    <pkg>MarkedPointProcesses</pkg>
+    <pkg>ModelMap</pkg>
+    <pkg>pastecs</pkg>
     <pkg>ncdf</pkg>
     <pkg>ncf</pkg>
     <pkg>nlme</pkg>
-    <pkg priority="core">maptools</pkg>
-    <pkg>ModelMap</pkg>
-    <pkg>pastecs</pkg>
     <pkg>PBSmapping</pkg>
     <pkg>PBSmodelling</pkg>
     <pkg>psgp</pkg>
     <pkg>ramps</pkg>
     <pkg priority="core">RandomFields</pkg>
     <pkg>RArcInfo</pkg>
+    <pkg priority="core">raster</pkg>
     <pkg priority="core">RColorBrewer</pkg>
     <pkg>regress</pkg>
     <pkg priority="core">rgdal</pkg>
@@ -326,6 +352,7 @@
     <pkg>sgeostat</pkg>
     <pkg>shapefiles</pkg>
     <pkg priority="core">sp</pkg>
+    <pkg>sparr</pkg>
     <pkg>spatial</pkg>
     <pkg>spatialCovariance</pkg>
     <pkg>SpatialExtremes</pkg>
@@ -339,6 +366,7 @@
     <pkg priority="core">spdep</pkg>
     <pkg>spgrass6</pkg>
     <pkg>spgwr</pkg>
+    <pkg>sphet</pkg>
     <pkg priority="core">splancs</pkg>
     <pkg>spsurvey</pkg>
     <pkg>SQLiteMap</pkg>
