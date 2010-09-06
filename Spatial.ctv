@@ -154,7 +154,7 @@
       strengths are model-fitting and simulation, and it has a useful
       <a href="http://www.spatstat.org/"> homepage</a>. It is the only
       package that will enable the user to fit inhomogeneous point process
-      models with interpoint interactions. <pkg>MarkedPointProcesses</pkg> 
+      models with interpoint interactions. <pkg>MarkedPointProcess</pkg> 
       is another contemporary point pattern package. 
       The <pkg>spatgraphs</pkg>
       package provides graphs, graph visualization and graph based
@@ -328,7 +328,7 @@
     <pkg>maps</pkg>
     <pkg>MBA</pkg>
     <pkg priority="core">maptools</pkg>
-    <pkg>MarkedPointProcesses</pkg>
+    <pkg>MarkedPointProcess</pkg>
     <pkg>ModelMap</pkg>
     <pkg>pastecs</pkg>
     <pkg>ncdf</pkg>
