@@ -2,7 +2,7 @@
   <name>Spatial</name>
   <topic>Analysis of Spatial Data</topic>
   <maintainer email="Roger.Bivand@nhh.no">Roger Bivand</maintainer>
-  <version>2010-09-05</version>
+  <version>2010-10-13</version>
 
   <info>
     <p>Base R includes many functions that can be used for reading,
@@ -138,9 +138,7 @@
 
       <p>Integration with version 6.* of the leading open source
       GIS, GRASS, is provided in CRAN package <pkg>spgrass6</pkg>, using
-      <pkg>rgdal</pkg> for exchanging data.
-      Integration with legacy version 5.* GRASS, continues to be provided
-      in CRAN package <pkg>GRASS</pkg>. <pkg>RPyGeo</pkg> is a wrapper
+      <pkg>rgdal</pkg> for exchanging data. <pkg>RPyGeo</pkg> is a wrapper
       for Python access to the ArcGIS GeoProcessor, and <pkg>RSAGA</pkg>
       is a similar shell-based wrapper for SAGA commands. DIVAGIS may be 
       integrated with R using <pkg>divagis</pkg>. </p></li>
@@ -319,7 +317,6 @@
     <pkg>glmmBUGS</pkg>
     <pkg>gmaps</pkg>
     <pkg>gmt</pkg>
-    <pkg>GRASS</pkg>
     <pkg priority="core">gstat</pkg>
     <pkg>hdeco</pkg>
     <pkg>intamap</pkg>
