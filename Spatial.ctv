@@ -24,7 +24,7 @@
     contributed packages address two broad areas: moving spatial data
     into and out of R, and analysing spatial data in R.</p>
 
-    <p>The <a href="https://www.stat.math.ethz.ch/mailman/listinfo/R-SIG-Geo/">
+    <p>The <a href="https://stat.ethz.ch/mailman/listinfo/R-SIG-Geo/">
     R-SIG-Geo</a>
     mailing-list is a good place to begin for obtaining help and discussing
     questions about both accessing data, and analysing it. More
