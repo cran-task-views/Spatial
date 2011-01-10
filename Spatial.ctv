@@ -2,7 +2,7 @@
   <name>Spatial</name>
   <topic>Analysis of Spatial Data</topic>
   <maintainer email="Roger.Bivand@nhh.no">Roger Bivand</maintainer>
-  <version>2010-10-13</version>
+  <version>2011-01-10</version>
 
   <info>
     <p>Base R includes many functions that can be used for reading,
@@ -15,7 +15,7 @@
     active location is <a target="_top" href="http://r-forge.r-project.org/">
     R-Forge</a>, which lists "Spatial Data and Statistics" projects in its
     <a target="_top" href="http://r-forge.r-project.org/softwaremap/trove_list.php">project tree</a>. Some CRAN packages associated 
-    with <pkg>sp</pkg> are hosted on Sourceforge in the
+    with <pkg>sp</pkg> are still hosted on Sourceforge in the
     <a target="_top" href="http://R-spatial.sourceforge.net/">R-spatial</a>
     project, and as yet unreleased source versions may checked out from
     CVS there.</p>
@@ -28,7 +28,7 @@
     R-SIG-Geo</a>
     mailing-list is a good place to begin for obtaining help and discussing
     questions about both accessing data, and analysing it. More
-    information about the functions is available from the
+    information about some functions is still available from the
     <a target="_top" href="http://www.R-project.org/Rgeo/">Rgeo</a> website.
     The packages in this
     view can be roughly structured into the following topics. If you think
@@ -69,8 +69,10 @@
       <li><p><b>Handling spatial data</b>: A number of packages have
       been written using sp classes. The <pkg>raster</pkg> package 
       introduces many GIS methods that now permit much to be done with 
-      spatial data without having to use GIS in addition to R. 
-      <pkg>geosphere</pkg> permits computations of distance and area 
+      spatial data without having to use GIS in addition to R. It may be
+      complemented by <pkg>gdistance</pkg>, which provided calculation
+      of distances and routes on geographic grids. <pkg>geosphere</pkg>
+      permits computations of distance and area 
       to be carried out on spatial data in geographical coordinates. 
       The <pkg>spsurvey</pkg> provides a
       range of sampling functions. The <pkg>trip</pkg> package extends sp
@@ -140,8 +142,7 @@
       GIS, GRASS, is provided in CRAN package <pkg>spgrass6</pkg>, using
       <pkg>rgdal</pkg> for exchanging data. <pkg>RPyGeo</pkg> is a wrapper
       for Python access to the ArcGIS GeoProcessor, and <pkg>RSAGA</pkg>
-      is a similar shell-based wrapper for SAGA commands. DIVAGIS may be 
-      integrated with R using <pkg>divagis</pkg>. </p></li>
+      is a similar shell-based wrapper for SAGA commands. </p></li>
 
       <li><p><b>Point pattern analysis</b>: The <pkg>spatial</pkg>
       package is a recommended package shipped with base R, and contains
@@ -302,11 +303,11 @@
     <pkg priority="core">deldir</pkg>
     <pkg>DSpat</pkg>
     <pkg>diseasemapping</pkg>
-    <pkg>divagis</pkg>
     <pkg>ecespa</pkg>
     <pkg>fields</pkg>
     <pkg>FieldSim</pkg>
     <pkg>GEOmap</pkg>
+    <pkg>gdistance</pkg>
     <pkg>geomapdata</pkg>
     <pkg>geonames</pkg>
     <pkg>geosphere</pkg>
