@@ -191,8 +191,7 @@
       functions is to be found in the <pkg>fields</pkg> package. The
       <pkg>spatial</pkg> package is shipped with base R, and contains
       several core functions. The <pkg>spBayes</pkg> package fits Gaussian
-      univariate and multivariate models with MCMC. <pkg>ramps</pkg>
-      is a different Bayesian geostatistical modelling package.</p>
+      univariate and multivariate models with MCMC.</p>
 
       <p>The <pkg>RandomFields</pkg> package provides functions for
       the simulation and analysis of random fields, and variogram
@@ -335,7 +334,6 @@
     <pkg>PBSmapping</pkg>
     <pkg>PBSmodelling</pkg>
     <pkg>psgp</pkg>
-    <pkg>ramps</pkg>
     <pkg priority="core">RandomFields</pkg>
     <pkg>RArcInfo</pkg>
     <pkg priority="core">raster</pkg>
