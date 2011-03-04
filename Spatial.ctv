@@ -274,7 +274,7 @@
       - <a href="http://www.leg.ufpr.br/Rcitrus/">Rcitrus</a> - is for
       the spatial analysis of plant disease incidence.
      <pkg>clustTool</pkg> is a GUI for clustering data with spatial
-     information. The <pkg>tossm</pkg> offers tools for detecting
+     information. The <pkg>tossm</pkg> package offers tools for detecting
      and managing genetic spatial structure in populations. 
      The <pkg>Geneland</pkg> package uses <pkg>fields</pkg> and 
      <pkg>RandonFields</pkg> to make use of both geographic and genetic
