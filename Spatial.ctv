@@ -275,8 +275,12 @@
       the spatial analysis of plant disease incidence.
      <pkg>clustTool</pkg> is a GUI for clustering data with spatial
      information. The <pkg>tossm</pkg> offers tools for detecting
-     and managing genetic spatial structure in populations. The <a
-     href="Environmetrics.html">Environmetrics</a> Task
+     and managing genetic spatial structure in populations. 
+     The <pkg>Geneland</pkg> package uses <pkg>fields</pkg> and 
+     <pkg>RandonFields</pkg> to make use of both geographic and genetic
+     informations to estimate the number of populations in a dataset and
+     delineate their spatial organisation.
+     The <a href="Environmetrics.html">Environmetrics</a> Task
       View contains a much more complete survey of relevant functions
       and packages.</p></li>
     </ul>
@@ -307,6 +311,7 @@
     <pkg>fields</pkg>
     <pkg>FieldSim</pkg>
     <pkg>GEOmap</pkg>
+    <pkg>Geneland</pkg>
     <pkg>gdistance</pkg>
     <pkg>geomapdata</pkg>
     <pkg>geonames</pkg>
