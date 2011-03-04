@@ -2,7 +2,7 @@
   <name>Spatial</name>
   <topic>Analysis of Spatial Data</topic>
   <maintainer email="Roger.Bivand@nhh.no">Roger Bivand</maintainer>
-  <version>2011-03-02</version>
+  <version>2011-03-04</version>
 
   <info>
     <p>Base R includes many functions that can be used for reading,
@@ -16,7 +16,7 @@
     R-Forge</a>, which lists "Spatial Data and Statistics" projects in its
     <a target="_top" href="http://r-forge.r-project.org/softwaremap/trove_list.php">project tree</a>. Information on R-spatial packages will be posted
     on the R-Forge rspatial project <a target="_top" 
-    href="http://rspatial.r-forge.r-project.org/>website</a>, including
+    href="http://rspatial.r-forge.r-project.org/">website</a>, including
     a visualisation gallery.</p>
 
     <p>The
