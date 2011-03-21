@@ -2,7 +2,7 @@
   <name>Spatial</name>
   <topic>Analysis of Spatial Data</topic>
   <maintainer email="Roger.Bivand@nhh.no">Roger Bivand</maintainer>
-  <version>2011-03-04</version>
+  <version>2011-03-21</version>
 
   <info>
     <p>Base R includes many functions that can be used for reading,
@@ -46,7 +46,10 @@
       The <pkg>sp</pkg> package is discussed in a note in
       <a href="http://CRAN.R-project.org/doc/Rnews/Rnews_2005-2.pdf">R
       News</a>.  Some other packages have become dependent on these
-      classes, including <pkg>rgdal</pkg> and <pkg>maptools</pkg>. 
+      classes, including <pkg>rgdal</pkg> and <pkg>maptools</pkg>. The
+      <pkg>rgeos</pkg> package provides an interface to topology functions
+      for <pkg>sp</pkg> objects using 
+      <a href="http://trac.osgeo.org/geos/">GEOS</a>.
       The <pkg>raster</pkg> package is a major extension of spatial data 
       classes to virtualise access to large rasters, permitting large 
       objects to be analysed, and extending the analytical tools available 
@@ -347,6 +350,7 @@
     <pkg priority="core">RColorBrewer</pkg>
     <pkg>regress</pkg>
     <pkg priority="core">rgdal</pkg>
+    <pkg>rgeos</pkg>
     <pkg>RgoogleMaps</pkg>
     <pkg>RPyGeo</pkg>
     <pkg>RSAGA</pkg>
