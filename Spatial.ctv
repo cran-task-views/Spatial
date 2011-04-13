@@ -2,7 +2,7 @@
   <name>Spatial</name>
   <topic>Analysis of Spatial Data</topic>
   <maintainer email="Roger.Bivand@nhh.no">Roger Bivand</maintainer>
-  <version>2011-03-21</version>
+  <version>2011-04-13</version>
 
   <info>
     <p>Base R includes many functions that can be used for reading,
@@ -277,9 +277,7 @@
       - <a href="http://www.leg.ufpr.br/Rcitrus/">Rcitrus</a> - is for
       the spatial analysis of plant disease incidence.
      <pkg>clustTool</pkg> is a GUI for clustering data with spatial
-     information. The <pkg>tossm</pkg> package offers tools for detecting
-     and managing genetic spatial structure in populations. 
-     The <pkg>Geneland</pkg> package uses <pkg>fields</pkg> and 
+     information. The <pkg>Geneland</pkg> package uses <pkg>fields</pkg> and 
      <pkg>RandonFields</pkg> to make use of both geographic and genetic
      informations to estimate the number of populations in a dataset and
      delineate their spatial organisation.
@@ -379,7 +377,6 @@
     <pkg>SQLiteMap</pkg>
     <pkg>Stem</pkg>
     <pkg>tgp</pkg>
-    <pkg>tossm</pkg>
     <pkg>trip</pkg>
     <pkg>tripEstimation</pkg>
     <pkg>tripack</pkg>
