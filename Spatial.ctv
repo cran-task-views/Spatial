@@ -2,7 +2,7 @@
   <name>Spatial</name>
   <topic>Analysis of Spatial Data</topic>
   <maintainer email="Roger.Bivand@nhh.no">Roger Bivand</maintainer>
-  <version>2011-06-08</version>
+  <version>2011-07-26</version>
 
   <info>
     <p>Base R includes many functions that can be used for reading,
@@ -214,8 +214,7 @@
       for the estimation of the parameters of a spatio-temporal
       model using the EM algorithm, and the estimation of the
       parameter standard errors using a spatio-temporal parametric
-      bootstrap. <pkg>CircSpatial</pkg> provides functions for circular
-      spatial data, and <pkg>FieldSim</pkg> is another random fields
+      bootstrap. <pkg>FieldSim</pkg> is another random fields
       simulations package.  </p></li>
 
       <li><p><b>Disease mapping and areal data analysis</b>:
@@ -299,7 +298,6 @@
     <pkg>aspace</pkg>
     <pkg>ash</pkg>
     <pkg>automap</pkg>
-    <pkg>CircSpatial</pkg>
     <pkg priority="core">classInt</pkg>
     <pkg>CompRandFld</pkg>
     <pkg>constrainedKriging</pkg>
