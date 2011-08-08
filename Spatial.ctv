@@ -2,7 +2,7 @@
   <name>Spatial</name>
   <topic>Analysis of Spatial Data</topic>
   <maintainer email="Roger.Bivand@nhh.no">Roger Bivand</maintainer>
-  <version>2011-07-26</version>
+  <version>2011-08-08</version>
 
   <info>
     <p>Base R includes many functions that can be used for reading,
@@ -89,7 +89,11 @@
       of multivariate and spatial analysis. The new <pkg>cshapes</pkg>
       and <pkg>rworldmap</pkg> packages make available data sets for
       conflict studies and environmental studies purposes - they are
-      linked as <pkg>rworldmap</pkg> suggests <pkg>cshapes</pkg>.</p></li>
+      linked as <pkg>rworldmap</pkg> suggests <pkg>cshapes</pkg>.</p>
+      <p>The <pkg>landsat</pkg> package with accompanying 
+      <a href="http://www.jstatsoft.org/v43/i04">JSS paper</a> provides
+      tools for exploring and developing correction tools for remote
+      sensing data.</p></li>
 
       <li><p><b>Reading and writing spatial data</b>: Maps may be
       vector-based or raster-based. The <pkg>rgdal</pkg> package provides
@@ -326,6 +330,7 @@
     <pkg priority="core">gstat</pkg>
     <pkg>hdeco</pkg>
     <pkg>intamap</pkg>
+    <pkg>landsat</pkg>
     <pkg>mapdata</pkg>
     <pkg>mapproj</pkg>
     <pkg>maps</pkg>
