@@ -2,7 +2,7 @@
   <name>Spatial</name>
   <topic>Analysis of Spatial Data</topic>
   <maintainer email="Roger.Bivand@nhh.no">Roger Bivand</maintainer>
-  <version>2011-08-08</version>
+  <version>2011-08-16</version>
 
   <info>
     <p>Base R includes many functions that can be used for reading,
@@ -14,7 +14,8 @@
     some of which are on CRAN, and others are still in development. One
     active location is <a target="_top" href="http://r-forge.r-project.org/">
     R-Forge</a>, which lists "Spatial Data and Statistics" projects in its
-    <a target="_top" href="http://r-forge.r-project.org/softwaremap/trove_list.php">project tree</a>. Information on R-spatial packages will be posted
+    <a target="_top" href="http://r-forge.r-project.org/softwaremap/trove_list.php">project tree</a>. Information on R-spatial packages,
+    especially <pkg>sp</pkg>  will be posted
     on the R-Forge rspatial project <a target="_top" 
     href="http://rspatial.r-forge.r-project.org/">website</a>, including
     a visualisation gallery.</p>
@@ -26,8 +27,12 @@
     <p>The <a href="https://stat.ethz.ch/mailman/listinfo/R-SIG-Geo/">
     R-SIG-Geo</a>
     mailing-list is a good place to begin for obtaining help and discussing
-    questions about both accessing data, and analysing it.
-    The packages in this
+    questions about both accessing data, and analysing it. The mailing list
+    is a good place to search for information about relevant courses, and a
+    list is hosted at the <a href="http://geodacenter.asu.edu/projects/rsp">
+    GeoDaCenter</a>.</p>
+
+    <p>The packages in this
     view can be roughly structured into the following topics. If you think
     that some package is missing from the list, please let me know. Please 
     also visit and contribute to the <a 
