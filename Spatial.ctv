@@ -76,7 +76,11 @@
       of distances and routes on geographic grids. <pkg>geosphere</pkg>
       permits computations of distance and area 
       to be carried out on spatial data in geographical coordinates. 
-      The <pkg>spsurvey</pkg> provides a
+      The <pkg>Metadata</pkg> package collects and downloads a variety
+      of open GIS datasets that can be used to characterize the surface
+      properties of Latitude/Longitude points, using <pkg>raster</pkg>,
+      <pkg>rgdal</pkg> and others to access data providers.
+      The <pkg>spsurvey</pkg> package provides a
       range of sampling functions. The <pkg>trip</pkg> package extends sp
       classes to permit the accessing and manipulating of spatial data for
       animal tracking. The <pkg>hdeco</pkg> package provides hierarchical
@@ -342,6 +346,7 @@
     <pkg>MBA</pkg>
     <pkg priority="core">maptools</pkg>
     <pkg>MarkedPointProcess</pkg>
+    <pkg>Metadata</pkg>
     <pkg>ModelMap</pkg>
     <pkg>pastecs</pkg>
     <pkg>ncdf</pkg>
