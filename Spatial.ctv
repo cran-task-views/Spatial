@@ -2,7 +2,7 @@
   <name>Spatial</name>
   <topic>Analysis of Spatial Data</topic>
   <maintainer email="Roger.Bivand@nhh.no">Roger Bivand</maintainer>
-  <version>2011-08-16</version>
+  <version>2011-09-21</version>
 
   <info>
     <p>Base R includes many functions that can be used for reading,
@@ -12,12 +12,12 @@
     these locations may be retrieved if the location is recorded with
     care. Base R functions are complemented by contributed packages,
     some of which are on CRAN, and others are still in development. One
-    active location is <a target="_top" href="http://r-forge.r-project.org/">
+    active location is <a target="_top" href="http://R-Forge.R-project.org/">
     R-Forge</a>, which lists "Spatial Data and Statistics" projects in its
-    <a target="_top" href="http://r-forge.r-project.org/softwaremap/trove_list.php">project tree</a>. Information on R-spatial packages,
+    <a target="_top" href="http://R-Forge.R-project.org/softwaremap/trove_list.php">project tree</a>. Information on R-spatial packages,
     especially <pkg>sp</pkg>  will be posted
     on the R-Forge rspatial project <a target="_top" 
-    href="http://rspatial.r-forge.r-project.org/">website</a>, including
+    href="http://rspatial.R-Forge.R-project.org/">website</a>, including
     a visualisation gallery.</p>
 
     <p>The
@@ -36,9 +36,9 @@
     view can be roughly structured into the following topics. If you think
     that some package is missing from the list, please let me know. Please 
     also visit and contribute to the <a 
-    href="http://wiki.r-project.org/rwiki/doku.php?id=tips:spatial-data">
+    href="http://wiki.R-project.org/rwiki/doku.php?id=tips:spatial-data">
     spatial data handling</a> and <a 
-    href="http://wiki.r-project.org/rwiki/doku.php?id=tips:stats-spatial">
+    href="http://wiki.R-project.org/rwiki/doku.php?id=tips:stats-spatial">
     spatial statistics</a> pages on the R Wiki.</p>
     <ul>
 
