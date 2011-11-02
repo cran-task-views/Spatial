@@ -89,8 +89,8 @@
       spatial data analysis. <pkg>spcosa</pkg> provides spatial coverage
       sampling and random sampling from compact geographical strata. </p>
 
-      <p>The
-      <pkg>UScensus2000</pkg>US Census 2000 Suite of packages makes the
+      <p>The US Census 2000 Suite of packages (<pkg>UScensus2000blkgrp</pkg>,
+      <pkg>UScensus2000cdp</pkg>, <pkg>UScensus2000tract</pkg>) makes the
       use of data from the 2000 US Census more convenient. An important
       data set, Guerry's "Moral Statistics of France", has been made
       available in the <pkg>Guerry</pkg> package, which provides data
@@ -394,7 +394,9 @@
     <pkg>trip</pkg>
     <pkg>tripEstimation</pkg>
     <pkg>tripack</pkg>
-    <pkg>UScensus2000</pkg>
+    <pkg>UScensus2000blkgrp</pkg>
+    <pkg>UScensus2000cdp</pkg>
+    <pkg>UScensus2000tract</pkg>
     <pkg>vardiag</pkg>
     <pkg>vegan</pkg>
   </packagelist>
