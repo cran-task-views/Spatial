@@ -2,7 +2,7 @@
   <name>Spatial</name>
   <topic>Analysis of Spatial Data</topic>
   <maintainer email="Roger.Bivand@nhh.no">Roger Bivand</maintainer>
-  <version>2011-11-02</version>
+  <version>2011-11-03</version>
 
   <info>
     <p>Base R includes many functions that can be used for reading,
@@ -243,7 +243,7 @@
       non-stationarity. The <pkg>sparr</pkg> package provides another
       approach to relative risks.
       The <pkg>glmmBUGS</pkg> package is a helpful way of passing out spatial
-      models to WinBUGS, extended by <pkg>diseasemapping</pkg>.</p></li>
+      models to WinBUGS.</p></li>
 
       <li><p><b>Spatial regression</b>:
       The choice of function for spatial regression will depend on the 
@@ -319,7 +319,6 @@
     <pkg priority="core">DCluster</pkg>
     <pkg priority="core">deldir</pkg>
     <pkg>DSpat</pkg>
-    <pkg>diseasemapping</pkg>
     <pkg>ecespa</pkg>
     <pkg>fields</pkg>
     <pkg>FieldSim</pkg>
