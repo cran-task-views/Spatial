@@ -54,7 +54,10 @@
       classes, including <pkg>rgdal</pkg> and <pkg>maptools</pkg>. The
       <pkg>rgeos</pkg> package provides an interface to topology functions
       for <pkg>sp</pkg> objects using 
-      <a href="http://trac.osgeo.org/geos/">GEOS</a>.
+      <a href="http://trac.osgeo.org/geos/">GEOS</a>. <pkg>rgeos</pkg> 
+      may be installed on Mac OSX by setting the repository with: 
+      <pre>setRepositories(ind=1:2)</pre> and install with: 
+      <pre>install.packages("rgeos")</pre> as usual.
       The <pkg>raster</pkg> package is a major extension of spatial data 
       classes to virtualise access to large rasters, permitting large 
       objects to be analysed, and extending the analytical tools available 
@@ -104,7 +107,7 @@
       tools for exploring and developing correction tools for remote
       sensing data.</p></li>
 
-      <li><p><b>Reading and writing spatial data</b>: Maps may be
+      <li><p><b>Reading and writing spatial data - <pkg>rgdal</pkg></b>: Maps may be
       vector-based or raster-based. The <pkg>rgdal</pkg> package provides
       bindings to <a href="http://www.gdal.org/">GDAL</a>-supported raster
       formats and <a href="http://www.gdal.org/ogr/">OGR</a>-supported
@@ -116,15 +119,24 @@
       searchable online PROJ.4 representations of projections). 
       The Windows binary of <pkg>rgdal</pkg>
       includes a subset of possible data source drivers; if others
-      are needed, use FWTools conversion utilities; for NetCDF files,
-      <pkg>ncdf</pkg> may be used. There are a
+      are needed, use FWTools conversion utilities.</p>
+      <p><i>Installing <pkg>rgdal</pkg> on Mac OSX</i>: unless extra 
+      drivers are needed, users should install <pkg>rgdal</pkg> on on Mac 
+      OSX from the CRAN Extras repository, which has been kindly provided 
+      by Prof. Brian Ripley. Just set the repository with: 
+      <pre>setRepositories(ind=1:2)</pre> and install with: 
+      <pre>install.packages("rgdal")</pre> as usual.
+      </p></li>
+      <li><p><b>Reading and writing spatial data - other packages</b>:
+      There are a
       number of other packages for accessing vector data on CRAN:
       <pkg>maps</pkg> (with <pkg>mapdata</pkg> and <pkg>mapproj</pkg>)
       provides access to the same kinds of geographical databases as
       S - <pkg>gmaps</pkg> wraps these data for visualisation,
       <pkg>RArcInfo</pkg> allows ArcInfo v.7 binary files and *.e00
       files to be read, and <pkg>maptools</pkg> and <pkg>shapefiles</pkg>
-      read and write ArcGIS/ArcView shapefiles. The <pkg>maptools</pkg>
+      read and write ArcGIS/ArcView shapefiles; for NetCDF files,
+      <pkg>ncdf</pkg> may be used. The <pkg>maptools</pkg>
       package also provides helper functions for writing map polygon
       files to be read by WinBUGS, Mondrian, and the tmap command
       in Stata. It also provides interface functions between
