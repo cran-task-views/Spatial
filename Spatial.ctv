@@ -2,7 +2,7 @@
   <name>Spatial</name>
   <topic>Analysis of Spatial Data</topic>
   <maintainer email="Roger.Bivand@nhh.no">Roger Bivand</maintainer>
-  <version>2011-11-14</version>
+  <version>2011-12-11</version>
 
   <info>
     <p>Base R includes many functions that can be used for reading,
@@ -296,6 +296,9 @@
       <pkg>tripEstimation</pkg>, basing on the classes provided by
       <pkg>trip</pkg>. <pkg>ncf</pkg> has entered CRAN recently, and
       provides a range of spatial nonparametric covariance functions.
+      <pkg>rangeMapper</pkg> is a package to manipulate species range
+     (extent-of-occurrence) maps, mainly tools for easy generation of
+     biodiversity (species richness) or life-history traits maps.
       <pkg>ModelMap</pkg> builds on other packages to create models
       using underlying GIS data. An off-CRAN package
       - <a href="http://www.leg.ufpr.br/Rcitrus/">Rcitrus</a> - is for
@@ -368,6 +371,7 @@
     <pkg>psgp</pkg>
     <pkg>ramps</pkg>
     <pkg priority="core">RandomFields</pkg>
+    <pkg>rangeMapper</pkg>
     <pkg>RArcInfo</pkg>
     <pkg priority="core">raster</pkg>
     <pkg priority="core">RColorBrewer</pkg>
