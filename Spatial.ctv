@@ -2,7 +2,7 @@
   <name>Spatial</name>
   <topic>Analysis of Spatial Data</topic>
   <maintainer email="Roger.Bivand@nhh.no">Roger Bivand</maintainer>
-  <version>2011-12-11</version>
+  <version>2011-12-22</version>
 
   <info>
     <p>Base R includes many functions that can be used for reading,
@@ -131,8 +131,7 @@
       There are a
       number of other packages for accessing vector data on CRAN:
       <pkg>maps</pkg> (with <pkg>mapdata</pkg> and <pkg>mapproj</pkg>)
-      provides access to the same kinds of geographical databases as
-      S - <pkg>gmaps</pkg> wraps these data for visualisation,
+      provides access to the same kinds of geographical databases as S -
       <pkg>RArcInfo</pkg> allows ArcInfo v.7 binary files and *.e00
       files to be read, and <pkg>maptools</pkg> and <pkg>shapefiles</pkg>
       read and write ArcGIS/ArcView shapefiles; for NetCDF files,
@@ -348,7 +347,6 @@
     <pkg>geoRglm</pkg>
     <pkg>GeoXp</pkg>
     <pkg>glmmBUGS</pkg>
-    <pkg>gmaps</pkg>
     <pkg>gmt</pkg>
     <pkg priority="core">gstat</pkg>
     <pkg>hdeco</pkg>
