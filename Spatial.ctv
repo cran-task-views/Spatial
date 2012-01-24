@@ -2,7 +2,7 @@
   <name>Spatial</name>
   <topic>Analysis of Spatial Data</topic>
   <maintainer email="Roger.Bivand@nhh.no">Roger Bivand</maintainer>
-  <version>2012-01-21</version>
+  <version>2011-12-22</version>
 
   <info>
     <p>Base R includes many functions that can be used for reading,
@@ -207,7 +207,8 @@
       <pkg>vardiag</pkg>. Automated interpolation using <pkg>gstat</pkg>
       is available in <pkg>automap</pkg>. This family of packages is
       supplemented by <pkg>intamap</pkg> with procedures for automated
-      interpolation.  A similar wide range of
+      interpolation and <pkg>psgp</pkg>, which implements projected
+      sparse Gaussian process kriging.  A similar wide range of
       functions is to be found in the <pkg>fields</pkg> package. The
       <pkg>spatial</pkg> package is shipped with base R, and contains
       several core functions. The <pkg>spBayes</pkg> package fits Gaussian
@@ -365,6 +366,7 @@
     <pkg>nlme</pkg>
     <pkg>PBSmapping</pkg>
     <pkg>PBSmodelling</pkg>
+    <pkg>psgp</pkg>
     <pkg>ramps</pkg>
     <pkg priority="core">RandomFields</pkg>
     <pkg>rangeMapper</pkg>
