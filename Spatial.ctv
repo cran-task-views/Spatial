@@ -2,7 +2,7 @@
   <name>Spatial</name>
   <topic>Analysis of Spatial Data</topic>
   <maintainer email="Roger.Bivand@nhh.no">Roger Bivand</maintainer>
-  <version>2011-12-22</version>
+  <version>2012-03-09</version>
 
   <info>
     <p>Base R includes many functions that can be used for reading,
@@ -36,9 +36,9 @@
     view can be roughly structured into the following topics. If you think
     that some package is missing from the list, please let me know. Please 
     also visit and contribute to the <a 
-    href="http://wiki.R-project.org/rwiki/doku.php?id=tips:spatial-data">
+    href="http://rwiki.sciviews.org/doku.php?id=tips:spatial-data">
     spatial data handling</a> and <a 
-    href="http://wiki.R-project.org/rwiki/doku.php?id=tips:stats-spatial">
+    href="http://rwiki.sciviews.org/doku.php?id=tips:stats-spatial">
     spatial statistics</a> pages on the R Wiki.</p>
     <ul>
 
