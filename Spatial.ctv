@@ -2,7 +2,7 @@
   <name>Spatial</name>
   <topic>Analysis of Spatial Data</topic>
   <maintainer email="Roger.Bivand@nhh.no">Roger Bivand</maintainer>
-  <version>2012-03-09</version>
+  <version>2012-05-02</version>
 
   <info>
     <p>Base R includes many functions that can be used for reading,
@@ -213,7 +213,11 @@
       <pkg>spatial</pkg> package is shipped with base R, and contains
       several core functions. The <pkg>spBayes</pkg> package fits Gaussian
       univariate and multivariate models with MCMC. <pkg>ramps</pkg>
-      is a different Bayesian geostatistical modelling package.</p>
+      is a different Bayesian geostatistical modelling package.
+      The <pkg>geospt</pkg> package contains some geostatistical and radial
+      basis functions, including prediction and cross validation. Besides, 
+      it includes functions for the design of optimal spatial sampling 
+      networks based on geostatistical modelling.</p>
 
       <p>The <pkg>RandomFields</pkg> package provides functions for
       the simulation and analysis of random fields, and variogram
@@ -345,6 +349,7 @@
     <pkg>Guerry</pkg>
     <pkg priority="core">geoR</pkg>
     <pkg>geoRglm</pkg>
+    <pkg>geospt</pkg>
     <pkg>GeoXp</pkg>
     <pkg>glmmBUGS</pkg>
     <pkg>gmt</pkg>
