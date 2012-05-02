@@ -258,7 +258,9 @@
       non-stationarity. The <pkg>sparr</pkg> package provides another
       approach to relative risks.
       The <pkg>glmmBUGS</pkg> package is a helpful way of passing out spatial
-      models to WinBUGS.</p></li>
+      models to WinBUGS.
+      The <pkg>McSpatial</pkg> provides a comprehensive range of tools for
+      nonparametric spatial data analysis.</p></li>
 
       <li><p><b>Spatial regression</b>:
       The choice of function for spatial regression will depend on the 
@@ -282,7 +284,10 @@
       an alternative. When using GMM, <pkg>sphet</pkg> can be used to 
       accommodate both autocorrelation and heteroskedasticity. Spatial 
       count regression is provided using custom MCMC
-      by <pkg>spatcounts</pkg>.</p></li>
+      by <pkg>spatcounts</pkg>.
+      The <pkg>McSpatial</pkg> provides a comprehensive range of tools for
+      nonparametric spatial data analysis, and spatial regression methods
+      of many kinds.</p></li>
 
       <li><p><b>Ecological analysis</b>: There are many packages
       for analysing ecological and environmental data. They include
@@ -363,6 +368,7 @@
     <pkg>MBA</pkg>
     <pkg priority="core">maptools</pkg>
     <pkg>MarkedPointProcess</pkg>
+    <pkg>McSpatial</pkg>
     <pkg>Metadata</pkg>
     <pkg>ModelMap</pkg>
     <pkg>pastecs</pkg>
