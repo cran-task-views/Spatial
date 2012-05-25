@@ -2,7 +2,7 @@
   <name>Spatial</name>
   <topic>Analysis of Spatial Data</topic>
   <maintainer email="Roger.Bivand@nhh.no">Roger Bivand</maintainer>
-  <version>2012-05-22</version>
+  <version>2012-05-25</version>
 
   <info>
     <p>Base R includes many functions that can be used for reading,
@@ -74,8 +74,10 @@
       <li><p><b>Handling spatial data</b>: A number of packages have
       been written using sp classes. The <pkg>raster</pkg> package 
       introduces many GIS methods that now permit much to be done with 
-      spatial data without having to use GIS in addition to R.
-      <pkg>geosphere</pkg> permits computations of distance and area 
+      spatial data without having to use GIS in addition to R. It may be
+      complemented by <pkg>gdistance</pkg>, which provided calculation
+      of distances and routes on geographic grids. <pkg>geosphere</pkg>
+      permits computations of distance and area 
       to be carried out on spatial data in geographical coordinates. 
       The <pkg>Metadata</pkg> package collects and downloads a variety
       of open GIS datasets that can be used to characterize the surface
@@ -345,6 +347,7 @@
     <pkg>FieldSim</pkg>
     <pkg>GEOmap</pkg>
     <pkg>Geneland</pkg>
+    <pkg>gdistance</pkg>
     <pkg>geomapdata</pkg>
     <pkg>geonames</pkg>
     <pkg>geosphere</pkg>
