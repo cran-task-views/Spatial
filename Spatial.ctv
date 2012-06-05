@@ -51,8 +51,10 @@
       The <pkg>sp</pkg> package is discussed in a note in
       <a href="http://CRAN.R-project.org/doc/Rnews/Rnews_2005-2.pdf">R
       News</a>.  Some other packages have become dependent on these
-      classes, including <pkg>rgdal</pkg> and <pkg>maptools</pkg>. The
-      <pkg>rgeos</pkg> package provides an interface to topology functions
+      classes, including <pkg>rgdal</pkg> and <pkg>maptools</pkg>. 
+      Functions provided by <pkg>vec2dtrans</pkg> for applying affine 
+      and similarity transformations on vector spatial data (sp objects). 
+      The <pkg>rgeos</pkg> package provides an interface to topology functions
       for <pkg>sp</pkg> objects using 
       <a href="http://trac.osgeo.org/geos/">GEOS</a>. <pkg>rgeos</pkg> 
       may be installed on Mac OSX by setting the repository with: 
@@ -423,6 +425,7 @@
     <pkg>UScensus2000cdp</pkg>
     <pkg>UScensus2000tract</pkg>
     <pkg>vardiag</pkg>
+    <pkg>vec2dtrans</pkg>
     <pkg>vegan</pkg>
   </packagelist>
 
