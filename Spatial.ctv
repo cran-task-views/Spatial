@@ -2,7 +2,7 @@
   <name>Spatial</name>
   <topic>Analysis of Spatial Data</topic>
   <maintainer email="Roger.Bivand@nhh.no">Roger Bivand</maintainer>
-  <version>2012-05-25</version>
+  <version>2012-07-11</version>
 
   <info>
     <p>Base R includes many functions that can be used for reading,
@@ -57,13 +57,13 @@
       The <pkg>rgeos</pkg> package provides an interface to topology functions
       for <pkg>sp</pkg> objects using 
       <a href="http://trac.osgeo.org/geos/">GEOS</a>. <pkg>rgeos</pkg> 
-      may be installed on Mac OSX by setting the repository with: 
-      <pre>setRepositories(ind=1:2)</pre> and install with: 
-      <pre>install.packages("rgeos")</pre> as usual.
+      is now available for Mac OSX on CRAN.
       The <pkg>raster</pkg> package is a major extension of spatial data 
       classes to virtualise access to large rasters, permitting large 
       objects to be analysed, and extending the analytical tools available 
-      for both raster and vector data.</p>
+      for both raster and vector data. The <pkg>spacetime</pkg> package 
+      extends the shared classes defined in <pkg>sp</pkg> for 
+      spatio-temporal data.</p>
 
       <p>An
       alternative approach to some of these issues is implemented in
@@ -107,7 +107,8 @@
       <p>The <pkg>landsat</pkg> package with accompanying 
       <a href="http://www.jstatsoft.org/v43/i04">JSS paper</a> provides
       tools for exploring and developing correction tools for remote
-      sensing data.</p></li>
+      sensing data. <pkg>taRifx</pkg> is a collection of utility and 
+      convenience functions, and some interesting spatial functions.</p></li>
 
       <li><p><b>Reading and writing spatial data - <pkg>rgdal</pkg></b>: Maps may be
       vector-based or raster-based. The <pkg>rgdal</pkg> package provides
@@ -119,16 +120,10 @@
       support for vector objects 
       (<a href="http://spatialreference.org">this site</a> provides 
       searchable online PROJ.4 representations of projections). 
-      The Windows binary of <pkg>rgdal</pkg>
-      includes a subset of possible data source drivers; if others
-      are needed, use FWTools conversion utilities.</p>
-      <p><i>Installing <pkg>rgdal</pkg> on Mac OSX</i>: unless extra 
-      drivers are needed, users should install <pkg>rgdal</pkg> on on Mac 
-      OSX from the CRAN Extras repository, which has been kindly provided 
-      by Prof. Brian Ripley. Just set the repository with: 
-      <pre>setRepositories(ind=1:2)</pre> and install with: 
-      <pre>install.packages("rgdal")</pre> as usual.
-      </p></li>
+      The Windows and Mac OSX CRAN binaries of <pkg>rgdal</pkg>
+      include subsets of possible data source drivers; if others
+      are needed, use other conversion utilities, or install from source
+      against a version of GDAL with the required drivers.</p></li>
       <li><p><b>Reading and writing spatial data - other packages</b>:
       There are a
       number of other packages for accessing vector data on CRAN:
@@ -156,7 +151,15 @@
       the <a href="www.geonames.org">www.geonames.org</a> service. If the
       user wishes to place a map backdrop behind other displays, the the
       <pkg>RgoogleMaps</pkg> package for accessing 
-      Google Maps(TM) may be useful.
+      Google Maps(TM) may be useful. <pkg>ggmaps</pkg> may be used for 
+      spatial visualization with Google Maps and OpenStreetMap. 
+      <pkg>plotKML</pkg> is a package providing methods for the 
+      visualization of spatial and spatio-temporal objects in Google Earth. 
+      <pkg>OpenStreetMap</pkg> gives access to open street map raster images, 
+      and <pkg>osmar</pkg> provides infrastructure to access OpenStreetMap 
+      data from different sources, to work with the data in common R manner, 
+      and to convert data into available infrastructure provided by 
+      existing R packages.
       <pkg>RSurvey</pkg> may be used as a processing program for spatially
       distributed data, and is capable of error corrections and data
       visualization.</p>
@@ -199,7 +202,8 @@
       data. <pkg>DSpat</pkg> contains functions for spatial modelling
       for distance sampling data, and <pkg>spatialsegregation</pkg> 
       provides segregation measures for multitype spatial point 
-      patterns.</p></li>
+      patterns. <pkg>GriegSmith</pkg> uses the Grieg-Smith method on 
+      2 dimensional spatial data</p></li>
 
       <li><p><b>Geostatistics</b>: The <pkg>gstat</pkg> package
       provides a wide range of functions for univariate and multivariate
@@ -227,7 +231,8 @@
       <pkg>gstat</pkg> and this package. <pkg>SpatialExtremes</pkg>
       proposes several approaches for spatial extremes modelling
       using <pkg>RandomFields</pkg>. In addition, <pkg>CompRandFld</pkg>, 
-      <pkg>constrainedKriging</pkg> and <pkg>geofd</pkg> provide 
+      <pkg>constrainedKriging</pkg>, <pkg>geospt</pkg> and 
+      <pkg>geofd</pkg> provide 
       alternative approaches to geostatistical modelling.</p>
 
       <p>The <pkg>sgeostat</pkg> package
@@ -287,9 +292,13 @@
       accommodate both autocorrelation and heteroskedasticity. Spatial 
       count regression is provided using custom MCMC
       by <pkg>spatcounts</pkg>.
-      The <pkg>McSpatial</pkg> provides a comprehensive range of tools for
+      The <pkg>McSpatial</pkg> package provides a comprehensive range of 
+      tools for
       nonparametric spatial data analysis, and spatial regression methods
-      of many kinds.</p></li>
+      of many kinds. The <pkg>splm</pkg> package provides methods for 
+      fitting spatial panel data by maximum likelihood and GM. 
+      <pkg>spatialprobit</pkg> make possible Bayesian estimation of the 
+      spatial autoregressive probit model (SAR probit model).</p></li>
 
       <li><p><b>Ecological analysis</b>: There are many packages
       for analysing ecological and environmental data. They include
@@ -315,7 +324,7 @@
       the spatial analysis of plant disease incidence.
      <pkg>clustTool</pkg> is a GUI for clustering data with spatial
      information. The <pkg>Geneland</pkg> package uses <pkg>fields</pkg> and 
-     <pkg>RandonFields</pkg> to make use of both geographic and genetic
+     <pkg>RandomFields</pkg> to make use of both geographic and genetic
      informations to estimate the number of populations in a dataset and
      delineate their spatial organisation.
      The <a href="Environmetrics.html">Environmetrics</a> Task
@@ -353,6 +362,8 @@
     <pkg>geomapdata</pkg>
     <pkg>geonames</pkg>
     <pkg>geosphere</pkg>
+    <pkg>geospt</pkg>
+    <pkg>ggmap</pkg>
     <pkg>Guerry</pkg>
     <pkg priority="core">geoR</pkg>
     <pkg>geoRglm</pkg>
@@ -360,6 +371,7 @@
     <pkg>GeoXp</pkg>
     <pkg>glmmBUGS</pkg>
     <pkg>gmt</pkg>
+    <pkg>GriegSmith</pkg>
     <pkg priority="core">gstat</pkg>
     <pkg>hdeco</pkg>
     <pkg>intamap</pkg>
@@ -377,8 +389,11 @@
     <pkg>ncdf</pkg>
     <pkg>ncf</pkg>
     <pkg>nlme</pkg>
+    <pkg>OpenStreetMap</pkg>
+    <pkg>osmar</pkg>
     <pkg>PBSmapping</pkg>
     <pkg>PBSmodelling</pkg>
+    <pkg>plotKML</pkg>
     <pkg>psgp</pkg>
     <pkg>ramps</pkg>
     <pkg priority="core">RandomFields</pkg>
@@ -388,7 +403,7 @@
     <pkg priority="core">RColorBrewer</pkg>
     <pkg>regress</pkg>
     <pkg priority="core">rgdal</pkg>
-    <pkg>rgeos</pkg>
+    <pkg priority="core">rgeos</pkg>
     <pkg>RgoogleMaps</pkg>
     <pkg>RPyGeo</pkg>
     <pkg>RSAGA</pkg>
@@ -397,6 +412,7 @@
     <pkg>sgeostat</pkg>
     <pkg>shapefiles</pkg>
     <pkg priority="core">sp</pkg>
+    <pkg priority="core">spacetime</pkg>
     <pkg>sparr</pkg>
     <pkg>spatial</pkg>
     <pkg>spatialCovariance</pkg>
@@ -406,6 +422,7 @@
     <pkg>spatgraphs</pkg>
     <pkg>spatialsegregation</pkg>
     <pkg priority="core">spatstat</pkg>
+    <pkg>spatialprobit</pkg>
     <pkg>spBayes</pkg>
     <pkg>spcosa</pkg>
     <pkg priority="core">spdep</pkg>
