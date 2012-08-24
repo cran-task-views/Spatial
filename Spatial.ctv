@@ -2,7 +2,7 @@
   <name>Spatial</name>
   <topic>Analysis of Spatial Data</topic>
   <maintainer email="Roger.Bivand@nhh.no">Roger Bivand</maintainer>
-  <version>2012-07-11</version>
+  <version>2012-08-24</version>
 
   <info>
     <p>Base R includes many functions that can be used for reading,
@@ -322,8 +322,7 @@
       using underlying GIS data. An off-CRAN package
       - <a href="http://www.leg.ufpr.br/Rcitrus/">Rcitrus</a> - is for
       the spatial analysis of plant disease incidence.
-     <pkg>clustTool</pkg> is a GUI for clustering data with spatial
-     information. The <pkg>Geneland</pkg> package uses <pkg>fields</pkg> and 
+     The <pkg>Geneland</pkg> package uses <pkg>fields</pkg> and 
      <pkg>RandomFields</pkg> to make use of both geographic and genetic
      informations to estimate the number of populations in a dataset and
      delineate their spatial organisation.
@@ -348,7 +347,6 @@
     <pkg priority="core">classInt</pkg>
     <pkg>CompRandFld</pkg>
     <pkg>constrainedKriging</pkg>
-    <pkg>clustTool</pkg>
     <pkg>cshapes</pkg>
     <pkg priority="core">DCluster</pkg>
     <pkg priority="core">deldir</pkg>
