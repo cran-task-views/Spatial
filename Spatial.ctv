@@ -61,7 +61,9 @@
       The <pkg>raster</pkg> package is a major extension of spatial data 
       classes to virtualise access to large rasters, permitting large 
       objects to be analysed, and extending the analytical tools available 
-      for both raster and vector data. The <pkg>spacetime</pkg> package 
+      for both raster and vector data. Used with <pkg>rasterVis</pkg>, it
+      can also provide enhanced visualization and interaction.
+      The <pkg>spacetime</pkg> package 
       extends the shared classes defined in <pkg>sp</pkg> for 
       spatio-temporal data.</p>
 
@@ -390,6 +392,7 @@
     <pkg>rangeMapper</pkg>
     <pkg>RArcInfo</pkg>
     <pkg priority="core">raster</pkg>
+    <pkg>rasterVis</pkg>
     <pkg priority="core">RColorBrewer</pkg>
     <pkg>regress</pkg>
     <pkg priority="core">rgdal</pkg>
