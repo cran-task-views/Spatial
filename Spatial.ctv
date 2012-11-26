@@ -2,7 +2,7 @@
   <name>Spatial</name>
   <topic>Analysis of Spatial Data</topic>
   <maintainer email="Roger.Bivand@nhh.no">Roger Bivand</maintainer>
-  <version>2012-09-30</version>
+  <version>2012-11-26</version>
 
   <info>
     <p>Base R includes many functions that can be used for reading,
@@ -96,7 +96,7 @@
       spatial data analysis. <pkg>spcosa</pkg> provides spatial coverage
       sampling and random sampling from compact geographical strata. </p>
 
-      <p>The <pkg>UScensus2000</pkg> Suite of packages (<pkg>UScensus2000blkgrp</pkg>,
+      <p>The UScensus2000 suite of packages (<pkg>UScensus2000blkgrp</pkg>,
       <pkg>UScensus2000cdp</pkg>, <pkg>UScensus2000tract</pkg>) makes the
       use of data from the 2000 US Census more convenient. An important
       data set, Guerry's "Moral Statistics of France", has been made
@@ -427,7 +427,6 @@
     <pkg>trip</pkg>
     <pkg>tripEstimation</pkg>
     <pkg>tripack</pkg>
-    <pkg>UScensus2000</pkg>
     <pkg>UScensus2000blkgrp</pkg>
     <pkg>UScensus2000cdp</pkg>
     <pkg>UScensus2000tract</pkg>
