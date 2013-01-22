@@ -2,7 +2,7 @@
   <name>Spatial</name>
   <topic>Analysis of Spatial Data</topic>
   <maintainer email="Roger.Bivand@nhh.no">Roger Bivand</maintainer>
-  <version>2012-11-26</version>
+  <version>2013-01-22</version>
 
   <info>
     <p>Base R includes many functions that can be used for reading,
@@ -63,6 +63,8 @@
       objects to be analysed, and extending the analytical tools available 
       for both raster and vector data. Used with <pkg>rasterVis</pkg>, it
       can also provide enhanced visualization and interaction.
+      The <pkg>micromap</pkg> package provides linked micromaps using
+      <pkg>ggplot2</pkg>.
       The <pkg>spacetime</pkg> package 
       extends the shared classes defined in <pkg>sp</pkg> for 
       spatio-temporal data.</p>
@@ -374,6 +376,7 @@
     <pkg>MarkedPointProcess</pkg>
     <pkg>McSpatial</pkg>
     <pkg>Metadata</pkg>
+    <pkg>micromap</pkg>
     <pkg>ModelMap</pkg>
     <pkg>pastecs</pkg>
     <pkg>ncdf</pkg>
