@@ -255,7 +255,14 @@
       simulations package.  </p></li>
 
       <li><p><b>Disease mapping and areal data analysis</b>:
-      The <pkg>spgwr</pkg> package contains an implementation of
+      <pkg>DCluster</pkg> is a package for the detection of
+      spatial clusters of diseases. It extends and  depends on the
+      <pkg>spdep</pkg> package, which provides basic functions for
+      building neighbour lists and spatial weights, tests for spatial
+      autocorrelation for areal data like Moran's I, and functions for
+      fitting spatial regression models, such as SAR and CAR models. These
+      models assume that the spatial dependence can be described by known
+      weights. The <pkg>spgwr</pkg> package contains an implementation of
       geographically weighted regression methods for exploring possible
       non-stationarity. The <pkg>sparr</pkg> package provides another
       approach to relative risks.
@@ -343,6 +350,7 @@
     <pkg>CompRandFld</pkg>
     <pkg>constrainedKriging</pkg>
     <pkg>cshapes</pkg>
+    <pkg priority="core">DCluster</pkg>
     <pkg priority="core">deldir</pkg>
     <pkg>DSpat</pkg>
     <pkg>ecespa</pkg>
