@@ -2,7 +2,7 @@
   <name>Spatial</name>
   <topic>Analysis of Spatial Data</topic>
   <maintainer email="Roger.Bivand@nhh.no">Roger Bivand</maintainer>
-  <version>2013-06-29</version>
+  <version>2013-06-30</version>
 
   <info>
     <p>Base R includes many functions that can be used for reading,
@@ -298,7 +298,9 @@
       weighted regression (GWR) models and has tools to diagnose and 
       remediate collinearity in the GWR models. Also fits geographically 
       weighted ridge regression (GWRR) and geographically weighted lasso 
-      (GWL) models.. The <pkg>sparr</pkg> package provides another
+      (GWL) models. The <pkg>GWmodel</pkg> package contains functions for 
+      computing geographically weighted models. The <pkg>sparr</pkg> 
+      package provides another
       approach to relative risks. The <pkg>CARBayes</pkg> package 
       implements Bayesian hierarchical spatial areal unit models. In 
       such models the spatial correlation is modelled by a set of random 
@@ -432,6 +434,7 @@
     <pkg priority="core">gstat</pkg>
     <pkg>gstudio</pkg>
     <pkg>Guerry</pkg>
+    <pkg>GWmodel</pkg>
     <pkg>gwrr</pkg>
     <pkg>hdeco</pkg>
     <pkg>intamap</pkg>
