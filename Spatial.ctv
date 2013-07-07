@@ -6,7 +6,7 @@
 
   <info>
     <p>Base R includes many functions that can be used for reading,
-    vizualising, and analysing spatial data. The focus in this view is on
+    visualising, and analysing spatial data. The focus in this view is on
     "geographical" spatial data, where observations can be identified
     with geographical locations, and where additional information about
     these locations may be retrieved if the location is recorded with
@@ -44,7 +44,7 @@
 
       <li><p><b>Classes for spatial data</b>: Because many of the
       packages importing and using spatial data have had to include
-      objects of storing data and functions for vizualising it,
+      objects of storing data and functions for visualising it,
       an initiative is in progress to construct shared classes
       and plotting functions for spatial data. The <pkg>sp</pkg>
       package has been published on CRAN.
@@ -62,7 +62,7 @@
       classes to virtualise access to large rasters, permitting large 
       objects to be analysed, and extending the analytical tools available 
       for both raster and vector data. Used with <pkg>rasterVis</pkg>, it
-      can also provide enhanced visualization and interaction. The 
+      can also provide enhanced visualisation and interaction. The 
       <pkg>spatial.tools</pkg> package contains spatial functions meant to 
       enhance the core functionality of the <pkg>raster</pkg> package, 
       including a parallel processing engine for use with rasters.
@@ -148,7 +148,7 @@
       <pkg>PBSmapping</pkg> and <pkg>spatstat</pkg> and sp classes,
       in addition to <pkg>maps</pkg> databases and sp classes. There is
       also an interface to GSHHS shoreline databases. 
-      For visualization, the colour palettes provided in
+      For visualisation, the colour palettes provided in
       the <pkg>RColorBrewer</pkg> package are very useful, and may
       be modified or extended using the <code>colorRampPalette</code>
       function provided with R. The <pkg>classInt</pkg> package provides
@@ -159,9 +159,9 @@
       user wishes to place a map backdrop behind other displays, the the
       <pkg>RgoogleMaps</pkg> package for accessing 
       Google Maps(TM) may be useful. <pkg>ggmap</pkg> may be used for 
-      spatial visualization with Google Maps and OpenStreetMap. 
+      spatial visualisation with Google Maps and OpenStreetMap. 
       <pkg>plotKML</pkg> is a package providing methods for the 
-      visualization of spatial and spatio-temporal objects in Google Earth. 
+      visualisation of spatial and spatio-temporal objects in Google Earth. 
       <pkg>OpenStreetMap</pkg> gives access to open street map raster images, 
       and <pkg>osmar</pkg> provides infrastructure to access OpenStreetMap 
       data from different sources, to work with the data in common R manner, 
@@ -169,7 +169,7 @@
       existing R packages.
       <pkg>RSurvey</pkg> may be used as a processing program for spatially
       distributed data, and is capable of error corrections and data
-      visualization.</p>
+      visualisation.</p>
 
       <p>Integration with version 6.* of the leading open source
       GIS, GRASS, is provided in CRAN package <pkg>spgrass6</pkg>, using
@@ -189,7 +189,7 @@
       models with interpoint interactions. <pkg>MarkedPointProcess</pkg> 
       is another contemporary point pattern package. 
       The <pkg>spatgraphs</pkg>
-      package provides graphs, graph visualization and graph based
+      package provides graphs, graph visualisation and graph based
       summaries to be used with spatial point pattern analysis. The
       <pkg>splancs</pkg> package also allows point data to be analysed
       within a polygonal region of interest, and covers many methods,
