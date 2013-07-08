@@ -67,7 +67,7 @@
       enhance the core functionality of the <pkg>raster</pkg> package, 
       including a parallel processing engine for use with rasters.
       The <pkg>micromap</pkg> package provides linked micromaps using
-      <pkg>ggplot2</pkg>.
+      ggplot2.
       The <pkg>spacetime</pkg> package 
       extends the shared classes defined in <pkg>sp</pkg> for 
       spatio-temporal data. The <pkg>Grid2Polygons</pkg> converts a 
