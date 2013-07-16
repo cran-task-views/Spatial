@@ -2,7 +2,7 @@
   <name>Spatial</name>
   <topic>Analysis of Spatial Data</topic>
   <maintainer email="Roger.Bivand@nhh.no">Roger Bivand</maintainer>
-  <version>2013-06-30</version>
+  <version>2013-07-16</version>
 
   <info>
     <p>Base R includes many functions that can be used for reading,
@@ -308,7 +308,13 @@
       distribution. Examples of the models included are the BYM model as 
       well as a recently developed localised spatial smoothing model.
       The <pkg>glmmBUGS</pkg> package is a helpful way of passing out spatial
-      models to WinBUGS.</p></li>
+      models to WinBUGS. The <pkg>spacom</pkg> package provides tools to
+      construct and exploit spatially weighted context data, and further
+      allows combining the resulting spatially weighted context data with
+      individual-level predictor and outcome variables, for the purposes
+      of multilevel modelling. The <pkg>geospacom</pkg> package gnerates
+      distance matrices from shape files and represents spatially weighted
+      multilevel analysis results.</p></li>
 
       <li><p><b>Spatial regression</b>:
       The choice of function for spatial regression will depend on the 
@@ -422,6 +428,7 @@
     <pkg>georob</pkg>
     <pkg priority="core">geoR</pkg>
     <pkg>geoRglm</pkg>
+    <pkg>geospacom</pkg>
     <pkg>geosphere</pkg>
     <pkg>geospt</pkg>
     <pkg>geospt</pkg>
@@ -481,6 +488,7 @@
     <pkg>shapefiles</pkg>
     <pkg priority="core">sp</pkg>
     <pkg priority="core">spacetime</pkg>
+    <pkg>spacom</pkg>
     <pkg>sparr</pkg>
     <pkg>spatial</pkg>
     <pkg>spatialCovariance</pkg>
