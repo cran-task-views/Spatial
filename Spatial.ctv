@@ -2,7 +2,7 @@
   <name>Spatial</name>
   <topic>Analysis of Spatial Data</topic>
   <maintainer email="Roger.Bivand@nhh.no">Roger Bivand</maintainer>
-  <version>2013-07-16</version>
+  <version>2013-07-22</version>
 
   <info>
     <p>Base R includes many functions that can be used for reading,
@@ -292,7 +292,10 @@
       autocorrelation for areal data like Moran's I, and functions for
       fitting spatial regression models, such as SAR and CAR models. These
       models assume that the spatial dependence can be described by known
-      weights. The <pkg>spgwr</pkg> package contains an implementation of
+      weights. The <pkg>SpatialEpi</pkg> package provides implementations of
+      cluster detection and disease mapping functions, including Bayesian
+      cluster detection, and supports strata.
+      The <pkg>spgwr</pkg> package contains an implementation of
       geographically weighted regression methods for exploring possible
       non-stationarity. The <pkg>gwrr</pkg> package fits geographically
       weighted regression (GWR) models and has tools to diagnose and 
@@ -492,6 +495,7 @@
     <pkg>sparr</pkg>
     <pkg>spatial</pkg>
     <pkg>spatialCovariance</pkg>
+    <pkg>SpatialEpi</pkg>
     <pkg>SpatialExtremes</pkg>
     <pkg>spatialkernel</pkg>
     <pkg>spatcounts</pkg>
