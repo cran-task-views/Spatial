@@ -2,7 +2,7 @@
   <name>Spatial</name>
   <topic>Analysis of Spatial Data</topic>
   <maintainer email="Roger.Bivand@nhh.no">Roger Bivand</maintainer>
-  <version>2013-07-22</version>
+  <version>2013-08-21</version>
 
   <info>
     <p>Base R includes many functions that can be used for reading,
@@ -159,8 +159,10 @@
       user wishes to place a map backdrop behind other displays, the the
       <pkg>RgoogleMaps</pkg> package for accessing 
       Google Maps(TM) may be useful. <pkg>ggmap</pkg> may be used for 
-      spatial visualisation with Google Maps and OpenStreetMap. 
-      <pkg>plotKML</pkg> is a package providing methods for the 
+      spatial visualisation with Google Maps and OpenStreetMap.
+      The <pkg>plotGoogleMaps</pkg> package provides methods for the 
+      visualisation of spatial and spatio-temporal objects in Google Maps in
+      a web browser. <pkg>plotKML</pkg> is a package providing methods for the 
       visualisation of spatial and spatio-temporal objects in Google Earth. 
       <pkg>OpenStreetMap</pkg> gives access to open street map raster images, 
       and <pkg>osmar</pkg> provides infrastructure to access OpenStreetMap 
@@ -468,6 +470,7 @@
     <pkg>osmar</pkg>
     <pkg>PBSmapping</pkg>
     <pkg>PBSmodelling</pkg>
+    <pkg>plotGoogleMaps</pkg>
     <pkg>plotKML</pkg>
     <pkg>psgp</pkg>
     <pkg>ramps</pkg>
