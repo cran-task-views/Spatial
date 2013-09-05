@@ -2,7 +2,7 @@
   <name>Spatial</name>
   <topic>Analysis of Spatial Data</topic>
   <maintainer email="Roger.Bivand@nhh.no">Roger Bivand</maintainer>
-  <version>2013-08-21</version>
+  <version>2013-09-05</version>
 
   <info>
     <p>Base R includes many functions that can be used for reading,
@@ -46,11 +46,10 @@
       packages importing and using spatial data have had to include
       objects of storing data and functions for visualising it,
       an initiative is in progress to construct shared classes
-      and plotting functions for spatial data. The <pkg>sp</pkg>
-      package has been published on CRAN.
+      and plotting functions for spatial data.
       The <pkg>sp</pkg> package is discussed in a note in
       <a href="http://CRAN.R-project.org/doc/Rnews/Rnews_2005-2.pdf">R
-      News</a>.  Some other packages have become dependent on these
+      News</a>.  Many other packages have become dependent on these
       classes, including <pkg>rgdal</pkg> and <pkg>maptools</pkg>. 
       Functions provided by <pkg>vec2dtransf</pkg> for applying affine 
       and similarity transformations on vector spatial data (sp objects). 
@@ -70,7 +69,7 @@
       ggplot2.
       The <pkg>spacetime</pkg> package 
       extends the shared classes defined in <pkg>sp</pkg> for 
-      spatio-temporal data. The <pkg>Grid2Polygons</pkg> converts a 
+      spatio-temporal data (see <a href="http://www.jstatsoft.org/v51/i07">Spatio-Temporal Data in R</a>). The <pkg>Grid2Polygons</pkg> converts a 
       spatial object from class SpatialGridDataFrame to 
       SpatialPolygonsDataFrame.</p>
 
@@ -109,10 +108,15 @@
       data set, Guerry's "Moral Statistics of France", has been made
       available in the <pkg>Guerry</pkg> package, which provides data
       and maps and examples designed to contribute to the integration
-      of multivariate and spatial analysis. The new <pkg>cshapes</pkg>
-      and <pkg>rworldmap</pkg> packages make available data sets for
-      conflict studies and environmental studies purposes - they are
-      linked as <pkg>rworldmap</pkg> suggests <pkg>cshapes</pkg>.</p>
+      of multivariate and spatial analysis. Modern country boundaries are
+      provided at 2 resolutions by <pkg>rworldmap</pkg> along with
+      functions to join and map tabular data referenced by country
+      names or codes. Chloropleth and bubble maps are supported and general
+      functions to work on user supplied maps (see <a href="http://journal.r-project.org/archive/2011-1/RJournal_2011-1_South.pdf">A New R package for Mapping Global Data</a>. Higher resolution country
+      borders are available from the linked package <pkg>rworldxtra</pkg>.
+      Historical country boundaries (1946-2012) can be obtained from the
+      <pkg>cshapes</pkg> package along with functions for calculating
+      distance matrices (see <a href="http://journal.r-project.org/archive/2010-1/RJournal_2010-1_Weidmann+Skrede~Gleditsch.pdf">Mapping and Measuring Country Shapes</a>).</p>
       <p>The <pkg>landsat</pkg> package with accompanying 
       <a href="http://www.jstatsoft.org/v43/i04">JSS paper</a> provides
       tools for exploring and developing correction tools for remote
@@ -490,6 +494,7 @@
     <pkg>RSurvey</pkg>
     <pkg>rtop</pkg>
     <pkg>rworldmap</pkg>
+    <pkg>rworldxtra</pkg>
     <pkg>sgeostat</pkg>
     <pkg>shapefiles</pkg>
     <pkg priority="core">sp</pkg>
