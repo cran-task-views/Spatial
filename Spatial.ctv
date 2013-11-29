@@ -2,7 +2,7 @@
   <name>Spatial</name>
   <topic>Analysis of Spatial Data</topic>
   <maintainer email="Roger.Bivand@nhh.no">Roger Bivand</maintainer>
-  <version>2013-09-27</version>
+  <version>2013-11-29</version>
 
   <info>
     <p>Base R includes many functions that can be used for reading,
@@ -89,10 +89,6 @@
       of distances and routes on geographic grids. <pkg>geosphere</pkg>
       permits computations of distance and area 
       to be carried out on spatial data in geographical coordinates. 
-      The <pkg>Metadata</pkg> package collects and downloads a variety
-      of open GIS datasets that can be used to characterize the surface
-      properties of Latitude/Longitude points, using <pkg>raster</pkg>,
-      <pkg>rgdal</pkg> and others to access data providers.
       The <pkg>spsurvey</pkg> package provides a
       range of sampling functions. The <pkg>trip</pkg> package extends sp
       classes to permit the accessing and manipulating of spatial data for
@@ -455,7 +451,6 @@
     <pkg priority="core">maptools</pkg>
     <pkg>MarkedPointProcess</pkg>
     <pkg>McSpatial</pkg>
-    <pkg>Metadata</pkg>
     <pkg>micromap</pkg>
     <pkg>ModelMap</pkg>
     <pkg>pastecs</pkg>
