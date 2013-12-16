@@ -2,7 +2,7 @@
   <name>Spatial</name>
   <topic>Analysis of Spatial Data</topic>
   <maintainer email="Roger.Bivand@nhh.no">Roger Bivand</maintainer>
-  <version>2013-11-29</version>
+  <version>2013-12-16</version>
 
   <info>
     <p>Base R includes many functions that can be used for reading,
@@ -384,11 +384,7 @@
       provides tools for analyzing spatial data, especially non-Gaussian 
       areal data. It supports the sparse spatial generalized linear mixed 
       model of Hughes and Haran (2013) and the centered autologistic model 
-      of Caragea and Kaiser (2009). <pkg>rlandscape</pkg> is a tool for 
-      generating data (forests divided into management units) for testing 
-      harvest scheduling models. It enables the user to create large amounts 
-      of sample forests while maintaining control over some spatial 
-      properties of the data, such as the degree and area distributions.
+      of Caragea and Kaiser (2009).
       The <a href="Environmetrics.html">Environmetrics</a> Task
       View contains a much more complete survey of relevant functions
       and packages.</p></li>
@@ -476,7 +472,6 @@
     <pkg priority="core">rgdal</pkg>
     <pkg priority="core">rgeos</pkg>
     <pkg>RgoogleMaps</pkg>
-    <pkg>rlandscape</pkg>
     <pkg>RPyGeo</pkg>
     <pkg>RSAGA</pkg>
     <pkg>RSurvey</pkg>
