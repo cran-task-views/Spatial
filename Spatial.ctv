@@ -2,7 +2,7 @@
   <name>Spatial</name>
   <topic>Analysis of Spatial Data</topic>
   <maintainer email="Roger.Bivand@nhh.no">Roger Bivand</maintainer>
-  <version>2013-12-16</version>
+  <version>2014-01-07</version>
 
   <info>
     <p>Base R includes many functions that can be used for reading,
@@ -173,7 +173,7 @@
       distributed data, and is capable of error corrections and data
       visualisation.</p>
 
-      <p>Integration with version 6.* of the leading open source
+      <p>Integration with version 6.* and 7 (devel) of the leading open source
       GIS, GRASS, is provided in CRAN package <pkg>spgrass6</pkg>, using
       <pkg>rgdal</pkg> for exchanging data. <pkg>RPyGeo</pkg> is a wrapper
       for Python access to the ArcGIS GeoProcessor, and <pkg>RSAGA</pkg>
@@ -296,7 +296,11 @@
       models assume that the spatial dependence can be described by known
       weights. The <pkg>SpatialEpi</pkg> package provides implementations of
       cluster detection and disease mapping functions, including Bayesian
-      cluster detection, and supports strata.
+      cluster detection, and supports strata. Regionalisation of polygon
+      objects is provided by <pkg>AMOEBA</pkg>: a function to calculate
+      spatial clusters using the Getis-Ord local statistic. It searches
+      irregular clusters (ecotopes) on a map, and by <code>skater</code>
+      in <pkg>spdep</pkg>.
       The <pkg>spgwr</pkg> package contains an implementation of
       geographically weighted regression methods for exploring possible
       non-stationarity. The <pkg>gwrr</pkg> package fits geographically
@@ -400,6 +404,7 @@
     <pkg>adehabitatMA</pkg>
     <pkg>ads</pkg>
     <pkg>akima</pkg>
+    <pkg>AMOEBA</pkg>
     <pkg>aspace</pkg>
     <pkg>ash</pkg>
     <pkg>automap</pkg>
