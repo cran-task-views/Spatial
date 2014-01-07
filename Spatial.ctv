@@ -218,7 +218,10 @@
       distance, including classical ones (Ripley's K and others) and more 
       recent ones used by spatial economists (Duranton and Overman's Kd, 
       Marcon and Puech's M). It relies on spatstat for core 
-      calculation.</p></li>
+      calculation. <pkg>latticeDensity</pkg> contains functions that compute
+      the lattice-based density estimator of Barry and McIntyre, which
+      accounts for point processes in two-dimensional regions with
+      irregular boundaries and holes.</p></li>
 
       <li><p><b>Geostatistics</b>: The <pkg>gstat</pkg> package
       provides a wide range of functions for univariate and multivariate
@@ -300,7 +303,8 @@
       objects is provided by <pkg>AMOEBA</pkg>: a function to calculate
       spatial clusters using the Getis-Ord local statistic. It searches
       irregular clusters (ecotopes) on a map, and by <code>skater</code>
-      in <pkg>spdep</pkg>.
+      in <pkg>spdep</pkg>. The <pkg>seg</pkg> package provides functions
+      for measuring spatial segregation.
       The <pkg>spgwr</pkg> package contains an implementation of
       geographically weighted regression methods for exploring possible
       non-stationarity. The <pkg>gwrr</pkg> package fits geographically
@@ -445,6 +449,7 @@
     <pkg>hdeco</pkg>
     <pkg>intamap</pkg>
     <pkg>landsat</pkg>
+    <pkg>latticeDensity</pkg>
     <pkg>mapdata</pkg>
     <pkg>mapproj</pkg>
     <pkg>maps</pkg>
@@ -483,6 +488,7 @@
     <pkg>rtop</pkg>
     <pkg>rworldmap</pkg>
     <pkg>rworldxtra</pkg>
+    <pkg>seg</pkg>
     <pkg>sgeostat</pkg>
     <pkg>shapefiles</pkg>
     <pkg priority="core">sp</pkg>
