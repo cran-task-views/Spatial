@@ -2,7 +2,7 @@
   <name>Spatial</name>
   <topic>Analysis of Spatial Data</topic>
   <maintainer email="Roger.Bivand@nhh.no">Roger Bivand</maintainer>
-  <version>2014-01-07</version>
+  <version>2014-02-23</version>
 
   <info>
     <p>Base R includes many functions that can be used for reading,
@@ -104,7 +104,14 @@
       data set, Guerry's "Moral Statistics of France", has been made
       available in the <pkg>Guerry</pkg> package, which provides data
       and maps and examples designed to contribute to the integration
-      of multivariate and spatial analysis. Modern country boundaries are
+      of multivariate and spatial analysis. 
+      The <pkg>marmap</pkg> package is designed for downloading, plotting
+      and manipulating bathymetric and topographic data in R. <pkg>marmap</pkg>
+      can query the ETOPO1 bathymetry and topography database hosted by the
+      NOAA, use simple latitude-longitude-depth data in ascii format, and take
+      advantage of the advanced plotting tools available in R to build
+      publication-quality bathymetric maps (see the <a href="http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0073051">PLOS</a>
+      paper). Modern country boundaries are
       provided at 2 resolutions by <pkg>rworldmap</pkg> along with
       functions to join and map tabular data referenced by country
       names or codes. Chloropleth and bubble maps are supported and general
@@ -119,7 +126,8 @@
       sensing data. <pkg>taRifx</pkg> is a collection of utility and 
       convenience functions, and some interesting spatial functions.</p></li>
 
-      <li><p><b>Reading and writing spatial data - <pkg>rgdal</pkg></b>: Maps may be
+      <li><p><b>Reading and writing spatial data - <pkg>rgdal</pkg></b>:
+      Maps may be
       vector-based or raster-based. The <pkg>rgdal</pkg> package provides
       bindings to <a href="http://www.gdal.org/">GDAL</a>-supported raster
       formats and <a href="http://www.gdal.org/ogr/">OGR</a>-supported
@@ -133,6 +141,7 @@
       include subsets of possible data source drivers; if others
       are needed, use other conversion utilities, or install from source
       against a version of GDAL with the required drivers.</p></li>
+
       <li><p><b>Reading and writing spatial data - other packages</b>:
       There are a
       number of other packages for accessing vector data on CRAN:
@@ -456,6 +465,7 @@
     <pkg>MBA</pkg>
     <pkg priority="core">maptools</pkg>
     <pkg>MarkedPointProcess</pkg>
+    <pkg>marmap</pkg>
     <pkg>McSpatial</pkg>
     <pkg>micromap</pkg>
     <pkg>ModelMap</pkg>
