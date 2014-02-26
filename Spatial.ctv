@@ -2,7 +2,7 @@
   <name>Spatial</name>
   <topic>Analysis of Spatial Data</topic>
   <maintainer email="Roger.Bivand@nhh.no">Roger Bivand</maintainer>
-  <version>2014-02-23</version>
+  <version>2014-02-26</version>
 
   <info>
     <p>Base R includes many functions that can be used for reading,
@@ -171,8 +171,11 @@
       spatial visualisation with Google Maps and OpenStreetMap.
       The <pkg>plotGoogleMaps</pkg> package provides methods for the 
       visualisation of spatial and spatio-temporal objects in Google Maps in
-      a web browser. <pkg>plotKML</pkg> is a package providing methods for the 
-      visualisation of spatial and spatio-temporal objects in Google Earth. 
+      a web browser. <pkg>plotKML</pkg> is a package providing methods for
+      the visualisation of spatial and spatio-temporal objects in Google
+      Earth. A further option is <pkg>leafletR</pkg>, which provides basic
+      web-mapping functionality to combine vector data files and online
+      map tiles from different sources.
       <pkg>OpenStreetMap</pkg> gives access to open street map raster images, 
       and <pkg>osmar</pkg> provides infrastructure to access OpenStreetMap 
       data from different sources, to work with the data in common R manner, 
@@ -459,6 +462,7 @@
     <pkg>intamap</pkg>
     <pkg>landsat</pkg>
     <pkg>latticeDensity</pkg>
+    <pkg>leafletR</pkg>
     <pkg>mapdata</pkg>
     <pkg>mapproj</pkg>
     <pkg>maps</pkg>
