@@ -12,11 +12,11 @@
     these locations may be retrieved if the location is recorded with
     care. Base R functions are complemented by contributed packages,
     some of which are on CRAN, and others are still in development. One
-    active location is <a target="_top" href="http://R-Forge.R-project.org/">
+    active location is <a href="http://R-Forge.R-project.org/">
     R-Forge</a>, which lists "Spatial Data and Statistics" projects in its
-    <a target="_top" href="http://R-Forge.R-project.org/softwaremap/trove_list.php">project tree</a>. Information on R-spatial packages,
+    <a href="http://R-Forge.R-project.org/softwaremap/trove_list.php">project tree</a>. Information on R-spatial packages,
     especially <pkg>sp</pkg>  will be posted
-    on the R-Forge rspatial project <a target="_top" 
+    on the R-Forge rspatial project <a 
     href="http://rspatial.R-Forge.R-project.org/">website</a>, including
     a visualisation gallery.</p>
 
@@ -562,7 +562,7 @@
     
   <links>
     <view>Environmetrics</view>
-    <a target="_top" href="http://geodacenter.asu.edu/projects/rsp">Rgeo: Spatial Statistics with R</a>
+    <a href="http://geodacenter.asu.edu/projects/rsp">Rgeo: Spatial Statistics with R</a>
     <a href="https://www.stat.math.ethz.ch/mailman/listinfo/R-SIG-Geo/">R-SIG-Geo mailing list</a>
   </links> 
 
