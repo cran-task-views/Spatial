@@ -2,7 +2,7 @@
   <name>Spatial</name>
   <topic>Analysis of Spatial Data</topic>
   <maintainer email="Roger.Bivand@nhh.no">Roger Bivand</maintainer>
-  <version>2014-06-08</version>
+  <version>2014-08-18</version>
 
   <info>
     <p>Base R includes many functions that can be used for reading,
@@ -51,8 +51,6 @@
       <a href="http://CRAN.R-project.org/doc/Rnews/Rnews_2005-2.pdf">R
       News</a>.  Many other packages have become dependent on these
       classes, including <pkg>rgdal</pkg> and <pkg>maptools</pkg>. 
-      Functions provided by <pkg>vec2dtransf</pkg> for applying affine 
-      and similarity transformations on vector spatial data (sp objects). 
       The <pkg>rgeos</pkg> package provides an interface to topology functions
       for <pkg>sp</pkg> objects using 
       <a href="http://trac.osgeo.org/geos/">GEOS</a>. <pkg>rgeos</pkg> 
@@ -555,7 +553,6 @@
     <pkg>UScensus2000cdp</pkg>
     <pkg>UScensus2000tract</pkg>
     <pkg>vardiag</pkg>
-    <pkg>vec2dtransf</pkg>
     <pkg>vegan</pkg>
   </packagelist>
 
