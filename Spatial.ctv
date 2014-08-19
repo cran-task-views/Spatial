@@ -2,7 +2,7 @@
   <name>Spatial</name>
   <topic>Analysis of Spatial Data</topic>
   <maintainer email="Roger.Bivand@nhh.no">Roger Bivand</maintainer>
-  <version>2014-08-18</version>
+  <version>2014-08-19</version>
 
   <info>
     <p>Base R includes many functions that can be used for reading,
@@ -258,7 +258,7 @@
       model descriptions can be passed between <pkg>geoR</pkg>,
       <pkg>gstat</pkg> and this package. <pkg>SpatialExtremes</pkg>
       proposes several approaches for spatial extremes modelling
-      using <pkg>RandomFields</pkg>. In addition, <pkg>CompRandFld</pkg>, 
+      using <pkg>RandomFields</pkg>. In addition,
       <pkg>constrainedKriging</pkg> and <pkg>geospt</pkg> provide 
       alternative approaches to geostatistical modelling. The 
       <pkg>spTimer</pkg> package  is able to fit, spatially predict and 
@@ -435,7 +435,6 @@
     <pkg>automap</pkg>
     <pkg>CARBayes</pkg>
     <pkg priority="core">classInt</pkg>
-    <pkg>CompRandFld</pkg>
     <pkg>constrainedKriging</pkg>
     <pkg>cshapes</pkg>
     <pkg priority="core">DCluster</pkg>
