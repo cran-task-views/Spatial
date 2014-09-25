@@ -328,7 +328,11 @@
       The <pkg>glmmBUGS</pkg> package is a helpful way of passing out spatial
       models to WinBUGS. The <pkg>spaMM</pkg> package fits spatial GLMMs,
       using the Matern correlation function as the basic model for spatial
-      random effects.
+      random effects. The <pkg>PReMiuM</pkg> package is for profile 
+      regression, which is a Dirichlet process Bayesian clustering model;
+      it provides a spatial CAR term that can be included in the fixed
+      effects (which are global, ie. non cluster specific, parameters)
+      to account for any spatial correlation in the residuals.
       The <pkg>spacom</pkg> package provides tools to
       construct and exploit spatially weighted context data, and further
       allows combining the resulting spatially weighted context data with
@@ -485,6 +489,7 @@
     <pkg>PBSmodelling</pkg>
     <pkg>plotGoogleMaps</pkg>
     <pkg>plotKML</pkg>
+    <pkg>PReMiuM</pkg>
     <pkg>psgp</pkg>
     <pkg>ramps</pkg>
     <pkg priority="core">RandomFields</pkg>
