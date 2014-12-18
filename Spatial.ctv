@@ -2,7 +2,7 @@
   <name>Spatial</name>
   <topic>Analysis of Spatial Data</topic>
   <maintainer email="Roger.Bivand@nhh.no">Roger Bivand</maintainer>
-  <version>2014-09-19</version>
+  <version>2014-12-18</version>
 
   <info>
     <p>Base R includes many functions that can be used for reading,
@@ -98,7 +98,11 @@
 
       <p>The UScensus2000 suite of packages (<pkg>UScensus2000blkgrp</pkg>,
       <pkg>UScensus2000cdp</pkg>, <pkg>UScensus2000tract</pkg>) makes the
-      use of data from the 2000 US Census more convenient.
+      use of data from the 2000 US Census more convenient. An important
+      data set, Guerry's "Moral Statistics of France", has been made
+      available in the <pkg>Guerry</pkg> package, which provides data
+      and maps and examples designed to contribute to the integration
+      of multivariate and spatial analysis.
       The <pkg>marmap</pkg> package is designed for downloading, plotting
       and manipulating bathymetric and topographic data in R. <pkg>marmap</pkg>
       can query the ETOPO1 bathymetry and topography database hosted by the
@@ -253,7 +257,7 @@
       model descriptions can be passed between <pkg>geoR</pkg>,
       <pkg>gstat</pkg> and this package. <pkg>SpatialExtremes</pkg>
       proposes several approaches for spatial extremes modelling
-      using <pkg>RandomFields</pkg>. In addition,
+      using <pkg>RandomFields</pkg>. In addition, <pkg>CompRandFld</pkg>, 
       <pkg>constrainedKriging</pkg> and <pkg>geospt</pkg> provide 
       alternative approaches to geostatistical modelling. The 
       <pkg>spTimer</pkg> package  is able to fit, spatially predict and 
@@ -434,6 +438,7 @@
     <pkg>automap</pkg>
     <pkg>CARBayes</pkg>
     <pkg priority="core">classInt</pkg>
+    <pkg>CompRandFld</pkg>
     <pkg>constrainedKriging</pkg>
     <pkg>cshapes</pkg>
     <pkg priority="core">DCluster</pkg>
@@ -462,6 +467,7 @@
     <pkg>GriegSmith</pkg>
     <pkg priority="core">gstat</pkg>
     <pkg>gstudio</pkg>
+    <pkg>Guerry</pkg>
     <pkg>GWmodel</pkg>
     <pkg>gwrr</pkg>
     <pkg>hdeco</pkg>
