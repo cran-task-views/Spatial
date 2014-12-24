@@ -162,7 +162,7 @@
       functions for choosing class intervals for thematic cartography.
       The <pkg>gmt</pkg> package gives a simple interface between GMT
       map-making software and R. <pkg>geonames</pkg> is an interface to 
-      the <a href="www.geonames.org">www.geonames.org</a> service. If the
+      the <a href="http://www.geonames.org/">www.geonames.org</a> service. If the
       user wishes to place a map backdrop behind other displays, the the
       <pkg>RgoogleMaps</pkg> package for accessing 
       Google Maps(TM) may be useful. <pkg>ggmap</pkg> may be used for 
