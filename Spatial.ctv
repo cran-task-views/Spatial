@@ -564,7 +564,7 @@
   <links>
     <view>Environmetrics</view>
     <a href="http://geodacenter.asu.edu/projects/rsp">Rgeo: Spatial Statistics with R</a>
-    <a href="https://www.stat.math.ethz.ch/mailman/listinfo/R-SIG-Geo/">R-SIG-Geo mailing list</a>
+    <a href="https://stat.ethz.ch/mailman/listinfo/R-SIG-Geo/">R-SIG-Geo mailing list</a>
   </links> 
 
 </CRANTaskView>
