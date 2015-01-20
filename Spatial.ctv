@@ -135,6 +135,8 @@
       support for vector objects 
       (<a href="http://spatialreference.org">this site</a> provides 
       searchable online PROJ.4 representations of projections). 
+      Affine and similarity transformations on sp objects may be made
+      using functions in the <pkg>vec2dtransf</pkg> package.
       The Windows and Mac OSX CRAN binaries of <pkg>rgdal</pkg>
       include subsets of possible data source drivers; if others
       are needed, use other conversion utilities, or install from source
@@ -555,6 +557,7 @@
     <pkg>UScensus2000cdp</pkg>
     <pkg>UScensus2000tract</pkg>
     <pkg>vardiag</pkg>
+    <pkg>vec2dtransf</pkg>
     <pkg>vegan</pkg>
   </packagelist>
 
