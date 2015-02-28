@@ -2,7 +2,7 @@
   <name>Spatial</name>
   <topic>Analysis of Spatial Data</topic>
   <maintainer email="Roger.Bivand@nhh.no">Roger Bivand</maintainer>
-  <version>2015-01-15</version>
+  <version>2015-03-01</version>
 
   <info>
     <p>Base R includes many functions that can be used for reading,
@@ -140,7 +140,11 @@
       The Windows and Mac OSX CRAN binaries of <pkg>rgdal</pkg>
       include subsets of possible data source drivers; if others
       are needed, use other conversion utilities, or install from source
-      against a version of GDAL with the required drivers.</p></li>
+      against a version of GDAL with the required drivers.
+      The <pkg>rgeos</pkg> package provides functions for reading and 
+      writing well-known text (WKT) geometry, and the <pkg>wkb</pkg> package
+      provides functions for reading and writing well-known binary (WKB) 
+      geometry.</p></li>
 
       <li><p><b>Reading and writing spatial data - other packages</b>:
       There are a
@@ -559,6 +563,7 @@
     <pkg>vardiag</pkg>
     <pkg>vec2dtransf</pkg>
     <pkg>vegan</pkg>
+    <pkg>wkb</pkg>
   </packagelist>
 
     
