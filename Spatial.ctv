@@ -2,7 +2,7 @@
   <name>Spatial</name>
   <topic>Analysis of Spatial Data</topic>
   <maintainer email="Roger.Bivand@nhh.no">Roger Bivand</maintainer>
-  <version>2015-03-01</version>
+  <version>2015-03-10</version>
 
   <info>
     <p>Base R includes many functions that can be used for reading,
@@ -55,7 +55,14 @@
       The <pkg>rgeos</pkg> package provides an interface to topology functions
       for <pkg>sp</pkg> objects using 
       <a href="http://trac.osgeo.org/geos/">GEOS</a>. <pkg>rgeos</pkg> 
-      is now available for Mac OSX on CRAN.
+      is now available for Mac OSX on CRAN for pre-Mavericks R; for Mavericks+,       please see advice given on R-sig-mac: 
+      <a href="https://stat.ethz.ch/pipermail/r-sig-mac/2014-May/010871.html">
+      for a binary package</a>, and 
+      <a href="https://stat.ethz.ch/pipermail/r-sig-mac/2015-March/011317.html">
+      for source install using the Kyngchaos framework</a> Also see the 
+      README file in the package, for example at 
+      <a href="https://r-forge.r-project.org/scm/viewvc.php/pkg/inst/README?view=markup&root=rgeos">
+      R-Forge</a>.
       The <pkg>raster</pkg> package is a major extension of spatial data 
       classes to virtualise access to large rasters, permitting large 
       objects to be analysed, and extending the analytical tools available 
@@ -140,11 +147,19 @@
       The Windows and Mac OSX CRAN binaries of <pkg>rgdal</pkg>
       include subsets of possible data source drivers; if others
       are needed, use other conversion utilities, or install from source
-      against a version of GDAL with the required drivers.
-      The <pkg>rgeos</pkg> package provides functions for reading and 
-      writing well-known text (WKT) geometry, and the <pkg>wkb</pkg> package
-      provides functions for reading and writing well-known binary (WKB) 
-      geometry.</p></li>
+      against a version of GDAL with the required drivers. The CRAN OSX 
+      binary is for pre-Mavericks R; for Mavericks+, please see advice 
+      given on R-sig-mac: 
+      <a href="https://stat.ethz.ch/pipermail/r-sig-mac/2014-May/010871.html">
+      for a binary package</a>, and 
+      <a href="https://stat.ethz.ch/pipermail/r-sig-mac/2015-March/011317.html">
+      for source install using the Kyngchaos frameworks</a>. Also see the 
+      README file in the package, for example at 
+      <a href="https://r-forge.r-project.org/scm/viewvc.php/pkg/inst/README?view=markup&root=rgdal">
+      R-Forge</a>. The <pkg>rgeos</pkg> package provides functions for 
+      reading and writing well-known text (WKT) geometry, and the 
+      <pkg>wkb</pkg> package provides functions for reading and writing 
+      well-known binary (WKB) geometry.</p></li>
 
       <li><p><b>Reading and writing spatial data - other packages</b>:
       There are a
