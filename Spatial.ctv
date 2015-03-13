@@ -59,7 +59,7 @@
       <a href="https://stat.ethz.ch/pipermail/r-sig-mac/2014-May/010871.html">
       for a binary package</a>, and 
       <a href="https://stat.ethz.ch/pipermail/r-sig-mac/2015-March/011317.html">
-      for source install using the Kyngchaos framework</a> Also see the 
+      for source install using the Kyngchaos framework</a>. Also see the 
       README file in the package, for example at 
       <a href="https://r-forge.r-project.org/scm/viewvc.php/pkg/inst/README?view=markup&root=rgeos">
       R-Forge</a>.
