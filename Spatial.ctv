@@ -61,7 +61,7 @@
       <a href="https://stat.ethz.ch/pipermail/r-sig-mac/2015-March/011317.html">
       for source install using the Kyngchaos framework</a>. Also see the 
       README file in the package, for example at 
-      <a href="https://r-forge.r-project.org/scm/viewvc.php/pkg/inst/README?view=markup&root=rgeos">
+      <a href="https://r-forge.r-project.org/scm/viewvc.php/pkg/inst/README?view=markup&amp;root=rgeos">
       R-Forge</a>.
       The <pkg>raster</pkg> package is a major extension of spatial data 
       classes to virtualise access to large rasters, permitting large 
@@ -155,7 +155,7 @@
       <a href="https://stat.ethz.ch/pipermail/r-sig-mac/2015-March/011317.html">
       for source install using the Kyngchaos frameworks</a>. Also see the 
       README file in the package, for example at 
-      <a href="https://r-forge.r-project.org/scm/viewvc.php/pkg/inst/README?view=markup&root=rgdal">
+      <a href="https://r-forge.r-project.org/scm/viewvc.php/pkg/inst/README?view=markup&amp;root=rgdal">
       R-Forge</a>. The <pkg>rgeos</pkg> package provides functions for 
       reading and writing well-known text (WKT) geometry, and the 
       <pkg>wkb</pkg> package provides functions for reading and writing 
