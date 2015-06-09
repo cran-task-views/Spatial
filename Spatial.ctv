@@ -2,7 +2,7 @@
   <name>Spatial</name>
   <topic>Analysis of Spatial Data</topic>
   <maintainer email="Roger.Bivand@nhh.no">Roger Bivand</maintainer>
-  <version>2015-03-10</version>
+  <version>2015-06-09</version>
 
   <info>
     <p>Base R includes many functions that can be used for reading,
@@ -422,12 +422,8 @@
       <pkg>siplab</pkg> package is a platform for experimenting with
       spatially explicit individual-based vegetation models.
       <pkg>ModelMap</pkg> builds on other packages to create models
-      using underlying GIS data. The <pkg>gstudio</pkg> package contains 
-      classes and functions for the spatial analysis of marker data to 
-      include structure statistics, analyses based upon allele frequencies, 
-      and Population Graphs network analysis of spatial conditional genetic 
-      covariance. This package interfaces with raster and sp objects 
-      directly. An off-CRAN package
+      using underlying GIS data.
+      An off-CRAN package
       - <a href="http://www.leg.ufpr.br/Rcitrus/">Rcitrus</a> - is for
       the spatial analysis of plant disease incidence.
       The <pkg>Geneland</pkg> package uses <pkg>fields</pkg> and 
@@ -487,7 +483,6 @@
     <pkg>Grid2Polygons</pkg>
     <pkg>GriegSmith</pkg>
     <pkg priority="core">gstat</pkg>
-    <pkg>gstudio</pkg>
     <pkg>Guerry</pkg>
     <pkg>GWmodel</pkg>
     <pkg>gwrr</pkg>
