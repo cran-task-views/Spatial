@@ -181,9 +181,14 @@
       be modified or extended using the <code>colorRampPalette</code>
       function provided with R. The <pkg>classInt</pkg> package provides
       functions for choosing class intervals for thematic cartography.
+      The <pkg>tmap</pkg> package proveds a modern basis for thematic mapping
+      optionally using a Grammar of Graphics syntax. Because it has a custom
+      grid graphics platform, it obviates the need to fortify geometries to 
+      use with ggplot2.
       The <pkg>gmt</pkg> package gives a simple interface between GMT
       map-making software and R. <pkg>geonames</pkg> is an interface to 
-      the <a href="http://www.geonames.org/">www.geonames.org</a> service. If the
+      the <a href="http://www.geonames.org/">www.geonames.org</a> service.
+      If the
       user wishes to place a map backdrop behind other displays, the the
       <pkg>RgoogleMaps</pkg> package for accessing 
       Google Maps(TM) may be useful. <pkg>ggmap</pkg> may be used for 
@@ -204,9 +209,10 @@
       distributed data, and is capable of error corrections and data
       visualisation.</p>
 
-      <p>Integration with version 6.* and 7 (devel) of the leading open source
+      <p>Integration with version 6.* and of the leading open source
       GIS, GRASS, is provided in CRAN package <pkg>spgrass6</pkg>, using
-      <pkg>rgdal</pkg> for exchanging data. <pkg>RPyGeo</pkg> is a wrapper
+      <pkg>rgdal</pkg> for exchanging data. 
+      For GRASS 7.*, use <pkg>rgrass7</pkg>. <pkg>RPyGeo</pkg> is a wrapper
       for Python access to the ArcGIS GeoProcessor, and <pkg>RSAGA</pkg>
       is a similar shell-based wrapper for SAGA commands. </p></li>
 
@@ -524,6 +530,7 @@
     <pkg priority="core">rgdal</pkg>
     <pkg priority="core">rgeos</pkg>
     <pkg>RgoogleMaps</pkg>
+    <pkg>rgrass7</pkg>
     <pkg>RPyGeo</pkg>
     <pkg>RSAGA</pkg>
     <pkg>RSurvey</pkg>
@@ -568,6 +575,7 @@
     <pkg>trip</pkg>
     <pkg>tripEstimation</pkg>
     <pkg>tripack</pkg>
+    <pkg>tmap</pkg>
     <pkg>UScensus2000cdp</pkg>
     <pkg>UScensus2000tract</pkg>
     <pkg>vardiag</pkg>
