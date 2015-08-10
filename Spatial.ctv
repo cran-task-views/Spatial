@@ -30,6 +30,11 @@
     questions about both accessing data, and analysing it. The mailing list
     is a good place to search for information about relevant courses.</p>
 
+    There are a number of contributed tutorials and introductions; a recent 
+    one is <a href="https://cran.r-project.org/doc/contrib/intro-spatial-rl.pdf">
+    Introduction to visualising spatial data in R</a> by Robin Lovelace 
+    and James Cheshire.
+
     <p>The packages in this
     view can be roughly structured into the following topics. If you think
     that some package is missing from the list, please let me know.
