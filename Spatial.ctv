@@ -28,18 +28,11 @@
     R-SIG-Geo</a>
     mailing-list is a good place to begin for obtaining help and discussing
     questions about both accessing data, and analysing it. The mailing list
-    is a good place to search for information about relevant courses, and a
-    list is hosted at the <a href="http://geodacenter.asu.edu/projects/rsp">
-    GeoDaCenter</a>.</p>
+    is a good place to search for information about relevant courses.</p>
 
     <p>The packages in this
     view can be roughly structured into the following topics. If you think
     that some package is missing from the list, please let me know.
-<!--
-    Please also visit and contribute to the <a href="http://rwiki.sciviews.org/doku.php?id=tips:spatial-data">
-    spatial data handling</a> and <a href="http://rwiki.sciviews.org/doku.php?id=tips:stats-spatial">
-    spatial statistics</a> pages on the R Wiki.
--->
     </p>
     <ul>
 
@@ -54,15 +47,7 @@
       classes, including <pkg>rgdal</pkg> and <pkg>maptools</pkg>. 
       The <pkg>rgeos</pkg> package provides an interface to topology functions
       for <pkg>sp</pkg> objects using 
-      <a href="http://trac.osgeo.org/geos/">GEOS</a>. <pkg>rgeos</pkg> 
-      is now available for Mac OSX on CRAN for pre-Mavericks R; for Mavericks+,       please see advice given on R-sig-mac: 
-      <a href="https://stat.ethz.ch/pipermail/r-sig-mac/2014-May/010871.html">
-      for a binary package</a>, and 
-      <a href="https://stat.ethz.ch/pipermail/r-sig-mac/2015-March/011317.html">
-      for source install using the Kyngchaos framework</a>. Also see the 
-      README file in the package, for example at 
-      <a href="https://r-forge.r-project.org/scm/viewvc.php/pkg/inst/README?view=markup&amp;root=rgeos">
-      R-Forge</a>.
+      <a href="http://trac.osgeo.org/geos/">GEOS</a>.
       The <pkg>raster</pkg> package is a major extension of spatial data 
       classes to virtualise access to large rasters, permitting large 
       objects to be analysed, and extending the analytical tools available 
@@ -147,16 +132,8 @@
       The Windows and Mac OSX CRAN binaries of <pkg>rgdal</pkg>
       include subsets of possible data source drivers; if others
       are needed, use other conversion utilities, or install from source
-      against a version of GDAL with the required drivers. The CRAN OSX 
-      binary is for pre-Mavericks R; for Mavericks+, please see advice 
-      given on R-sig-mac: 
-      <a href="https://stat.ethz.ch/pipermail/r-sig-mac/2014-May/010871.html">
-      for a binary package</a>, and 
-      <a href="https://stat.ethz.ch/pipermail/r-sig-mac/2015-March/011317.html">
-      for source install using the Kyngchaos frameworks</a>. Also see the 
-      README file in the package, for example at 
-      <a href="https://r-forge.r-project.org/scm/viewvc.php/pkg/inst/README?view=markup&amp;root=rgdal">
-      R-Forge</a>. The <pkg>rgeos</pkg> package provides functions for 
+      against a version of GDAL with the required drivers. 
+      The <pkg>rgeos</pkg> package provides functions for 
       reading and writing well-known text (WKT) geometry, and the 
       <pkg>wkb</pkg> package provides functions for reading and writing 
       well-known binary (WKB) geometry.</p></li>
