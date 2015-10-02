@@ -2,7 +2,7 @@
   <name>Spatial</name>
   <topic>Analysis of Spatial Data</topic>
   <maintainer email="Roger.Bivand@nhh.no">Roger Bivand</maintainer>
-  <version>2015-08-09</version>
+  <version>2015-10-02</version>
 
   <info>
     <p>Base R includes many functions that can be used for reading,
@@ -228,7 +228,7 @@
       estimation and binary kernel
       regression estimation for multivariate spatial point process data.
       <pkg>DSpat</pkg> contains functions for spatial modelling
-      for distance sampling data, and <pkg>spatialsegregation</pkg> 
+      for distance sampling data and <pkg>spatialsegregation</pkg> 
       provides segregation measures for multitype spatial point 
       patterns. <pkg>GriegSmith</pkg> uses the Grieg-Smith method on 
       2 dimensional spatial data. The <pkg>dbmss</pkg> package allows 
@@ -321,8 +321,9 @@
       objects is provided by <pkg>AMOEBA</pkg>: a function to calculate
       spatial clusters using the Getis-Ord local statistic. It searches
       irregular clusters (ecotopes) on a map, and by <code>skater</code>
-      in <pkg>spdep</pkg>. The <pkg>seg</pkg> package provides functions
-      for measuring spatial segregation.
+      in <pkg>spdep</pkg>. The <pkg>seg</pkg> and <pkg>OasisR</pkg> packages
+      provide functions for measuring spatial segregation; <pkg>OasisR</pkg>
+      includes Monte Carlo simulations to test the indices.
       The <pkg>spgwr</pkg> package contains an implementation of
       geographically weighted regression methods for exploring possible
       non-stationarity. The <pkg>gwrr</pkg> package fits geographically
@@ -493,6 +494,7 @@
     <pkg>ncf</pkg>
     <pkg>ngspatial</pkg>
     <pkg>nlme</pkg>
+    <pkg>OasisR</pkg>
     <pkg>OpenStreetMap</pkg>
     <pkg>osmar</pkg>
     <pkg>PBSmapping</pkg>
