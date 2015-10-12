@@ -2,7 +2,7 @@
   <name>Spatial</name>
   <topic>Analysis of Spatial Data</topic>
   <maintainer email="Roger.Bivand@nhh.no">Roger Bivand</maintainer>
-  <version>2015-10-02</version>
+  <version>2015-10-12</version>
 
   <info>
     <p>Base R includes many functions that can be used for reading,
@@ -351,9 +351,13 @@
       construct and exploit spatially weighted context data, and further
       allows combining the resulting spatially weighted context data with
       individual-level predictor and outcome variables, for the purposes
-      of multilevel modelling. The <pkg>geospacom</pkg> package gnerates
+      of multilevel modelling. The <pkg>geospacom</pkg> package generates
       distance matrices from shape files and represents spatially weighted
-      multilevel analysis results.</p></li>
+      multilevel analysis results. Spatial survival analysis is provided by
+      the <pkg>spatsurv</pkg> - Bayesian inference for parametric proportional
+      hazards spatial survival models - and <pkg>spBayesSurv</pkg> - Bayesian
+      Modeling and Analysis of Spatially Correlated Survival Data - packages.
+      </p></li>
 
       <li><p><b>Spatial regression</b>:
       The choice of function for spatial regression will depend on the 
@@ -542,7 +546,9 @@
     <pkg>spatial.tools</pkg>
     <pkg>SpatialTools</pkg>
     <pkg priority="core">spatstat</pkg>
+    <pkg>spatsurv</pkg>
     <pkg>spBayes</pkg>
+    <pkg>spBayesSurv</pkg>
     <pkg>spcosa</pkg>
     <pkg priority="core">spdep</pkg>
     <pkg>spgrass6</pkg>
