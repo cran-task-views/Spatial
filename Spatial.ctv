@@ -2,7 +2,7 @@
   <name>Spatial</name>
   <topic>Analysis of Spatial Data</topic>
   <maintainer email="Roger.Bivand@nhh.no">Roger Bivand</maintainer>
-  <version>2015-10-12</version>
+  <version>2016-01-11</version>
 
   <info>
     <p>Base R includes many functions that can be used for reading,
@@ -151,7 +151,7 @@
       <pkg>RArcInfo</pkg> allows ArcInfo v.7 binary files and *.e00
       files to be read, and <pkg>maptools</pkg> and <pkg>shapefiles</pkg>
       read and write ArcGIS/ArcView shapefiles; for NetCDF files,
-      <pkg>ncdf</pkg> may be used. The <pkg>maptools</pkg>
+      <pkg>ncdf4</pkg> or <pkg>RNetCDF</pkg> may be used. The <pkg>maptools</pkg>
       package also provides helper functions for writing map polygon
       files to be read by WinBUGS, Mondrian, and the tmap command
       in Stata. It also provides interface functions between
@@ -494,7 +494,7 @@
     <pkg>micromap</pkg>
     <pkg>ModelMap</pkg>
     <pkg>pastecs</pkg>
-    <pkg>ncdf</pkg>
+    <pkg>ncdf4</pkg>
     <pkg>ncf</pkg>
     <pkg>ngspatial</pkg>
     <pkg>nlme</pkg>
@@ -519,6 +519,7 @@
     <pkg priority="core">rgeos</pkg>
     <pkg>RgoogleMaps</pkg>
     <pkg>rgrass7</pkg>
+    <pkg>RNetCDF</pkg>
     <pkg>RPyGeo</pkg>
     <pkg>RSAGA</pkg>
     <pkg>RSurvey</pkg>
