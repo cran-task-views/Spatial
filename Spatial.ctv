@@ -2,7 +2,7 @@
   <name>Spatial</name>
   <topic>Analysis of Spatial Data</topic>
   <maintainer email="Roger.Bivand@nhh.no">Roger Bivand</maintainer>
-  <version>2016-01-11</version>
+  <version>2016-01-19</version>
 
   <info>
     <p>Base R includes many functions that can be used for reading,
@@ -53,6 +53,9 @@
       The <pkg>rgeos</pkg> package provides an interface to topology functions
       for <pkg>sp</pkg> objects using 
       <a href="http://trac.osgeo.org/geos/">GEOS</a>.
+      The <pkg>stplanr</pkg> provides a "SpatialLinesNetwork" class based on 
+      objects defined in <pkg>sp</sp> and <pkg>igraph</pkg> that can be used 
+      for routing analysis within R.
       The <pkg>raster</pkg> package is a major extension of spatial data 
       classes to virtualise access to large rasters, permitting large 
       objects to be analysed, and extending the analytical tools available 
@@ -480,6 +483,7 @@
     <pkg>GWmodel</pkg>
     <pkg>gwrr</pkg>
     <pkg>hdeco</pkg>
+    <pkg>igraph</pkg>
     <pkg>intamap</pkg>
     <pkg>landsat</pkg>
     <pkg>latticeDensity</pkg>
@@ -561,6 +565,7 @@
     <pkg>spTimer</pkg>
     <pkg>SSN</pkg>
     <pkg>Stem</pkg>
+    <pkg>stplanr</pkg>
     <pkg>taRifx</pkg>
     <pkg>tgp</pkg>
     <pkg>trip</pkg>
