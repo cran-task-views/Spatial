@@ -54,7 +54,7 @@
       for <pkg>sp</pkg> objects using 
       <a href="http://trac.osgeo.org/geos/">GEOS</a>.
       The <pkg>stplanr</pkg> provides a "SpatialLinesNetwork" class based on 
-      objects defined in <pkg>sp</sp> and <pkg>igraph</pkg> that can be used 
+      objects defined in <pkg>sp</pkg> and <pkg>igraph</pkg> that can be used 
       for routing analysis within R.
       The <pkg>raster</pkg> package is a major extension of spatial data 
       classes to virtualise access to large rasters, permitting large 
