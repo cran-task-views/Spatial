@@ -2,7 +2,7 @@
   <name>Spatial</name>
   <topic>Analysis of Spatial Data</topic>
   <maintainer email="Roger.Bivand@nhh.no">Roger Bivand</maintainer>
-  <version>2016-01-19</version>
+  <version>2016-01-27</version>
 
   <info>
     <p>Base R includes many functions that can be used for reading,
@@ -350,11 +350,7 @@
       it provides a spatial CAR term that can be included in the fixed
       effects (which are global, ie. non cluster specific, parameters)
       to account for any spatial correlation in the residuals.
-      The <pkg>spacom</pkg> package provides tools to
-      construct and exploit spatially weighted context data, and further
-      allows combining the resulting spatially weighted context data with
-      individual-level predictor and outcome variables, for the purposes
-      of multilevel modelling. The <pkg>geospacom</pkg> package generates
+      The <pkg>geospacom</pkg> package generates
       distance matrices from shape files and represents spatially weighted
       multilevel analysis results. Spatial survival analysis is provided by
       the <pkg>spatsurv</pkg> - Bayesian inference for parametric proportional
@@ -536,7 +532,6 @@
     <pkg priority="core">sp</pkg>
     <pkg priority="core">spacetime</pkg>
     <pkg>siplab</pkg>
-    <pkg>spacom</pkg>
     <pkg>spaMM</pkg>
     <pkg>sparr</pkg>
     <pkg>spatial</pkg>
