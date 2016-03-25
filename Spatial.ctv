@@ -2,7 +2,7 @@
   <name>Spatial</name>
   <topic>Analysis of Spatial Data</topic>
   <maintainer email="Roger.Bivand@nhh.no">Roger Bivand</maintainer>
-  <version>2016-01-27</version>
+  <version>2016-03-25</version>
 
   <info>
     <p>Base R includes many functions that can be used for reading,
@@ -14,24 +14,27 @@
     some of which are on CRAN, and others are still in development. One
     active location is <a href="http://R-Forge.R-project.org/">
     R-Forge</a>, which lists "Spatial Data and Statistics" projects in its
-    <a href="http://R-Forge.R-project.org/softwaremap/trove_list.php">project tree</a>. Information on R-spatial packages,
-    especially <pkg>sp</pkg>  will be posted
-    on the R-Forge rspatial project <a 
-    href="http://rspatial.R-Forge.R-project.org/">website</a>, including
-    a visualisation gallery.</p>
+    <a href="http://R-Forge.R-project.org/softwaremap/trove_list.php">project
+    tree</a>. Information on R-spatial packages, especially <pkg>sp</pkg> 
+    is posted on the R-Forge rspatial project 
+    <a href="http://rspatial.R-Forge.R-project.org/">website</a>, including
+    a visualisation gallery. Active development of <pkg>sp</pkg> is 
+    continuing on <a href="https://github.com/edzer/sp">Github</a>.</p>
 
-    <p>The
-    contributed packages address two broad areas: moving spatial data
+    <p>The contributed packages address two broad areas: moving spatial data
     into and out of R, and analysing spatial data in R.</p>
 
     <p>The <a href="https://stat.ethz.ch/mailman/listinfo/R-SIG-Geo/">
-    R-SIG-Geo</a>
-    mailing-list is a good place to begin for obtaining help and discussing
-    questions about both accessing data, and analysing it. The mailing list
-    is a good place to search for information about relevant courses.</p>
+    R-SIG-Geo</a> mailing-list is a good place to begin for obtaining help
+    and discussing questions about both accessing data, and analysing it.
+    The mailing list is a good place to search for information about
+    relevant courses. Further information about courses may be found
+    under the "Events" tab of <a href="http://r-spatial.org/">this blog</a>.
+    </p>
 
-    There are a number of contributed tutorials and introductions; a recent 
-    one is <a href="https://cran.r-project.org/doc/contrib/intro-spatial-rl.pdf">
+    There are a number of contributed tutorials and introductions; 
+    a recent one is 
+    <a href="https://cran.r-project.org/doc/contrib/intro-spatial-rl.pdf">
     Introduction to visualising spatial data in R</a> by Robin Lovelace 
     and James Cheshire.
 
