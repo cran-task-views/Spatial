@@ -2,7 +2,7 @@
   <name>Spatial</name>
   <topic>Analysis of Spatial Data</topic>
   <maintainer email="Roger.Bivand@nhh.no">Roger Bivand</maintainer>
-  <version>2016-03-25</version>
+  <version>2016-05-02</version>
 
   <info>
     <p>Base R includes many functions that can be used for reading,
@@ -68,7 +68,9 @@
       enhance the core functionality of the <pkg>raster</pkg> package, 
       including a parallel processing engine for use with rasters.
       The <pkg>micromap</pkg> package provides linked micromaps using
-      ggplot2.
+      ggplot2. The <pkg>recmap</pkg> package provides rectangular 
+      cartograms with rectangle sizes reflecting for example population; the 
+      <pkg>statebins</pkg> privides a simpler binning approach to US states.
       The <pkg>spacetime</pkg> package 
       extends the shared classes defined in <pkg>sp</pkg> for 
       spatio-temporal data (see <a href="http://www.jstatsoft.org/v51/i07">Spatio-Temporal Data in R</a>). The <pkg>Grid2Polygons</pkg> converts a 
@@ -517,6 +519,7 @@
     <pkg priority="core">raster</pkg>
     <pkg>rasterVis</pkg>
     <pkg priority="core">RColorBrewer</pkg>
+    <pkg>recmap</pkg>
     <pkg>regress</pkg>
     <pkg priority="core">rgdal</pkg>
     <pkg priority="core">rgeos</pkg>
@@ -562,6 +565,7 @@
     <pkg>spsurvey</pkg>
     <pkg>spTimer</pkg>
     <pkg>SSN</pkg>
+    <pkg>statebins</pkg>
     <pkg>Stem</pkg>
     <pkg>stplanr</pkg>
     <pkg>taRifx</pkg>
