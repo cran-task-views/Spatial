@@ -2,7 +2,7 @@
   <name>Spatial</name>
   <topic>Analysis of Spatial Data</topic>
   <maintainer email="Roger.Bivand@nhh.no">Roger Bivand</maintainer>
-  <version>2016-05-02</version>
+  <version>2016-06-11</version>
 
   <info>
     <p>Base R includes many functions that can be used for reading,
@@ -58,7 +58,13 @@
       <a href="http://trac.osgeo.org/geos/">GEOS</a>.
       The <pkg>stplanr</pkg> provides a "SpatialLinesNetwork" class based on 
       objects defined in <pkg>sp</pkg> and <pkg>igraph</pkg> that can be used 
-      for routing analysis within R.
+      for routing analysis within R. Another network package is
+      <pkg>shp2graph</pkg>. The <pkg>cleangeo</pkg> may be used to 
+      inspect spatial objects, facilitate handling and reporting of topology 
+      errors and geometry validity issues. It claims to provide a geometry
+      cleaner that will fix all geometry problems, and eliminate (at least
+      reduce) the likelihood of having issues when doing spatial data
+      processing.
       The <pkg>raster</pkg> package is a major extension of spatial data 
       classes to virtualise access to large rasters, permitting large 
       objects to be analysed, and extending the analytical tools available 
@@ -100,7 +106,15 @@
       decomposition of entropy for categorical map comparisons. The
       <pkg>GeoXp</pkg> package permits interactive graphical exploratory
       spatial data analysis. <pkg>spcosa</pkg> provides spatial coverage
-      sampling and random sampling from compact geographical strata. </p>
+      sampling and random sampling from compact geographical strata. 
+      The <pkg>magclass</pkg> offers a data class for increased
+      interoperability working with spatial-temporal data together with
+      corresponding functions and methods (conversions, basic calculations
+      and basic data manipulation). The class distinguishes between spatial,
+      temporal and other dimensions to facilitate the development and
+      interoperability of tools build for it. Additional features are
+      name-based addressing of data and internal consistency checks (e.g.
+      checking for the right data order in calculations).</p>
 
       <p>The UScensus2000 suite of packages (<pkg>UScensus2000cdp</pkg>, <pkg>UScensus2000tract</pkg>) makes the
       use of data from the 2000 US Census more convenient. An important
@@ -127,7 +141,17 @@
       <a href="http://www.jstatsoft.org/v43/i04">JSS paper</a> provides
       tools for exploring and developing correction tools for remote
       sensing data. <pkg>taRifx</pkg> is a collection of utility and 
-      convenience functions, and some interesting spatial functions.</p></li>
+      convenience functions, and some interesting spatial functions.
+      The <pkg>gdalUtils</pkg> package provides wrappers for the Geospatial
+      Data Abstraction Library (GDAL) Utilities. The <pkg>geoaxe</pkg> allows
+      users to split 'geospatial' objects into pieces. Includes support for
+      some spatial object inputs, 'Well-Known Text', and 'GeoJSON'. The 
+      <pkg>lawn</pkg> package is a client for 'Turfjs' 
+      for 'geospatial' analysis. The package revolves around using 'GeoJSON'
+      data. Functions are included for creating 'GeoJSON' data objects,
+      measuring aspects of 'GeoJSON', and combining, transforming, and
+      creating random 'GeoJSON' data objects.
+      </p></li>
 
       <li><p><b>Reading and writing spatial data - <pkg>rgdal</pkg></b>:
       Maps may be
@@ -174,7 +198,18 @@
       The <pkg>tmap</pkg> package proveds a modern basis for thematic mapping
       optionally using a Grammar of Graphics syntax. Because it has a custom
       grid graphics platform, it obviates the need to fortify geometries to 
-      use with ggplot2.
+      use with ggplot2. The <pkg>mapview</pkg> package provides methods to
+      view spatial objects interactively, usually on a web mapping base.
+      The <pkg>quickmapr</pkg> package
+      provides a simple method to visualize 'sp' and 'raster' objects,
+      allows for basic zooming, panning, identifying, and labeling of
+      spatial objects, and does not require that the data be in geographic
+      coordinates. The <pkg>cartography</pkg> package allows various
+      cartographic representations such as proportional symbols,
+      choropleth, typology, flows or discontinuities. The <pkg>mapmisc</pkg>
+      package is a minimal, light-weight set of tools for producing nice
+     looking maps in R, with support for map projections.
+
       The <pkg>gmt</pkg> package gives a simple interface between GMT
       map-making software and R. <pkg>geonames</pkg> is an interface to 
       the <a href="http://www.geonames.org/">www.geonames.org</a> service.
@@ -267,7 +302,11 @@
       The <pkg>geospt</pkg> package contains some geostatistical and radial
       basis functions, including prediction and cross validation. Besides, 
       it includes functions for the design of optimal spatial sampling 
-      networks based on geostatistical modelling.</p>
+      networks based on geostatistical modelling. The <pkg>geostatsp</pkg>
+      package offers geostatistical modelling facilities using Raster and
+      SpatialPoints objects are provided. Non-Gaussian models are fit
+      using INLA, and Gaussian geostatistical models use Maximum Likelihood
+      Estimation.</p>
 
       <p>The <pkg>RandomFields</pkg> package provides functions for
       the simulation and analysis of random fields, and variogram
@@ -313,7 +352,10 @@
       in-stream distance. Models are created using moving average 
       constructions. Spatial linear models, including covariates, can be 
       fit with ML or REML. Mapping and other graphical functions are 
-      included. </p></li>
+      included. The <pkg>ipdw</pkg> provides functions o interpolate 
+      georeferenced point data via Inverse Path Distance Weighting. Useful 
+      for coastal marine applications where barriers in the landscape 
+      preclude interpolation with Euclidean distances.</p></li>
 
       <li><p><b>Disease mapping and areal data analysis</b>:
       <pkg>DCluster</pkg> is a package for the detection of
@@ -325,7 +367,10 @@
       models assume that the spatial dependence can be described by known
       weights. The <pkg>SpatialEpi</pkg> package provides implementations of
       cluster detection and disease mapping functions, including Bayesian
-      cluster detection, and supports strata. Regionalisation of polygon
+      cluster detection, and supports strata. The <pkg>diseasemapping</pkg>
+      package offers the formatting of population and case data, calculation
+      of Standardized Incidence Ratios, and fitting the BYM model using
+      INLA. Regionalisation of polygon
       objects is provided by <pkg>AMOEBA</pkg>: a function to calculate
       spatial clusters using the Getis-Ord local statistic. It searches
       irregular clusters (ecotopes) on a map, and by <code>skater</code>
@@ -339,8 +384,18 @@
       remediate collinearity in the GWR models. Also fits geographically 
       weighted ridge regression (GWRR) and geographically weighted lasso 
       (GWL) models. The <pkg>GWmodel</pkg> package contains functions for 
-      computing geographically weighted models. The <pkg>sparr</pkg> 
-      package provides another
+      computing geographically weighted models. The <pkg>lctools</pkg> 
+      package provides researchers and educators with easy-to-learn user
+      friendly tools for calculating key spatial statistics and to apply
+      simple as well as advanced methods of spatial analysis in real data.
+      These include: Local Pearson and Geographically Weighted Pearson
+      Correlation Coefficients, Spatial Inequality Measures (Gini, Spatial
+      Gini, LQ, Focal LQ), Spatial Autocorrelation (Global and Local
+      Moran's I), several Geographically Weighted Regression techniques and
+      other Spatial Analysis tools (other geographically weighted statistics).
+      This package also contains functions for measuring the significance of
+      each statistic calculated, mainly based on Monte Carlo simulations.
+      The <pkg>sparr</pkg> package provides another
       approach to relative risks. The <pkg>CARBayes</pkg> package 
       implements Bayesian hierarchical spatial areal unit models. In 
       such models the spatial correlation is modelled by a set of random 
@@ -394,9 +449,17 @@
       regressions, spatial AR model, repeat sales models, and 
       conditionally parametric logit and probit.
       The <pkg>splm</pkg> package provides methods for 
-      fitting spatial panel data by maximum likelihood and GM. 
+      fitting spatial panel data by maximum likelihood and GM. The two 
+      small packages <pkg>S2sls</pkg> and <pkg>spanel</pkg> provide 
+      alternative implementations without most of the facilities of 
+      <pkg>splm</pkg>. The <pkg>HSAR</pkg> package provides Hierarchical
+      Spatial Autoregressive Models (HSAR), based on a Bayesian Markov Chain
+      Monte Carlo (MCMC) algorithm.
       <pkg>spatialprobit</pkg> make possible Bayesian estimation of the 
-      spatial autoregressive probit model (SAR probit model).</p></li>
+      spatial autoregressive probit model (SAR probit model). The 
+      <pkg>ProbitSpatial</pkg> package provides methods for fitting Binomial
+      spatial probit models to larger data sets; spatial autoregressive
+      (SAR) and spatial error (SEM) probit models are included.</p></li>
 
       <li><p><b>Ecological analysis</b>: There are many packages
       for analysing ecological and environmental data. They include
@@ -419,7 +482,12 @@
       <pkg>siplab</pkg> package is a platform for experimenting with
       spatially explicit individual-based vegetation models.
       <pkg>ModelMap</pkg> builds on other packages to create models
-      using underlying GIS data.
+      using underlying GIS data. The <pkg>SpatialPosition</pkg> computes
+      spatial position models: Stewart potentials, Reilly catchment areas,
+      Huff catchment areas. The <pkg>Watersheds</pkg> package provides
+      methods for watersheds aggregation and spatial drainage network
+      analysis.
+
       An off-CRAN package
       - <a href="http://www.leg.ufpr.br/Rcitrus/">Rcitrus</a> - is for
       the spatial analysis of plant disease incidence.
@@ -451,19 +519,24 @@
     <pkg>ash</pkg>
     <pkg>automap</pkg>
     <pkg>CARBayes</pkg>
+    <pkg>cartography</pkg>
     <pkg priority="core">classInt</pkg>
+    <pkg>cleangeo</pkg>
     <pkg>CompRandFld</pkg>
     <pkg>constrainedKriging</pkg>
     <pkg>cshapes</pkg>
-    <pkg priority="core">DCluster</pkg>
     <pkg>dbmss</pkg>
+    <pkg priority="core">DCluster</pkg>
     <pkg priority="core">deldir</pkg>
+    <pkg>diseasemapping</pkg>
     <pkg>DSpat</pkg>
     <pkg>ecespa</pkg>
     <pkg>fields</pkg>
     <pkg>FieldSim</pkg>
+    <pkg>gdalUtils</pkg>
     <pkg>gdistance</pkg>
     <pkg>Geneland</pkg>
+    <pkg>geoaxe</pkg>
     <pkg>GEOmap</pkg>
     <pkg>geomapdata</pkg>
     <pkg>geonames</pkg>
@@ -473,6 +546,7 @@
     <pkg>geospacom</pkg>
     <pkg>geosphere</pkg>
     <pkg>geospt</pkg>
+    <pkg>geostatsp</pkg>
     <pkg>GeoXp</pkg>
     <pkg>ggmap</pkg>
     <pkg>glmmBUGS</pkg>
@@ -484,16 +558,20 @@
     <pkg>GWmodel</pkg>
     <pkg>gwrr</pkg>
     <pkg>hdeco</pkg>
+    <pkg>HSAR</pkg>
     <pkg>igraph</pkg>
     <pkg>intamap</pkg>
     <pkg>landsat</pkg>
     <pkg>latticeDensity</pkg>
+    <pkg>lawn</pkg>
     <pkg>leafletR</pkg>
+    <pkg>MBA</pkg>
     <pkg>mapdata</pkg>
+    <pkg>mapmisc</pkg>
     <pkg>mapproj</pkg>
     <pkg>maps</pkg>
-    <pkg>MBA</pkg>
     <pkg priority="core">maptools</pkg>
+    <pkg>mapview</pkg>
     <pkg>marmap</pkg>
     <pkg>McSpatial</pkg>
     <pkg>micromap</pkg>
@@ -511,7 +589,9 @@
     <pkg>plotGoogleMaps</pkg>
     <pkg>plotKML</pkg>
     <pkg>PReMiuM</pkg>
+    <pkg>ProbitSpatial</pkg>
     <pkg>psgp</pkg>
+    <pkg>quickmapr</pkg>
     <pkg>ramps</pkg>
     <pkg priority="core">RandomFields</pkg>
     <pkg>rangeMapper</pkg>
@@ -532,19 +612,23 @@
     <pkg>rtop</pkg>
     <pkg>rworldmap</pkg>
     <pkg>rworldxtra</pkg>
+    <pkg>S2sls</pkg>
     <pkg>seg</pkg>
     <pkg>sgeostat</pkg>
     <pkg>shapefiles</pkg>
+    <pkg>shp2graph</pkg>
     <pkg priority="core">sp</pkg>
     <pkg priority="core">spacetime</pkg>
     <pkg>siplab</pkg>
     <pkg>spaMM</pkg>
+    <pkg>spanel</pkg>
     <pkg>sparr</pkg>
     <pkg>spatial</pkg>
     <pkg>spatialCovariance</pkg>
     <pkg>SpatialEpi</pkg>
     <pkg>SpatialExtremes</pkg>
     <pkg>spatialkernel</pkg>
+    <pkg>SpatialPosition</pkg>
     <pkg>spatcounts</pkg>
     <pkg>spatgraphs</pkg>
     <pkg>spatialprobit</pkg>
@@ -579,6 +663,7 @@
     <pkg>vardiag</pkg>
     <pkg>vec2dtransf</pkg>
     <pkg>vegan</pkg>
+    <pkg>Watersheds</pkg>
     <pkg>wkb</pkg>
   </packagelist>
 
