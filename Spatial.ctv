@@ -2,7 +2,7 @@
   <name>Spatial</name>
   <topic>Analysis of Spatial Data</topic>
   <maintainer email="Roger.Bivand@nhh.no">Roger Bivand</maintainer>
-  <version>2016-06-11</version>
+  <version>2016-06-27</version>
 
   <info>
     <p>Base R includes many functions that can be used for reading,
@@ -561,11 +561,13 @@
     <pkg>HSAR</pkg>
     <pkg>igraph</pkg>
     <pkg>intamap</pkg>
+    <pkg>ipdw</pkg>
     <pkg>landsat</pkg>
     <pkg>latticeDensity</pkg>
     <pkg>lawn</pkg>
+    <pkg>lctools</pkg>
     <pkg>leafletR</pkg>
-    <pkg>MBA</pkg>
+    <pkg>magclass</pkg>
     <pkg>mapdata</pkg>
     <pkg>mapmisc</pkg>
     <pkg>mapproj</pkg>
@@ -573,6 +575,7 @@
     <pkg priority="core">maptools</pkg>
     <pkg>mapview</pkg>
     <pkg>marmap</pkg>
+    <pkg>MBA</pkg>
     <pkg>McSpatial</pkg>
     <pkg>micromap</pkg>
     <pkg>ModelMap</pkg>
