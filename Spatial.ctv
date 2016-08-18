@@ -99,6 +99,9 @@
       of distances and routes on geographic grids. <pkg>geosphere</pkg>
       permits computations of distance and area 
       to be carried out on spatial data in geographical coordinates. 
+      The <pkg>dggridR</pkg> package provides an interface to DGGRID for
+      working with discrete global grids, using hexagons, triangles, and
+      diamonds to overcome the issue that every bin have the same area.
       The <pkg>spsurvey</pkg> package provides a
       range of sampling functions. The <pkg>trip</pkg> package extends sp
       classes to permit the accessing and manipulating of spatial data for
@@ -239,7 +242,11 @@
       <pkg>rgdal</pkg> for exchanging data. 
       For GRASS 7.*, use <pkg>rgrass7</pkg>. <pkg>RPyGeo</pkg> is a wrapper
       for Python access to the ArcGIS GeoProcessor, and <pkg>RSAGA</pkg>
-      is a similar shell-based wrapper for SAGA commands. </p></li>
+      is a similar shell-based wrapper for SAGA commands. The <pkg>RQGIS</pkg>
+      package establishes an interface between R and QGIS, i.e. it allows
+      the user to access QGIS functionalities from the R console. It achieves
+      this by using the QGIS Python API via the command line. Note also
+      <a href="https://stat.ethz.ch/pipermail/r-sig-geo/2016-August/024817.html">this thread</a> on an alternative R/QGIS integration.</p></li>
 
       <li><p><b>Point pattern analysis</b>: The <pkg>spatial</pkg>
       package is a recommended package shipped with base R, and contains
@@ -528,6 +535,7 @@
     <pkg>dbmss</pkg>
     <pkg priority="core">DCluster</pkg>
     <pkg priority="core">deldir</pkg>
+    <pkg priority="core">dggridR</pkg>
     <pkg>diseasemapping</pkg>
     <pkg>DSpat</pkg>
     <pkg>ecespa</pkg>
@@ -610,6 +618,7 @@
     <pkg>rgrass7</pkg>
     <pkg>RNetCDF</pkg>
     <pkg>RPyGeo</pkg>
+    <pkg>RQGIS</pkg>
     <pkg>RSAGA</pkg>
     <pkg>RSurvey</pkg>
     <pkg>rtop</pkg>
