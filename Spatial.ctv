@@ -2,7 +2,7 @@
   <name>Spatial</name>
   <topic>Analysis of Spatial Data</topic>
   <maintainer email="Roger.Bivand@nhh.no">Roger Bivand</maintainer>
-  <version>2016-08-18</version>
+  <version>2016-08-30</version>
 
   <info>
     <p>Base R includes many functions that can be used for reading,
@@ -186,14 +186,44 @@
       <pkg>RArcInfo</pkg> allows ArcInfo v.7 binary files and *.e00
       files to be read, and <pkg>maptools</pkg> and <pkg>shapefiles</pkg>
       read and write ArcGIS/ArcView shapefiles; for NetCDF files,
-      <pkg>ncdf4</pkg> or <pkg>RNetCDF</pkg> may be used. The <pkg>maptools</pkg>
+      <pkg>ncdf4</pkg> or <pkg>RNetCDF</pkg> may be used.
+      The <pkg>maptools</pkg>
       package also provides helper functions for writing map polygon
       files to be read by WinBUGS, Mondrian, and the tmap command
       in Stata. It also provides interface functions between
       <pkg>PBSmapping</pkg> and <pkg>spatstat</pkg> and sp classes,
       in addition to <pkg>maps</pkg> databases and sp classes. There is
-      also an interface to GSHHS shoreline databases. 
-      For visualisation, the colour palettes provided in
+      also an interface to GSHHS shoreline databases. The <pkg>gmt</pkg> 
+      package gives a simple interface between GMT
+      map-making software and R. <pkg>geonames</pkg> is an interface to 
+      the <a href="http://www.geonames.org/">www.geonames.org</a> service.
+      <pkg>OpenStreetMap</pkg> gives access to open street map raster images, 
+      and <pkg>osmar</pkg> provides infrastructure to access OpenStreetMap 
+      data from different sources, to work with the data in common R manner, 
+      and to convert data into available infrastructure provided by 
+      existing R packages.</p>
+
+      <p>The <pkg>rpostgis</pkg> package provides additional functions to the
+      'RPostgreSQL' package to interface R with a 'PostGIS'-enabled database,
+      as well as convenient wrappers to common 'PostgreSQL' queries. The
+      <pkg>postGIStools</pkg> package provides functions to convert geometry
+      and 'hstore' data types from 'PostgreSQL' into standard R objects,
+      as well as to simplify the import of R data frames (including spatial
+      data frames) into 'PostgreSQL'</p>
+
+      <p>Integration with version 6.* and of the leading open source
+      GIS, GRASS, is provided in CRAN package <pkg>spgrass6</pkg>, using
+      <pkg>rgdal</pkg> for exchanging data. 
+      For GRASS 7.*, use <pkg>rgrass7</pkg>. <pkg>RPyGeo</pkg> is a wrapper
+      for Python access to the ArcGIS GeoProcessor, and <pkg>RSAGA</pkg>
+      is a similar shell-based wrapper for SAGA commands. The <pkg>RQGIS</pkg>
+      package establishes an interface between R and QGIS, i.e. it allows
+      the user to access QGIS functionalities from the R console. It achieves
+      this by using the QGIS Python API via the command line. Note also
+      <a href="https://stat.ethz.ch/pipermail/r-sig-geo/2016-August/024817.html">this thread</a> on an alternative R/QGIS integration.</p></li>
+
+     <li><p><b>Visualisation</b>:
+      For visualization, the colour palettes provided in
       the <pkg>RColorBrewer</pkg> package are very useful, and may
       be modified or extended using the <code>colorRampPalette</code>
       function provided with R. The <pkg>classInt</pkg> package provides
@@ -211,12 +241,7 @@
       cartographic representations such as proportional symbols,
       choropleth, typology, flows or discontinuities. The <pkg>mapmisc</pkg>
       package is a minimal, light-weight set of tools for producing nice
-     looking maps in R, with support for map projections.
-
-      The <pkg>gmt</pkg> package gives a simple interface between GMT
-      map-making software and R. <pkg>geonames</pkg> is an interface to 
-      the <a href="http://www.geonames.org/">www.geonames.org</a> service.
-      If the
+      looking maps in R, with support for map projections.If the
       user wishes to place a map backdrop behind other displays, the the
       <pkg>RgoogleMaps</pkg> package for accessing 
       Google Maps(TM) may be useful. <pkg>ggmap</pkg> may be used for 
@@ -227,26 +252,7 @@
       the visualisation of spatial and spatio-temporal objects in Google
       Earth. A further option is <pkg>leafletR</pkg>, which provides basic
       web-mapping functionality to combine vector data files and online
-      map tiles from different sources.
-      <pkg>OpenStreetMap</pkg> gives access to open street map raster images, 
-      and <pkg>osmar</pkg> provides infrastructure to access OpenStreetMap 
-      data from different sources, to work with the data in common R manner, 
-      and to convert data into available infrastructure provided by 
-      existing R packages.
-      <pkg>RSurvey</pkg> may be used as a processing program for spatially
-      distributed data, and is capable of error corrections and data
-      visualisation.</p>
-
-      <p>Integration with version 6.* and of the leading open source
-      GIS, GRASS, is provided in CRAN package <pkg>spgrass6</pkg>, using
-      <pkg>rgdal</pkg> for exchanging data. 
-      For GRASS 7.*, use <pkg>rgrass7</pkg>. <pkg>RPyGeo</pkg> is a wrapper
-      for Python access to the ArcGIS GeoProcessor, and <pkg>RSAGA</pkg>
-      is a similar shell-based wrapper for SAGA commands. The <pkg>RQGIS</pkg>
-      package establishes an interface between R and QGIS, i.e. it allows
-      the user to access QGIS functionalities from the R console. It achieves
-      this by using the QGIS Python API via the command line. Note also
-      <a href="https://stat.ethz.ch/pipermail/r-sig-geo/2016-August/024817.html">this thread</a> on an alternative R/QGIS integration.</p></li>
+      map tiles from different sources.</p></li>
 
       <li><p><b>Point pattern analysis</b>: The <pkg>spatial</pkg>
       package is a recommended package shipped with base R, and contains
@@ -362,7 +368,10 @@
       included. The <pkg>ipdw</pkg> provides functions o interpolate 
       georeferenced point data via Inverse Path Distance Weighting. Useful 
       for coastal marine applications where barriers in the landscape 
-      preclude interpolation with Euclidean distances.</p></li>
+      preclude interpolation with Euclidean distances.
+      <pkg>RSurvey</pkg> may be used as a processing program for spatially
+      distributed data, and is capable of error corrections and data
+      visualisation.</p></li>
 
       <li><p><b>Disease mapping and areal data analysis</b>:
       <pkg>DCluster</pkg> is a package for the detection of
@@ -604,6 +613,7 @@
     <pkg>PBSmodelling</pkg>
     <pkg>plotGoogleMaps</pkg>
     <pkg>plotKML</pkg>
+    <pkg>postGIStools</pkg>
     <pkg>PReMiuM</pkg>
     <pkg>ProbitSpatial</pkg>
     <pkg>psgp</pkg>
@@ -622,6 +632,7 @@
     <pkg>RgoogleMaps</pkg>
     <pkg>rgrass7</pkg>
     <pkg>RNetCDF</pkg>
+    <pkg>rpostgis</pkg>
     <pkg>RPyGeo</pkg>
     <pkg>RQGIS</pkg>
     <pkg>RSAGA</pkg>
