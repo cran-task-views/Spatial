@@ -2,7 +2,7 @@
   <name>Spatial</name>
   <topic>Analysis of Spatial Data</topic>
   <maintainer email="Roger.Bivand@nhh.no">Roger Bivand</maintainer>
-  <version>2016-08-30</version>
+  <version>2016-09-07</version>
 
   <info>
     <p>Base R includes many functions that can be used for reading,
@@ -437,6 +437,10 @@
       the <pkg>spatsurv</pkg> - Bayesian inference for parametric proportional
       hazards spatial survival models - and <pkg>spBayesSurv</pkg> - Bayesian
       Modeling and Analysis of Spatially Correlated Survival Data - packages.
+      The <pkg>spselect</pkg> package provides modelling functions based on
+      forward stepwise regression, incremental forward stagewise regression,
+      least angle regression (LARS), and lasso models for selecting the
+      spatial scale of covariates in regression models.
       </p></li>
 
       <li><p><b>Spatial regression</b>:
@@ -675,6 +679,7 @@
     <pkg>sphet</pkg>
     <pkg priority="core">splancs</pkg>
     <pkg>splm</pkg>
+    <pkg>spselect</pkg>
     <pkg>spsurvey</pkg>
     <pkg>spTimer</pkg>
     <pkg>SSN</pkg>
