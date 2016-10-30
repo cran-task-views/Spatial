@@ -269,7 +269,11 @@
       summaries to be used with spatial point pattern analysis. The
       <pkg>splancs</pkg> package also allows point data to be analysed
       within a polygonal region of interest, and covers many methods,
-      including 2D kernel densities. </p>
+      including 2D kernel densities. The <pkg>smacpod</pkg> package provides
+      various statistical methods for analyzing case-control point data.
+      The methods available closely follow those in chapter 6 of Applied
+      Spatial Statistics for Public Health Data by Waller and Gotway
+      (2004).</p>
 
       <p><pkg>ecespa</pkg> provides
       wrappers, functions and data for spatial point pattern analysis,
@@ -343,7 +347,11 @@
       cross-validation and for unbiased back-transformation of kriging 
       predictions of log-transformed data. The <pkg>SpatialTools</pkg> 
       package has an emphasis on kriging, and provides functions for 
-      prediction and simulation.</p>
+      prediction and simulation. It is extended by <pkg>ExceedanceTools</pkg>,
+      which provides tools for constructing confidence regions for exceedance
+      regions and contour lines. The <pkg>gear</pkg> package implements
+      common geostatistical methods in a clean, straightforward, efficient
+      manner, and is said to be a quasi reboot of <pkg>SpatialTools</pkg>.</p>
 
       <p>The <pkg>sgeostat</pkg> package
       is also available. Within the same general topical area are
@@ -383,7 +391,9 @@
       models assume that the spatial dependence can be described by known
       weights. The <pkg>SpatialEpi</pkg> package provides implementations of
       cluster detection and disease mapping functions, including Bayesian
-      cluster detection, and supports strata. The <pkg>diseasemapping</pkg>
+      cluster detection, and supports strata. The <pkg>smerc</pkg> package
+      provides statistical methods for the analysis of data areal data, with
+      a focus on cluster detection. The <pkg>diseasemapping</pkg>
       package offers the formatting of population and case data, calculation
       of Standardized Incidence Ratios, and fitting the BYM model using
       INLA. Regionalisation of polygon
@@ -557,10 +567,12 @@
     <pkg>diseasemapping</pkg>
     <pkg>DSpat</pkg>
     <pkg>ecespa</pkg>
+    <pkg>ExceedanceTools</pkg>
     <pkg>fields</pkg>
     <pkg>FieldSim</pkg>
     <pkg>gdalUtils</pkg>
     <pkg>gdistance</pkg>
+    <pkg>gear</pkg>
     <pkg>Geneland</pkg>
     <pkg>geoaxe</pkg>
     <pkg>GEOmap</pkg>
@@ -652,6 +664,8 @@
     <pkg priority="core">sp</pkg>
     <pkg priority="core">spacetime</pkg>
     <pkg>siplab</pkg>
+    <pkg>smacpod</pkg>
+    <pkg>smerc</pkg>
     <pkg>spacom</pkg>
     <pkg>spaMM</pkg>
     <pkg>spanel</pkg>
