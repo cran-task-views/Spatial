@@ -2,7 +2,7 @@
   <name>Spatial</name>
   <topic>Analysis of Spatial Data</topic>
   <maintainer email="Roger.Bivand@nhh.no">Roger Bivand</maintainer>
-  <version>2016-09-07</version>
+  <version>2016-11-27</version>
 
   <info>
     <p>Base R includes many functions that can be used for reading,
@@ -51,7 +51,16 @@
       and plotting functions for spatial data.
       The <pkg>sp</pkg> package is discussed in a note in
       <a href="http://CRAN.R-project.org/doc/Rnews/Rnews_2005-2.pdf">R
-      News</a>.  Many other packages have become dependent on these
+      News</a>.  
+
+      A new package called <pkg>sf</pkg> is now on CRAN, and is being
+      actively developed on <a href="https://github.com/edzer/sfr">GitHub</a>,
+      providing Simple Features for R. The development of the package is
+      being supported by the R Consortium. It provides simple features access
+      for vector data, and as such is a modern implementation of parts of 
+      <pkg>sp</pkg>.
+
+      Many other packages have become dependent on the <pkg>sp</pkg>
       classes, including <pkg>rgdal</pkg> and <pkg>maptools</pkg>. 
       The <pkg>rgeos</pkg> package provides an interface to topology functions
       for <pkg>sp</pkg> objects using 
@@ -245,7 +254,8 @@
       user wishes to place a map backdrop behind other displays, the the
       <pkg>RgoogleMaps</pkg> package for accessing 
       Google Maps(TM) may be useful. <pkg>ggmap</pkg> may be used for 
-      spatial visualisation with Google Maps and OpenStreetMap.
+      spatial visualisation with Google Maps and OpenStreetMap; <pkg>ggsn</pkg>
+      provides North arrows and scales for such maps.
       The <pkg>plotGoogleMaps</pkg> package provides methods for the 
       visualisation of spatial and spatio-temporal objects in Google Maps in
       a web browser. <pkg>plotKML</pkg> is a package providing methods for
@@ -587,6 +597,7 @@
     <pkg>geostatsp</pkg>
     <pkg>GeoXp</pkg>
     <pkg>ggmap</pkg>
+    <pkg>ggsn</pkg>
     <pkg>glmmBUGS</pkg>
     <pkg>gmt</pkg>
     <pkg>Grid2Polygons</pkg>
@@ -661,6 +672,7 @@
     <pkg>sgeostat</pkg>
     <pkg>shapefiles</pkg>
     <pkg>shp2graph</pkg>
+    <pkg priority="core">sf</pkg>
     <pkg priority="core">sp</pkg>
     <pkg priority="core">spacetime</pkg>
     <pkg>siplab</pkg>
