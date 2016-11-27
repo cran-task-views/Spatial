@@ -155,15 +155,19 @@
       sensing data. <pkg>taRifx</pkg> is a collection of utility and 
       convenience functions, and some interesting spatial functions.
       The <pkg>gdalUtils</pkg> package provides wrappers for the Geospatial
-      Data Abstraction Library (GDAL) Utilities. The <pkg>geoaxe</pkg> allows
-      users to split 'geospatial' objects into pieces. Includes support for
-      some spatial object inputs, 'Well-Known Text', and 'GeoJSON'. The 
-      <pkg>lawn</pkg> package is a client for 'Turfjs' 
-      for 'geospatial' analysis. The package revolves around using 'GeoJSON'
-      data. Functions are included for creating 'GeoJSON' data objects,
-      measuring aspects of 'GeoJSON', and combining, transforming, and
-      creating random 'GeoJSON' data objects.
-      </p></li>
+      Data Abstraction Library (GDAL) Utilities.</p> 
+
+      <p>An rOpenSci
+      <a href="http://ropensci.org/blog/blog/2016/11/22/geospatial-suite">
+      blog entry</a> described a GeoJSON-centred approach to reading GeoJSON
+      and WKT data. GeoJSON can be written and read using <pkg>rgdal</pkg>, and
+      WKT by <pkg>rgeos</pkg>. The entry lists <pkg>geojson</pkg>,
+      <pkg>geojsonio</pkg>, <pkg>geoaxe</pkg> and <pkg>lawn</pkg> among
+      others. The <pkg>rgbif</pkg> package is used to access Global
+      Biodiversity Information Facility (GBIF) data). The <pkg>geoaxe</pkg>
+      allows users to split 'geospatial' objects into pieces. The 
+      <pkg>lawn</pkg> package is a client for 'Turfjs' for 'geospatial'
+      analysis.</p></li>
 
       <li><p><b>Reading and writing spatial data - <pkg>rgdal</pkg></b>:
       Maps may be
@@ -585,6 +589,8 @@
     <pkg>gear</pkg>
     <pkg>Geneland</pkg>
     <pkg>geoaxe</pkg>
+    <pkg>geojson</pkg>
+    <pkg>geojsonio</pkg>
     <pkg>GEOmap</pkg>
     <pkg>geomapdata</pkg>
     <pkg>geonames</pkg>
@@ -654,6 +660,7 @@
     <pkg priority="core">RColorBrewer</pkg>
     <pkg>recmap</pkg>
     <pkg>regress</pkg>
+    <pkg>rgbif</pkg>
     <pkg priority="core">rgdal</pkg>
     <pkg priority="core">rgeos</pkg>
     <pkg>RgoogleMaps</pkg>
