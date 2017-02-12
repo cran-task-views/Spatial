@@ -365,7 +365,10 @@
       which provides tools for constructing confidence regions for exceedance
       regions and contour lines. The <pkg>gear</pkg> package implements
       common geostatistical methods in a clean, straightforward, efficient
-      manner, and is said to be a quasi reboot of <pkg>SpatialTools</pkg>.</p>
+      manner, and is said to be a quasi reboot of <pkg>SpatialTools</pkg>.
+      The <pkg>sperrorest</pkg> package implements spatial error estimation
+      and permutation-based spatial variable importance using different
+      spatial cross-validation and spatial block bootstrap methods.</p>
 
       <p>The <pkg>sgeostat</pkg> package
       is also available. Within the same general topical area are
@@ -707,6 +710,7 @@
     <pkg>spBayesSurv</pkg>
     <pkg>spcosa</pkg>
     <pkg priority="core">spdep</pkg>
+    <pkg>sperrorest</pkg>
     <pkg>spgrass6</pkg>
     <pkg>spgwr</pkg>
     <pkg>sphet</pkg>
