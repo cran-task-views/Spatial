@@ -511,7 +511,10 @@
       spatial autoregressive probit model (SAR probit model). The 
       <pkg>ProbitSpatial</pkg> package provides methods for fitting Binomial
       spatial probit models to larger data sets; spatial autoregressive
-      (SAR) and spatial error (SEM) probit models are included.</p></li>
+      (SAR) and spatial error (SEM) probit models are included. The
+      <pkg>starma</pkg> package provides functions to identify, estimate
+      and diagnose a Space-Time AutoRegressive Moving Average (STARMA)
+      model.</p></li>
 
       <li><p><b>Ecological analysis</b>: There are many packages
       for analysing ecological and environmental data. They include
@@ -720,6 +723,7 @@
     <pkg>spsurvey</pkg>
     <pkg>spTimer</pkg>
     <pkg>SSN</pkg>
+    <pkg>starma</pkg>
     <pkg>statebins</pkg>
     <pkg>Stem</pkg>
     <pkg>stplanr</pkg>
