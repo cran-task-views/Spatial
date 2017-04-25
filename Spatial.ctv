@@ -2,7 +2,7 @@
   <name>Spatial</name>
   <topic>Analysis of Spatial Data</topic>
   <maintainer email="Roger.Bivand@nhh.no">Roger Bivand</maintainer>
-  <version>2016-11-27</version>
+  <version>2017-04-25</version>
 
   <info>
     <p>Base R includes many functions that can be used for reading,
@@ -546,10 +546,7 @@
       An off-CRAN package
       - <a href="http://www.leg.ufpr.br/Rcitrus/">Rcitrus</a> - is for
       the spatial analysis of plant disease incidence.
-      The <pkg>Geneland</pkg> package uses <pkg>fields</pkg> and 
-      <pkg>RandomFields</pkg> to make use of both geographic and genetic
-      informations to estimate the number of populations in a dataset and
-      delineate their spatial organisation. The <pkg>ngspatial</pkg> package 
+      The <pkg>ngspatial</pkg> package 
       provides tools for analyzing spatial data, especially non-Gaussian 
       areal data. It supports the sparse spatial generalized linear mixed 
       model of Hughes and Haran (2013) and the centered autologistic model 
@@ -593,7 +590,6 @@
     <pkg>gdalUtils</pkg>
     <pkg>gdistance</pkg>
     <pkg>gear</pkg>
-    <pkg>Geneland</pkg>
     <pkg>geoaxe</pkg>
     <pkg>geojson</pkg>
     <pkg>geojsonio</pkg>
