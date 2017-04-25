@@ -298,9 +298,6 @@
       K-function. The <pkg>aspace</pkg> package is a collection of
       functions for estimating centrographic statistcs and computational
       geometries from spatial point patterns.
-      <pkg>spatialkernel</pkg> provides edge-corrected kernel density 
-      estimation and binary kernel
-      regression estimation for multivariate spatial point process data.
       <pkg>DSpat</pkg> contains functions for spatial modelling
       for distance sampling data and <pkg>spatialsegregation</pkg> 
       provides segregation measures for multitype spatial point 
@@ -695,7 +692,6 @@
     <pkg>spatialCovariance</pkg>
     <pkg>SpatialEpi</pkg>
     <pkg>SpatialExtremes</pkg>
-    <pkg>spatialkernel</pkg>
     <pkg>SpatialPosition</pkg>
     <pkg>spatcounts</pkg>
     <pkg>spatgraphs</pkg>
