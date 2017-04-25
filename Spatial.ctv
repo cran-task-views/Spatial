@@ -403,7 +403,10 @@
       autocorrelation for areal data like Moran's I, and functions for
       fitting spatial regression models, such as SAR and CAR models. These
       models assume that the spatial dependence can be described by known
-      weights. The <pkg>SpatialEpi</pkg> package provides implementations of
+      weights. In <pkg>spdep</pkg>, the <code>ME</code> and
+      <code>SpatialFiltering</code> functions provide Moran Eigenvector
+      model fitting, as do more modern functions in the <pkg>spmoran</pkg>
+      package. The <pkg>SpatialEpi</pkg> package provides implementations of
       cluster detection and disease mapping functions, including Bayesian
       cluster detection, and supports strata. The <pkg>smerc</pkg> package
       provides statistical methods for the analysis of data areal data, with
@@ -711,6 +714,7 @@
     <pkg>sphet</pkg>
     <pkg priority="core">splancs</pkg>
     <pkg>splm</pkg>
+    <pkg>spmoran</pkg>
     <pkg>spselect</pkg>
     <pkg>spsurvey</pkg>
     <pkg>spTimer</pkg>
