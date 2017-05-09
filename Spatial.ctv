@@ -2,7 +2,7 @@
   <name>Spatial</name>
   <topic>Analysis of Spatial Data</topic>
   <maintainer email="Roger.Bivand@nhh.no">Roger Bivand</maintainer>
-  <version>2017-04-25</version>
+  <version>2017-05-09</version>
 
   <info>
     <p>Base R includes many functions that can be used for reading,
@@ -531,6 +531,11 @@
       <pkg>tripEstimation</pkg>, basing on the classes provided by
       <pkg>trip</pkg>. <pkg>ncf</pkg> has entered CRAN recently, and
       provides a range of spatial nonparametric covariance functions.
+      The <pkg>spind</pkg> package provides functions for spatial methods
+      based on generalized estimating equations (GEE) and wavelet-revised
+      methods (WRM), functions for scaling by wavelet multiresolution
+      regression (WMRR), conducting multi-model inference, and stepwise model
+      selection.
       <pkg>rangeMapper</pkg> is a package to manipulate species range
       (extent-of-occurrence) maps, mainly tools for easy generation of
       biodiversity (species richness) or life-history traits maps. The
