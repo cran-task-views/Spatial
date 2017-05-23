@@ -334,7 +334,12 @@
       package offers geostatistical modelling facilities using Raster and
       SpatialPoints objects are provided. Non-Gaussian models are fit
       using INLA, and Gaussian geostatistical models use Maximum Likelihood
-      Estimation.</p>
+      Estimation. The <pkg>FRK</pkg> package is a tool for 
+      spatial/spatio-temporal modelling and prediction with large datasets. 
+      The approach, discussed in Cressie and Johannesson (2008), decomposes
+      the field, and hence the covariance function, using a fixed set of n
+      basis functions, where n is typically much smaller than the number of
+      data points (or polygons) m.</p> 
 
       <p>The <pkg>RandomFields</pkg> package provides functions for
       the simulation and analysis of random fields, and variogram
@@ -592,6 +597,7 @@
     <pkg>ExceedanceTools</pkg>
     <pkg>fields</pkg>
     <pkg>FieldSim</pkg>
+    <pkg>FRK</pkg>
     <pkg>gdalUtils</pkg>
     <pkg>gdistance</pkg>
     <pkg>gear</pkg>
