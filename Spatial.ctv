@@ -723,6 +723,7 @@
     <pkg>spgrass6</pkg>
     <pkg>spgwr</pkg>
     <pkg>sphet</pkg>
+    <pkg>spind</pkg>
     <pkg priority="core">splancs</pkg>
     <pkg>splm</pkg>
     <pkg>spmoran</pkg>
