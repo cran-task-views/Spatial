@@ -330,7 +330,9 @@
       The <pkg>geospt</pkg> package contains some geostatistical and radial
       basis functions, including prediction and cross validation. Besides, 
       it includes functions for the design of optimal spatial sampling 
-      networks based on geostatistical modelling. The <pkg>geostatsp</pkg>
+      networks based on geostatistical modelling. <pkg>spsann</pkg> is another
+      package to offer functions to optimize sample configurations, using
+      spatial simulated annealing. The <pkg>geostatsp</pkg>
       package offers geostatistical modelling facilities using Raster and
       SpatialPoints objects are provided. Non-Gaussian models are fit
       using INLA, and Gaussian geostatistical models use Maximum Likelihood
@@ -370,7 +372,11 @@
       manner, and is said to be a quasi reboot of <pkg>SpatialTools</pkg>.
       The <pkg>sperrorest</pkg> package implements spatial error estimation
       and permutation-based spatial variable importance using different
-      spatial cross-validation and spatial block bootstrap methods.</p>
+      spatial cross-validation and spatial block bootstrap methods.
+      The <pkg>spm</pkg> package provides functions for hybrid geostatistical
+      and machine learning methods for spatial predictive modelling. It
+      currently contains two commonly used geostatistical methods, two machine
+      learning methods, four hybrid methods and two averaging methods.</p>
 
       <p>The <pkg>sgeostat</pkg> package
       is also available. Within the same general topical area are
@@ -726,7 +732,9 @@
     <pkg>spind</pkg>
     <pkg priority="core">splancs</pkg>
     <pkg>splm</pkg>
+    <pkg>spm</pkg>
     <pkg>spmoran</pkg>
+    <pkg>spsann</pkg>
     <pkg>spselect</pkg>
     <pkg>spsurvey</pkg>
     <pkg>spTimer</pkg>
