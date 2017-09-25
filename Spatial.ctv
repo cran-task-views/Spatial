@@ -85,7 +85,7 @@
       The <pkg>micromap</pkg> package provides linked micromaps using
       ggplot2. The <pkg>recmap</pkg> package provides rectangular 
       cartograms with rectangle sizes reflecting for example population; the 
-      <pkg>statebins</pkg> privides a simpler binning approach to US states.
+      <pkg>statebins</pkg> provides a simpler binning approach to US states.
       The <pkg>spacetime</pkg> package 
       extends the shared classes defined in <pkg>sp</pkg> for 
       spatio-temporal data (see <a href="http://www.jstatsoft.org/v51/i07">Spatio-Temporal Data in R</a>). The <pkg>Grid2Polygons</pkg> converts a 
@@ -241,7 +241,7 @@
       be modified or extended using the <code>colorRampPalette</code>
       function provided with R. The <pkg>classInt</pkg> package provides
       functions for choosing class intervals for thematic cartography.
-      The <pkg>tmap</pkg> package proveds a modern basis for thematic mapping
+      The <pkg>tmap</pkg> package provides a modern basis for thematic mapping
       optionally using a Grammar of Graphics syntax. Because it has a custom
       grid graphics platform, it obviates the need to fortify geometries to 
       use with ggplot2. The <pkg>mapview</pkg> package provides methods to
@@ -296,7 +296,7 @@
       also be of interest. The <pkg>ads</pkg> package perform first-
       and second-order multi-scale analyses derived from Ripley's
       K-function. The <pkg>aspace</pkg> package is a collection of
-      functions for estimating centrographic statistcs and computational
+      functions for estimating centrographic statistics and computational
       geometries from spatial point patterns.
       <pkg>DSpat</pkg> contains functions for spatial modelling
       for distance sampling data and <pkg>spatialsegregation</pkg> 
