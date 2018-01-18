@@ -19,7 +19,7 @@
     is posted on the R-Forge rspatial project 
     <a href="http://rspatial.R-Forge.R-project.org/">website</a>, including
     a visualisation gallery. Active development of <pkg>sp</pkg> is 
-    continuing on <a href="https://github.com/edzer/sp">Github</a>.</p>
+    continuing on <github>edzer/sp</github>.</p>
 
     <p>The contributed packages address two broad areas: moving spatial data
     into and out of R, and analysing spatial data in R.</p>
@@ -54,7 +54,7 @@
       News</a>.  
 
       A new package called <pkg>sf</pkg> is now on CRAN, and is being
-      actively developed on <a href="https://github.com/edzer/sfr">GitHub</a>,
+      actively developed on <github>edzer/sfr</github>,
       providing Simple Features for R. The development of the package is
       being supported by the R Consortium. It provides simple features access
       for vector data, and as such is a modern implementation of parts of 
