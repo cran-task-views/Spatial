@@ -2,7 +2,7 @@
   <name>Spatial</name>
   <topic>Analysis of Spatial Data</topic>
   <maintainer email="Roger.Bivand@nhh.no">Roger Bivand</maintainer>
-  <version>2018-01-24</version>
+  <version>2018-03-26</version>
 
   <info>
     <p>Base R includes many functions that can be used for reading,
@@ -499,9 +499,8 @@
       techniques can be used for maximum likelihood fits, while spatial two
       stage least squares and generalised method of moments estimators are
       an alternative. When using GMM, <pkg>sphet</pkg> can be used to 
-      accommodate both autocorrelation and heteroskedasticity. Spatial 
-      count regression is provided using custom MCMC
-      by <pkg>spatcounts</pkg>. The <pkg>McSpatial</pkg> provides functions 
+      accommodate both autocorrelation and heteroskedasticity.
+      The <pkg>McSpatial</pkg> provides functions 
       for locally weighted regression, semiparametric and conditionally 
       parametric regression, fourier and cubic spline functions, GMM and 
       linearized spatial logit and probit, k-density functions and 
@@ -709,7 +708,6 @@
     <pkg>SpatialEpi</pkg>
     <pkg>SpatialExtremes</pkg>
     <pkg>SpatialPosition</pkg>
-    <pkg>spatcounts</pkg>
     <pkg>spatgraphs</pkg>
     <pkg>spatialprobit</pkg>
     <pkg>spatialsegregation</pkg>
