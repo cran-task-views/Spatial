@@ -2,7 +2,7 @@
   <name>Spatial</name>
   <topic>Analysis of Spatial Data</topic>
   <maintainer email="Roger.Bivand@nhh.no">Roger Bivand</maintainer>
-  <version>2018-03-26</version>
+  <version>2018-04-02</version>
 
   <info>
     <p>Base R includes many functions that can be used for reading,
@@ -108,9 +108,6 @@
       of distances and routes on geographic grids. <pkg>geosphere</pkg>
       permits computations of distance and area 
       to be carried out on spatial data in geographical coordinates. 
-      The <pkg>dggridR</pkg> package provides an interface to DGGRID for
-      working with discrete global grids, using hexagons, triangles, and
-      diamonds to overcome the issue that every bin have the same area.
       The <pkg>spsurvey</pkg> package provides a
       range of sampling functions. The <pkg>trip</pkg> package extends sp
       classes to permit the accessing and manipulating of spatial data for
@@ -593,7 +590,6 @@
     <pkg>dbmss</pkg>
     <pkg priority="core">DCluster</pkg>
     <pkg priority="core">deldir</pkg>
-    <pkg priority="core">dggridR</pkg>
     <pkg>diseasemapping</pkg>
     <pkg>DSpat</pkg>
     <pkg>ecespa</pkg>
