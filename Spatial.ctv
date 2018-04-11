@@ -2,7 +2,7 @@
   <name>Spatial</name>
   <topic>Analysis of Spatial Data</topic>
   <maintainer email="Roger.Bivand@nhh.no">Roger Bivand</maintainer>
-  <version>2018-04-02</version>
+  <version>2018-04-11</version>
 
   <info>
     <p>Base R includes many functions that can be used for reading,
@@ -524,7 +524,7 @@
       <li><p><b>Ecological analysis</b>: There are many packages
       for analysing ecological and environmental data. They include
       <pkg>ade4</pkg> for exploratory and Euclidean methods in the
-      environmental sciences,  the <pkg>adehabitat</pkg> family of packages 
+      environmental sciences,  the adehabitat family of packages 
       for the analysis of habitat selection by animals
       (<pkg>adehabitatHR</pkg>, <pkg>adehabitatHS</pkg>,
       <pkg>adehabitatLT</pkg>, and <pkg>adehabitatMA</pkg>),
@@ -569,7 +569,6 @@
 
   <packagelist>
     <pkg>ade4</pkg>
-    <pkg>adehabitat</pkg>
     <pkg>adehabitatHR</pkg>
     <pkg>adehabitatHS</pkg>
     <pkg>adehabitatLT</pkg>
