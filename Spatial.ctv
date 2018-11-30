@@ -2,7 +2,7 @@
   <name>Spatial</name>
   <topic>Analysis of Spatial Data</topic>
   <maintainer email="Roger.Bivand@nhh.no">Roger Bivand</maintainer>
-  <version>2018-11-27</version>
+  <version>2018-11-30</version>
 
   <info>
     <p>Base R includes many functions that can be used for reading,
@@ -85,8 +85,6 @@
       <pkg>shp2graph</pkg>.</li>
 	  <li>The <pkg>spacetime</pkg> package extends the shared classes defined in <pkg>sp</pkg> for 
       spatio-temporal data (see <a href="http://www.jstatsoft.org/v51/i07">Spatio-Temporal Data in R</a>).</li>
-	  <li><pkg>Grid2Polygons</pkg> converts a  spatial object from class 
-	  SpatialGridDataFrame to SpatialPolygonsDataFrame.</li>
 	  <li><pkg>maptools</pkg> provides conversion functions between
       <pkg>PBSmapping</pkg> and <pkg>spatstat</pkg> and sp classes,
       in addition to <pkg>maps</pkg> databases and sp classes.</li>
@@ -756,7 +754,6 @@
     <pkg>ggsn</pkg>
     <pkg>glmmBUGS</pkg>
     <pkg>gmt</pkg>
-    <pkg>Grid2Polygons</pkg>
     <pkg>GriegSmith</pkg>
     <pkg priority="core">gstat</pkg>
     <pkg>Guerry</pkg>
