@@ -19,7 +19,7 @@
     <a href="https://github.com/r-spatial">r-spatial</a>, others including
     <pkg>raster</pkg> under <a href="https://github.com/rspatial">rspatial</a>.
     Maintenance of the <pkg>sp</pkg> is continuing here:
-    <github>edzer/sp</github>.</p>
+    <github>edzer/sp</github>.
     Another set of locations for the development and maintenance of packages on 
     <a href="https://R-Forge.R-project.org/">
     R-Forge</a>, which lists "Spatial Data and Statistics" projects in its
