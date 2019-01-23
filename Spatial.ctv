@@ -2,7 +2,7 @@
   <name>Spatial</name>
   <topic>Analysis of Spatial Data</topic>
   <maintainer email="Roger.Bivand@nhh.no">Roger Bivand</maintainer>
-  <version>2018-12-23</version>
+  <version>2019-01-23</version>
 
   <info>
     <p>Base R includes many functions that can be used for reading,
@@ -596,8 +596,7 @@
       effects, which are assigned a conditional autoregressive (CAR) prior 
       distribution. Examples of the models included are the BYM model as 
       well as a recently developed localised spatial smoothing model.
-      The <pkg>glmmBUGS</pkg> package is a helpful way of passing out spatial
-      models to WinBUGS. The <pkg>spaMM</pkg> package fits spatial GLMMs,
+      The <pkg>spaMM</pkg> package fits spatial GLMMs,
       using the Matern correlation function as the basic model for spatial
       random effects. The <pkg>PReMiuM</pkg> package is for profile 
       regression, which is a Dirichlet process Bayesian clustering model;
@@ -775,7 +774,6 @@
     <pkg>geostatsp</pkg>
     <pkg>ggmap</pkg>
     <pkg>ggsn</pkg>
-    <pkg>glmmBUGS</pkg>
     <pkg>gmt</pkg>
     <pkg>inlmisc</pkg>
     <pkg>GriegSmith</pkg>
