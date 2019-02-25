@@ -2,7 +2,7 @@
   <name>Spatial</name>
   <topic>Analysis of Spatial Data</topic>
   <maintainer email="Roger.Bivand@nhh.no">Roger Bivand</maintainer>
-  <version>2019-01-23</version>
+  <version>2019-02-25</version>
 
   <info>
     <p>Base R includes many functions that can be used for reading,
@@ -10,7 +10,7 @@
     "geographical" spatial data, where observations can be identified
     with geographical locations, and where additional information about
     these locations may be retrieved if the location is recorded with
-    care.</p>
+    care. 
     
     <p>Base R functions are complemented by contributed packages,
     some of which are on CRAN, and others are still in development.
@@ -19,7 +19,7 @@
     <a href="https://github.com/r-spatial">r-spatial</a>, others including
     <pkg>raster</pkg> under <a href="https://github.com/rspatial">rspatial</a>.
     Maintenance of the <pkg>sp</pkg> is continuing here:
-    <github>edzer/sp</github>.
+    <github>edzer/sp</github>.</p>
     Another set of locations for the development and maintenance of packages on 
     <a href="https://R-Forge.R-project.org/">
     R-Forge</a>, which lists "Spatial Data and Statistics" projects in its
@@ -70,7 +70,7 @@
       <a href="http://CRAN.R-project.org/doc/Rnews/Rnews_2005-2.pdf">R
       News</a>.</li>  
       <li><pkg>sf</pkg> is a newer package now on CRAN, and is being
-      actively developed here: <github>rspatial/sf</github>,
+      actively developed here: <github>r-spatial/sf</github>,
       providing Simple Features for R, in compliance with the 
       <a href="http://www.opengeospatial.org/standards/sfa">OGC Simple Feature</a> standard. 
       The development of the package is being supported by the 
@@ -88,6 +88,8 @@
       <pkg>shp2graph</pkg>.</li>
       <li>The <pkg>spacetime</pkg> package extends the shared classes defined in <pkg>sp</pkg> for 
       spatio-temporal data (see <a href="http://www.jstatsoft.org/v51/i07">Spatio-Temporal Data in R</a>).</li>
+      <li> The <pkg>rcosmo</pkg> package provides simple access to spherical and HEALPix data. It extends
+      standard dataframes for HEALPix-type data.</li>
       <li><pkg>inlmisc</pkg> has followed on from Grid2Polygons and converts a  spatial object from class 
       SpatialGridDataFrame to SpatialPolygonsDataFrame among many other possibilities.</li>
       <li><pkg>maptools</pkg> provides conversion functions between
@@ -270,6 +272,10 @@
       data from different sources, to work with the data in common R manner, 
       and to convert data into available infrastructure provided by 
       existing R packages.</li>
+      <li><pkg>tidycensus</pkg> provides access to US Census Bureau data in a tidy format,
+      including the option to bind the data spatially on import. </li>
+      <li><pkg>tigris</pkg> provides access to cartographic elements provided by the US
+      Census Bureau TIGER, including cartographic boundaries, roads, and water.</li>
     </ul>
     
     <h2 id="handling-spatial-data">Handling spatial data</h2>  
@@ -311,6 +317,11 @@
       convenience functions, and some interesting spatial functions.</li>
       <li><pkg>geoaxe</pkg>allows users to split 'geospatial' objects into pieces.</li>
       <li>The <pkg>lawn</pkg> package is a client for 'Turfjs' for 'geospatial'analysis.</li>
+      <li>The <pkg>rcosmo</pkg> package offers various tools for geometric transformations, 
+      computations, and statistical analysis of spherical data.</li>
+      <li>The <pkg>areal</pkg> package can be used to interpolate overlapping but incongruent polygons,
+      also known as areal weighted interpolation.</li>
+      <li>The <pkg>qualmap</pkg> package can be used to digitize qualitative GIS data.</li>
     </ul>      
         
     <p><strong>Data processing - raster and imagery data</strong></p>    
@@ -341,8 +352,13 @@
       <li><pkg>RColorBrewer</pkg> provides very useful colour palettes that may
       be modified or extended using the <code>colorRampPalette</code>
       function provided with R.</li>
+      <li><pkg>viridis</pkg> also provides colour palettes designed with consideration
+      for colorblindness and printing in grayscale.</li>
       <li><pkg>classInt</pkg> package provides
       functions for choosing class intervals for thematic cartography.</li>
+      <li><pkg>rcosmo</pkg> package provides several tools to interactively 
+      visualize HEALPix data, in particular, to plot data in 
+      arbitrary spherical windows.</li>
     </ul>
     
     <p><strong>Thematic cartography packages</strong></p>
@@ -383,6 +399,7 @@
       Earth.</li>
       <li><pkg>ggmap</pkg> may be used for spatial visualisation with Google Maps 
       and OpenStreetMap;<pkg>ggsn</pkg> provides North arrows and scales for such maps.</li>
+      <li><pkg>mapedit</pkg> provides an R shiny widget based on <pkg>leaflet</pkg> for editing or creating sf geometries.</li>
     </ul>
     
     <p><strong>Building Cartograms</strong></p>    
@@ -472,7 +489,11 @@
       package offers geostatistical modelling facilities using Raster and
       SpatialPoints objects are provided. Non-Gaussian models are fit
       using INLA, and Gaussian geostatistical models use Maximum Likelihood
-      Estimation. The <pkg>FRK</pkg> package is a tool for 
+      Estimation.  The <pkg>rcosmo</pkg> package offers various geostatistics
+      methods for spherical data: descriptive statistics, entropy based 
+      methods, covariance-variogram methods, etc. Most of rcosmo features 
+      were developed for Cosmic Microwave Background data, but they can 
+      also be used for any spherical data. The <pkg>FRK</pkg> package is a tool for 
       spatial/spatio-temporal modelling and prediction with large datasets. 
       The approach, discussed in Cressie and Johannesson (2008), decomposes
       the field, and hence the covariance function, using a fixed set of n
@@ -731,6 +752,7 @@
     <pkg>ads</pkg>
     <pkg>akima</pkg>
     <pkg>AMOEBA</pkg>
+    <pkg>areal</pkg>
     <pkg>aspace</pkg>
     <pkg>ash</pkg>
     <pkg>automap</pkg>
@@ -795,6 +817,7 @@
     <pkg>lwgeom</pkg>
     <pkg>magclass</pkg>
     <pkg>mapdata</pkg>
+    <pkg>mapedit</pkg>
     <pkg>mapmisc</pkg>
     <pkg>mapproj</pkg>
     <pkg>maps</pkg>
@@ -829,6 +852,7 @@
     <pkg priority="core">raster</pkg>
     <pkg>rasterVis</pkg>
     <pkg priority="core">RColorBrewer</pkg>
+    <pkg>rcosmo</pkg>
     <pkg>recmap</pkg>
     <pkg>regress</pkg>
     <pkg>rgbif</pkg>
@@ -899,6 +923,8 @@
     <pkg>stplanr</pkg>
     <pkg>taRifx</pkg>
     <pkg>tgp</pkg>
+    <pkg>tidycensus</pkg>
+    <pkg>tigris</pkg>
     <pkg>trip</pkg>
     <pkg>tripEstimation</pkg>
     <pkg>tripack</pkg>
@@ -908,8 +934,10 @@
     <pkg>vardiag</pkg>
     <pkg>vec2dtransf</pkg>
     <pkg>vegan</pkg>
+    <pkg>viridis</pkg>
     <pkg>Watersheds</pkg>
     <pkg>wkb</pkg>
+    <pkg>qualmap</pkg>
   </packagelist>
 
     
