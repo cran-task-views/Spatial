@@ -2,7 +2,7 @@
   <name>Spatial</name>
   <topic>Analysis of Spatial Data</topic>
   <maintainer email="Roger.Bivand@nhh.no">Roger Bivand</maintainer>
-  <version>2019-02-25</version>
+  <version>2019-04-06</version>
 
   <info>
     <p>Base R includes many functions that can be used for reading,
@@ -10,7 +10,7 @@
     "geographical" spatial data, where observations can be identified
     with geographical locations, and where additional information about
     these locations may be retrieved if the location is recorded with
-    care.</p>
+    care. 
     
     <p>Base R functions are complemented by contributed packages,
     some of which are on CRAN, and others are still in development.
@@ -19,7 +19,7 @@
     <a href="https://github.com/r-spatial">r-spatial</a>, others including
     <pkg>raster</pkg> under <a href="https://github.com/rspatial">rspatial</a>.
     Maintenance of the <pkg>sp</pkg> is continuing here:
-    <github>edzer/sp</github>.
+    <github>edzer/sp</github>.</p>
     Another set of locations for the development and maintenance of packages on 
     <a href="https://R-Forge.R-project.org/">
     R-Forge</a>, which lists "Spatial Data and Statistics" projects in its
@@ -569,10 +569,11 @@
       spatial clusters of diseases. It extends and  depends on the
       <pkg>spdep</pkg> package, which provides basic functions for
       building neighbour lists and spatial weights, tests for spatial
-      autocorrelation for areal data like Moran's I, and functions for
-      fitting spatial regression models, such as SAR and CAR models. These
+      autocorrelation for areal data like Moran's I. Functions for
+      fitting spatial regression models, such as SAR and CAR models prior to
+      version 1.1-1 are now in <pkg>spatialreg</pkg>. These
       models assume that the spatial dependence can be described by known
-      weights. In <pkg>spdep</pkg>, the <code>ME</code> and
+      weights. In <pkg>spatialreg</pkg>, the <code>ME</code> and
       <code>SpatialFiltering</code> functions provide Moran Eigenvector
       model fitting, as do more modern functions in the <pkg>spmoran</pkg>
       package. The <pkg>SpatialEpi</pkg> package provides implementations of
@@ -648,16 +649,18 @@
       and the spatial process is continuous, geostatistical methods may be 
       used, or functions in the <pkg>nlme</pkg> package. If the support
       is areal, and the spatial process is not being treated as continuous,
-      functions provided in the <pkg>spdep</pkg> package may be used.
+      functions provided in the <pkg>spatialreg</pkg> package may be used.
       This package can also be seen as providing spatial econometrics
       functions, and, as noted above, provides basic functions for
       building neighbour lists and spatial weights, tests for spatial
       autocorrelation for areal data like Moran's I, and functions for
-      fitting spatial regression models. It provides the full range of
+      fitting spatial regression models. <pkg>spdep</pkg> provides the full 
+      range of
       local indicators of spatial association, such as local Moran's I and
       diagnostic tools for fitted linear models, including Lagrange
       Multiplier tests. Spatial regression models that can be fitted using
-      maximum likelihood include spatial lag models, spatial error models,
+      maximum likelihood and Bayesian MCMC methods in <pkg>spatialreg</pkg>
+      include spatial lag models, spatial error models,
       and spatial Durbin models. For larger data sets, sparse matrix 
       techniques can be used for maximum likelihood fits, while spatial 
       two-stage least squares and generalised method of moments estimators are
@@ -893,6 +896,7 @@
     <pkg>SpatialPosition</pkg>
     <pkg>spatgraphs</pkg>
     <pkg>spatialprobit</pkg>
+    <pkg priority="core">spatialreg</pkg>
     <pkg>spatialsegregation</pkg>
     <pkg>spatial.tools</pkg>
     <pkg>SpatialTools</pkg>
