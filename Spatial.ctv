@@ -10,7 +10,7 @@
     "geographical" spatial data, where observations can be identified
     with geographical locations, and where additional information about
     these locations may be retrieved if the location is recorded with
-    care. 
+    care.</p>
     
     <p>Base R functions are complemented by contributed packages,
     some of which are on CRAN, and others are still in development.
