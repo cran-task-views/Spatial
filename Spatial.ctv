@@ -20,13 +20,14 @@
     <pkg>raster</pkg> under <a href="https://github.com/rspatial">rspatial</a>.
     Maintenance of the <pkg>sp</pkg> is continuing here:
     <github>edzer/sp</github>.</p>
-    Another set of locations for the development and maintenance of packages on 
+
+    <p>Another set of locations for the development and maintenance of packages on 
     <a href="https://R-Forge.R-project.org/">
     R-Forge</a>, which lists "Spatial Data and Statistics" projects in its
     <a href="https://R-Forge.R-project.org/softwaremap/trove_list.php">project
     tree</a>. Information on R-spatial packages was until 2016 posted on the R-Forge rspatial project 
     <a href="https://rspatial.R-Forge.R-project.org/">website</a>, including
-    a visualisation gallery. </p>
+    a visualisation gallery.</p>
 
     <p>The contributed packages address two broad areas: moving spatial data
     into and out of R, and analysing spatial data in R.</p>
@@ -61,7 +62,7 @@
     functions for spatial data.</p>
       
     <p>Complementary initiatives are ongoing to support better handling of
-    geographic metadata in R</p>
+    geographic metadata in R.</p>
       
     <p><strong>Spatial data - general</strong></p>
     <ul>
