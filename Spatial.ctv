@@ -2,7 +2,7 @@
   <name>Spatial</name>
   <topic>Analysis of Spatial Data</topic>
   <maintainer email="Roger.Bivand@nhh.no">Roger Bivand</maintainer>
-  <version>2019-04-06</version>
+  <version>2019-06-08</version>
 
   <info>
     <p>Base R includes many functions that can be used for reading,
@@ -525,9 +525,7 @@
       package has an emphasis on kriging, and provides functions for 
       prediction and simulation. It is extended by <pkg>ExceedanceTools</pkg>,
       which provides tools for constructing confidence regions for exceedance
-      regions and contour lines. The <pkg>gear</pkg> package implements
-      common geostatistical methods in a clean, straightforward, efficient
-      manner, and is said to be a quasi reboot of <pkg>SpatialTools</pkg>.
+      regions and contour lines. 
       The <pkg>sperrorest</pkg> package implements spatial error estimation
       and permutation-based spatial variable importance using different
       spatial cross-validation and spatial block bootstrap methods.
@@ -780,7 +778,6 @@
     <pkg>FRK</pkg>
     <pkg>gdalUtils</pkg>
     <pkg>gdistance</pkg>
-    <pkg>gear</pkg>
     <pkg>geoaxe</pkg>
     <pkg>geogrid</pkg>
     <pkg>geojson</pkg>
