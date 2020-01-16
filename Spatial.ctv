@@ -501,9 +501,7 @@
       <p>The <pkg>RandomFields</pkg> package provides functions for
       the simulation and analysis of random fields, and variogram
       model descriptions can be passed between <pkg>geoR</pkg>,
-      <pkg>gstat</pkg> and this package. <pkg>SpatialExtremes</pkg>
-      proposes several approaches for spatial extremes modelling
-      using <pkg>RandomFields</pkg>. In addition, <pkg>CompRandFld</pkg>, 
+      <pkg>gstat</pkg> and this package. In addition, <pkg>CompRandFld</pkg>, 
       <pkg>constrainedKriging</pkg> and <pkg>geospt</pkg> provide 
       alternative approaches to geostatistical modelling. The 
       <pkg>spTimer</pkg> package  is able to fit, spatially predict and 
@@ -886,7 +884,6 @@
     <pkg>spatial</pkg>
     <pkg>spatialCovariance</pkg>
     <pkg>SpatialEpi</pkg>
-    <pkg>SpatialExtremes</pkg>
     <pkg>SpatialPosition</pkg>
     <pkg>spatgraphs</pkg>
     <pkg>spatialprobit</pkg>
