@@ -2,7 +2,7 @@
   <name>Spatial</name>
   <topic>Analysis of Spatial Data</topic>
   <maintainer email="Roger.Bivand@nhh.no">Roger Bivand</maintainer>
-  <version>2019-06-08</version>
+  <version>2020-01-16</version>
 
   <info>
     <p>Base R includes many functions that can be used for reading,
@@ -392,9 +392,6 @@
       <li><pkg>RgoogleMaps</pkg> package for accessing 
       Google Maps(TM) may be useful if the user wishes to place a map backdrop 
       behind other displays.</li>
-      <li><pkg>plotGoogleMaps</pkg> package provides methods for the 
-      visualisation of spatial and spatio-temporal objects in Google Maps in
-      a web browser.</li>
       <li><pkg>plotKML</pkg> is a package providing methods for
       the visualisation of spatial and spatio-temporal objects in Google
       Earth.</li>
@@ -840,7 +837,6 @@
     <pkg>ows4R</pkg>
     <pkg>PBSmapping</pkg>
     <pkg>PBSmodelling</pkg>
-    <pkg>plotGoogleMaps</pkg>
     <pkg>plotKML</pkg>
     <pkg>postGIStools</pkg>
     <pkg>PReMiuM</pkg>
