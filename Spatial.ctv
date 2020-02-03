@@ -2,7 +2,7 @@
   <name>Spatial</name>
   <topic>Analysis of Spatial Data</topic>
   <maintainer email="Roger.Bivand@nhh.no">Roger Bivand</maintainer>
-  <version>2020-02-02</version>
+  <version>2020-02-03</version>
 
   <info>
     <p>Base R includes many functions that can be used for reading,
@@ -537,8 +537,7 @@
       data interpolation with multilevel B-splines. In addition,
       there are the <pkg>spatialCovariance</pkg> package, which
       supports the computation of spatial covariance matrices
-      for data on rectangles, the <pkg>regress</pkg> package
-      building in part on <pkg>spatialCovariance</pkg>, and the
+      for data on rectangles and the
       <pkg>tgp</pkg> package. The <pkg>Stem</pkg> package provides
       for the estimation of the parameters of a spatio-temporal
       model using the EM algorithm, and the estimation of the
@@ -844,7 +843,6 @@
     <pkg priority="core">RColorBrewer</pkg>
     <pkg>rcosmo</pkg>
     <pkg>recmap</pkg>
-    <pkg>regress</pkg>
     <pkg>rgbif</pkg>
     <pkg priority="core">rgdal</pkg>
     <pkg priority="core">rgeos</pkg>
