@@ -89,8 +89,6 @@
       <pkg>shp2graph</pkg>.</li>
       <li>The <pkg>spacetime</pkg> package extends the shared classes defined in <pkg>sp</pkg> for 
       spatio-temporal data (see <a href="http://www.jstatsoft.org/v51/i07">Spatio-Temporal Data in R</a>).</li>
-      <li> The <pkg>rcosmo</pkg> package provides simple access to spherical and HEALPix data. It extends
-      standard dataframes for HEALPix-type data.</li>
       <li><pkg>inlmisc</pkg> has followed on from Grid2Polygons and converts a  spatial object from class 
       SpatialGridDataFrame to SpatialPolygonsDataFrame among many other possibilities.</li>
       <li><pkg>maptools</pkg> provides conversion functions between
@@ -318,8 +316,6 @@
       convenience functions, and some interesting spatial functions.</li>
       <li><pkg>geoaxe</pkg>allows users to split 'geospatial' objects into pieces.</li>
       <li>The <pkg>lawn</pkg> package is a client for 'Turfjs' for 'geospatial'analysis.</li>
-      <li>The <pkg>rcosmo</pkg> package offers various tools for geometric transformations, 
-      computations, and statistical analysis of spherical data.</li>
       <li>The <pkg>areal</pkg> package can be used to interpolate overlapping but incongruent polygons,
       also known as areal weighted interpolation.</li>
       <li>The <pkg>qualmap</pkg> package can be used to digitize qualitative GIS data.</li>
@@ -357,9 +353,6 @@
       for colorblindness and printing in grayscale.</li>
       <li><pkg>classInt</pkg> package provides
       functions for choosing class intervals for thematic cartography.</li>
-      <li><pkg>rcosmo</pkg> package provides several tools to interactively 
-      visualize HEALPix data, in particular, to plot data in 
-      arbitrary spherical windows.</li>
     </ul>
     
     <p><strong>Thematic cartography packages</strong></p>
@@ -487,11 +480,7 @@
       package offers geostatistical modelling facilities using Raster and
       SpatialPoints objects are provided. Non-Gaussian models are fit
       using INLA, and Gaussian geostatistical models use Maximum Likelihood
-      Estimation.  The <pkg>rcosmo</pkg> package offers various geostatistics
-      methods for spherical data: descriptive statistics, entropy based 
-      methods, covariance-variogram methods, etc. Most of rcosmo features 
-      were developed for Cosmic Microwave Background data, but they can 
-      also be used for any spherical data. The <pkg>FRK</pkg> package is a tool for 
+      Estimation.  The <pkg>FRK</pkg> package is a tool for 
       spatial/spatio-temporal modelling and prediction with large datasets. 
       The approach, discussed in Cressie and Johannesson (2008), decomposes
       the field, and hence the covariance function, using a fixed set of n
@@ -840,7 +829,6 @@
     <pkg priority="core">raster</pkg>
     <pkg>rasterVis</pkg>
     <pkg priority="core">RColorBrewer</pkg>
-    <pkg>rcosmo</pkg>
     <pkg>recmap</pkg>
     <pkg>rgbif</pkg>
     <pkg priority="core">rgdal</pkg>
