@@ -2,7 +2,7 @@
   <name>Spatial</name>
   <topic>Analysis of Spatial Data</topic>
   <maintainer email="Roger.Bivand@nhh.no">Roger Bivand</maintainer>
-  <version>2020-02-03</version>
+  <version>2020-02-04</version>
 
   <info>
     <p>Base R includes many functions that can be used for reading,
@@ -467,7 +467,7 @@
       <p>The <pkg>gstat</pkg> package
       provides a wide range of functions for univariate and multivariate
       geostatistics, also for larger datasets, while <pkg>geoR</pkg>
-      and <pkg>geoRglm</pkg> contain functions for model-based
+      contains functions for model-based
       geostatistics. Variogram diagnostics may be carried out with 
       <pkg>vardiag</pkg>. Automated interpolation using <pkg>gstat</pkg>
       is available in <pkg>automap</pkg>. This family of packages is
@@ -777,7 +777,6 @@
     <pkg>geonames</pkg>
     <pkg>georob</pkg>
     <pkg priority="core">geoR</pkg>
-    <pkg>geoRglm</pkg>
     <pkg>geonapi</pkg>
     <pkg>geosapi</pkg>
     <pkg>geospacom</pkg>
