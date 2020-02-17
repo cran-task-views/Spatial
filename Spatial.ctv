@@ -2,7 +2,7 @@
   <name>Spatial</name>
   <topic>Analysis of Spatial Data</topic>
   <maintainer email="Roger.Bivand@nhh.no">Roger Bivand</maintainer>
-  <version>2020-02-04</version>
+  <version>2020-02-17</version>
 
   <info>
     <p>Base R includes many functions that can be used for reading,
@@ -607,9 +607,7 @@
       it provides a spatial CAR term that can be included in the fixed
       effects (which are global, ie. non-cluster specific, parameters)
       to account for any spatial correlation in the residuals.
-      The <pkg>geospacom</pkg> package generates
-      distance matrices from shape files and represents spatially weighted
-      multilevel analysis results. Spatial survival analysis is provided by
+      Spatial survival analysis is provided by
       the <pkg>spatsurv</pkg> - Bayesian inference for parametric proportional
       hazards spatial survival models - and <pkg>spBayesSurv</pkg> - Bayesian
       Modeling and Analysis of Spatially Correlated Survival Data - packages.
@@ -768,7 +766,6 @@
     <pkg priority="core">geoR</pkg>
     <pkg>geonapi</pkg>
     <pkg>geosapi</pkg>
-    <pkg>geospacom</pkg>
     <pkg>geosphere</pkg>
     <pkg>geospt</pkg>
     <pkg>geostatsp</pkg>
