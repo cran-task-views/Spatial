@@ -2,7 +2,7 @@
   <name>Spatial</name>
   <topic>Analysis of Spatial Data</topic>
   <maintainer email="Roger.Bivand@nhh.no">Roger Bivand</maintainer>
-  <version>2020-02-17</version>
+  <version>2020-02-20</version>
 
   <info>
     <p>Base R includes many functions that can be used for reading,
@@ -653,9 +653,7 @@
       fitting spatial panel data by maximum likelihood and GM. The two 
       small packages <pkg>S2sls</pkg> and <pkg>spanel</pkg> provide 
       alternative implementations without most of the facilities of 
-      <pkg>splm</pkg>. The <pkg>HSAR</pkg> package provides Hierarchical
-      Spatial Autoregressive Models (HSAR), based on a Bayesian Markov Chain
-      Monte Carlo (MCMC) algorithm.
+      <pkg>splm</pkg>.
       <pkg>spatialprobit</pkg> make possible Bayesian estimation of the 
       spatial autoregressive probit model (SAR probit model). The 
       <pkg>ProbitSpatial</pkg> package provides methods for fitting Binomial
@@ -778,7 +776,6 @@
     <pkg>Guerry</pkg>
     <pkg>GWmodel</pkg>
     <pkg>gwrr</pkg>
-    <pkg>HSAR</pkg>
     <pkg>igraph</pkg>
     <pkg>intamap</pkg>
     <pkg>ipdw</pkg>
