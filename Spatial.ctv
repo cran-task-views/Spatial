@@ -2,7 +2,7 @@
   <name>Spatial</name>
   <topic>Analysis of Spatial Data</topic>
   <maintainer email="Roger.Bivand@nhh.no">Roger Bivand</maintainer>
-  <version>2020-02-20</version>
+  <version>2020-02-21</version>
 
   <info>
     <p>Base R includes many functions that can be used for reading,
@@ -583,16 +583,6 @@
       robust, local ridge, heteroskedastic, mixed, multiscale, generalised 
       and space-time GWR; GW summary statistics, GW PCA and GW discriminant analysis; 
       associated tests and diagnostics; and options for a range of distance metrics. 
-      The <pkg>lctools</pkg> package provides researchers and educators with easy-to-learn user
-      friendly tools for calculating key spatial statistics and to apply
-      simple as well as advanced methods of spatial analysis in real data.
-      These include: Local Pearson and Geographically Weighted Pearson
-      Correlation Coefficients, Spatial Inequality Measures (Gini, Spatial
-      Gini, LQ, Focal LQ), Spatial Autocorrelation (Global and Local
-      Moran's I), several Geographically Weighted Regression techniques and
-      other Spatial Analysis tools (other geographically weighted statistics).
-      This package also contains functions for measuring the significance of
-      each statistic calculated, mainly based on Monte Carlo simulations.
       The <pkg>sparr</pkg> package provides another
       approach to relative risks. The <pkg>CARBayes</pkg> package 
       implements Bayesian hierarchical spatial areal unit models. In 
@@ -783,7 +773,6 @@
     <pkg>landscapemetrics</pkg>
     <pkg>latticeDensity</pkg>
     <pkg>lawn</pkg>
-    <pkg>lctools</pkg>
     <pkg>leaflet</pkg>
     <pkg>leafletR</pkg>
     <pkg>lwgeom</pkg>
