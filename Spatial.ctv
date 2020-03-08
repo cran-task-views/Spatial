@@ -2,7 +2,7 @@
   <name>Spatial</name>
   <topic>Analysis of Spatial Data</topic>
   <maintainer email="Roger.Bivand@nhh.no">Roger Bivand</maintainer>
-  <version>2020-03-04</version>
+  <version>2020-03-09</version>
 
   <info>
     <p>Base R includes many functions that can be used for reading,
@@ -449,10 +449,7 @@
       distance, including classical ones (Ripley's K and others) and more 
       recent ones used by spatial economists (Duranton and Overman's Kd, 
       Marcon and Puech's M). It relies on spatstat for core 
-      calculation. <pkg>latticeDensity</pkg> contains functions that compute
-      the lattice-based density estimator of Barry and McIntyre, which
-      accounts for point processes in two-dimensional regions with
-      irregular boundaries and holes.</p>
+      calculation.</p>
 
     <p><strong>Geostatistics</strong></p>  
       
@@ -770,7 +767,6 @@
     <pkg>ipdw</pkg>
     <pkg>landsat</pkg>
     <pkg>landscapemetrics</pkg>
-    <pkg>latticeDensity</pkg>
     <pkg>lawn</pkg>
     <pkg>leaflet</pkg>
     <pkg>leafletR</pkg>
