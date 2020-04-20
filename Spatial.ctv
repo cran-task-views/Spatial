@@ -204,11 +204,11 @@
       <pkg>rgdal</pkg> for exchanging data. 
       For GRASS 6.*, use <pkg>spgrass6</pkg>.</li>
       <li><em>SAGA:</em><pkg>RSAGA</pkg> is a similar shell-based wrapper for SAGA commands.</li>
-      <li><em>Quantum GIS (QGIS):</em><pkg>RQGIS</pkg>
-      package establishes an interface between R and QGIS, i.e. it allows
+      <li><em>Quantum GIS (QGIS):</em>QGIS2 was supported by RQGIS.
+      QGIS3 is supported by <github>r-spatial/RQGIS3</github>, which
+      establishes an interface between R and QGIS, i.e. it allows
       the user to access QGIS functionalities from the R console. It achieves
-      this by using the QGIS Python API via the command line. Note also
-      <a href="https://stat.ethz.ch/pipermail/r-sig-geo/2016-August/024817.html">this thread</a> on an alternative R/QGIS integration.</li>
+      this by using the QGIS Python API.</li>
       <li><em>ArcGIS:</em><pkg>RPyGeo</pkg> is a wrapper
       for Python access to the ArcGIS GeoProcessor</li>
     </ul>
@@ -815,7 +815,6 @@
     <pkg>RPostgreSQL</pkg>
     <pkg>rpostgis</pkg>
     <pkg>RPyGeo</pkg>
-    <pkg>RQGIS</pkg>
     <pkg>RSAGA</pkg>
     <pkg>RSurvey</pkg>
     <pkg>rtop</pkg>
