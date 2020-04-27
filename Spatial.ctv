@@ -2,7 +2,7 @@
   <name>Spatial</name>
   <topic>Analysis of Spatial Data</topic>
   <maintainer email="Roger.Bivand@nhh.no">Roger Bivand</maintainer>
-  <version>2020-03-09</version>
+  <version>2020-04-27</version>
 
   <info>
     <p>Base R includes many functions that can be used for reading,
@@ -108,9 +108,6 @@
       demographic data, environmental variables monitored at fixed stations, time series of
       satellite images with multiple spectral bands, spatial simulations, and climate model
       results.</li>
-      <li><pkg>spatial.tools</pkg> package contains spatial functions meant to 
-      enhance the core functionality of the <pkg>raster</pkg> package, 
-      including a parallel processing engine for use with rasters.</li>
     </ul>
     
     <p><strong>Geographic metadata</strong></p>
@@ -842,7 +839,6 @@
     <pkg>spatialprobit</pkg>
     <pkg priority="core">spatialreg</pkg>
     <pkg>spatialsegregation</pkg>
-    <pkg>spatial.tools</pkg>
     <pkg>SpatialTools</pkg>
     <pkg priority="core">spatstat</pkg>
     <pkg>spatsurv</pkg>
