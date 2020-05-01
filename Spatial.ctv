@@ -2,7 +2,7 @@
   <name>Spatial</name>
   <topic>Analysis of Spatial Data</topic>
   <maintainer email="Roger.Bivand@nhh.no">Roger Bivand</maintainer>
-  <version>2020-04-27</version>
+  <version>2020-05-01</version>
 
   <info>
     <p>Base R includes many functions that can be used for reading,
@@ -365,9 +365,6 @@
       <li><pkg>cartography</pkg> package allows various
       cartographic representations such as proportional symbols,
       choropleth, typology, flows or discontinuities.</li>
-      <li>The <pkg>mapmisc</pkg>
-      package is a minimal, light-weight set of tools for producing nice
-      looking maps in R, with support for map projections.</li>
       <li>Additional processing and mapping functions are available in <pkg>PBSmapping</pkg> package; 
       <pkg>PBSmodelling</pkg> provides modelling support. In addition, <pkg>GEOmap</pkg> 
       provides mapping facilities directed to meet the needs of geologists, and uses the
@@ -770,7 +767,6 @@
     <pkg>magclass</pkg>
     <pkg>mapdata</pkg>
     <pkg>mapedit</pkg>
-    <pkg>mapmisc</pkg>
     <pkg>mapproj</pkg>
     <pkg>maps</pkg>
     <pkg priority="core">maptools</pkg>
