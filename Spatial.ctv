@@ -2,7 +2,7 @@
   <name>Spatial</name>
   <topic>Analysis of Spatial Data</topic>
   <maintainer email="Roger.Bivand@nhh.no">Roger Bivand</maintainer>
-  <version>2020-05-01</version>
+  <version>2020-05-19</version>
 
   <info>
     <p>Base R includes many functions that can be used for reading,
@@ -627,10 +627,7 @@
       alternative implementations without most of the facilities of 
       <pkg>splm</pkg>.
       <pkg>spatialprobit</pkg> make possible Bayesian estimation of the 
-      spatial autoregressive probit model (SAR probit model). The 
-      <pkg>ProbitSpatial</pkg> package provides methods for fitting Binomial
-      spatial probit models to larger data sets; spatial autoregressive
-      (SAR) and spatial error (SEM) probit models are included. The
+      spatial autoregressive probit model (SAR probit model). The
       <pkg>starma</pkg> package provides functions to identify, estimate
       and diagnose a Space-Time AutoRegressive Moving Average (STARMA)
       model.</p>
@@ -780,7 +777,6 @@
     <pkg>plotKML</pkg>
     <pkg>postGIStools</pkg>
     <pkg>PReMiuM</pkg>
-    <pkg>ProbitSpatial</pkg>
     <pkg>quickmapr</pkg>
     <pkg>ramps</pkg>
     <pkg priority="core">RandomFields</pkg>
