@@ -2,7 +2,7 @@
   <name>Spatial</name>
   <topic>Analysis of Spatial Data</topic>
   <maintainer email="Roger.Bivand@nhh.no">Roger Bivand</maintainer>
-  <version>2020-05-19</version>
+  <version>2020-06-16</version>
 
   <info>
     <p>Base R includes many functions that can be used for reading,
@@ -429,9 +429,7 @@
       wrappers, functions and data for spatial point pattern analysis,
       used in the book on Spatial Ecology of the ECESPA/AEET. The
       functions for binning points on grids in <pkg>ash</pkg> may
-      also be of interest. The <pkg>ads</pkg> package perform first-
-      and second-order multi-scale analyses derived from Ripley's
-      K-function. The <pkg>aspace</pkg> package is a collection of
+      also be of interest. The <pkg>aspace</pkg> package is a collection of
       functions for estimating centrographic statistics and computational
       geometries from spatial point patterns.
       <pkg>DSpat</pkg> contains functions for spatial modelling
@@ -694,7 +692,6 @@
     <pkg>adehabitatHS</pkg>
     <pkg>adehabitatLT</pkg>
     <pkg>adehabitatMA</pkg>
-    <pkg>ads</pkg>
     <pkg>akima</pkg>
     <pkg>AMOEBA</pkg>
     <pkg>areal</pkg>
