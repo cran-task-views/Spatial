@@ -2,7 +2,7 @@
   <name>Spatial</name>
   <topic>Analysis of Spatial Data</topic>
   <maintainer email="Roger.Bivand@nhh.no">Roger Bivand</maintainer>
-  <version>2020-06-16</version>
+  <version>2019-06-22</version>
 
   <info>
     <p>Base R includes many functions that can be used for reading,
@@ -10,7 +10,7 @@
     "geographical" spatial data, where observations can be identified
     with geographical locations, and where additional information about
     these locations may be retrieved if the location is recorded with
-    care.</p>
+    care.</p> 
     
     <p>Base R functions are complemented by contributed packages,
     some of which are on CRAN, and others are still in development.
@@ -89,6 +89,8 @@
       <pkg>shp2graph</pkg>.</li>
       <li>The <pkg>spacetime</pkg> package extends the shared classes defined in <pkg>sp</pkg> for 
       spatio-temporal data (see <a href="http://www.jstatsoft.org/v51/i07">Spatio-Temporal Data in R</a>).</li>
+      <li> The <pkg>rcosmo</pkg> package provides simple access to spherical and HEALPix data. It extends
+      standard dataframes for HEALPix-type data.</li>
       <li><pkg>inlmisc</pkg> has followed on from Grid2Polygons and converts a  spatial object from class 
       SpatialGridDataFrame to SpatialPolygonsDataFrame among many other possibilities.</li>
       <li><pkg>maptools</pkg> provides conversion functions between
@@ -108,6 +110,9 @@
       demographic data, environmental variables monitored at fixed stations, time series of
       satellite images with multiple spectral bands, spatial simulations, and climate model
       results.</li>
+      <li>spatial.tools package contains spatial functions meant to 
+      enhance the core functionality of the <pkg>raster</pkg> package, 
+      including a parallel processing engine for use with rasters.</li>
     </ul>
     
     <p><strong>Geographic metadata</strong></p>
@@ -253,7 +258,11 @@
       paper).</li>
       <li><pkg>maptools</pkg> provides an interface to GSHHS shoreline databases.</li>
       <li>The UScensus2000 suite of packages (<pkg>UScensus2000cdp</pkg>, <pkg>UScensus2000tract</pkg>) makes the
-      use of data from the 2000 US Census more convenient. An important
+      use of data from the 2000 US Census more convenient.</li>
+      <li>The <pkg>cancensus</pkg> package provides access to Statistics 
+      Canada's Census data with the option to retrieve all data as 
+      spatial data.</li>
+      <li>An important
       data set, Guerry's "Moral Statistics of France", has been made
       available in the <pkg>Guerry</pkg> package, which provides data
       and maps and examples designed to contribute to the integration
@@ -312,6 +321,8 @@
       convenience functions, and some interesting spatial functions.</li>
       <li><pkg>geoaxe</pkg>allows users to split 'geospatial' objects into pieces.</li>
       <li>The <pkg>lawn</pkg> package is a client for 'Turfjs' for 'geospatial'analysis.</li>
+      <li>The <pkg>rcosmo</pkg> package offers various tools for geometric transformations, 
+      computations, and statistical analysis of spherical data.</li>
       <li>The <pkg>areal</pkg> package can be used to interpolate overlapping but incongruent polygons,
       also known as areal weighted interpolation.</li>
       <li>The <pkg>qualmap</pkg> package can be used to digitize qualitative GIS data.</li>
@@ -349,6 +360,9 @@
       for colorblindness and printing in grayscale.</li>
       <li><pkg>classInt</pkg> package provides
       functions for choosing class intervals for thematic cartography.</li>
+      <li><pkg>rcosmo</pkg> package provides several tools to interactively 
+      visualize HEALPix data, in particular, to plot data in 
+      arbitrary spherical windows.</li>
     </ul>
     
     <p><strong>Thematic cartography packages</strong></p>
@@ -365,6 +379,9 @@
       <li><pkg>cartography</pkg> package allows various
       cartographic representations such as proportional symbols,
       choropleth, typology, flows or discontinuities.</li>
+      <li>The <pkg>mapmisc</pkg>
+      package is a minimal, light-weight set of tools for producing nice
+      looking maps in R, with support for map projections.</li>
       <li>Additional processing and mapping functions are available in <pkg>PBSmapping</pkg> package; 
       <pkg>PBSmodelling</pkg> provides modelling support. In addition, <pkg>GEOmap</pkg> 
       provides mapping facilities directed to meet the needs of geologists, and uses the
@@ -378,6 +395,9 @@
       <li><pkg>RgoogleMaps</pkg> package for accessing 
       Google Maps(TM) may be useful if the user wishes to place a map backdrop 
       behind other displays.</li>
+      <li>plotGoogleMaps package provides methods for the 
+      visualisation of spatial and spatio-temporal objects in Google Maps in
+      a web browser.</li>
       <li><pkg>plotKML</pkg> is a package providing methods for
       the visualisation of spatial and spatio-temporal objects in Google
       Earth.</li>
@@ -429,7 +449,9 @@
       wrappers, functions and data for spatial point pattern analysis,
       used in the book on Spatial Ecology of the ECESPA/AEET. The
       functions for binning points on grids in <pkg>ash</pkg> may
-      also be of interest. The <pkg>aspace</pkg> package is a collection of
+      also be of interest. The ads package perform first-
+      and second-order multi-scale analyses derived from Ripley's
+      K-function. The <pkg>aspace</pkg> package is a collection of
       functions for estimating centrographic statistics and computational
       geometries from spatial point patterns.
       <pkg>DSpat</pkg> contains functions for spatial modelling
@@ -441,14 +463,17 @@
       distance, including classical ones (Ripley's K and others) and more 
       recent ones used by spatial economists (Duranton and Overman's Kd, 
       Marcon and Puech's M). It relies on spatstat for core 
-      calculation.</p>
+      calculation. <pkg>latticeDensity</pkg> contains functions that compute
+      the lattice-based density estimator of Barry and McIntyre, which
+      accounts for point processes in two-dimensional regions with
+      irregular boundaries and holes.</p>
 
     <p><strong>Geostatistics</strong></p>  
       
       <p>The <pkg>gstat</pkg> package
       provides a wide range of functions for univariate and multivariate
       geostatistics, also for larger datasets, while <pkg>geoR</pkg>
-      contains functions for model-based
+      and geoRglm contain functions for model-based
       geostatistics. Variogram diagnostics may be carried out with 
       <pkg>vardiag</pkg>. Automated interpolation using <pkg>gstat</pkg>
       is available in <pkg>automap</pkg>. This family of packages is
@@ -464,7 +489,15 @@
       it includes functions for the design of optimal spatial sampling 
       networks based on geostatistical modelling. <pkg>spsann</pkg> is another
       package to offer functions to optimize sample configurations, using
-      spatial simulated annealing. The <pkg>FRK</pkg> package is a tool for 
+      spatial simulated annealing. The <pkg>geostatsp</pkg>
+      package offers geostatistical modelling facilities using Raster and
+      SpatialPoints objects are provided. Non-Gaussian models are fit
+      using INLA, and Gaussian geostatistical models use Maximum Likelihood
+      Estimation.  The <pkg>rcosmo</pkg> package offers various geostatistics
+      methods for spherical data: descriptive statistics, entropy based 
+      methods, covariance-variogram methods, etc. Most of rcosmo features 
+      were developed for Cosmic Microwave Background data, but they can 
+      also be used for any spherical data. The <pkg>FRK</pkg> package is a tool for 
       spatial/spatio-temporal modelling and prediction with large datasets. 
       The approach, discussed in Cressie and Johannesson (2008), decomposes
       the field, and hence the covariance function, using a fixed set of n
@@ -474,7 +507,9 @@
       <p>The <pkg>RandomFields</pkg> package provides functions for
       the simulation and analysis of random fields, and variogram
       model descriptions can be passed between <pkg>geoR</pkg>,
-      <pkg>gstat</pkg> and this package. In addition, <pkg>CompRandFld</pkg>, 
+      <pkg>gstat</pkg> and this package. <pkg>SpatialExtremes</pkg>
+      proposes several approaches for spatial extremes modelling
+      using <pkg>RandomFields</pkg>. In addition, <pkg>CompRandFld</pkg>, 
       <pkg>constrainedKriging</pkg> and <pkg>geospt</pkg> provide 
       alternative approaches to geostatistical modelling. The 
       <pkg>spTimer</pkg> package  is able to fit, spatially predict and 
@@ -493,7 +528,9 @@
       package has an emphasis on kriging, and provides functions for 
       prediction and simulation. It is extended by <pkg>ExceedanceTools</pkg>,
       which provides tools for constructing confidence regions for exceedance
-      regions and contour lines. 
+      regions and contour lines. The <pkg>gear</pkg> package implements
+      common geostatistical methods in a clean, straightforward, efficient
+      manner, and is said to be a quasi reboot of <pkg>SpatialTools</pkg>.
       The <pkg>sperrorest</pkg> package implements spatial error estimation
       and permutation-based spatial variable importance using different
       spatial cross-validation and spatial block bootstrap methods.
@@ -510,7 +547,8 @@
       data interpolation with multilevel B-splines. In addition,
       there are the <pkg>spatialCovariance</pkg> package, which
       supports the computation of spatial covariance matrices
-      for data on rectangles and the
+      for data on rectangles, the <pkg>regress</pkg> package
+      building in part on <pkg>spatialCovariance</pkg>, and the
       <pkg>tgp</pkg> package. The <pkg>Stem</pkg> package provides
       for the estimation of the parameters of a spatio-temporal
       model using the EM algorithm, and the estimation of the
@@ -546,12 +584,16 @@
       cluster detection and disease mapping functions, including Bayesian
       cluster detection, and supports strata. The <pkg>smerc</pkg> package
       provides statistical methods for the analysis of data areal data, with
-      a focus on cluster detection. Regionalisation of polygon
+      a focus on cluster detection. The <pkg>diseasemapping</pkg>
+      package offers the formatting of population and case data, calculation
+      of Standardized Incidence Ratios, and fitting the BYM model using
+      INLA. Regionalisation of polygon
       objects is provided by <pkg>AMOEBA</pkg>: a function to calculate
       spatial clusters using the Getis-Ord local statistic. It searches
       irregular clusters (ecotopes) on a map, and by <code>skater</code>
-      in <pkg>spdep</pkg>. The <pkg>seg</pkg> package
-      provides functions for measuring spatial segregation.
+      in <pkg>spdep</pkg>. The <pkg>seg</pkg> and <pkg>OasisR</pkg> packages
+      provide functions for measuring spatial segregation; <pkg>OasisR</pkg>
+      includes Monte Carlo simulations to test the indices.
       The <pkg>spgwr</pkg> package contains an implementation of
       geographically weighted regression methods for exploring possible
       non-stationarity. The <pkg>gwrr</pkg> package fits geographically
@@ -563,6 +605,16 @@
       robust, local ridge, heteroskedastic, mixed, multiscale, generalised 
       and space-time GWR; GW summary statistics, GW PCA and GW discriminant analysis; 
       associated tests and diagnostics; and options for a range of distance metrics. 
+      The <pkg>lctools</pkg> package provides researchers and educators with easy-to-learn user
+      friendly tools for calculating key spatial statistics and to apply
+      simple as well as advanced methods of spatial analysis in real data.
+      These include: Local Pearson and Geographically Weighted Pearson
+      Correlation Coefficients, Spatial Inequality Measures (Gini, Spatial
+      Gini, LQ, Focal LQ), Spatial Autocorrelation (Global and Local
+      Moran's I), several Geographically Weighted Regression techniques and
+      other Spatial Analysis tools (other geographically weighted statistics).
+      This package also contains functions for measuring the significance of
+      each statistic calculated, mainly based on Monte Carlo simulations.
       The <pkg>sparr</pkg> package provides another
       approach to relative risks. The <pkg>CARBayes</pkg> package 
       implements Bayesian hierarchical spatial areal unit models. In 
@@ -577,7 +629,14 @@
       it provides a spatial CAR term that can be included in the fixed
       effects (which are global, ie. non-cluster specific, parameters)
       to account for any spatial correlation in the residuals.
-      Spatial survival analysis is provided by
+      The spacom package provides tools to
+      construct and exploit spatially weighted context data, and further
+      allows combining the resulting spatially weighted context data with
+      individual-level predictor and outcome variables, for the purposes
+      of multilevel modelling.
+      The geospacom package generates
+      distance matrices from shape files and represents spatially weighted
+      multilevel analysis results. Spatial survival analysis is provided by
       the <pkg>spatsurv</pkg> - Bayesian inference for parametric proportional
       hazards spatial survival models - and <pkg>spBayesSurv</pkg> - Bayesian
       Modeling and Analysis of Spatially Correlated Survival Data - packages.
@@ -623,9 +682,14 @@
       fitting spatial panel data by maximum likelihood and GM. The two 
       small packages <pkg>S2sls</pkg> and <pkg>spanel</pkg> provide 
       alternative implementations without most of the facilities of 
-      <pkg>splm</pkg>.
+      <pkg>splm</pkg>. The HSAR package provides Hierarchical
+      Spatial Autoregressive Models (HSAR), based on a Bayesian Markov Chain
+      Monte Carlo (MCMC) algorithm.
       <pkg>spatialprobit</pkg> make possible Bayesian estimation of the 
-      spatial autoregressive probit model (SAR probit model). The
+      spatial autoregressive probit model (SAR probit model). The 
+      ProbitSpatial package provides methods for fitting Binomial
+      spatial probit models to larger data sets; spatial autoregressive
+      (SAR) and spatial error (SEM) probit models are included. The
       <pkg>starma</pkg> package provides functions to identify, estimate
       and diagnose a Space-Time AutoRegressive Moving Average (STARMA)
       model.</p>
@@ -698,6 +762,7 @@
     <pkg>aspace</pkg>
     <pkg>ash</pkg>
     <pkg>automap</pkg>
+    <pkg>cancensus</pkg>
     <pkg>CARBayes</pkg>
     <pkg>cartogram</pkg>
     <pkg>cartography</pkg>
@@ -709,6 +774,7 @@
     <pkg>dbmss</pkg>
     <pkg priority="core">DCluster</pkg>
     <pkg priority="core">deldir</pkg>
+    <pkg>diseasemapping</pkg>
     <pkg>DSpat</pkg>
     <pkg>ecespa</pkg>
     <pkg>ExceedanceTools</pkg>
@@ -717,6 +783,7 @@
     <pkg>FRK</pkg>
     <pkg>gdalUtils</pkg>
     <pkg>gdistance</pkg>
+    <pkg>gear</pkg>
     <pkg>geoaxe</pkg>
     <pkg>geogrid</pkg>
     <pkg>geojson</pkg>
@@ -731,6 +798,7 @@
     <pkg>geosapi</pkg>
     <pkg>geosphere</pkg>
     <pkg>geospt</pkg>
+    <pkg>geostatsp</pkg>
     <pkg>ggmap</pkg>
     <pkg>ggsn</pkg>
     <pkg>gmt</pkg>
@@ -745,13 +813,16 @@
     <pkg>ipdw</pkg>
     <pkg>landsat</pkg>
     <pkg>landscapemetrics</pkg>
+    <pkg>latticeDensity</pkg>
     <pkg>lawn</pkg>
+    <pkg>lctools</pkg>
     <pkg>leaflet</pkg>
     <pkg>leafletR</pkg>
     <pkg>lwgeom</pkg>
     <pkg>magclass</pkg>
     <pkg>mapdata</pkg>
     <pkg>mapedit</pkg>
+    <pkg>mapmisc</pkg>
     <pkg>mapproj</pkg>
     <pkg>maps</pkg>
     <pkg priority="core">maptools</pkg>
@@ -766,6 +837,7 @@
     <pkg>ncf</pkg>
     <pkg>ngspatial</pkg>
     <pkg>nlme</pkg>
+    <pkg>OasisR</pkg>
     <pkg>OpenStreetMap</pkg>
     <pkg>osmar</pkg>
     <pkg>ows4R</pkg>
@@ -781,7 +853,9 @@
     <pkg priority="core">raster</pkg>
     <pkg>rasterVis</pkg>
     <pkg priority="core">RColorBrewer</pkg>
+    <pkg>rcosmo</pkg>
     <pkg>recmap</pkg>
+    <pkg>regress</pkg>
     <pkg>rgbif</pkg>
     <pkg priority="core">rgdal</pkg>
     <pkg priority="core">rgeos</pkg>
@@ -814,6 +888,7 @@
     <pkg>spatial</pkg>
     <pkg>spatialCovariance</pkg>
     <pkg>SpatialEpi</pkg>
+    <pkg>SpatialExtremes</pkg>
     <pkg>SpatialPosition</pkg>
     <pkg>spatgraphs</pkg>
     <pkg>spatialprobit</pkg>
