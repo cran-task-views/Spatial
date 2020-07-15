@@ -2,7 +2,7 @@
   <name>Spatial</name>
   <topic>Analysis of Spatial Data</topic>
   <maintainer email="Roger.Bivand@nhh.no">Roger Bivand</maintainer>
-  <version>2019-06-22</version>
+  <version>2019-07-15</version>
 
   <info>
     <p>Base R includes many functions that can be used for reading,
@@ -559,10 +559,7 @@
       in-stream distance. Models are created using moving average 
       constructions. Spatial linear models, including covariates, can be 
       fit with ML or REML. Mapping and other graphical functions are 
-      included. The <pkg>ipdw</pkg> provides functions o interpolate 
-      georeferenced point data via Inverse Path Distance Weighting. Useful 
-      for coastal marine applications where barriers in the landscape 
-      preclude interpolation with Euclidean distances.
+      included.
       <pkg>RSurvey</pkg> may be used as a processing program for spatially
       distributed data, and is capable of error corrections and data
       visualisation.</p>
@@ -810,7 +807,6 @@
     <pkg>gwrr</pkg>
     <pkg>igraph</pkg>
     <pkg>intamap</pkg>
-    <pkg>ipdw</pkg>
     <pkg>landsat</pkg>
     <pkg>landscapemetrics</pkg>
     <pkg>latticeDensity</pkg>
