@@ -2,7 +2,7 @@
   <name>Spatial</name>
   <topic>Analysis of Spatial Data</topic>
   <maintainer email="Roger.Bivand@nhh.no">Roger Bivand</maintainer>
-  <version>2019-07-15</version>
+  <version>2019-10-24</version>
 
   <info>
     <p>Base R includes many functions that can be used for reading,
@@ -458,12 +458,7 @@
       for distance sampling data and <pkg>spatialsegregation</pkg> 
       provides segregation measures for multitype spatial point 
       patterns. <pkg>GriegSmith</pkg> uses the Grieg-Smith method on 
-      2 dimensional spatial data. The <pkg>dbmss</pkg> package allows 
-      simple computation of a full set of spatial statistic functions of 
-      distance, including classical ones (Ripley's K and others) and more 
-      recent ones used by spatial economists (Duranton and Overman's Kd, 
-      Marcon and Puech's M). It relies on spatstat for core 
-      calculation. <pkg>latticeDensity</pkg> contains functions that compute
+      2 dimensional spatial data. <pkg>latticeDensity</pkg> contains functions that compute
       the lattice-based density estimator of Barry and McIntyre, which
       accounts for point processes in two-dimensional regions with
       irregular boundaries and holes.</p>
@@ -768,7 +763,6 @@
     <pkg>CompRandFld</pkg>
     <pkg>constrainedKriging</pkg>
     <pkg>cshapes</pkg>
-    <pkg>dbmss</pkg>
     <pkg priority="core">DCluster</pkg>
     <pkg priority="core">deldir</pkg>
     <pkg>diseasemapping</pkg>
