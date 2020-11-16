@@ -2,7 +2,7 @@
   <name>Spatial</name>
   <topic>Analysis of Spatial Data</topic>
   <maintainer email="Roger.Bivand@nhh.no">Roger Bivand</maintainer>
-  <version>2019-10-24</version>
+  <version>2019-11-16</version>
 
   <info>
     <p>Base R includes many functions that can be used for reading,
@@ -592,11 +592,7 @@
       weighted regression (GWR) models and has tools to diagnose and 
       remediate collinearity in the GWR models. Also fits geographically 
       weighted ridge regression (GWRR) and geographically weighted lasso 
-      (GWL) models. The <pkg>GWmodel</pkg> package contains functions for 
-      computing geographically weighted (GW) models. Specifically, basic, 
-      robust, local ridge, heteroskedastic, mixed, multiscale, generalised 
-      and space-time GWR; GW summary statistics, GW PCA and GW discriminant analysis; 
-      associated tests and diagnostics; and options for a range of distance metrics. 
+      (GWL) models.
       The <pkg>lctools</pkg> package provides researchers and educators with easy-to-learn user
       friendly tools for calculating key spatial statistics and to apply
       simple as well as advanced methods of spatial analysis in real data.
@@ -797,7 +793,6 @@
     <pkg>GriegSmith</pkg>
     <pkg priority="core">gstat</pkg>
     <pkg>Guerry</pkg>
-    <pkg>GWmodel</pkg>
     <pkg>gwrr</pkg>
     <pkg>igraph</pkg>
     <pkg>intamap</pkg>
