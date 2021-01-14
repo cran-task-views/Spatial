@@ -2,7 +2,7 @@
   <name>Spatial</name>
   <topic>Analysis of Spatial Data</topic>
   <maintainer email="Roger.Bivand@nhh.no">Roger Bivand</maintainer>
-  <version>2021-01-10</version>
+  <version>2021-01-14</version>
 
   <info>
     <p>Base R includes many functions that can be used for reading,
@@ -17,7 +17,7 @@
     One location is <a href="https://github.com/">Github</a>. Some key packages
     including <pkg>sf</pkg> and <pkg>stars</pkg> are grouped under
     <a href="https://github.com/r-spatial">r-spatial</a>, others including
-    <pkg>raster</pkg> under <a href="https://github.com/rspatial">rspatial</a>.
+    <pkg>raster</pkg> and <pkg>terra</pkg> under <a href="https://github.com/rspatial">rspatial</a>.
     Maintenance of the <pkg>sp</pkg> is continuing here:
     <github>edzer/sp</github>.</p>
 
@@ -105,14 +105,18 @@
       objects to be analysed, and extending the analytical tools available 
       for both raster and vector data. Used with <pkg>rasterVis</pkg>, it
       can also provide enhanced visualisation and interaction. </li>
+      <li><pkg>terra</pkg> is a re-implementation of <pkg>raster</pkg>
+      functionality, linking directly to PROJ, GDAL and GEOS, and introducing 
+      new S4 classes for raster and vector data. See the 
+      <a href="https://rspatial.org/terra/">manual and tutorials</a>
+      to get started. <pkg>terra</pkg> is very
+      similar to the <pkg>raster</pkg> package; but <pkg>terra</pkg> is 
+      simpler, better, and faster. </li>
       <li><pkg>stars</pkg> provides for spatiotemporal data in the form of dense arrays,
       with space and time being array dimensions. Examples include socio-economic or
       demographic data, environmental variables monitored at fixed stations, time series of
       satellite images with multiple spectral bands, spatial simulations, and climate model
       results.</li>
-      <li>spatial.tools package contains spatial functions meant to 
-      enhance the core functionality of the <pkg>raster</pkg> package, 
-      including a parallel processing engine for use with rasters.</li>
     </ul>
     
     <p><strong>Geographic metadata</strong></p>
@@ -457,7 +461,12 @@
       for distance sampling data and <pkg>spatialsegregation</pkg> 
       provides segregation measures for multitype spatial point 
       patterns. <pkg>GriegSmith</pkg> uses the Grieg-Smith method on 
-      2 dimensional spatial data. <pkg>latticeDensity</pkg> contains functions that compute
+      2 dimensional spatial data. The <pkg>dbmss</pkg> package allows 
+-      simple computation of a full set of spatial statistic functions of 
+-      distance, including classical ones (Ripley's K and others) and more 
+-      recent ones used by spatial economists (Duranton and Overman's Kd, 
+-      Marcon and Puech's M). It relies on spatstat for core 
+-      calculation. <pkg>latticeDensity</pkg> contains functions that compute
       the lattice-based density estimator of Barry and McIntyre, which
       accounts for point processes in two-dimensional regions with
       irregular boundaries and holes.</p>
@@ -553,7 +562,10 @@
       in-stream distance. Models are created using moving average 
       constructions. Spatial linear models, including covariates, can be 
       fit with ML or REML. Mapping and other graphical functions are 
-      included.
+      included. The <pkg>ipdw</pkg> provides functions o interpolate 
+-      georeferenced point data via Inverse Path Distance Weighting. Useful 
+-      for coastal marine applications where barriers in the landscape 
+-      preclude interpolation with Euclidean distances.
       <pkg>RSurvey</pkg> may be used as a processing program for spatially
       distributed data, and is capable of error corrections and data
       visualisation.</p>
@@ -591,7 +603,11 @@
       weighted regression (GWR) models and has tools to diagnose and 
       remediate collinearity in the GWR models. Also fits geographically 
       weighted ridge regression (GWRR) and geographically weighted lasso 
-      (GWL) models.
+      (GWL) models. The <pkg>GWmodel</pkg> package contains functions for 
+-      computing geographically weighted (GW) models. Specifically, basic, 
+-      robust, local ridge, heteroskedastic, mixed, multiscale, generalised 
+-      and space-time GWR; GW summary statistics, GW PCA and GW discriminant analysis; 
+-      associated tests and diagnostics; and options for a range of distance metrics. 
       The <pkg>lctools</pkg> package provides researchers and educators with easy-to-learn user
       friendly tools for calculating key spatial statistics and to apply
       simple as well as advanced methods of spatial analysis in real data.
@@ -758,6 +774,7 @@
     <pkg>CompRandFld</pkg>
     <pkg>constrainedKriging</pkg>
     <pkg>cshapes</pkg>
+    <pkg>dbmss</pkg>
     <pkg priority="core">DCluster</pkg>
     <pkg priority="core">deldir</pkg>
     <pkg>diseasemapping</pkg>
@@ -792,9 +809,11 @@
     <pkg>GriegSmith</pkg>
     <pkg priority="core">gstat</pkg>
     <pkg>Guerry</pkg>
+    <pkg>GWmodel</pkg>
     <pkg>gwrr</pkg>
     <pkg>igraph</pkg>
     <pkg>intamap</pkg>
+    <pkg>ipdw</pkg>
     <pkg>landsat</pkg>
     <pkg>landscapemetrics</pkg>
     <pkg>latticeDensity</pkg>
@@ -904,6 +923,7 @@
     <pkg>Stem</pkg>
     <pkg>stplanr</pkg>
     <pkg>taRifx</pkg>
+    <pkg>terra</pkg>
     <pkg>tgp</pkg>
     <pkg>tidycensus</pkg>
     <pkg>tigris</pkg>
