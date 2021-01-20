@@ -2,7 +2,7 @@
   <name>Spatial</name>
   <topic>Analysis of Spatial Data</topic>
   <maintainer email="Roger.Bivand@nhh.no">Roger Bivand</maintainer>
-  <version>2021-01-14</version>
+  <version>2021-01-20</version>
 
   <info>
     <p>Base R includes many functions that can be used for reading,
@@ -171,7 +171,7 @@
         blog entry</a> described a GeoJSON-centred approach to reading GeoJSON
         and WKT data. GeoJSON can be written and read using <pkg>rgdal</pkg>, and
         WKT by <pkg>rgeos</pkg>. The entry lists <pkg>geojson</pkg>,
-        <pkg>geojsonio</pkg>, and <pkg>geoaxe</pkg> among
+        and <pkg>geojsonio</pkg>, among
         others.</li>
         <li><em>Geographic Markup Language (GML):</em>GML format can be read and writen with
         <pkg>rgdal</pkg>. Additional GML native reader and writer is provided by <pkg>geometa</pkg> 
@@ -323,7 +323,6 @@
       checking for the right data order in calculations).</li>
       <li><pkg>taRifx</pkg> is a collection of utility and 
       convenience functions, and some interesting spatial functions.</li>
-      <li><pkg>geoaxe</pkg>allows users to split 'geospatial' objects into pieces.</li>
       <li>The <pkg>rcosmo</pkg> package offers various tools for geometric transformations, 
       computations, and statistical analysis of spherical data.</li>
       <li>The <pkg>areal</pkg> package can be used to interpolate overlapping but incongruent polygons,
@@ -787,7 +786,6 @@
     <pkg>gdalUtils</pkg>
     <pkg>gdistance</pkg>
     <pkg>gear</pkg>
-    <pkg>geoaxe</pkg>
     <pkg>geogrid</pkg>
     <pkg>geojson</pkg>
     <pkg>geojsonio</pkg>
