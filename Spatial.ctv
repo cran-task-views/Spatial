@@ -2,7 +2,7 @@
   <name>Spatial</name>
   <topic>Analysis of Spatial Data</topic>
   <maintainer email="Roger.Bivand@nhh.no">Roger Bivand</maintainer>
-  <version>2021-01-20</version>
+  <version>2021-02-06</version>
 
   <info>
     <p>Base R includes many functions that can be used for reading,
@@ -672,14 +672,6 @@
       two-stage least squares and generalised method of moments estimators are
       an alternative. When using GMM, <pkg>sphet</pkg> can be used to 
       accommodate both autocorrelation and heteroskedasticity.
-      The <pkg>McSpatial</pkg> provides functions 
-      for locally weighted regression, semiparametric and conditionally 
-      parametric regression, fourier and cubic spline functions, GMM and 
-      linearized spatial logit and probit, k-density functions and 
-      counterfactuals, nonparametric quantile regression and conditional 
-      density functions, Machado-Mata decomposition for quantile 
-      regressions, spatial AR model, repeat sales models, and 
-      conditionally parametric logit and probit.
       The <pkg>splm</pkg> package provides methods for 
       fitting spatial panel data by maximum likelihood and GM. The two 
       small packages <pkg>S2sls</pkg> and <pkg>spanel</pkg> provide 
@@ -829,7 +821,6 @@
     <pkg>mapview</pkg>
     <pkg>marmap</pkg>
     <pkg>MBA</pkg>
-    <pkg>McSpatial</pkg>
     <pkg>micromap</pkg>
     <pkg>ModelMap</pkg>
     <pkg>pastecs</pkg>
