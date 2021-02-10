@@ -236,6 +236,12 @@
         an open source implementation used widely for serving spatial data.</li>
         <li><pkg>geonapi</pkg> provides an interface to the <a href="https://geonetwork-opensource.org/">GeoNetwork</a> 
         legacy API, an opensource catalogue for managing geographic metadata.</li>
+       <li><pkg>rgee</pkg> ia an <a href="https://earthengine.google.com/">Earth Engine</a>  
+       client library for R. All of the 'Earth Engine' API classes, modules, 
+       and functions are made available. Additional functions implemented 
+       include importing (exporting) of Earth Engine spatial objects, 
+       extraction of time series, interactive map display, assets management 
+       interface, and metadata display.</li>
     </ul>
 
     <p><strong>Specific geospatial data sources of interest</strong></p>
@@ -849,6 +855,7 @@
     <pkg>regress</pkg>
     <pkg>rgbif</pkg>
     <pkg priority="core">rgdal</pkg>
+    <pkg>rgee</pkg>
     <pkg priority="core">rgeos</pkg>
     <pkg>RgoogleMaps</pkg>
     <pkg>rgrass7</pkg>
