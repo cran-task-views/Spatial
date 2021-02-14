@@ -2,7 +2,7 @@
   <name>Spatial</name>
   <topic>Analysis of Spatial Data</topic>
   <maintainer email="Roger.Bivand@nhh.no">Roger Bivand</maintainer>
-  <version>2021-02-06</version>
+  <version>2021-02-14</version>
 
   <info>
     <p>Base R includes many functions that can be used for reading,
@@ -462,8 +462,7 @@
       K-function. The <pkg>aspace</pkg> package is a collection of
       functions for estimating centrographic statistics and computational
       geometries from spatial point patterns.
-      <pkg>DSpat</pkg> contains functions for spatial modelling
-      for distance sampling data and <pkg>spatialsegregation</pkg> 
+      <pkg>spatialsegregation</pkg> 
       provides segregation measures for multitype spatial point 
       patterns. <pkg>GriegSmith</pkg> uses the Grieg-Smith method on 
       2 dimensional spatial data. The <pkg>dbmss</pkg> package allows 
@@ -775,7 +774,6 @@
     <pkg priority="core">DCluster</pkg>
     <pkg priority="core">deldir</pkg>
     <pkg>diseasemapping</pkg>
-    <pkg>DSpat</pkg>
     <pkg>ecespa</pkg>
     <pkg>ExceedanceTools</pkg>
     <pkg>fields</pkg>
