@@ -464,8 +464,7 @@
       geometries from spatial point patterns.
       <pkg>spatialsegregation</pkg> 
       provides segregation measures for multitype spatial point 
-      patterns. <pkg>GriegSmith</pkg> uses the Grieg-Smith method on 
-      2 dimensional spatial data. The <pkg>dbmss</pkg> package allows 
+      patterns. The <pkg>dbmss</pkg> package allows 
 -      simple computation of a full set of spatial statistic functions of 
 -      distance, including classical ones (Ripley's K and others) and more 
 -      recent ones used by spatial economists (Duranton and Overman's Kd, 
@@ -800,7 +799,6 @@
     <pkg>ggsn</pkg>
     <pkg>gmt</pkg>
     <pkg>inlmisc</pkg>
-    <pkg>GriegSmith</pkg>
     <pkg priority="core">gstat</pkg>
     <pkg>Guerry</pkg>
     <pkg>GWmodel</pkg>
