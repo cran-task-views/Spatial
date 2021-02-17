@@ -2,7 +2,7 @@
   <name>Spatial</name>
   <topic>Analysis of Spatial Data</topic>
   <maintainer email="Roger.Bivand@nhh.no">Roger Bivand</maintainer>
-  <version>2021-02-14</version>
+  <version>2021-02-17</version>
 
   <info>
     <p>Base R includes many functions that can be used for reading,
@@ -317,8 +317,6 @@
       <li>The <pkg>trip</pkg> package extends sp
       classes to permit the accessing and manipulating of spatial data for
       animal tracking.</li>
-      <li><pkg>spcosa</pkg> provides spatial coverage
-      sampling and random sampling from compact geographical strata.</li>
       <li><pkg>magclass</pkg> offers a data class for increased
       interoperability working with spatial-temporal data together with
       corresponding functions and methods (conversions, basic calculations
@@ -893,7 +891,6 @@
     <pkg>spatsurv</pkg>
     <pkg>spBayes</pkg>
     <pkg>spBayesSurv</pkg>
-    <pkg>spcosa</pkg>
     <pkg priority="core">spdep</pkg>
     <pkg>sperrorest</pkg>
     <pkg>spgrass6</pkg>
