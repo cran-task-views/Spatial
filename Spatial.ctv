@@ -290,6 +290,14 @@
       including the option to bind the data spatially on import. </li>
       <li><pkg>tigris</pkg> provides access to cartographic elements provided by the US
       Census Bureau TIGER, including cartographic boundaries, roads, and water.</li>
+      <li><pkg>chilemapas</pkg> provides access to spatial data of political 
+      and administrative divisions of Chile.</li>
+      <li><pkg>geobr</pkg> provides easy access to official spatial data 
+      sets of Brazil for multiple geographies and years.</li>
+      <li><pkg>geouy</pkg> loads and process geographic information for 
+      Uruguay.</li>
+      <li><pkg>RCzechia</pkg> downloads spatial shape files of administrative 
+      regions and other spatial objects of the Czech Republic.</li>
     </ul>
     
     <h2 id="handling-spatial-data">Handling spatial data</h2>  
@@ -762,6 +770,7 @@
     <pkg>CARBayes</pkg>
     <pkg>cartogram</pkg>
     <pkg>cartography</pkg>
+    <pkg>chilemapas</pkg>
     <pkg priority="core">classInt</pkg>
     <pkg>cleangeo</pkg>
     <pkg>CompRandFld</pkg>
@@ -779,6 +788,7 @@
     <pkg>gdalUtils</pkg>
     <pkg>gdistance</pkg>
     <pkg>gear</pkg>
+    <pkg>geobr</pkg>
     <pkg>geogrid</pkg>
     <pkg>geojson</pkg>
     <pkg>geojsonio</pkg>
@@ -793,6 +803,7 @@
     <pkg>geosphere</pkg>
     <pkg>geospt</pkg>
     <pkg>geostatsp</pkg>
+    <pkg>geouy</pkg>
     <pkg>ggmap</pkg>
     <pkg>ggsn</pkg>
     <pkg>gmt</pkg>
@@ -845,6 +856,7 @@
     <pkg>rasterVis</pkg>
     <pkg priority="core">RColorBrewer</pkg>
     <pkg>rcosmo</pkg>
+    <pkg>RCzechia</pkg>
     <pkg>recmap</pkg>
     <pkg>regress</pkg>
     <pkg>rgbif</pkg>
