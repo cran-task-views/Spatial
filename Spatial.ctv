@@ -2,7 +2,7 @@
   <name>Spatial</name>
   <topic>Analysis of Spatial Data</topic>
   <maintainer email="Roger.Bivand@nhh.no">Roger Bivand</maintainer>
-  <version>2021-02-17</version>
+  <version>2021-02-23</version>
 
   <info>
     <p>Base R includes many functions that can be used for reading,
@@ -721,9 +721,6 @@
       methods (WRM), functions for scaling by wavelet multiresolution
       regression (WMRR), conducting multi-model inference, and stepwise model
       selection.</li>
-      <li><pkg>rangeMapper</pkg> is a package to manipulate species range
-      (extent-of-occurrence) maps, mainly tools for easy generation of
-      biodiversity (species richness) or life-history traits maps.</li>
       <li>The <pkg>siplab</pkg> package is a platform for experimenting with
       spatially explicit individual-based vegetation models.</li>
       <li><pkg>ModelMap</pkg> builds on other packages to create models
@@ -851,7 +848,6 @@
     <pkg>quickmapr</pkg>
     <pkg>ramps</pkg>
     <pkg priority="core">RandomFields</pkg>
-    <pkg>rangeMapper</pkg>
     <pkg priority="core">raster</pkg>
     <pkg>rasterVis</pkg>
     <pkg priority="core">RColorBrewer</pkg>
