@@ -2,7 +2,7 @@
   <name>Spatial</name>
   <topic>Analysis of Spatial Data</topic>
   <maintainer email="Roger.Bivand@nhh.no">Roger Bivand</maintainer>
-  <version>2021-02-23</version>
+  <version>2021-03-01</version>
 
   <info>
     <p>Base R includes many functions that can be used for reading,
@@ -501,11 +501,7 @@
       it includes functions for the design of optimal spatial sampling 
       networks based on geostatistical modelling. <pkg>spsann</pkg> is another
       package to offer functions to optimize sample configurations, using
-      spatial simulated annealing. The <pkg>geostatsp</pkg>
-      package offers geostatistical modelling facilities using Raster and
-      SpatialPoints objects are provided. Non-Gaussian models are fit
-      using INLA, and Gaussian geostatistical models use Maximum Likelihood
-      Estimation.  The <pkg>rcosmo</pkg> package offers various geostatistics
+      spatial simulated annealing. The <pkg>rcosmo</pkg> package offers various geostatistics
       methods for spherical data: descriptive statistics, entropy based 
       methods, covariance-variogram methods, etc. Most of rcosmo features 
       were developed for Cosmic Microwave Background data, but they can 
@@ -799,7 +795,6 @@
     <pkg>geosapi</pkg>
     <pkg>geosphere</pkg>
     <pkg>geospt</pkg>
-    <pkg>geostatsp</pkg>
     <pkg>geouy</pkg>
     <pkg>ggmap</pkg>
     <pkg>ggsn</pkg>
