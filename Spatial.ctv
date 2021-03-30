@@ -468,9 +468,7 @@
       K-function. The <pkg>aspace</pkg> package is a collection of
       functions for estimating centrographic statistics and computational
       geometries from spatial point patterns.
-      <pkg>spatialsegregation</pkg> 
-      provides segregation measures for multitype spatial point 
-      patterns. The <pkg>dbmss</pkg> package allows 
+      The <pkg>dbmss</pkg> package allows 
       simple computation of a full set of spatial statistic functions of 
       distance, including classical ones (Ripley's K and others) and more 
       recent ones used by spatial economists (Duranton and Overman's Kd, 
@@ -883,7 +881,6 @@
     <pkg>spatgraphs</pkg>
     <pkg>spatialprobit</pkg>
     <pkg priority="core">spatialreg</pkg>
-    <pkg>spatialsegregation</pkg>
     <pkg>SpatialTools</pkg>
     <pkg priority="core">spatstat</pkg>
     <pkg>spBayes</pkg>
