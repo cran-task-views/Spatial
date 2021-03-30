@@ -471,11 +471,11 @@
       <pkg>spatialsegregation</pkg> 
       provides segregation measures for multitype spatial point 
       patterns. The <pkg>dbmss</pkg> package allows 
--      simple computation of a full set of spatial statistic functions of 
--      distance, including classical ones (Ripley's K and others) and more 
--      recent ones used by spatial economists (Duranton and Overman's Kd, 
--      Marcon and Puech's M). It relies on spatstat for core 
--      calculation.</p>
+      simple computation of a full set of spatial statistic functions of 
+      distance, including classical ones (Ripley's K and others) and more 
+      recent ones used by spatial economists (Duranton and Overman's Kd, 
+      Marcon and Puech's M). It relies on spatstat for core 
+      calculation.</p>
 
     <p><strong>Geostatistics</strong></p>  
       
