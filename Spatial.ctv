@@ -642,9 +642,8 @@
       The geospacom package generates
       distance matrices from shape files and represents spatially weighted
       multilevel analysis results. Spatial survival analysis is provided by
-      the <pkg>spatsurv</pkg> - Bayesian inference for parametric proportional
-      hazards spatial survival models - and <pkg>spBayesSurv</pkg> - Bayesian
-      Modeling and Analysis of Spatially Correlated Survival Data - packages.
+      the <pkg>spBayesSurv</pkg> package: Bayesian
+      Modeling and Analysis of Spatially Correlated Survival Data.
       The <pkg>spselect</pkg> package provides modelling functions based on
       forward stepwise regression, incremental forward stagewise regression,
       least angle regression (LARS), and lasso models for selecting the
@@ -887,7 +886,6 @@
     <pkg>spatialsegregation</pkg>
     <pkg>SpatialTools</pkg>
     <pkg priority="core">spatstat</pkg>
-    <pkg>spatsurv</pkg>
     <pkg>spBayes</pkg>
     <pkg>spBayesSurv</pkg>
     <pkg priority="core">spdep</pkg>
