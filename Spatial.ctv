@@ -298,6 +298,8 @@
       Uruguay.</li>
       <li><pkg>RCzechia</pkg> downloads spatial shape files of administrative 
       regions and other spatial objects of the Czech Republic.</li>
+      <li><pkg>rgugik</pkg> allows to search and retrieve data from Polish Head
+      Office of Geodesy and Cartography ("GUGiK").</li>
     </ul>
     
     <h2 id="handling-spatial-data">Handling spatial data</h2>  
@@ -849,6 +851,7 @@
     <pkg priority="core">rgeos</pkg>
     <pkg>RgoogleMaps</pkg>
     <pkg>rgrass7</pkg>
+    <pkg>rgugik</pkg>
     <pkg>rnaturalearth</pkg>
     <pkg>RNetCDF</pkg>
     <pkg>RPostgreSQL</pkg>
