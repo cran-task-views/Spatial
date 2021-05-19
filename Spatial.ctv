@@ -2,7 +2,7 @@
   <name>Spatial</name>
   <topic>Analysis of Spatial Data</topic>
   <maintainer email="Roger.Bivand@nhh.no">Roger Bivand</maintainer>
-  <version>2021-03-30</version>
+  <version>2021-05-20</version>
 
   <info>
     <p>Base R includes many functions that can be used for reading,
@@ -296,10 +296,15 @@
       sets of Brazil for multiple geographies and years.</li>
       <li><pkg>geouy</pkg> loads and process geographic information for 
       Uruguay.</li>
-      <li><pkg>RCzechia</pkg> downloads spatial shape files of administrative 
+      <li><pkg>RCzechia</pkg> downloads spatial boundary files of administrative 
       regions and other spatial objects of the Czech Republic.</li>
       <li><pkg>rgugik</pkg> allows to search and retrieve data from Polish Head
       Office of Geodesy and Cartography ("GUGiK").</li>
+      <li><pkg>giscoR</pkg> provides access to spatial elements provided by
+      GISCO - Eurostat, including boundary files of countries, NUTS regions,
+      municipalities and other spatial objects.</li>
+      <li><pkg>mapSpain</pkg> downloads spatial boundary files of
+      administrative regions and other spatial objects of Spain.</li>
     </ul>
     
     <h2 id="handling-spatial-data">Handling spatial data</h2>  
@@ -794,6 +799,7 @@
     <pkg>geouy</pkg>
     <pkg>ggmap</pkg>
     <pkg>ggsn</pkg>
+    <pkg>giscoR</pkg>
     <pkg>gmt</pkg>
     <pkg>inlmisc</pkg>
     <pkg priority="core">gstat</pkg>
@@ -814,6 +820,7 @@
     <pkg>mapedit</pkg>
     <pkg>mapmisc</pkg>
     <pkg>mapproj</pkg>
+    <pkg>mapSpain</pkg>
     <pkg>maps</pkg>
     <pkg priority="core">maptools</pkg>
     <pkg>mapview</pkg>
