@@ -2,7 +2,7 @@
   <name>Spatial</name>
   <topic>Analysis of Spatial Data</topic>
   <maintainer email="Roger.Bivand@nhh.no">Roger Bivand</maintainer>
-  <version>2021-05-20</version>
+  <version>2021-06-03</version>
 
   <info>
     <p>Base R includes many functions that can be used for reading,
@@ -543,11 +543,7 @@
       manner, and is said to be a quasi reboot of <pkg>SpatialTools</pkg>.
       The <pkg>sperrorest</pkg> package implements spatial error estimation
       and permutation-based spatial variable importance using different
-      spatial cross-validation and spatial block bootstrap methods.
-      The <pkg>spm</pkg> package provides functions for hybrid geostatistical
-      and machine learning methods for spatial predictive modelling. It
-      currently contains two commonly used geostatistical methods, two machine
-      learning methods, four hybrid methods and two averaging methods.</p>
+      spatial cross-validation and spatial block bootstrap methods.</p>
 
       <p>The <pkg>sgeostat</pkg> package
       is also available. Within the same general topical area are
@@ -903,7 +899,6 @@
     <pkg>spind</pkg>
     <pkg priority="core">splancs</pkg>
     <pkg>splm</pkg>
-    <pkg>spm</pkg>
     <pkg>spmoran</pkg>
     <pkg>spsann</pkg>
     <pkg>spselect</pkg>
