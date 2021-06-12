@@ -305,6 +305,8 @@
       municipalities and other spatial objects.</li>
       <li><pkg>mapSpain</pkg> downloads spatial boundary files of
       administrative regions and other spatial objects of Spain.</li>
+      <li><pkg>osmextract</pkg> matches, downloads, converts and reads OpenStreetMap 
+      data extracts obtained from Geofabrik and other providers.</li>
     </ul>
     
     <h2 id="handling-spatial-data">Handling spatial data</h2>  
@@ -832,6 +834,7 @@
     <pkg>OasisR</pkg>
     <pkg>OpenStreetMap</pkg>
     <pkg>osmar</pkg>
+    <pkg>osmextract</pkg>
     <pkg>ows4R</pkg>
     <pkg>PBSmapping</pkg>
     <pkg>PBSmodelling</pkg>
