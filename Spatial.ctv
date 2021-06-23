@@ -2,7 +2,7 @@
   <name>Spatial</name>
   <topic>Analysis of Spatial Data</topic>
   <maintainer email="Roger.Bivand@nhh.no">Roger Bivand</maintainer>
-  <version>2021-06-03</version>
+  <version>2021-06-23</version>
 
   <info>
     <p>Base R includes many functions that can be used for reading,
@@ -474,9 +474,7 @@
       functions for binning points on grids in <pkg>ash</pkg> may
       also be of interest. The ads package perform first-
       and second-order multi-scale analyses derived from Ripley's
-      K-function. The <pkg>aspace</pkg> package is a collection of
-      functions for estimating centrographic statistics and computational
-      geometries from spatial point patterns.
+      K-function.
       The <pkg>dbmss</pkg> package allows 
       simple computation of a full set of spatial statistic functions of 
       distance, including classical ones (Ripley's K and others) and more 
@@ -755,7 +753,6 @@
     <pkg>akima</pkg>
     <pkg>AMOEBA</pkg>
     <pkg>areal</pkg>
-    <pkg>aspace</pkg>
     <pkg>ash</pkg>
     <pkg>automap</pkg>
     <pkg>cancensus</pkg>
