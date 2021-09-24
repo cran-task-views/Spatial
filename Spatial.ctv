@@ -2,7 +2,7 @@
   <name>Spatial</name>
   <topic>Analysis of Spatial Data</topic>
   <maintainer email="Roger.Bivand@nhh.no">Roger Bivand</maintainer>
-  <version>2021-06-23</version>
+  <version>2021-09-24</version>
 
   <info>
     <p>Base R includes many functions that can be used for reading,
@@ -272,11 +272,6 @@
       <li>The <pkg>cancensus</pkg> package provides access to Statistics 
       Canada's Census data with the option to retrieve all data as 
       spatial data.</li>
-      <li>An important
-      data set, Guerry's "Moral Statistics of France", has been made
-      available in the <pkg>Guerry</pkg> package, which provides data
-      and maps and examples designed to contribute to the integration
-      of multivariate and spatial analysis.</li>
       <li><pkg>rgbif</pkg> package is used to access Global
       Biodiversity Information Facility (GBIF) occurence data</li>
       <li><pkg>geonames</pkg> is an interface to 
@@ -798,7 +793,6 @@
     <pkg>gmt</pkg>
     <pkg>inlmisc</pkg>
     <pkg priority="core">gstat</pkg>
-    <pkg>Guerry</pkg>
     <pkg>GWmodel</pkg>
     <pkg>gwrr</pkg>
     <pkg>igraph</pkg>
