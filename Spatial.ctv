@@ -2,7 +2,7 @@
   <name>Spatial</name>
   <topic>Analysis of Spatial Data</topic>
   <maintainer email="Roger.Bivand@nhh.no">Roger Bivand</maintainer>
-  <version>2021-09-24</version>
+  <version>2021-10-07</version>
 
   <info>
     <p>Base R includes many functions that can be used for reading,
@@ -416,9 +416,6 @@
       <li>plotGoogleMaps package provides methods for the 
       visualisation of spatial and spatio-temporal objects in Google Maps in
       a web browser.</li>
-      <li><pkg>plotKML</pkg> is a package providing methods for
-      the visualisation of spatial and spatio-temporal objects in Google
-      Earth.</li>
       <li><pkg>ggmap</pkg> may be used for spatial visualisation with Google Maps 
       and OpenStreetMap;<pkg>ggsn</pkg> provides North arrows and scales for such maps.</li>
       <li><pkg>mapedit</pkg> provides an R shiny widget based on <pkg>leaflet</pkg> for editing or creating sf geometries.</li>
@@ -829,7 +826,6 @@
     <pkg>ows4R</pkg>
     <pkg>PBSmapping</pkg>
     <pkg>PBSmodelling</pkg>
-    <pkg>plotKML</pkg>
     <pkg>postGIStools</pkg>
     <pkg>PReMiuM</pkg>
     <pkg>quickmapr</pkg>
