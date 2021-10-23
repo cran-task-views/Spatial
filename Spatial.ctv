@@ -2,7 +2,7 @@
   <name>Spatial</name>
   <topic>Analysis of Spatial Data</topic>
   <maintainer email="Roger.Bivand@nhh.no">Roger Bivand</maintainer>
-  <version>2021-10-07</version>
+  <version>2021-10-23</version>
 
   <info>
     <p>Base R includes many functions that can be used for reading,
@@ -269,9 +269,6 @@
       <li><pkg>maptools</pkg> provides an interface to GSHHS shoreline databases.</li>
       <li>The UScensus2000 suite of packages (<pkg>UScensus2000cdp</pkg>, <pkg>UScensus2000tract</pkg>) makes the
       use of data from the 2000 US Census more convenient.</li>
-      <li>The <pkg>cancensus</pkg> package provides access to Statistics 
-      Canada's Census data with the option to retrieve all data as 
-      spatial data.</li>
       <li><pkg>rgbif</pkg> package is used to access Global
       Biodiversity Information Facility (GBIF) occurence data</li>
       <li><pkg>geonames</pkg> is an interface to 
@@ -745,7 +742,6 @@
     <pkg>areal</pkg>
     <pkg>ash</pkg>
     <pkg>automap</pkg>
-    <pkg>cancensus</pkg>
     <pkg>CARBayes</pkg>
     <pkg>cartogram</pkg>
     <pkg>cartography</pkg>
