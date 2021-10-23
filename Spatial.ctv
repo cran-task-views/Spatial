@@ -83,10 +83,6 @@
           <github>rspatial/stars</github>, and supported by the 
       <a href="https://www.r-consortium.org/">R Consortium</a>; it
           provides for spatiotemporal data in the form of dense arrays.</li>
-      <li><pkg>stplanr</pkg> provides a "SpatialLinesNetwork" class based
-      on objects defined in <pkg>sp</pkg> and <pkg>igraph</pkg> that can be
-      used for routing analysis within R. Another network package is
-      <pkg>shp2graph</pkg>.</li>
       <li>The <pkg>spacetime</pkg> package extends the shared classes defined in <pkg>sp</pkg> for 
       spatio-temporal data (see <a href="http://www.jstatsoft.org/v51/i07">Spatio-Temporal Data in R</a>).</li>
       <li> The <pkg>rcosmo</pkg> package provides simple access to spherical and HEALPix data. It extends
@@ -786,7 +782,6 @@
     <pkg priority="core">gstat</pkg>
     <pkg>GWmodel</pkg>
     <pkg>gwrr</pkg>
-    <pkg>igraph</pkg>
     <pkg>intamap</pkg>
     <pkg>ipdw</pkg>
     <pkg>landsat</pkg>
@@ -892,7 +887,6 @@
     <pkg>stars</pkg>
     <pkg>statebins</pkg>
     <pkg>Stem</pkg>
-    <pkg>stplanr</pkg>
     <pkg>taRifx</pkg>
     <pkg>terra</pkg>
     <pkg>tgp</pkg>
