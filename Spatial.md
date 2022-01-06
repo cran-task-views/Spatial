@@ -143,7 +143,15 @@ geographic metadata in R.
 Reading and writing spatial data
 --------------------------------
 
-**Reading and writing spatial data -
+**Reading and writing spatial data**
+
+mention GDAL 
+sf/stars and terra
+mention older rgdal
+
+
+<!--
+-
 `r pkg("rgdal", priority = "core")`**
 
 Maps may be vector-based or raster-based. The
@@ -163,6 +171,8 @@ binaries of `r pkg("rgdal")` include subsets of possible
 data source drivers; if others are needed, use other conversion
 utilities, or install from source against a version of GDAL with the
 required drivers.
+
+-->
 
 ### Reading and writing spatial data - data formats
 
