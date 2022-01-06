@@ -707,7 +707,9 @@ two-stage least squares and generalised method of moments estimators are
 an alternative. When using GMM, `r pkg("sphet")` can be used
 to accommodate both autocorrelation and heteroskedasticity. The
 `r pkg("splm")` package provides methods for fitting spatial
-panel data by maximum likelihood and GM. The two small packages
+panel data by maximum likelihood and GM. 
+The `r pkg("spsur")` package provides functions to test and estimate 
+spatial seemingly unrelated regression models (spatial SUR) by maximum likelihood and three-stage least squares. The two small packages
 `r pkg("S2sls")` and `r pkg("spanel")` provide
 alternative implementations without most of the facilities of
 `r pkg("splm")`. The HSAR package provides Hierarchical
