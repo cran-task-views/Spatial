@@ -181,6 +181,7 @@ dealing with open standard formats or proprietary formats.
 
 *OGC Standard Data formats*
 
+<!--sf/terra/vapour-->
 -   *Well-Known Text (WKT) / Well-Known Binary (WKB):* These standards
     are part of the OGC Simple Feature specification. Both WKT/WKB
     formats are supported by `r pkg("sf")` package that
@@ -248,6 +249,7 @@ dealing with open standard formats or proprietary formats.
     establishes an interface between R and QGIS, i.e. it allows the user
     to access QGIS functionalities from the R console. It achieves this
     by using the QGIS Python API.
+    <!--rqgisprocess-->
 -   *ArcGIS:* `r pkg("RPyGeo")` is a wrapper for Python
     access to the ArcGIS GeoProcessor
 
@@ -271,7 +273,7 @@ tentative (non-exhaustive) list:
 -   `r pkg("geonapi")` provides an interface to the
     [GeoNetwork](https://geonetwork-opensource.org/) legacy API, an
     opensource catalogue for managing geographic metadata.
--   `r pkg("rgee")` ia an [Earth
+-   `r pkg("rgee")` is an [Earth
     Engine](https://earthengine.google.com/) client library for R. All
     of the 'Earth Engine' API classes, modules, and functions are made
     available. Additional functions implemented include importing
