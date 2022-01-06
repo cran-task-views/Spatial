@@ -1,9 +1,9 @@
 ---
 name: Spatial
 topic: Analysis of Spatial Data
-maintainer: Roger Bivand
+maintainer: Roger Bivand, Jakub Nowosad
 email: Roger.Bivand@nhh.no
-version: 2021-12-29
+version: 2022-01-06
 source: https://github.com/cran-task-views/Spatial/
 ---
 
@@ -14,40 +14,38 @@ visualising, and analysing spatial data. The focus in this view is on
 geographical locations, and where additional information about these
 locations may be retrieved if the location is recorded with care.
 
-Base R functions are complemented by contributed packages, some of which
-are on CRAN, and others are still in development. One location is
-[Github](https://github.com/) . Some key packages including
-`r pkg("sf", priority = "core")` and
-`r pkg("stars")` are grouped under
-[r-spatial](https://github.com/r-spatial) , others including
-`r pkg("raster", priority = "core")` and
-`r pkg("terra")` under
-[rspatial](https://github.com/rspatial) . Maintenance of the
-`r pkg("sp", priority = "core")` is continuing here:
-`r github("edzer/sp")`.
-
-Another set of locations for the development and maintenance of packages
-on [R-Forge](https://R-Forge.R-project.org/) , which lists "Spatial
-Data and Statistics" projects in its [project
-tree](https://R-Forge.R-project.org/softwaremap/trove_list.php) .
-Information on R-spatial packages was until 2016 posted on the R-Forge
-rspatial project [website](https://rspatial.R-Forge.R-project.org/) ,
-including a visualisation gallery.
+Base R functions are complemented by contributed packages provided as 
+source packages, and as ready-to-run binary packages for Windows and 
+macOS (Intel 64-bit and Apple Silicon arm64 architectures). Information 
+about source installs of packages using software external to R may be 
+found at the end of this page. This task view covers the current status 
+of contributed packages available from CRAN.
 
 The contributed packages address two broad areas: moving spatial data
-into and out of R, and analysing spatial data in R.
+into and out of R including coordinate transformation, and analysing 
+spatial data in R. Because the contributed packages constitute an evolving
+ecosystem, there are several points of entry for users looking for help
+and information. Two informal organisations curate websites: 
+[r-spatial](https://r-spatial.org/) with a hyphen, and 
+[rspatial](https://rspatial.org/) without. R-spatial is more generally 
+geo-informatics based, grew from the legacy `r pkg("sp")` package and 
+now clearly aligned with the modern `r pkg("sf", priority="core")` and 
+`r pkg("stars", priority="core")` packages. Rspatial has grown from the 
+`r pkg("raster")` package, now moving towards the modern 
+`r pkg("terra", priority="core")` package. It is also worth noting the
+wealth of online book projects, which may be helpful for users seeking
+an introduction, including 
+[Geocomputation with R](https://geocompr.robinlovelace.net/index.html).
 
-The [R-SIG-Geo](https://stat.ethz.ch/mailman/listinfo/R-SIG-Geo/)
-mailing-list is a good place to begin for obtaining help and discussing
-questions about both accessing data, and analysing it. The mailing list
-is a good place to search for information about relevant courses.
-Further information about courses may be found under the "Events" tab
-of [this blog](http://r-spatial.org/) .
-
-There are a number of contributed tutorials and introductions; a recent
-one is [Introduction to visualising spatial data in
-R](https://CRAN.R-project.org/doc/contrib/intro-spatial-rl.pdf) by Robin
-Lovelace and James Cheshire.
+Specific questions or issues may be raised directly with package
+maintainers by email, or where `packageDescription(<pkg>)$BugReports`
+returns an URL for bug reports or issues, where `<pkg>` is the
+name of the package as a string. Use may also be made of
+the [R-SIG-Geo](https://stat.ethz.ch/mailman/listinfo/R-SIG-Geo/)
+mailing-list after subscription, or of 
+[stackoverflow](https://stackoverflow.com) with appropriate tags. Using the
+`rspatial` tag on [twitter](https://twitter.com) may also be worth trying,
+or browsing traffic using that tag (among others).
 
 The packages in this view can be roughly structured into the following
 topics. If you think that some package is missing from the list, please
