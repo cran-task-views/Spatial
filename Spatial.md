@@ -479,20 +479,22 @@ Analyzing spatial data
 
 ### Point pattern analysis
 
-The `r pkg("spatial")` package is a recommended package
-shipped with base R, and contains several core functions, including an
-implementation of Khat by its author, Prof. Ripley. In addition,
-`r pkg("spatstat")` allows freedom in defining the region(s)
+The `r pkg("spatstat", priority = "core")` is a family of R packages for analysing
+spatial point pattern data (and other kinds of spatial data). It has extensive
+capabilities for exploratory analysis, statistical modelling, simulation and
+statistical inference. It allows freedom in defining the region(s)
 of interest, and makes extensions to marked processes and spatial
 covariates. Its strengths are model-fitting and simulation, and it has a
-useful [homepage](http://www.spatstat.org/) . It is the only package
+useful [homepage](http://www.spatstat.org/); it is 
+[actively developed](https://github.com/spatstat/spatstat). It is the only package
 that will enable the user to fit inhomogeneous point process models with
-interpoint interactions. The `r pkg("spatgraphs")` package
-provides graphs, graph visualisation and graph based summaries to be
-used with spatial point pattern analysis. The
-`r pkg("splancs", priority = "core")` package also allows
+interpoint interactions. The `r pkg("splancs")` package allows
 point data to be analysed within a polygonal region of interest, and
-covers many methods, including 2D kernel densities. The
+covers many methods, including 2D kernel densities. The `r pkg("spatial")` package 
+is a recommended package shipped with base R, and contains several core functions,
+including an implementation of Khat by its author, Prof. Ripley. 
+The `r pkg("spatgraphs")` package provides graphs, graph visualisation 
+and graph based summaries to be used with spatial point pattern analysis. The
 `r pkg("smacpod")` package provides various statistical
 methods for analyzing case-control point data. The methods available
 closely follow those in chapter 6 of Applied Spatial Statistics for
@@ -507,14 +509,14 @@ Ripley's K-function. The `r pkg("dbmss")` package allows
 simple computation of a full set of spatial statistic functions of
 distance, including classical ones (Ripley's K and others) and more
 recent ones used by spatial economists (Duranton and Overman's Kd,
-Marcon and Puech's M). It relies on spatstat for core calculation.
+Marcon and Puech's M). It relies on `r pkg("spatstat")` for core calculation.
 
 ### Geostatistics
 
 The `r pkg("gstat", priority = "core")` package provides a
 wide range of functions for univariate and multivariate geostatistics,
 also for larger datasets, while
-`r pkg("geoR", priority = "core")` and geoRglm contain
+`r pkg("geoR", priority = "core")` contains
 functions for model-based geostatistics. Variogram diagnostics may be
 carried out with `r pkg("vardiag")`. Automated interpolation
 using `r pkg("gstat")` is available in
@@ -574,7 +576,8 @@ geostatistical methods in a clean, straightforward, efficient manner,
 and is said to be a quasi reboot of `r pkg("SpatialTools")`.
 The `r pkg("sperrorest")` package implements spatial error
 estimation and permutation-based spatial variable importance using
-different spatial cross-validation and spatial block bootstrap methods.
+different spatial cross-validation and spatial block bootstrap methods, used by
+`r pkg("mlr3spatiotempcv")`.
 
 The `r pkg("sgeostat")` package is also available. Within
 the same general topical area are the
@@ -612,8 +615,7 @@ detection of spatial clusters of diseases. It extends and depends on the
 `r pkg("spdep", priority = "core")` package, which provides
 basic functions for building neighbour lists and spatial weights, tests
 for spatial autocorrelation for areal data like Moran's I. Functions
-for fitting spatial regression models, such as SAR and CAR models prior
-to version 1.1-1 are now in
+for fitting spatial regression models, such as SAR and CAR models are in
 `r pkg("spatialreg", priority = "core")`. These models assume
 that the spatial dependence can be described by known weights. In
 `r pkg("spatialreg")`, the `ME` and `SpatialFiltering`
