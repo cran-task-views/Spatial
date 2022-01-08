@@ -145,34 +145,14 @@ Reading and writing spatial data
 
 **Reading and writing spatial data**
 
-mention GDAL 
-sf/stars and terra
-mention older rgdal
-
-
-<!--
--
-`r pkg("rgdal", priority = "core")`**
-
-Maps may be vector-based or raster-based. The
-`r pkg("rgdal")` package provides bindings to [GDAL
-(Geospatial Data Abstraction Library)](http://www.gdal.org/) -supported
-raster formats and [OGR](http://www.gdal.org/ogr/) -supported vector
-formats. It contains functions to write raster and vector files in
-supported formats. Formats supported by GDAL/OGR include both OGC
-standard data formats (e.g. GeoJSON) and proprietary formats (e.g. ESRI
-Shapefile). The package also provides [PROJ.4](https://proj4.org/)
-projection support for vector objects ( [this
-site](http://spatialreference.org) provides searchable online PROJ.4
-representations of projections). Affine and similarity transformations
-on sp objects may be made using functions in the
-`r pkg("vec2dtransf")` package. The Windows and Mac OSX CRAN
-binaries of `r pkg("rgdal")` include subsets of possible
-data source drivers; if others are needed, use other conversion
-utilities, or install from source against a version of GDAL with the
-required drivers.
-
--->
+Spatial data is most often represented by one of two data models, vector or raster, and both models have many of their own file formats.
+[GDAL (Geospatial Data Abstraction Library)](https://gdal.org/) is a (non-R) library that provides a unified way to read and write hundreds of spatial data formats.
+Formats supported by GDAL include both OGC standard data formats (e.g., GeoPackage) and proprietary formats (e.g., ESRI Shapefile).
+GDAL is used by a large number of GIS software and also many R packages, such as `r pkg("sf")`, `r pkg("terra")`, and `r pkg("vapour")`.
+This allows us to read and write spatial data in R from and to various spatial file formats.
+Important note: CRAN offers binary versions of packages `r pkg("sf")`, `r pkg("terra")`, and `r pkg("vapour")` for Windows and macOS, that contain specific GDAL version with a subset of possible data source drivers.
+If other drivers are needed, you need to either use other conversion utilities or install these packages from the source against a version of GDAL with the required drivers.
+<!--Roger, should we still mention rgdal here (as it will be retired in less than 2 years)?-->
 
 ### Reading and writing spatial data - data formats
 
