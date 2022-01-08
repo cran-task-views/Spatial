@@ -403,40 +403,66 @@ Visualizing spatial data
 
 ### Base visualization packages
 
--   Packages such as `r pkg("sf")`, `r pkg("stars")`, `r pkg("terra")`, and `r pkg("rasterVis")` provide basic visualization methods through the generic plot function.
--   `r pkg("classInt", priority = "core")` package provides functions for choosing class intervals for thematic cartography.
--   `r pkg("rcosmo")` package provides several tools to interactively visualize HEALPix data, in particular, to plot data in arbitrary spherical windows.
--   Currently, the `r pkg ("grDevices")` (included with the R installation) contains a large number of color palettes that can be accessed with the hcl.colors and palette.colors functions. 
-Some of these color palettes can be also retrieved using packages, such as `r pkg("RColorBrewer")`, `r pkg("viridis")`, or `r pkg("rcartocolor")`.
+-   Packages such as `r pkg("sf")`, `r pkg("stars")`, `r pkg("terra")`, 
+    and `r pkg("rasterVis")` provide basic visualization methods through 
+    the generic plot function.
+-   `r pkg("classInt", priority = "core")` package provides functions for 
+    choosing class intervals for thematic cartography.
+-   `r pkg("rcosmo")` package provides several tools to interactively visualize
+    HEALPix data, in particular, to plot data in arbitrary spherical windows.
+-   Currently, the `r pkg ("grDevices")` (included with the R installation) 
+    contains a large number of color palettes that can be accessed with 
+    the hcl.colors and palette.colors functions.
+    Some of these color palettes can be also retrieved using separate packages,
+    such as `r pkg("RColorBrewer")`, `r pkg("viridis")`, 
+    or `r pkg("rcartocolor")`.
 
 ### Thematic cartography packages
 
--   `r pkg("tmap")` package accepts most spatial data classes and provides a modern basis for thematic mapping using a Grammar of Graphics syntax. 
--   `r pkg("mapsf")` package allows various cartographic representations such as proportional symbols, choropleth, or typology maps.
+-   `r pkg("tmap")` package accepts most spatial data classes and provides
+    a modern basis for thematic mapping using a Grammar of Graphics syntax. 
+-   `r pkg("mapsf")` package allows various cartographic representations 
+    such as proportional symbols, choropleth, or typology maps.
 -   `r pkg("ggplot2")` package has a built-in support for sf objects.
-Its spatial visualization capabilities can be further extended with `r pkg("ggspatial")`, which adds support for more spatial classes, allows adding north arrows and scale bars, and more.
--   The `r pkg("mapmisc")` package is a minimal, light-weight set of tools for producing nice-looking maps in R, with support for map projections.
--   Additional processing and mapping functions are available in `r pkg("PBSmapping")` package; `r pkg("PBSmodelling")` provides modelling support. 
-In addition, `r pkg("GEOmap")` provides mapping facilities directed to meet the needs of geologists and uses the `r pkg("geomapdata")` package.
+    Its spatial visualization capabilities can be further extended with 
+    `r pkg("ggspatial")`, which adds support for more spatial classes, 
+    allows adding north arrows and scale bars, and more.
+-   The `r pkg("mapmisc")` package is a minimal, light-weight set of tools
+    for producing nice-looking maps in R, with support for map projections.
+-   Additional processing and mapping functions are available in 
+    `r pkg("PBSmapping")` package; `r pkg("PBSmodelling")` provides 
+    modelling support. In addition, `r pkg("GEOmap")` provides mapping
+    facilities directed to meet the needs of geologists and uses 
+    the `r pkg("geomapdata")` package.
 
 ### Packages based on web-mapping frameworks
 
--   `r pkg("mapview")` and `r pkg("leaflet")`  packages provide methods to view spatial objects interactively, usually on a web mapping base. 
-Additionally, `r pkg("tmap")` has a view mode that allows for interactive spatial data mapping.
--   `r pkg("mapdeck")` package provides a mechanism to plot interactive maps through javascript libraries 'Mapbox GL' and 'Deck.gl'.
--   `r pkg("RgoogleMaps")` package for accessing Google Maps(TM) may be useful if the user wishes to place a map backdrop behind other displays.
--   `r pkg("ggmap")` may be used for spatial visualization with Google Maps and OpenStreetMap; `r pkg("ggsn")` provides north arrows and scales for such maps.
--   `r pkg("mapedit")` provides an R shiny widget based on `r pkg("leaflet")` for editing or creating sf geometries.
+-   `r pkg("mapview")` and `r pkg("leaflet")` packages provide methods to 
+    view spatial objects interactively, usually on a web mapping base.
+    Additionally, `r pkg("tmap")` has a view mode that allows for interactive 
+    spatial data mapping.
+-   `r pkg("mapdeck")` package provides a mechanism to plot interactive maps
+    through javascript libraries 'Mapbox GL' and 'Deck.gl'.
+-   `r pkg("RgoogleMaps")` package for accessing Google Maps(TM) may be
+    useful if the user wishes to place a map backdrop behind other displays.
+-   `r pkg("ggmap")` may be used for spatial visualization with Google Maps
+    and OpenStreetMap; `r pkg("ggsn")` provides north arrows and scales 
+    for such maps.
+-   `r pkg("mapedit")` provides an R shiny widget based on `r pkg("leaflet")`
+    for editing or creating sf geometries.
 
 ### Building Cartograms
 
--   `r pkg("cartogram")` package allows for constructions of a continuous area cartogram by a rubber sheet distortion algorithm, non-contiguous area cartograms, and non-overlapping circles cartogram.
--   `r pkg("geogrid")` package turns polygons into rectangular or hexagonal cartograms.
--   The `r pkg("micromap")` package provides linked micromaps using ggplot2.
--   `r pkg("recmap")` package provides rectangular cartograms with rectangle sizes reflecting for example population.
+-   `r pkg("cartogram")` package allows for constructions of a continuous 
+    area cartogram by a rubber sheet distortion algorithm, non-contiguous
+    area cartograms, and non-overlapping circles cartogram.
+-   `r pkg("geogrid")` package turns polygons into rectangular or hexagonal
+    cartograms.
+-   `r pkg("micromap")` package provides linked micromaps using ggplot2.
+-   `r pkg("recmap")` package provides rectangular cartograms with rectangle
+    sizes reflecting for example population.
 -   `r pkg("geogrid")` turns spatial polygons into regular or hexagonal grids. 
-`r pkg("statebins")` provides a simple binning approach to US states.
-
+    `r pkg("statebins")` provides a simple binning approach to US states.
 
 Analyzing spatial data
 ----------------------
