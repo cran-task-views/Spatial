@@ -338,27 +338,49 @@ Handling spatial data
 
 ### Data processing - general
 
--   `r pkg("sf")` provides an interface to spatial geometry functions using the [GEOS](https://libgeos.org/) and [S2](https://s2geometry.io/) libraries.
--   `r pkg("stars")` contains tools for manipulating raster and vector data cubes.
--   `r pkg("terra")` package introduces many GIS methods for spatial vector and raster data.
--   The `r pkg("gdalUtils")` and `r pkg("gdalUtilities")` packages provide wrappers for the Geospatial Data Abstraction Library (GDAL) Utilities.
--   `r pkg("rmapshaper")` is a wrapper around the 'mapshaper' 'JavaScript' library to perform topologically-aware polygon simplification and other operations such as clipping, erasing, dissolving, and converting 'multi-part' to 'single-part' geometries.
--   `r pkg("gdistance")`, provides functions to calculate distances and routes on geographic grids.
-    `r pkg("geosphere")` permits computations of distance and area to be carried out on spatial data in geographical coordinates. `r pkg("cshapes")` package provides functions for calculating distance matrices (see [Mapping and Measuring Country Shapes](http://journal.R-project.org/archive/2010-1/RJournal_2010-1_Weidmann+Skrede~Gleditsch.pdf)).
--   `r pkg("magclass")` offers a data class for increased interoperability working with spatial-temporal data together with corresponding functions and methods (conversions, basic calculations and basic data manipulation). 
--   The `r pkg("rcosmo")` package offers various tools for geometric transformations, computations, and statistical analysis of spherical data.
--   The `r pkg("trip")` package extends spatial classes to permit the accessing and manipulating of spatial data for animal tracking.
+-   `r pkg("sf")` provides an interface to spatial geometry functions using
+    the [GEOS](https://libgeos.org/) and [S2](https://s2geometry.io/) libraries.
+-   `r pkg("stars")` contains tools for manipulating raster and vector
+    data cubes.
+-   `r pkg("terra")` package introduces many GIS methods for spatial vector
+    and raster data.
+-   The `r pkg("gdalUtils")` and `r pkg("gdalUtilities")` packages provide
+    wrappers for the Geospatial Data Abstraction Library (GDAL) Utilities.
+-   `r pkg("rmapshaper")` is a wrapper around the 'mapshaper' 'JavaScript'
+    library to perform topologically-aware polygon simplification and other 
+    operations such as clipping, erasing, dissolving, and converting 
+    'multi-part' to 'single-part' geometries.
+-   `r pkg("gdistance")`, provides functions to calculate distances and 
+    routes on geographic grids.
+    `r pkg("geosphere")` permits computations of distance and area to be 
+    carried out on spatial data in geographical coordinates.
+    `r pkg("cshapes")` package provides functions for calculating distance
+    matrices (see [Mapping and Measuring Country Shapes](http://journal.R-project.org/archive/2010-1/RJournal_2010-1_Weidmann+Skrede~Gleditsch.pdf)).
+-   `r pkg("magclass")` offers a data class for increased interoperability 
+    working with spatial-temporal data together with corresponding functions
+    and methods (conversions, basic calculations and basic data manipulation). 
+-   The `r pkg("rcosmo")` package offers various tools for geometric
+    transformations, computations, and statistical analysis of spherical data.
+-   The `r pkg("trip")` package extends spatial classes to permit the
+    accessing and manipulating of spatial data for animal tracking.
 <!-- Roger, should we link here to papers such as https://besjournals.onlinelibrary.wiley.com/doi/10.1111/1365-2656.13116, https://link.springer.com/article/10.1007%2Fs40823-021-00067-y, https://link.springer.com/article/10.1007/s10109-020-00342-2, etc?-->
 
 ### Data cleaning
 
--   `r pkg("cleangeo")` may be used to inspect spatial objects, facilitate handling and reporting of topology errors and geometry validity issues. It may be used to reduce the likelihood of having issues when doing spatial data processing.
--   `r pkg("lwgeom")` may also be used to facilitate handling and reporting of topology errors and geometry validity issues.
+-   `r pkg("cleangeo")` may be used to inspect spatial objects, facilitate
+    handling and reporting of topology errors and geometry validity issues.
+    It may be used to reduce the likelihood of having issues when doing
+    spatial data processing.
+-   `r pkg("lwgeom")` may also be used to facilitate handling and reporting
+    of topology errors and geometry validity issues.
 
 ### Data processing - specific
 
--   The `r pkg("landsat")` package with accompanying [JSS paper](http://www.jstatsoft.org/v43/i04) provides tools for exploring and developing correction tools for remote sensing data.
--   The `r pkg("areal")` package can be used to interpolate overlapping but incongruent polygons, also known as areal weighted interpolation.
+-   The `r pkg("landsat")` package with accompanying 
+    [JSS paper](http://www.jstatsoft.org/v43/i04) provides tools for exploring
+    and developing correction tools for remote sensing data.
+-   The `r pkg("areal")` package can be used to interpolate overlapping 
+    but incongruent polygons, also known as areal weighted interpolation.
 -   The `r pkg("qualmap")` package can be used to digitize qualitative GIS data.
 -   `r pkg("spsurvey")` provides a range of sampling functions.
 
