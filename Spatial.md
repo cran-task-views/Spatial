@@ -708,6 +708,7 @@ calculated rates that are comparable both in terms of levels and uncertainty.
     `r pkg("synthACS")`, and `r pkg("NetLogoR")` permits the building and
     running of spatially explicit agent-based models.
 
+
 ### Spatial regression
 
 Many packages providing functions for fitting spatial regression models have 
