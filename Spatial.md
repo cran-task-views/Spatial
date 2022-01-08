@@ -154,13 +154,11 @@ Important note: CRAN offers binary versions of packages `r pkg("sf")`, `r pkg("t
 If other drivers are needed, you need to either use other conversion utilities or install these packages from the source against a version of GDAL with the required drivers.
 <!--Roger, should we still mention rgdal here (as it will be retired in less than 2 years)?-->
 
-<!--lidar data formats-->
-
 ### Reading and writing spatial data - data formats
 
 Other packages provide facilities to read and write spatial data, dealing with open standard formats or proprietary formats.
 
-*OGC Standard Data formats*
+*Open formats*
 
 -   *Well-Known Text (WKT) / Well-Known Binary (WKB):* These standards are part of the OGC Simple Feature specification. 
 Both WKT/WKB formats are supported by the `r pkg("sf")` package that implements the whole OGC Simple Feature specification in R. 
@@ -171,6 +169,7 @@ The GeoJSON format can also be read and write with `r pkg("sf")`, `r pkg("terra"
 Additional GML native reader and writer is provided by `r pkg("geometa")` model with bindings to the `r pkg("sf")` classes, for extension of geographic metadata with GML data and metadata elements(GML 3.2.1 and 3.3) and interfacing OGC web-services in `r pkg("ows4R")` package.
 -   *NetCDF files:* NetCDF files can be read and write with  `r pkg("ncdf4")` or `r pkg("RNetCDF")`. 
 Additionally, both `r pkg("terra")` and `r pkg("stars")` have capabilities for reading and writing NetCDF files.
+-   *LAS / LAX:* These file formats are designed to work with lidar point cloud data and can be read/write with `r pkg("lidR")` or `r pkg("rLiDAR")`.
 
 *Proprietary Data Formats*
 
