@@ -154,54 +154,32 @@ Important note: CRAN offers binary versions of packages `r pkg("sf")`, `r pkg("t
 If other drivers are needed, you need to either use other conversion utilities or install these packages from the source against a version of GDAL with the required drivers.
 <!--Roger, should we still mention rgdal here (as it will be retired in less than 2 years)?-->
 
+<!--lidar data formats-->
+
 ### Reading and writing spatial data - data formats
 
-Other packages provide facilities to read and write spatial data,
-dealing with open standard formats or proprietary formats.
+Other packages provide facilities to read and write spatial data, dealing with open standard formats or proprietary formats.
 
 *OGC Standard Data formats*
 
-<!--sf/terra/vapour-->
--   *Well-Known Text (WKT) / Well-Known Binary (WKB):* These standards
-    are part of the OGC Simple Feature specification. Both WKT/WKB
-    formats are supported by `r pkg("sf")` package that
-    implements the whole OGC Simple Feature specification in R. Apart
-    from the `r pkg("sf")` package, the
-    `r pkg("rgeos", priority = "core")` package provides
-    functions for reading and writing well-known text (WKT) geometry.
-    Package `r pkg("wkb")` package provides functions for
-    reading and writing well-known binary (WKB) geometry.
--   *GeoJSON:* An rOpenSci [blog
-    entry](http://ropensci.org/blog/blog/2016/11/22/geospatial-suite)
-    described a GeoJSON-centred approach to reading GeoJSON and WKT
-    data. GeoJSON can be written and read using
-    `r pkg("rgdal")`, and WKT by
-    `r pkg("rgeos")`. The entry lists
-    `r pkg("geojson")`, and
-    `r pkg("geojsonio")`, among others.
--   *Geographic Markup Language (GML):* GML format can be read and
-    writen with `r pkg("rgdal")`. Additional GML native
-    reader and writer is provided by `r pkg("geometa")`
-    model with bindings to the `r pkg("sf")` classes, for
-    extension of geographic metadata with GML data and metadata elements
-    (GML 3.2.1 and 3.3) and interfacing OGC web-services in
-    `r pkg("ows4R")` package
--   *NetCDF files:* `r pkg("ncdf4")` or
-    `r pkg("RNetCDF")` may be used.
+-   *Well-Known Text (WKT) / Well-Known Binary (WKB):* These standards are part of the OGC Simple Feature specification. 
+Both WKT/WKB formats are supported by the `r pkg("sf")` package that implements the whole OGC Simple Feature specification in R. 
+-   *GeoJSON:* An rOpenSci [blog     entry](http://ropensci.org/blog/blog/2016/11/22/geospatial-suite) describes a GeoJSON-centred approach to reading GeoJSON and WKT data. 
+The entry lists `r pkg("geojson")`, and `r pkg("geojsonio")`, among others.
+The GeoJSON format can also be read and write with `r pkg("sf")`, `r pkg("terra")`, and `r pkg("vapour")`.
+-   *Geographic Markup Language (GML):* GML format can be read and written with `r pkg("sf")`. 
+Additional GML native reader and writer is provided by `r pkg("geometa")` model with bindings to the `r pkg("sf")` classes, for extension of geographic metadata with GML data and metadata elements(GML 3.2.1 and 3.3) and interfacing OGC web-services in `r pkg("ows4R")` package.
+-   *NetCDF files:* NetCDF files can be read and write with  `r pkg("ncdf4")` or `r pkg("RNetCDF")`. 
+Additionally, both `r pkg("terra")` and `r pkg("stars")` have capabilities for reading and writing NetCDF files.
 
 *Proprietary Data Formats*
 
--   *ESRI formats:* `r pkg("maps")` (with
-    `r pkg("mapdata")` and `r pkg("mapproj")`)
-    provides access to the same kinds of geographical databases as S.
-    `r pkg("maptools")` and
-    `r pkg("shapefiles")` read and write ESRI ArcGIS/ArcView
-    shapefiles.
+<!--Roger, should we kept mentions of "maps" below?-->
+-   *ESRI formats:* Many of spatial data saved into ESRI file formats can be read with GDAL, and thus also with `r pkg("sf")`, `r pkg("terra")`, and `r pkg("vapour")`.
+Additionally, `r pkg("shapefiles")` reads and writes ESRI ArcGIS/ArcView shapefiles.
+<!--Roger, should we kept the maptools package mentioned below?-->
 -   *Others:* `r pkg("maptools")` package provides helper
-    functions for writing map polygon files to be read by *WinBUGS* ,
-    *Mondrian* , and the tmap command in *Stata* . The
-    `r pkg("gmt")` package gives a simple interface between
-    GMT map-making software and R.
+    functions for writing map polygon files to be read by *WinBUGS* , *Mondrian* , and the tmap command in *Stata*. The `r pkg("gmt")` package gives a simple interface between GMT map-making software and R.
 
 ### Reading and writing spatial data - GIS Software connectors
 
