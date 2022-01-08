@@ -430,18 +430,13 @@ Additionally, `r pkg("tmap")` has a view mode that allows for interactive spatia
 
 ### Building Cartograms
 
--   The `r pkg("micromap")` package provides linked
-    micromaps using ggplot2.
--   `r pkg("recmap")` package provides rectangular
-    cartograms with rectangle sizes reflecting for example population.
--   `r pkg("statebins")` provides a simpler binning approach
-    to US states.
--   `r pkg("cartogram")` package allows for constructions of
-    a continuous area cartogram by a rubber sheet distortion algorithm,
-    non-contiguous Area Cartograms, and non-overlapping Circles
-    Cartogram.
--   `r pkg("geogrid")` package turns polygons into
-    rectangular or hexagonal cartograms.
+-   `r pkg("cartogram")` package allows for constructions of a continuous area cartogram by a rubber sheet distortion algorithm, non-contiguous area cartograms, and non-overlapping circles cartogram.
+-   `r pkg("geogrid")` package turns polygons into rectangular or hexagonal cartograms.
+-   The `r pkg("micromap")` package provides linked micromaps using ggplot2.
+-   `r pkg("recmap")` package provides rectangular cartograms with rectangle sizes reflecting for example population.
+-   `r pkg("geogrid")` turns spatial polygons into regular or hexagonal grids. 
+`r pkg("statebins")` provides a simple binning approach to US states.
+
 
 Analyzing spatial data
 ----------------------
