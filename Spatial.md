@@ -182,33 +182,20 @@ Additionally, `r pkg("shapefiles")` reads and writes ESRI ArcGIS/ArcView shapefi
 
 ### Reading and writing spatial data - GIS Software connectors
 
--   *PostGIS:* The `r pkg("rpostgis")` package provides
-    additional functions to the `r pkg("RPostgreSQL")`
-    package to interface R with a 'PostGIS'-enabled database, as well
-    as convenient wrappers to common 'PostgreSQL' queries. It is
-    documented in an [R
-    Journal](https://journal.R-project.org/archive/2018/RJ-2018-025/index.html)
-    article. `r pkg("postGIStools")` package provides
-    functions to convert geometry and 'hstore' data types from
-    'PostgreSQL' into standard R objects, as well as to simplify the
-    import of R data frames (including spatial data frames) into
-    'PostgreSQL'. `r pkg("sf")` also provides an R
-    interface to Postgis, for both reading and writing, throuh GDAL.
--   *GRASS:* Integration with version 7.\* of the leading open source
-    GIS, GRASS, is provided in CRAN package
-    `r pkg("rgrass7")`, using `r pkg("rgdal")`
-    for exchanging data. For GRASS 6.\*, use
-    `r pkg("spgrass6")`.
--   *SAGA:* `r pkg("RSAGA")` is a similar shell-based
-    wrapper for SAGA commands.
--   *Quantum GIS (QGIS):* QGIS2 was supported by RQGIS. QGIS3 is
-    supported by `r github("r-spatial/RQGIS3")`, which
-    establishes an interface between R and QGIS, i.e. it allows the user
-    to access QGIS functionalities from the R console. It achieves this
-    by using the QGIS Python API.
-    <!--rqgisprocess-->
--   *ArcGIS:* `r pkg("RPyGeo")` is a wrapper for Python
-    access to the ArcGIS GeoProcessor
+-   *PostGIS:* The `r pkg("rpostgis")` package provides     additional functions to the `r pkg("RPostgreSQL")`    package to interface R with a 'PostGIS'-enabled database, as well as convenient wrappers to common 'PostgreSQL' queries. 
+It is documented in an [R   Journal](https://journal.R-project.org/archive/2018/RJ-2018-025/index.html) article.
+`r pkg("postGIStools")` package provides functions to convert geometry and 'hstore' data types from 'PostgreSQL' into standard R objects, as well as to simplify the import of R data frames (including spatial data frames) into 'PostgreSQL'.
+`r pkg("sf")` also provides an R interface to PostGIS, for both reading and writing, through GDAL.
+<!--Roger, I assume we can keep this information about rgrass7 for now and update it when rgrass is on CRAN (I just discovered the name change using a GitHub search)-->
+-   *GRASS GIS:* Integration with version 7.\* of the leading open source GIS, GRASS GIS, is provided in CRAN package `r pkg("rgrass7")`.
+For GRASS 6.\*, use `r pkg("spgrass6")`.
+-   *SAGA GIS:* `r pkg("RSAGA")` and `r pkg("Rsagacmd") offer  shell-based wrapper for SAGA GIS commands.
+-   *Quantum GIS (QGIS):* QGIS2 was supported by RQGIS (`r github("r-spatial/RQGIS")`).
+QGIS3 (version >= 3.16) is supported by `r github("paleolimbot/qgisprocess")`, which establishes an interface between R and QGIS, i.e., it allows the user to access QGIS functionalities from the R console. 
+It achieves this by using the qgis_process command-line utility.
+-   *WhiteboxTools:* `r pkg("whitebox")` is an R frontend for the WhiteboxTools software.
+-   *ArcGIS:* `r pkg("RPyGeo")` is a wrapper for Python access to the ArcGIS GeoProcessor. The RSRI company also offers their own package (`r github("R-ArcGIS/r-bridge")`) that allows transferring data from ArcGIS to R.
+-   Various GIS Software, including Orfeo ToolBox and SAGA GIS, can also be connected to R using `r pkg("link2GI")`.
 
 ### Interfaces to Spatial Web-Services
 
