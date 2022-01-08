@@ -477,133 +477,150 @@ Visualizing spatial data
 Analyzing spatial data
 ----------------------
 
+The division of spatial statistics into three partly overlapping 
+areas: point pattern analysis, geostatistics and the analysis of 
+areal/lattice data, is widely accepted. However, areal data 
+analysis can be split into disease mapping and spatial regression 
+(also partly overlapping). In addition, ecological analyses often 
+approach spatial data in particular ways, giving rise to a specific 
+topical cluster of packages.
+
 ### Point pattern analysis
 
-The `r pkg("spatial")` package is a recommended package
-shipped with base R, and contains several core functions, including an
-implementation of Khat by its author, Prof. Ripley. In addition,
-`r pkg("spatstat")` allows freedom in defining the region(s)
-of interest, and makes extensions to marked processes and spatial
-covariates. Its strengths are model-fitting and simulation, and it has a
-useful [homepage](http://www.spatstat.org/) . It is the only package
-that will enable the user to fit inhomogeneous point process models with
-interpoint interactions. The `r pkg("spatgraphs")` package
-provides graphs, graph visualisation and graph based summaries to be
-used with spatial point pattern analysis. The
-`r pkg("splancs", priority = "core")` package also allows
-point data to be analysed within a polygonal region of interest, and
-covers many methods, including 2D kernel densities. The
-`r pkg("smacpod")` package provides various statistical
-methods for analyzing case-control point data. The methods available
-closely follow those in chapter 6 of Applied Spatial Statistics for
-Public Health Data by Waller and Gotway (2004).
-
-`r pkg("ecespa")` provides wrappers, functions and data for
-spatial point pattern analysis, used in the book on Spatial Ecology of
-the ECESPA/AEET. The functions for binning points on grids in
-`r pkg("ash")` may also be of interest. The ads package
-perform first- and second-order multi-scale analyses derived from
-Ripley's K-function. The `r pkg("dbmss")` package allows
-simple computation of a full set of spatial statistic functions of
-distance, including classical ones (Ripley's K and others) and more
-recent ones used by spatial economists (Duranton and Overman's Kd,
-Marcon and Puech's M). It relies on spatstat for core calculation.
+-   The `r pkg("spatstat", priority = "core")` is a family of R packages for analysing
+    spatial point pattern data (and other kinds of spatial data). It has extensive
+    capabilities for exploratory analysis, statistical modelling, simulation and
+    statistical inference. It allows freedom in defining the region(s)
+    of interest, and makes extensions to marked processes and spatial
+    covariates. Its strengths are model-fitting and simulation, and it has a
+    useful [homepage](http://www.spatstat.org/); it is 
+    [actively developed](https://github.com/spatstat/spatstat). It is the only package
+    that will enable the user to fit inhomogeneous point process models with
+    interpoint interactions. 
+-   The `r pkg("splancs")` package allows
+    point data to be analysed within a polygonal region of interest, and
+    covers many methods, including 2D kernel densities. 
+-   The `r pkg("spatial")` package 
+    is a recommended package shipped with base R, and contains several core functions,
+    including an implementation of Khat by its author, Prof. Ripley. 
+-   The `r pkg("spatgraphs")` package provides graphs, graph visualisation 
+    and graph based summaries to be used with spatial point pattern analysis. 
+-   The `r pkg("smacpod")` package provides various statistical
+    methods for analyzing case-control point data. The methods available
+    closely follow those in chapter 6 of Applied Spatial Statistics for
+    Public Health Data by Waller and Gotway (2004).
+-   `r pkg("ecespa")` provides wrappers, functions and data for
+    spatial point pattern analysis, used in the book on Spatial Ecology of
+    the ECESPA/AEET. The functions for binning points on grids in
+-   `r pkg("ash")` may also be of interest. The ads package
+    perform first- and second-order multi-scale analyses derived from
+    Ripley's K-function. 
+-   The `r pkg("dbmss")` package allows
+    simple computation of a full set of spatial statistic functions of
+    distance, including classical ones (Ripley's K and others) and more
+    recent ones used by spatial economists (Duranton and Overman's Kd,
+    Marcon and Puech's M). It relies on `r pkg("spatstat")` for core calculation.
 
 ### Geostatistics
 
-The `r pkg("gstat", priority = "core")` package provides a
-wide range of functions for univariate and multivariate geostatistics,
-also for larger datasets, while
-`r pkg("geoR", priority = "core")` and geoRglm contain
-functions for model-based geostatistics. Variogram diagnostics may be
-carried out with `r pkg("vardiag")`. Automated interpolation
-using `r pkg("gstat")` is available in
-`r pkg("automap")`. This family of packages is supplemented
-by `r pkg("intamap")` with procedures for automated
-interpolation. A similar wide range of functions is to be found in the
-`r pkg("fields")` package. The
-`r pkg("spatial")` package is shipped with base R, and
-contains several core functions. The `r pkg("spBayes")`
-package fits Gaussian univariate and multivariate models with MCMC.
-`r pkg("ramps")` is a different Bayesian geostatistical
-modelling package. The `r pkg("geospt")` package contains
-some geostatistical and radial basis functions, including prediction and
-cross validation. Besides, it includes functions for the design of
-optimal spatial sampling networks based on geostatistical modelling. The
-`r pkg("rcosmo")` package offers various geostatistics
-methods for spherical data: descriptive statistics, entropy based
-methods, covariance-variogram methods, etc. Most of rcosmo features were
-developed for Cosmic Microwave Background data, but they can also be
-used for any spherical data. The `r pkg("FRK")` package is a
-tool for spatial/spatio-temporal modelling and prediction with large
-datasets. The approach, discussed in Cressie and Johannesson (2008),
-decomposes the field, and hence the covariance function, using a fixed
-set of n basis functions, where n is typically much smaller than the
-number of data points (or polygons) m.
-
-The `r pkg("RandomFields", priority = "core")` package
-provides functions for the simulation and analysis of random fields, and
-variogram model descriptions can be passed between
-`r pkg("geoR")`, `r pkg("gstat")` and this
-package. `r pkg("SpatialExtremes")` proposes several
-approaches for spatial extremes modelling using
-`r pkg("RandomFields")`. In addition,
-`r pkg("CompRandFld")`,
-`r pkg("constrainedKriging")` and
-`r pkg("geospt")` provide alternative approaches to
-geostatistical modelling. The `r pkg("spTimer")` package is
-able to fit, spatially predict and temporally forecast large amounts of
-space-time data using \[1\] Bayesian Gaussian Process (GP) Models, \[2\]
-Bayesian Auto-Regressive (AR) Models, and \[3\] Bayesian Gaussian
-Predictive Processes (GPP) based AR Models. The
-`r pkg("rtop")` package provides functions for the
-geostatistical interpolation of data with irregular spatial support such
-as runoff related data or data from administrative units. The
-`r pkg("georob")` package provides functions for fitting
-linear models with spatially correlated errors by robust and Gaussian
-Restricted Maximum Likelihood and for computing robust and customary
-point and block kriging predictions, along with utility functions for
-cross-validation and for unbiased back-transformation of kriging
-predictions of log-transformed data. The
-`r pkg("SpatialTools")` package has an emphasis on kriging,
-and provides functions for prediction and simulation. It is extended by
-`r pkg("ExceedanceTools")`, which provides tools for
-constructing confidence regions for exceedance regions and contour
-lines. The `r pkg("gear")` package implements common
-geostatistical methods in a clean, straightforward, efficient manner,
-and is said to be a quasi reboot of `r pkg("SpatialTools")`.
-The `r pkg("sperrorest")` package implements spatial error
-estimation and permutation-based spatial variable importance using
-different spatial cross-validation and spatial block bootstrap methods.
-
-The `r pkg("sgeostat")` package is also available. Within
-the same general topical area are the
-`r pkg("deldir", priority = "core")` and
-`r pkg("tripack")` packages for triangulation and the
-`r pkg("akima")` package for spline interpolation; the
-`r pkg("MBA")` package provides scattered data interpolation
-with multilevel B-splines. In addition, there are the
-`r pkg("spatialCovariance")` package, which supports the
-computation of spatial covariance matrices for data on rectangles, the
-`r pkg("regress")` package building in part on
-`r pkg("spatialCovariance")`, and the
-`r pkg("tgp")` package. The `r pkg("Stem")`
-package provides for the estimation of the parameters of a
-spatio-temporal model using the EM algorithm, and the estimation of the
-parameter standard errors using a spatio-temporal parametric bootstrap.
-`r pkg("FieldSim")` is another random fields simulations
-package. The `r pkg("SSN")` is for geostatistical modeling
-for data on stream networks, including models based on in-stream
-distance. Models are created using moving average constructions. Spatial
-linear models, including covariates, can be fit with ML or REML. Mapping
-and other graphical functions are included. The
-`r pkg("ipdw")` provides functions o interpolate -
-georeferenced point data via Inverse Path Distance Weighting. Useful -
-for coastal marine applications where barriers in the landscape -
-preclude interpolation with Euclidean distances.
-`r pkg("RSurvey")` may be used as a processing program for
-spatially distributed data, and is capable of error corrections and data
-visualisation.
+-   The `r pkg("gstat", priority = "core")` package provides a
+    wide range of functions for univariate and multivariate geostatistics,
+    also for larger datasets.
+-   `r pkg("geoR", priority = "core")` contains
+    functions for model-based geostatistics. 
+-   Variogram diagnostics may be
+    carried out with `r pkg("vardiag")`. 
+-   Automated interpolation using `r pkg("gstat")` is available 
+    in `r pkg("automap")`. 
+-   This family of packages is supplemented by `r pkg("intamap")` with 
+    procedures for automated interpolation. 
+-   A similar wide range of functions is to be found in the
+    `r pkg("fields")` package, extended by `r pkg("LatticeKrig")` 
+    for large spatial datasets and `r pkg("autoFRK")`.
+-   The `r pkg("spatial")` package is shipped with base R, and
+    contains several core functions. 
+-   The `r pkg("spBayes")` package fits Gaussian univariate and 
+    multivariate models with MCMC.
+-   `r pkg("ramps")` is a different Bayesian geostatistical
+    modelling package. 
+-   The `r pkg("geospt")` package contains
+    some geostatistical and radial basis functions, including prediction and
+    cross validation. Besides, it includes functions for the design of
+    optimal spatial sampling networks based on geostatistical modelling. 
+-   The `r pkg("rcosmo")` package offers various geostatistics
+    methods for spherical data: descriptive statistics, entropy based
+    methods, covariance-variogram methods, etc. Most of rcosmo features were
+    developed for Cosmic Microwave Background data, but they can also be
+    used for any spherical data. 
+-   The `r pkg("FRK")` package is a tool for 
+    spatial/spatio-temporal modelling and prediction with large
+    datasets. The approach, discussed in Cressie and Johannesson (2008),
+    decomposes the field, and hence the covariance function, using a fixed
+    set of n basis functions, where n is typically much smaller than the
+    number of data points (or polygons) m.
+-   The `r pkg("RandomFields", priority = "core")` package
+    provides functions for the simulation and analysis of random fields, and
+    variogram model descriptions can be passed between
+    `r pkg("geoR")`, `r pkg("gstat")` and this package. 
+-   `r pkg("SpatialExtremes")` proposes several
+    approaches for spatial extremes modelling using `r pkg("RandomFields")`. 
+-   In addition, `r pkg("CompRandFld")`, `r pkg("constrainedKriging")` and
+    `r pkg("geospt")` provide alternative approaches to geostatistical modelling. 
+-   The `r pkg("spTimer")` package is able to fit, spatially predict and 
+    temporally forecast large amounts of space-time data using \[1\] Bayesian 
+    Gaussian Process (GP) Models, \[2\] Bayesian Auto-Regressive (AR) Models, 
+    and \[3\] Bayesian Gaussian Predictive Processes (GPP) based AR Models. 
+-   The `r pkg("rtop")` package provides functions for the
+    geostatistical interpolation of data with irregular spatial support such
+    as runoff related data or data from administrative units. 
+-   The `r pkg("georob")` package provides functions for fitting
+    linear models with spatially correlated errors by robust and Gaussian
+    Restricted Maximum Likelihood and for computing robust and customary
+    point and block kriging predictions, along with utility functions for
+    cross-validation and for unbiased back-transformation of kriging
+    predictions of log-transformed data. 
+-   The `r pkg("SpatialTools")` package has an emphasis on kriging,
+    and provides functions for prediction and simulation. It is extended by
+    `r pkg("ExceedanceTools")`, which provides tools for
+    constructing confidence regions for exceedance regions and contour
+    lines. 
+-   The `r pkg("gear")` package implements common
+    geostatistical methods in a clean, straightforward, efficient manner,
+    and is said to be a quasi reboot of `r pkg("SpatialTools")`.
+-   The `r pkg("sperrorest")` package implements spatial error
+    estimation and permutation-based spatial variable importance using
+    different spatial cross-validation and spatial block bootstrap methods, used by
+    `r pkg("mlr3spatiotempcv")`.
+-   The `r pkg("sgeostat")` package is also available. Within
+    the same general topical area are the
+    `r pkg("deldir", priority = "core")` package for triangulation and the
+    `r pkg("interp")` package for spline interpolation; the
+    `r pkg("MBA")` package provides scattered data interpolation
+    with multilevel B-splines. 
+-   In addition, there are the
+    `r pkg("spatialCovariance")` package, which supports the
+    computation of spatial covariance matrices for data on rectangles, the
+    `r pkg("regress")` package building in part on
+    `r pkg("spatialCovariance")`, and the
+    `r pkg("tgp")` package. 
+-   The `r pkg("Stem")`
+    package provides for the estimation of the parameters of a
+    spatio-temporal model using the EM algorithm, and the estimation of the
+    parameter standard errors using a spatio-temporal parametric bootstrap.
+-   `r pkg("FieldSim")` is another random fields simulations
+    package. 
+-   The `r pkg("SSN")` is for geostatistical modeling
+    for data on stream networks, including models based on in-stream
+    distance. Models are created using moving average constructions. Spatial
+    linear models, including covariates, can be fit with ML or REML. Mapping
+    and other graphical functions are included. 
+-   The `r pkg("ipdw")` provides functions to interpolate
+    georeferenced point data via Inverse Path Distance Weighting. Useful
+    for coastal marine applications where barriers in the landscape
+    preclude interpolation with Euclidean distances.
+-   `r pkg("RSurvey")` may be used as a processing program for
+    spatially distributed data, and is capable of error corrections and data
+    visualisation.
 
 ### Disease mapping and areal data analysis
 
@@ -612,8 +629,7 @@ detection of spatial clusters of diseases. It extends and depends on the
 `r pkg("spdep", priority = "core")` package, which provides
 basic functions for building neighbour lists and spatial weights, tests
 for spatial autocorrelation for areal data like Moran's I. Functions
-for fitting spatial regression models, such as SAR and CAR models prior
-to version 1.1-1 are now in
+for fitting spatial regression models, such as SAR and CAR models are in
 `r pkg("spatialreg", priority = "core")`. These models assume
 that the spatial dependence can be described by known weights. In
 `r pkg("spatialreg")`, the `ME` and `SpatialFiltering`
