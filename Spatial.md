@@ -200,95 +200,36 @@ The ESRI company also offers their own package (`r github("R-ArcGIS/r-bridge")`)
 
 ### Interfaces to Spatial Web-Services
 
-Some R packages focused on providing interfaces to web-services and web
-tools in support of spatial data management. Here follows a first
-tentative (non-exhaustive) list:
+Some R packages focused on providing interfaces to web-services and web tools in support of spatial data management. 
+Here follows a first tentative (non-exhaustive) list:
 
--   `r pkg("ows4R")` is a new package that intends to
-    provide an R interface to OGC standard Web-Services. It is in active
-    development at `r github("eblondel/ows4R")` and
-    currently support interfaces to the Web Feature Service (WFS) for
-    vector data access, with binding to the `r pkg("sf")`
-    package, and the Catalogue Service (CSW) for geographic metadata
-    discovery and management (including transactions), with binding to
-    the `r pkg("geometa")` package.
--   `r pkg("geosapi")` is an R client for the
-    [GeoServer](http://geoserver.org) REST API, an open source
-    implementation used widely for serving spatial data.
--   `r pkg("geonapi")` provides an interface to the
-    [GeoNetwork](https://geonetwork-opensource.org/) legacy API, an
-    opensource catalogue for managing geographic metadata.
--   `r pkg("rgee")` is an [Earth
-    Engine](https://earthengine.google.com/) client library for R. All
-    of the 'Earth Engine' API classes, modules, and functions are made
-    available. Additional functions implemented include importing
-    (exporting) of Earth Engine spatial objects, extraction of time
-    series, interactive map display, assets management interface, and
-    metadata display.
+-   `r pkg("ows4R")` is a package that intends to provide an R interface to OGC standard Web-Services.
+It is in active development at `r github("eblondel/ows4R")` and currently support interfaces to the Web Feature Service (WFS) for vector data access, with binding to the `r pkg("sf")` package, and the Catalogue Service (CSW) for geographic metadata discovery and management (including transactions), with binding to the `r pkg("geometa")` package.
+-   `r pkg("geosapi")` is an R client for the [GeoServer](http://geoserver.org) REST API, an open source implementation used widely for serving spatial data.
+-   `r pkg("geonapi")` provides an interface to the [GeoNetwork](https://geonetwork-opensource.org/) legacy API, an open source catalogue for managing geographic metadata. 
+-   `r pkg("rgee")` is an [Earth Engine](https://earthengine.google.com/) client library for R. 
+All of the 'Earth Engine' API classes, modules, and functions are made available. 
+Additional functions implemented include importing (exporting) of Earth Engine spatial objects, extraction of time series, interactive map display, assets management interface, and metadata display.
 
 ### Specific geospatial data sources of interest
 
--   `r pkg("rnaturalearth")` package facilitates interaction
-    with [Natural Earth](http://www.naturalearthdata.com/) map data. It
-    includes functions to download a wealth of Natural Earth vector and
-    raster data, including cultural (e.g., country boundaries, airports,
-    roads, railroads) and physical (e.g., coastline, lakes, glaciates
-    areas) datasets.
--   Modern country boundaries are provided at 2 resolutions by
-    `r pkg("rworldmap")` along with functions to join and
-    map tabular data referenced by country names or codes. Chloropleth
-    and bubble maps are supported and general functions to work on user
-    supplied maps (see [A New R package for Mapping Global
-    Data](http://journal.R-project.org/archive/2011-1/RJournal_2011-1_South.pdf)
-    . Higher resolution country borders are available from the linked
-    package `r pkg("rworldxtra")`. Historical country
-    boundaries (1946-2012) can be obtained from the
-    `r pkg("cshapes")`.
--   `r pkg("marmap")` package is designed for downloading,
-    plotting and manipulating bathymetric and topographic data in R. It
-    allows to query the ETOPO1 bathymetry and topography database hosted
-    by the NOAA, use simple latitude-longitude-depth data in ascii
-    format, and take advantage of the advanced plotting tools available
-    in R to build publication-quality bathymetric maps (see the
-    [PLOS](http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0073051)
-    paper).
--   `r pkg("maptools")` provides an interface to GSHHS
-    shoreline databases.
--   The UScensus2000 suite of packages
-    (`r pkg("UScensus2000cdp")`,
-    `r pkg("UScensus2000tract")`) makes the use of data from
-    the 2000 US Census more convenient.
--   `r pkg("rgbif")` package is used to access Global
-    Biodiversity Information Facility (GBIF) occurence data
--   `r pkg("geonames")` is an interface to the
-    [www.geonames.org](http://www.geonames.org/) service.
--   `r pkg("OpenStreetMap")` gives access to open street map
-    raster images, and `r pkg("osmar")` provides
-    infrastructure to access OpenStreetMap data from different sources,
-    to work with the data in common R manner, and to convert data into
-    available infrastructure provided by existing R packages.
--   `r pkg("tidycensus")` provides access to US Census
-    Bureau data in a tidy format, including the option to bind the data
-    spatially on import.
--   `r pkg("tigris")` provides access to cartographic
-    elements provided by the US Census Bureau TIGER, including
-    cartographic boundaries, roads, and water.
--   `r pkg("chilemapas")` provides access to spatial data of
-    political and administrative divisions of Chile.
--   `r pkg("geobr")` provides easy access to official
-    spatial data sets of Brazil for multiple geographies and years.
--   `r pkg("geouy")` loads and process geographic
-    information for Uruguay.
--   `r pkg("rgugik")` allows to search and retrieve data
-    from Polish Head Office of Geodesy and Cartography ("GUGiK").
--   `r pkg("giscoR")` provides access to spatial elements
-    provided by GISCO - Eurostat, including boundary files of countries,
-    NUTS regions, municipalities and other spatial objects.
--   `r pkg("mapSpain")` downloads spatial boundary files of
-    administrative regions and other spatial objects of Spain.
--   `r pkg("osmextract")` matches, downloads, converts and
-    reads OpenStreetMap data extracts obtained from Geofabrik and other
-    providers.
+-   `r pkg("rnaturalearth")` package facilitates interaction with [Natural Earth](http://www.naturalearthdata.com/) map data.
+It includes functions to download a wealth of Natural Earth vector and raster data, including cultural (e.g., country boundaries, airports, roads, railroads) and physical (e.g., coastline, lakes, glaciated areas) datasets.
+-   Historical country boundaries (1886-today) can be obtained from the `r pkg("cshapes")`.
+-   `r pkg("marmap")` package is designed for downloading, plotting, and manipulating bathymetric and topographic data in R.
+It allows to query the ETOPO1 bathymetry and topography database hosted by the NOAA, use simple latitude-longitude-depth data in ascii format, and take advantage of the advanced plotting tools available in R to build publication-quality bathymetric maps (see the [PLOS](http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0073051) paper).
+-   `r pkg("tidycensus")` provides access to US Census Bureau data in a tidy format, including the option to bind the data spatially on import.
+-   `r pkg("tigris")` provides access to cartographic elements provided by the US Census Bureau TIGER, including cartographic boundaries, roads, and water.
+-   `r pkg("rgbif")` package is used to access Global Biodiversity Information Facility (GBIF) occurrence data
+-   `r pkg("geonames")` is an interface to the [www.geonames.org](http://www.geonames.org/) service.
+-   `r pkg("osmdata")` is an R package for accessing relatively small datasets from OpenStreetMap (OSM), delivered via the Overpass API. `r pkg("osmextract")` matches, downloads, converts, and reads OpenStreetMap data covering large areas, obtained from Geofabrik and other providers. 
+- `r pkg("OpenStreetMap")` gives access to open street map raster images, and `r pkg("osmar")` provides an infrastructure to access OpenStreetMap data from different sources, to work with the data in a common R manner, and to convert data into available infrastructure provided by existing R packages.
+-   `r pkg("giscoR")` provides access to spatial elements provided by GISCO - Eurostat, including boundary files of countries,  NUTS regions, municipalities, and other spatial objects.
+-   `r pkg("chilemapas")` provides access to spatial data of political and administrative divisions of Chile.
+-   `r pkg("geobr")` provides easy access to official spatial data sets of Brazil for multiple geographies and years.
+-   `r pkg("geouy")` loads and process geographic information for Uruguay.
+-   `r pkg("rgugik")` allows to search and retrieve data from Polish Head Office of Geodesy and Cartography ("GUGiK").
+-   `r pkg("mapSpain")` downloads spatial boundary files of administrative regions and other spatial objects of Spain.
 
 Handling spatial data
 ---------------------
