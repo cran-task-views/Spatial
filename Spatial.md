@@ -194,7 +194,8 @@ For GRASS 6.\*, use `r pkg("spgrass6")`.
 QGIS3 (version >= 3.16) is supported by `r github("paleolimbot/qgisprocess")`, which establishes an interface between R and QGIS, i.e., it allows the user to access QGIS functionalities from the R console. 
 It achieves this by using the qgis_process command-line utility.
 -   *WhiteboxTools:* `r pkg("whitebox")` is an R frontend for the WhiteboxTools software.
--   *ArcGIS:* `r pkg("RPyGeo")` is a wrapper for Python access to the ArcGIS GeoProcessor. The RSRI company also offers their own package (`r github("R-ArcGIS/r-bridge")`) that allows transferring data from ArcGIS to R.
+-   *ArcGIS:* `r pkg("RPyGeo")` is a wrapper for Python access to the ArcGIS GeoProcessor. 
+The ESRI company also offers their own package (`r github("R-ArcGIS/r-bridge")`) that allows transferring data from ArcGIS to R.
 -   Various GIS Software, including Orfeo ToolBox and SAGA GIS, can also be connected to R using `r pkg("link2GI")`.
 
 ### Interfaces to Spatial Web-Services
