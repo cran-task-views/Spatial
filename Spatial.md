@@ -160,7 +160,6 @@ that contain specific GDAL version with a subset of possible data source drivers
 If other drivers are needed, you need to either use other conversion utilities 
 or install these packages from the source against a version of GDAL with the
 required drivers.
-<!--Roger, should we still mention rgdal here (as it will be retired in less than 2 years)?-->
 
 ### Reading and writing spatial data - data formats
 
@@ -172,12 +171,15 @@ dealing with open standard formats or proprietary formats.
 -   *Well-Known Text (WKT) / Well-Known Binary (WKB):* These standards are 
     part of the OGC Simple Feature specification. Both WKT/WKB formats are 
     supported by the `r pkg("sf")` package that implements the whole
-    OGC Simple Feature specification in R. 
+    OGC Simple Feature specification in R. Additionally, `r pkg("wk")` and 
+    `r pkg("wkutils")` may be used to parse well-known binary and
+    well-known text representation of geometries to and from R-native formats.
 -   *GeoJSON:* An rOpenSci [blog entry](http://ropensci.org/blog/blog/2016/11/22/geospatial-suite) 
     describes a GeoJSON-centred approach to reading GeoJSON and WKT data.
     The entry lists `r pkg("geojson")`, and `r pkg("geojsonio")`, among others.
     The GeoJSON format can also be read and write with `r pkg("sf")`,
-    `r pkg("terra")`, and `r pkg("vapour")`.
+    `r pkg("terra")`, and `r pkg("vapour")`. `r pkg("wellknown")` makes possible
+    conversions from WKT to GeoJSON and GeoJSON to WKT.
 -   *Geographic Markup Language (GML):* GML format can be read and written
     with `r pkg("sf")`. Additional GML native reader and writer is provided
     by `r pkg("geometa")` model with bindings to the `r pkg("sf")` classes, 
@@ -192,15 +194,11 @@ dealing with open standard formats or proprietary formats.
 
 *Proprietary Data Formats*
 
-<!--Roger, should we kept mentions of "maps" below?-->
 -   *ESRI formats:* Many of spatial data saved into ESRI file formats
     can be read with GDAL, and thus also with `r pkg("sf")`, 
     `r pkg("terra")`, and `r pkg("vapour")`. Additionally, 
     `r pkg("shapefiles")` reads and writes ESRI ArcGIS/ArcView shapefiles.
-<!--Roger, should we kept the maptools package mentioned below?-->
--   *Others:* `r pkg("maptools")` package provides helper functions for writing
-    map polygon files to be read by *WinBUGS* , *Mondrian* , and the tmap
-    command in *Stata*. The `r pkg("gmt")` package gives a simple interface 
+-   *Others:* The `r pkg("gmt")` package gives a simple interface 
     between GMT map-making software and R.
 
 ### Reading and writing spatial data - GIS Software connectors
@@ -220,7 +218,7 @@ dealing with open standard formats or proprietary formats.
 -   *GRASS GIS:* Integration with version 7.\* of the leading open source GIS,
     GRASS GIS, is provided in CRAN package `r pkg("rgrass7")`.
     For GRASS 6.\*, use `r pkg("spgrass6")`.
--   *SAGA GIS:* `r pkg("RSAGA")` and `r pkg("Rsagacmd") offer shell-based
+-   *SAGA GIS:* `r pkg("RSAGA")` and `r pkg("Rsagacmd")` offer shell-based
     wrapper for SAGA GIS commands.
 -   *Quantum GIS (QGIS):* QGIS2 was supported by RQGIS 
     (`r github("r-spatial/RQGIS")`). QGIS3 (version >= 3.16) is supported by 
