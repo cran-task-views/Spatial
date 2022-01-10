@@ -392,9 +392,10 @@ Visualizing spatial data
     choosing class intervals for thematic cartography.
 -   `r pkg("rcosmo")` package provides several tools to interactively visualize
     HEALPix data, in particular, to plot data in arbitrary spherical windows.
--   Currently, the `r pkg ("grDevices")` (included with the R installation) 
+-   Currently, the grDevices package (included with the R installation) 
     contains a large number of color palettes that can be accessed with 
-    the hcl.colors and palette.colors functions.
+    the hcl.colors and palette.colors functions; see also New features in this
+    [blog](https://developer.r-project.org/Blog/public/2019/11/21/a-new-palette-for-r/index.html).
     Some of these color palettes can be also retrieved using separate packages,
     such as `r pkg("RColorBrewer")`, `r pkg("viridis")`, 
     or `r pkg("rcartocolor")`.
