@@ -201,6 +201,9 @@ dealing with open standard formats or proprietary formats.
     can be read with GDAL, and thus also with `r pkg("sf")`, 
     `r pkg("terra")`, and `r pkg("vapour")`. Additionally, 
     `r pkg("shapefiles")` reads and writes ESRI ArcGIS/ArcView shapefiles.
+    Additionally, `r pkg("maps")` (with `r pkg("mapdata")` and
+    `r pkg("mapproj")`) provides a legacy tool to access to the same kinds
+    of geographical databases as S.
 -   *Others:* The `r pkg("gmt")` package gives a simple interface 
     between GMT map-making software and R.
 
