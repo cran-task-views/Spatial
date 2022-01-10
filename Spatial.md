@@ -143,195 +143,178 @@ geographic metadata in R.
 Reading and writing spatial data
 --------------------------------
 
-**Reading and writing spatial data -
-`r pkg("rgdal", priority = "core")`**
+**Reading and writing spatial data**
 
-Maps may be vector-based or raster-based. The
-`r pkg("rgdal")` package provides bindings to [GDAL
-(Geospatial Data Abstraction Library)](http://www.gdal.org/) -supported
-raster formats and [OGR](http://www.gdal.org/ogr/) -supported vector
-formats. It contains functions to write raster and vector files in
-supported formats. Formats supported by GDAL/OGR include both OGC
-standard data formats (e.g. GeoJSON) and proprietary formats (e.g. ESRI
-Shapefile). The package also provides [PROJ.4](https://proj4.org/)
-projection support for vector objects ( [this
-site](http://spatialreference.org) provides searchable online PROJ.4
-representations of projections). Affine and similarity transformations
-on sp objects may be made using functions in the
-`r pkg("vec2dtransf")` package. The Windows and Mac OSX CRAN
-binaries of `r pkg("rgdal")` include subsets of possible
-data source drivers; if others are needed, use other conversion
-utilities, or install from source against a version of GDAL with the
+Spatial data is most often represented by one of two data models, 
+vector or raster, and both models have many of their own file formats.
+[GDAL (Geospatial Data Abstraction Library)](https://gdal.org/) is a (non-R)
+library that provides a unified way to read and write hundreds of 
+spatial data formats. Formats supported by GDAL include both OGC standard 
+data formats (e.g., GeoPackage) and proprietary formats (e.g., ESRI Shapefile).
+GDAL is used by a large number of GIS software and also many R packages,
+such as `r pkg("sf")`, `r pkg("terra")`, and `r pkg("vapour")`.
+This allows us to read and write spatial data in R from and to various 
+spatial file formats. Important note: CRAN offers binary versions of packages 
+`r pkg("sf")`, `r pkg("terra")`, and `r pkg("vapour")` for Windows and macOS,
+that contain specific GDAL version with a subset of possible data source drivers.
+If other drivers are needed, you need to either use other conversion utilities 
+or install these packages from the source against a version of GDAL with the
 required drivers.
+
+In the past, `r pkg("rgdal")` and `r pkg("raster")` (through `r pkg("rgdal")`) were recommended for reading and writing of spatial data in R.
+However, due to [the retirement of `r pkg("rgdal")` by the end of 2023](https://www.mail-archive.com/r-sig-geo@r-project.org/msg18468.html) new projects should not use it, and existing projects should implement migration to the packages mentioned in the previous paragraph.
 
 ### Reading and writing spatial data - data formats
 
-Other packages provide facilities to read and write spatial data,
+Other packages provide facilities to read and write spatial data, 
 dealing with open standard formats or proprietary formats.
 
-*OGC Standard Data formats*
+*Open formats*
 
--   *Well-Known Text (WKT) / Well-Known Binary (WKB):* These standards
-    are part of the OGC Simple Feature specification. Both WKT/WKB
-    formats are supported by `r pkg("sf")` package that
-    implements the whole OGC Simple Feature specification in R. Apart
-    from the `r pkg("sf")` package, the
-    `r pkg("rgeos", priority = "core")` package provides
-    functions for reading and writing well-known text (WKT) geometry.
-    Package `r pkg("wkb")` package provides functions for
-    reading and writing well-known binary (WKB) geometry.
--   *GeoJSON:* An rOpenSci [blog
-    entry](http://ropensci.org/blog/blog/2016/11/22/geospatial-suite)
-    described a GeoJSON-centred approach to reading GeoJSON and WKT
-    data. GeoJSON can be written and read using
-    `r pkg("rgdal")`, and WKT by
-    `r pkg("rgeos")`. The entry lists
-    `r pkg("geojson")`, and
-    `r pkg("geojsonio")`, among others.
--   *Geographic Markup Language (GML):* GML format can be read and
-    writen with `r pkg("rgdal")`. Additional GML native
-    reader and writer is provided by `r pkg("geometa")`
-    model with bindings to the `r pkg("sf")` classes, for
-    extension of geographic metadata with GML data and metadata elements
-    (GML 3.2.1 and 3.3) and interfacing OGC web-services in
-    `r pkg("ows4R")` package
--   *NetCDF files:* `r pkg("ncdf4")` or
-    `r pkg("RNetCDF")` may be used.
+-   *Well-Known Text (WKT) / Well-Known Binary (WKB):* These standards are 
+    part of the OGC Simple Feature specification. Both WKT/WKB formats are 
+    supported by the `r pkg("sf")` package that implements the whole
+    OGC Simple Feature specification in R. Additionally, `r pkg("wk")` and 
+    `r pkg("wkutils")` may be used to parse well-known binary and
+    well-known text representation of geometries to and from R-native formats.
+-   *GeoJSON:* An rOpenSci [blog entry](http://ropensci.org/blog/blog/2016/11/22/geospatial-suite) 
+    describes a GeoJSON-centred approach to reading GeoJSON and WKT data.
+    The entry lists `r pkg("geojson")`, and `r pkg("geojsonio")`, among others.
+    The GeoJSON format can also be read and write with `r pkg("sf")`,
+    `r pkg("terra")`, and `r pkg("vapour")`. `r pkg("wellknown")` makes possible
+    conversions from WKT to GeoJSON and GeoJSON to WKT.
+-   *Geographic Markup Language (GML):* GML format can be read and written
+    with `r pkg("sf")`. Additional GML native reader and writer is provided
+    by `r pkg("geometa")` model with bindings to the `r pkg("sf")` classes, 
+    for extension of geographic metadata with GML data and metadata 
+    elements (GML 3.2.1 and 3.3) and interfacing OGC web-services 
+    in `r pkg("ows4R")` package.
+-   *NetCDF files:* NetCDF files can be read and write with 
+    `r pkg("ncdf4")` or `r pkg("RNetCDF")`. Additionally, both `r pkg("terra")`
+    and `r pkg("stars")` have capabilities for reading and writing NetCDF files.
+-   *LAS / LAX:* These file formats are designed to work with lidar point
+    cloud data and can be read/write with `r pkg("lidR")` or `r pkg("rLiDAR")`.
 
 *Proprietary Data Formats*
 
--   *ESRI formats:* `r pkg("maps")` (with
-    `r pkg("mapdata")` and `r pkg("mapproj")`)
-    provides access to the same kinds of geographical databases as S.
-    `r pkg("maptools")` and
-    `r pkg("shapefiles")` read and write ESRI ArcGIS/ArcView
-    shapefiles.
--   *Others:* `r pkg("maptools")` package provides helper
-    functions for writing map polygon files to be read by *WinBUGS* ,
-    *Mondrian* , and the tmap command in *Stata* . The
-    `r pkg("gmt")` package gives a simple interface between
-    GMT map-making software and R.
+-   *ESRI formats:* Many of spatial data saved into ESRI file formats
+    can be read with GDAL, and thus also with `r pkg("sf")`, 
+    `r pkg("terra")`, and `r pkg("vapour")`. Additionally, 
+    `r pkg("shapefiles")` reads and writes ESRI ArcGIS/ArcView shapefiles.
+    Additionally, `r pkg("maps")` (with `r pkg("mapdata")` and
+    `r pkg("mapproj")`) provides a legacy tool to access to the same kinds
+    of geographical databases as S.
+-   *Others:* The `r pkg("gmt")` package gives a simple interface 
+    between GMT map-making software and R.
 
 ### Reading and writing spatial data - GIS Software connectors
 
--   *PostGIS:* The `r pkg("rpostgis")` package provides
-    additional functions to the `r pkg("RPostgreSQL")`
-    package to interface R with a 'PostGIS'-enabled database, as well
-    as convenient wrappers to common 'PostgreSQL' queries. It is
-    documented in an [R
-    Journal](https://journal.R-project.org/archive/2018/RJ-2018-025/index.html)
-    article. `r pkg("postGIStools")` package provides
-    functions to convert geometry and 'hstore' data types from
-    'PostgreSQL' into standard R objects, as well as to simplify the
-    import of R data frames (including spatial data frames) into
-    'PostgreSQL'. `r pkg("sf")` also provides an R
-    interface to Postgis, for both reading and writing, throuh GDAL.
--   *GRASS:* Integration with version 7.\* of the leading open source
-    GIS, GRASS, is provided in CRAN package
-    `r pkg("rgrass7")`, using `r pkg("rgdal")`
-    for exchanging data. For GRASS 6.\*, use
-    `r pkg("spgrass6")`.
--   *SAGA:* `r pkg("RSAGA")` is a similar shell-based
-    wrapper for SAGA commands.
--   *Quantum GIS (QGIS):* QGIS2 was supported by RQGIS. QGIS3 is
-    supported by `r github("r-spatial/RQGIS3")`, which
-    establishes an interface between R and QGIS, i.e. it allows the user
-    to access QGIS functionalities from the R console. It achieves this
-    by using the QGIS Python API.
--   *ArcGIS:* `r pkg("RPyGeo")` is a wrapper for Python
-    access to the ArcGIS GeoProcessor
+-   *PostGIS:* The `r pkg("rpostgis")` package provides additional functions
+    to the `r pkg("RPostgreSQL")` package to interface R with a 
+    'PostGIS'-enabled database, as well as convenient wrappers to 
+    common 'PostgreSQL' queries. It is documented in an 
+    [R Journal](https://journal.R-project.org/archive/2018/RJ-2018-025/index.html)
+    article. `r pkg("postGIStools")` package provides functions to convert 
+    geometry and 'hstore' data types from 'PostgreSQL' into standard R objects,
+    as well as to simplify the import of R data frames 
+    (including spatial data frames) into 'PostgreSQL'.
+    `r pkg("sf")` also provides an R interface to PostGIS, 
+    for both reading and writing, through GDAL.
+<!--Roger, I assume we can keep this information about rgrass7 for now and update it when rgrass is on CRAN (I just discovered the name change using a GitHub search)-->
+-   *GRASS GIS:* Integration with version 7.\* of the leading open source GIS,
+    GRASS GIS, is provided in CRAN package `r pkg("rgrass7")`.
+    For GRASS 6.\*, use `r pkg("spgrass6")`.
+-   *SAGA GIS:* `r pkg("RSAGA")` and `r pkg("Rsagacmd")` offer shell-based
+    wrapper for SAGA GIS commands.
+-   *Quantum GIS (QGIS):* QGIS2 was supported by RQGIS 
+    (`r github("r-spatial/RQGIS")`). QGIS3 (version >= 3.16) is supported by 
+    `r github("paleolimbot/qgisprocess")`, which establishes an interface 
+    between R and QGIS, i.e., it allows the user to access QGIS 
+    functionalities from the R console. It achieves this by using 
+    the qgis_process command-line utility.
+-   *WhiteboxTools:* `r pkg("whitebox")` is an R frontend for 
+    the WhiteboxTools software.
+-   *ArcGIS:* `r pkg("RPyGeo")` is a wrapper for Python access 
+    to the ArcGIS GeoProcessor. The ESRI company also offers their 
+    own package (`r github("R-ArcGIS/r-bridge")`) that allows transferring data
+    from ArcGIS to R.
+-   Various GIS Software, including Orfeo ToolBox and SAGA GIS, can also be
+    connected to R using `r pkg("link2GI")`.
 
 ### Interfaces to Spatial Web-Services
 
-Some R packages focused on providing interfaces to web-services and web
-tools in support of spatial data management. Here follows a first
-tentative (non-exhaustive) list:
+Some R packages focused on providing interfaces to web-services and web tools 
+in support of spatial data management. Here follows a first tentative 
+(non-exhaustive) list:
 
--   `r pkg("ows4R")` is a new package that intends to
-    provide an R interface to OGC standard Web-Services. It is in active
-    development at `r github("eblondel/ows4R")` and
-    currently support interfaces to the Web Feature Service (WFS) for
-    vector data access, with binding to the `r pkg("sf")`
-    package, and the Catalogue Service (CSW) for geographic metadata
-    discovery and management (including transactions), with binding to
-    the `r pkg("geometa")` package.
--   `r pkg("geosapi")` is an R client for the
-    [GeoServer](http://geoserver.org) REST API, an open source
-    implementation used widely for serving spatial data.
--   `r pkg("geonapi")` provides an interface to the
-    [GeoNetwork](https://geonetwork-opensource.org/) legacy API, an
-    opensource catalogue for managing geographic metadata.
--   `r pkg("rgee")` ia an [Earth
-    Engine](https://earthengine.google.com/) client library for R. All
-    of the 'Earth Engine' API classes, modules, and functions are made
-    available. Additional functions implemented include importing
-    (exporting) of Earth Engine spatial objects, extraction of time
-    series, interactive map display, assets management interface, and
-    metadata display.
+-   `r pkg("ows4R")` is a package that intends to provide an R interface 
+    to OGC standard Web-Services. It is in active development at 
+    `r github("eblondel/ows4R")` and currently support interfaces to the 
+    Web Feature Service (WFS) for vector data access, with binding to the 
+    `r pkg("sf")` package, and the Catalogue Service (CSW) for geographic
+    metadata discovery and management (including transactions), with binding 
+    to the `r pkg("geometa")` package.
+-   `r pkg("geosapi")` is an R client for the [GeoServer](http://geoserver.org) 
+    REST API, an open source implementation used widely for serving 
+    spatial data.
+-   `r pkg("geonapi")` provides an interface to the 
+    [GeoNetwork](https://geonetwork-opensource.org/) legacy API, 
+    an open source catalogue for managing geographic metadata. 
+-   `r pkg("rgee")` is an [Earth Engine](https://earthengine.google.com/) 
+    client library for R. All of the 'Earth Engine' API classes, modules, 
+    and functions are made available. Additional functions implemented include 
+    importing (exporting) of Earth Engine spatial objects, 
+    extraction of time series, interactive map display, 
+    assets management interface, and metadata display.
 
 ### Specific geospatial data sources of interest
 
--   `r pkg("rnaturalearth")` package facilitates interaction
-    with [Natural Earth](http://www.naturalearthdata.com/) map data. It
-    includes functions to download a wealth of Natural Earth vector and
-    raster data, including cultural (e.g., country boundaries, airports,
-    roads, railroads) and physical (e.g., coastline, lakes, glaciates
-    areas) datasets.
--   Modern country boundaries are provided at 2 resolutions by
-    `r pkg("rworldmap")` along with functions to join and
-    map tabular data referenced by country names or codes. Chloropleth
-    and bubble maps are supported and general functions to work on user
-    supplied maps (see [A New R package for Mapping Global
-    Data](http://journal.R-project.org/archive/2011-1/RJournal_2011-1_South.pdf)
-    . Higher resolution country borders are available from the linked
-    package `r pkg("rworldxtra")`. Historical country
-    boundaries (1946-2012) can be obtained from the
-    `r pkg("cshapes")`.
--   `r pkg("marmap")` package is designed for downloading,
-    plotting and manipulating bathymetric and topographic data in R. It
-    allows to query the ETOPO1 bathymetry and topography database hosted
-    by the NOAA, use simple latitude-longitude-depth data in ascii
-    format, and take advantage of the advanced plotting tools available
-    in R to build publication-quality bathymetric maps (see the
+-   `r pkg("rnaturalearth")` package facilitates interaction with 
+    [Natural Earth](http://www.naturalearthdata.com/) map data. It includes 
+    functions to download a wealth of Natural Earth vector and raster data,
+    including cultural (e.g., country boundaries, airports, roads, railroads)
+    and physical (e.g., coastline, lakes, glaciated areas) datasets.
+-   Historical country boundaries (1886-today) can be obtained 
+    from the `r pkg("cshapes")`.
+-   `r pkg("marmap")` package is designed for downloading, plotting, 
+    and manipulating bathymetric and topographic data in R. It allows to query 
+    the ETOPO1 bathymetry and topography database hosted by the NOAA, 
+    use simple latitude-longitude-depth data in ascii format, and take 
+    advantage of the advanced plotting tools available in R to build 
+    publication-quality bathymetric maps (see the
     [PLOS](http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0073051)
     paper).
--   `r pkg("maptools")` provides an interface to GSHHS
-    shoreline databases.
--   The UScensus2000 suite of packages
-    (`r pkg("UScensus2000cdp")`,
-    `r pkg("UScensus2000tract")`) makes the use of data from
-    the 2000 US Census more convenient.
--   `r pkg("rgbif")` package is used to access Global
-    Biodiversity Information Facility (GBIF) occurence data
--   `r pkg("geonames")` is an interface to the
+-   `r pkg("tidycensus")` provides access to US Census Bureau data in a 
+    tidy format, including the option to bind the data spatially on import.
+-   `r pkg("tigris")` provides access to cartographic elements provided by 
+    the US Census Bureau TIGER, including cartographic boundaries, roads, 
+    and water.
+-   `r pkg("rgbif")` package is used to access Global Biodiversity 
+    Information Facility (GBIF) occurrence data
+-   `r pkg("geonames")` is an interface to the 
     [www.geonames.org](http://www.geonames.org/) service.
--   `r pkg("OpenStreetMap")` gives access to open street map
-    raster images, and `r pkg("osmar")` provides
-    infrastructure to access OpenStreetMap data from different sources,
-    to work with the data in common R manner, and to convert data into
-    available infrastructure provided by existing R packages.
--   `r pkg("tidycensus")` provides access to US Census
-    Bureau data in a tidy format, including the option to bind the data
-    spatially on import.
--   `r pkg("tigris")` provides access to cartographic
-    elements provided by the US Census Bureau TIGER, including
-    cartographic boundaries, roads, and water.
--   `r pkg("chilemapas")` provides access to spatial data of
-    political and administrative divisions of Chile.
--   `r pkg("geobr")` provides easy access to official
-    spatial data sets of Brazil for multiple geographies and years.
--   `r pkg("geouy")` loads and process geographic
-    information for Uruguay.
--   `r pkg("rgugik")` allows to search and retrieve data
-    from Polish Head Office of Geodesy and Cartography ("GUGiK").
--   `r pkg("giscoR")` provides access to spatial elements
-    provided by GISCO - Eurostat, including boundary files of countries,
-    NUTS regions, municipalities and other spatial objects.
--   `r pkg("mapSpain")` downloads spatial boundary files of
-    administrative regions and other spatial objects of Spain.
--   `r pkg("osmextract")` matches, downloads, converts and
-    reads OpenStreetMap data extracts obtained from Geofabrik and other
-    providers.
+-   `r pkg("osmdata")` is an R package for accessing relatively 
+    small datasets from OpenStreetMap (OSM), delivered via the Overpass API.
+    `r pkg("osmextract")` matches, downloads, converts, and reads 
+    OpenStreetMap data covering large areas, obtained from Geofabrik 
+    and other providers. 
+-   `r pkg("OpenStreetMap")` gives access to open street map raster images, 
+    and `r pkg("osmar")` provides an infrastructure to access OpenStreetMap 
+    data from different sources, to work with the data in a common R manner,
+    and to convert data into available infrastructure provided by existing 
+    R packages.
+-   `r pkg("giscoR")` provides access to spatial elements provided by 
+    GISCO - Eurostat, including boundary files of countries,  NUTS regions,
+    municipalities, and other spatial objects.
+-   `r pkg("chilemapas")` provides access to spatial data of political 
+    and administrative divisions of Chile.
+-   `r pkg("geobr")` provides easy access to official spatial data sets of 
+    Brazil for multiple geographies and years.
+-   `r pkg("geouy")` loads and process geographic information for Uruguay.
+-   `r pkg("rgugik")` allows to search and retrieve data from Polish Head 
+    Office of Geodesy and Cartography ("GUGiK").
+-   `r pkg("mapSpain")` downloads spatial boundary files of administrative 
+    regions and other spatial objects of Spain.
 
 Handling spatial data
 ---------------------
