@@ -130,7 +130,7 @@ geographic metadata in R.
     way to read ISO 19139 metadata into R. The package extends
     `r pkg("sf")` to provide GML (ISO 19136) representation
     of geometries. `r pkg("geometa")` is under active development on
-    `r github("eblondel/geometa")`.
+    Github: `r github("eblondel/geometa")`.
 -   `r pkg("ncdf4")` provides read and write functions for
     handling metadata (CF conventions) in the self-described NetCDF
     format.
