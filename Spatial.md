@@ -367,13 +367,12 @@ Handling spatial data
 
 ### Data cleaning
 
--   `r pkg("cleangeo")` may be used to inspect spatial objects, facilitate
-    handling and reporting of topology errors and geometry validity issues.
-    It may be used to reduce the likelihood of having issues when doing
-    spatial data processing.
+-   `r pkg("sf")` has a built-in functions st_is_valid to check whether 
+    an sf geometry is valid and st_make_valid to fix invalid geometry.
 -   `r pkg("lwgeom")` may also be used to facilitate handling and reporting
-    of topology errors and geometry validity issues.
-
+    of topology errors and geometry validity issues
+    in sf objects.
+    
 ### Data processing - specific
 
 -   The `r pkg("landsat")` package with accompanying 
@@ -382,7 +381,21 @@ Handling spatial data
 -   The `r pkg("areal")` package can be used to interpolate overlapping 
     but incongruent polygons, also known as areal weighted interpolation.
 -   The `r pkg("qualmap")` package can be used to digitize qualitative GIS data.
--   `r pkg("spsurvey")` provides a range of sampling functions.
+
+### Spatial sampling
+
+-   `r pkg("spsurvey")` provides a range of sampling
+    functions.
+-   `r pkg("Spbsampling")` allows selecting probability samples well spread
+    over the population of interest, in any dimension and using 
+    any distance function.
+-   `r pkg("spatialsample")` is a member of the tidymodel family of packages
+    and contains functions and classes for spatial resampling to use with the
+    `r pkg("rsample")`. 
+-   `r pkg("MBHdesign")` provides spatially survey balanced designs using the
+    quasi-random number method.
+-   `r pkg("SpotSampling")` contains three methods for spatial and temporal
+    sampling. 
 
 Visualizing spatial data
 ------------------------
