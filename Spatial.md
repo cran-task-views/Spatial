@@ -483,9 +483,10 @@ areal/lattice data, is widely accepted. However, areal data
 analysis can be split into disease mapping and spatial regression 
 (also partly overlapping). In addition, ecological analyses often 
 approach spatial data in particular ways, giving rise to a specific 
-topical cluster of packages. All of these ways of analysing spatial data
-treat the relationships between observations as a way of expressing
-important sources of information about the observations
+topical cluster of packages. All of these approaches to analysing spatial data
+treat the spatial relationships between observations as a way of exploring
+and making use of important sources of information about the observations over
+and above what is known when assuming that they are independent of each other.
 
 ### Point pattern analysis
 
@@ -518,8 +519,8 @@ study area.
 -   `r pkg("ecespa")` provides wrappers, functions and data for
     spatial point pattern analysis, used in the book on Spatial Ecology of
     the ECESPA/AEET. The functions for binning points on grids in
--   `r pkg("ash")` may also be of interest. The ads package
-    perform first- and second-order multi-scale analyses derived from
+-   `r pkg("ads")` may also be of interest. The ads package
+    performs first- and second-order multi-scale analyses derived from
     Ripley's K-function. 
 -   The `r pkg("dbmss")` package allows
     simple computation of a full set of spatial statistic functions of
@@ -547,7 +548,7 @@ interpolate values observed at point to unobserved points
     `r pkg("fields")` package, extended by `r pkg("LatticeKrig")` 
     for large spatial datasets and `r pkg("autoFRK")`.
 -   The `r pkg("spatial")` package is shipped with base R, and
-    contains several core functions. 
+    contains several core geostatistical functions. 
 -   The `r pkg("spBayes")` package fits Gaussian univariate and 
     multivariate models with MCMC.
 -   `r pkg("ramps")` is a different Bayesian geostatistical
@@ -793,7 +794,7 @@ They include:
     functions in other contributed packages. One such is
     `r pkg("tripEstimation")`, basing on the classes
     provided by `r pkg("trip")`. 
--   `r pkg("ncf")` has entered CRAN recently, and provides a range of spatial
+-   `r pkg("ncf")` provides a range of spatial
     nonparametric covariance functions.
 -   The `r pkg("spind")` package provides functions for
     spatial methods based on generalized estimating equations (GEE) and
