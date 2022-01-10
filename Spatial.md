@@ -37,10 +37,11 @@ wealth of online book projects, which may be helpful for users seeking
 an introduction, including 
 [Geocomputation with R](https://geocompr.robinlovelace.net/index.html).
 
-Specific questions or issues may be raised directly with package
-maintainers by email, or where `packageDescription(<pkg>)$BugReports`
-returns an URL for bug reports or issues, where `<pkg>` is the
-name of the package as a string. Use may also be made of
+Specific questions or issues may be raised where 
+`packageDescription(<pkg>)$BugReports` returns an URL for bug 
+reports or issues (where `<pkg>` is the
+name of the package as a string), or directly with package
+maintainers by email. Use may also be made of
 the [R-SIG-Geo](https://stat.ethz.ch/mailman/listinfo/R-SIG-Geo/)
 mailing-list after subscription, or of 
 [stackoverflow](https://stackoverflow.com) with appropriate tags. Using the
