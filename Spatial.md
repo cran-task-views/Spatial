@@ -66,7 +66,7 @@ representations are to be preferred. For spatial raster data, the representation
 proposed in `r pkg("stars", priority = "core")` and `r pkg("terra", priority = "core")`
 suit overlapping but slightly different requirements. Conversion between objects
 of classes defined by `r pkg("sf")`, `r pkg("stars")`, `r pkg("terra")` and the legacy
-`r pkg("sp") packages are available, and are described in [Conversions between different 
+`r pkg("sp")` packages are available, and are described in [Conversions between different 
 spatial classes in R](https://geocompr.github.io/post/2021/spatial-classes-conversion/).
 
 Complementary initiatives are ongoing to support better handling of
