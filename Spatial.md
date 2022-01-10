@@ -45,7 +45,7 @@ maintainers by email. Use may also be made of
 the [R-SIG-Geo](https://stat.ethz.ch/mailman/listinfo/R-SIG-Geo/)
 mailing-list after subscription, or of 
 [stackoverflow](https://stackoverflow.com) with appropriate tags, or of
-[stackexchaange](https://gis.stackexchange.com/). Using the
+[stackexchange](https://gis.stackexchange.com/). Using the
 `#rspatial` tag on [twitter](https://twitter.com) may also be worth trying,
 or browsing traffic using that tag (among others).
 
