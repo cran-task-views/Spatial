@@ -420,13 +420,18 @@ Visualizing spatial data
 ### Thematic cartography packages
 
 -   `r pkg("tmap")` package accepts most spatial data classes and provides
-    a modern basis for thematic mapping using a Grammar of Graphics syntax. 
+    a modern basis for thematic mapping using a Grammar of Graphics syntax.
+    It also allows for interactive spatial data mapping.
 -   `r pkg("mapsf")` package allows various cartographic representations 
-    such as proportional symbols, choropleth, or typology maps.
--   `r pkg("ggplot2")` package has a built-in support for sf objects.
+    such as proportional symbols, choropleth, or typology maps; however only 
+    for sf objects
+-   `r pkg("ggplot2")` package has a built-in support for sf objects with the 
+    geom_sf function and additional support for stars object is available
+    through the geom_stars function available in the `r pkg("stars")` package.
     Its spatial visualization capabilities can be further extended with 
-    `r pkg("ggspatial")`, which adds support for more spatial classes, 
-    allows adding north arrows and scale bars, and more.
+    `r pkg("ggspatial")`, which adds support for more spatial classes 
+    (including classes from the raster package), allows adding north arrows
+    and scale bars, etc.
 -   The `r pkg("mapmisc")` package is a minimal, light-weight set of tools
     for producing nice-looking maps in R, with support for map projections.
 -   Additional processing and mapping functions are available in 
