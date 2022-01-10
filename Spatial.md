@@ -77,7 +77,7 @@ geographic metadata in R.
     for R, in compliance with the [OGC Simple
     Feature](http://www.opengeospatial.org/standards/sfa) standard. The
     development of the package was supported by the [R
-    Consortium](https://www.r-consortium.org/) . It provides simple
+    Consortium](https://www.r-consortium.org/). It provides simple
     features access for vector data, and as such is a modern
     implementation and standardization of parts of the legacy 
     `r pkg("sp")` package. `r pkg("sf")` is documented in an [R
@@ -87,7 +87,7 @@ geographic metadata in R.
     other external software libraries that they in turn depend on.
 -   `r pkg("stars", priority = "core")` is being actively developed here:
     `r github("rspatial/stars")`, and was supported by the [R
-    Consortium](https://www.r-consortium.org/) ; it provides for
+    Consortium](https://www.r-consortium.org/); it provides for
     spatiotemporal data in the form of dense arrays. It supercedes the 
     `r pkg("spacetime")` package, which 
     extended the shared classes defined in `r pkg("sp")` for
@@ -112,7 +112,7 @@ geographic metadata in R.
     PROJ, GDAL and GEOS, and introducing new S4 classes for raster and
     vector data. See the [manual and
     tutorials](https://rspatial.org/terra/) to get started.
-    `r pkg("terra")` is very similar to the`r pkg("raster")` package; but
+    `r pkg("terra")` is very similar to the `r pkg("raster")` package; but
     `r pkg("terra")` is simpler, better, and faster.
 -   `r pkg("stars", priority = "core")` provides for spatiotemporal data in the
     form of dense arrays, with space and time being array dimensions.
@@ -132,7 +132,7 @@ geographic metadata in R.
     of geometries. `r pkg("geometa")` is under active development on
     `r github("eblondel/geometa")`.
 -   `r pkg("ncdf4")` provides read and write functions for
-    handling metadata (CF conventions) in the self-described NetXDF
+    handling metadata (CF conventions) in the self-described NetCDF
     format.
 
 Reading and writing spatial data
