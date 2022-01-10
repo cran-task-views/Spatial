@@ -161,6 +161,9 @@ If other drivers are needed, you need to either use other conversion utilities
 or install these packages from the source against a version of GDAL with the
 required drivers.
 
+In the past, `r pkg("rgdal")` and `r pkg("raster")` (through `r pkg("rgdal")`) were recommended for reading and writing of spatial data in R.
+However, due to [the retirement of `r pkg("rgdal")` by the end of 2023](https://www.mail-archive.com/r-sig-geo@r-project.org/msg18468.html) new projects should not use it, and existing projects should implement migration to the packages mentioned in the previous paragraph.
+
 ### Reading and writing spatial data - data formats
 
 Other packages provide facilities to read and write spatial data, 
