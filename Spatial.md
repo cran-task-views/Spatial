@@ -647,6 +647,11 @@ calculated rates that are comparable both in terms of levels and uncertainty.
 -   `r pkg("DCluster")` extends and depends on the
     `r pkg("spdep", priority = "core")` package, which provides
     basic functions for building neighbour lists and spatial weights. 
+-   `r pkg("spdep")` also provides global and local tests for spatial
+    autocorrelation, including join-count tests, Moran's I, Geary's C,
+    Getis-Ord G and others.
+-   `r pkg("rgeoda")` is a wrapper for GeoDa and provides efficient alternatives
+    for calculating global and local tests for spatial autocorrelation.
 -   Some functions for fitting spatial regression models, such as SAR and CAR 
     models are in `r pkg("spatialreg", priority = "core")`, see below.
 -   The `r pkg("SpatialEpi")` package provides implementations of
@@ -811,8 +816,6 @@ They include:
     areas.
 -   The `r pkg("Watersheds")` package provides methods for
     watersheds aggregation and spatial drainage network analysis.
--   [Rcitrus](http://www.leg.ufpr.br/Rcitrus/) (off-CRAN package) is for
-    the spatial analysis of plant disease incidence.
 -   The `r pkg("ngspatial")` package provides tools for
     analyzing spatial data, especially non-Gaussian areal data. It
     supports the sparse spatial generalized linear mixed model of Hughes
