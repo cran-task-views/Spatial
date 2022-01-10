@@ -368,7 +368,7 @@ Handling spatial data
 ### Data cleaning
 
 -   `r pkg("sf")` has a built-in functions st_is_valid to check whether 
-    an sf geometry is valid and st_make_valid to fix invalid geometry.
+    an sf geometry is valid and st_make_valid to fix invalid geometry (from GEOS 3.8).
 -   `r pkg("lwgeom")` may also be used to facilitate handling and reporting
     of topology errors and geometry validity issues
     in sf objects.
