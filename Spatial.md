@@ -57,74 +57,77 @@ repository linked above.
 Classes for spatial data and metadata
 -------------------------------------
 
-Because many of the packages importing and using spatial data have had
-to include objects of storing data and functions for visualising it, an
-initiative is in progress to construct shared classes and plotting
-functions for spatial data.
+Many of the packages for handling and analysing spatial data use shared classes to
+reduce duplication of effort. Up until 2016, the `r pkg("sp")` package provided
+shared classes for spatial vector and raster data, but the representations used
+preceded more modern and efficient international standards for spatial vector data.
+From the release of `r pkg("sf", priority = "core")`, these modern vector
+representations are to be preferred. For spatial raster data, the representations
+proposed in `r pkg("stars", priority = "core")` and `r pkg("terra", priority = "core")`
+suit overlapping but slightly different requirements. Conversion between objects
+of classes defined by `r pkg("sf")`, `r pkg("stars")`, `r pkg("terra")` and the legacy
+`r pkg("sp") packages are available, and are described in [Conversions between different 
+spatial classes in R](https://geocompr.github.io/post/2021/spatial-classes-conversion/).
 
 Complementary initiatives are ongoing to support better handling of
 geographic metadata in R.
 
 ### Spatial data - general
 
--   The `r pkg("sp")` package provides classes and methods
-    for dealing with spatial data and is discussed in a note in [R
-    News](http://CRAN.R-project.org/doc/Rnews/Rnews_2005-2.pdf) .
--   `r pkg("sf")` is a newer package now on CRAN, and is
-    being actively developed here:
+-   `r pkg("sf", priority = "core")` is a CRAN package for spatial vector data, 
+    and is being actively developed here:
     `r github("r-spatial/sf")`, providing Simple Features
     for R, in compliance with the [OGC Simple
     Feature](http://www.opengeospatial.org/standards/sfa) standard. The
-    development of the package is being supported by the [R
-    Consortium](https://www.r-consortium.org/) . It provides simple
+    development of the package was supported by the [R
+    Consortium](https://www.r-consortium.org/). It provides simple
     features access for vector data, and as such is a modern
-    implementation and standardization of parts of
-    `r pkg("sp")`. It is documented in an [R
+    implementation and standardization of parts of the legacy 
+    `r pkg("sp")` package. `r pkg("sf")` is documented in an [R
     Journal](https://journal.R-project.org/archive/2018/RJ-2018-009/index.html)
-    article.
--   `r pkg("stars")` is being actively developed here:
-    `r github("rspatial/stars")`, and supported by the [R
-    Consortium](https://www.r-consortium.org/) ; it provides for
-    spatiotemporal data in the form of dense arrays.
--   The `r pkg("spacetime", priority = "core")` package
-    extends the shared classes defined in `r pkg("sp")` for
+    article. `r pkg("sf")` uses the PROJ, GEOS and GDAL external software
+    libraries, which must be available for source installs together with
+    other external software libraries that they in turn depend on.
+-   `r pkg("stars", priority = "core")` is being actively developed here:
+    `r github("rspatial/stars")`, and was supported by the [R
+    Consortium](https://www.r-consortium.org/); it provides for
+    spatiotemporal data in the form of dense arrays. It supercedes the 
+    `r pkg("spacetime")` package, which 
+    extended the shared classes defined in `r pkg("sp")` for
     spatio-temporal data (see [Spatio-Temporal Data in
-    R](http://www.jstatsoft.org/v51/i07) ).
+    R](http://www.jstatsoft.org/v51/i07) ). `r pkg("stars")` uses PROJ and
+    GDAL through `r pkg("sf")`.
+-   The `r pkg("vapour")` package offers low-level access to GDAL functionality 
+    for R packages. 
+-   The `r pkg("spatstat", priority = "core")` contains classes suited to the
+    analysis of point patterns, and may be coerced to and from `"sf"`, `"stars"`
+    and other spatial classes.
 -   The `r pkg("rcosmo")` package provides simple access to
     spherical and HEALPix data. It extends standard dataframes for
     HEALPix-type data.
 -   `r pkg("inlmisc")` has followed on from Grid2Polygons
     and converts a spatial object from class SpatialGridDataFrame to
-    SpatialPolygonsDataFrame among many other possibilities.
--   `r pkg("maptools", priority = "core")` provides
-    conversion functions between `r pkg("PBSmapping")` and
-    `r pkg("spatstat", priority = "core")` and
-    `r pkg("sp")` classes, in addition to
-    `r pkg("maps")` databases and `r pkg("sp")`
-    classes.
+    SpatialPolygonsDataFrame among many other possibilities for legacy 
+    `r pkg("sp")` classes.
+
 
 ### Raster data
 
--   `r pkg("raster")` package is a major extension of
-    `r pkg("sp")` spatial data classes to virtualise access
-    to large rasters, permitting large objects to be analysed, and
-    extending the analytical tools available for both raster and vector
-    data. Used with `r pkg("rasterVis")`, it can also
-    provide enhanced visualisation and interaction.
--   `r pkg("terra")` is a re-implementation of
+-   `r pkg("terra", priority = "core")` is a re-implementation of
     `r pkg("raster")` functionality, linking directly to
     PROJ, GDAL and GEOS, and introducing new S4 classes for raster and
     vector data. See the [manual and
     tutorials](https://rspatial.org/terra/) to get started.
-    `r pkg("terra")` is very similar to the
-    `r pkg("raster")` package; but
+    `r pkg("terra")` is very similar to the `r pkg("raster")` package; but
     `r pkg("terra")` is simpler, better, and faster.
--   `r pkg("stars")` provides for spatiotemporal data in the
+-   `r pkg("stars", priority = "core")` provides for spatiotemporal data in the
     form of dense arrays, with space and time being array dimensions.
     Examples include socio-economic or demographic data, environmental
     variables monitored at fixed stations, time series of satellite
     images with multiple spectral bands, spatial simulations, and
     climate model results.
+-   The `r pkg("gdalcubes")` package also provides classes for data cubes,
+    including proxy data cubes.
 
 ### Geographic metadata
 
@@ -134,10 +137,10 @@ geographic metadata in R.
     publication into metadata catalogues. Reverserly, geometa provides a
     way to read ISO 19139 metadata into R. The package extends
     `r pkg("sf")` to provide GML (ISO 19136) representation
-    of geometries. geometa is under active development on
-    `r github("eblondel/geometa")`
+    of geometries. `r pkg("geometa")` is under active development on
+    Github: `r github("eblondel/geometa")`.
 -   `r pkg("ncdf4")` provides read and write functions for
-    handling metadata (CF conventions) in the self-described NetXDF
+    handling metadata (CF conventions) in the self-described NetCDF
     format.
 
 Reading and writing spatial data
