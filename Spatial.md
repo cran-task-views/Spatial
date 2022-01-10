@@ -64,7 +64,10 @@ preceded more modern and efficient international standards for spatial vector da
 From the release of `r pkg("sf", priority = "core")`, these modern vector
 representations are to be preferred. For spatial raster data, the representations
 proposed in `r pkg("stars", priority = "core")` and `r pkg("terra", priority = "core")`
-suit overlapping but slightly different requirements.
+suit overlapping but slightly different requirements. Conversion between objects
+of classes defined by `r pkg("sf")`, `r pkg("stars")`, `r pkg("terra")` and the legacy
+`r pkg("sp") packages are available, and are described in [Conversions between different 
+spatial classes in R](https://geocompr.github.io/post/2021/spatial-classes-conversion/).
 
 Complementary initiatives are ongoing to support better handling of
 geographic metadata in R.
@@ -96,6 +99,9 @@ geographic metadata in R.
     GDAL through `r pkg("sf")`.
 -   The `r pkg("vapour")` package offers low-level access to GDAL functionality 
     for R packages. 
+-   The `r pkg("spatstat", priority = "core")` contains classes suited to the
+    analysis of point patterns, and may be coerced to and from `"sf"`, `"stars"`
+    and other spatial classes.
 -   The `r pkg("rcosmo")` package provides simple access to
     spherical and HEALPix data. It extends standard dataframes for
     HEALPix-type data.
@@ -120,6 +126,8 @@ geographic metadata in R.
     variables monitored at fixed stations, time series of satellite
     images with multiple spectral bands, spatial simulations, and
     climate model results.
+-   The `r pkg("gdalcubes")` package also provides classes for data cubes,
+    including proxy data cubes.
 
 ### Geographic metadata
 
