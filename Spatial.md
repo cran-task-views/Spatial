@@ -127,7 +127,7 @@ geographic metadata in R.
     images with multiple spectral bands, spatial simulations, and
     climate model results.
 -   The `r pkg("gdalcubes")` package also provides classes for data cubes,
-    including proxy data cubes.
+    including proxy data cubes, it links to PROJ, GDAL and NetCDF4.
 
 ### Geographic metadata
 
@@ -814,6 +814,46 @@ They include:
 The `r view("Environmetrics")` Task View contains a much more
 complete survey of relevant functions and packages.
 
+
+Installing packages linking to PROJ, GDAL or GEOS
+-------------------------------------------------
+
+Installation of packages like `r pkg("sf")` and `r pkg("terra")` which use
+external software libraries such as PROJ, GDAL or GEOS requires care. For
+most users on platforms such as Windows or macOS who are not themselves 
+package developers, it is always better to avoid what are known as 
+source installs, because CRAN binary packages include all of the external 
+software required. Because `getOption("pkgType")` on these platforms is
+usually `"both"`, you may be asked to choose to install a source package
+if it is more recent than the latest binary. 
+
+Please do not be tempted to choose a source install for `r pkg("sf")` or 
+`r pkg("terra")` or similar; the binary package will be generated within a
+day or two. To avoid being asked, you may see from `?options` 
+under options provided by the utils package that the default 
+behaviour of your installation of R may be controlled
+by setting options `install.packages.check.source` and
+`install.packages.compile.from.source`, or by setting environment variable
+`R_COMPILE_AND_INSTALL_PACKAGES`, see also this [helpful comment](https://github.com/r-spatial/sf/issues/1848#issuecomment-1005038753).
+
+If you are a developer using Windows or macOS or installing 
+from `github`, the same static-linked 
+binary external software libraries, header files, etc. as those used in 
+building CRAN binary packages are available from: Windows 4.0 and 4.1 
+[downloaded on-the-fly](https://github.com/orgs/rwinlib/repositories), 
+Windows 4.2 [forthcoming rtools42](https://www.r-project.org/nosvn/winutf8/ucrt3/) 
+and macOS [both architectures](https://mac.r-project.org/tools/). These 
+external software libraries have been built using the same compile and 
+link settings as R itself, so avoid the risk of possible errors caused by 
+mismatched binaries. 
+
+If you are a user (or developer) on systems where `getOption("pkgType")`
+is `"source"`, you will need to ensure that the external software is
+available when installing source packages. Advice for some such systems may
+be found [here](https://github.com/r-spatial/sf/#installing). 
+[The most common reason](https://github.com/r-spatial/sf/#multiple-gdal-geos-andor-proj-versions-on-your-system) 
+for failure is having multiple versions of external software installed
+on your platform.
 
 
 ### Links
