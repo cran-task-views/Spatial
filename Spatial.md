@@ -311,7 +311,7 @@ in support of spatial data management. Here follows a first tentative
     municipalities, and other spatial objects.
 -   `r pkg("chilemapas")` provides access to spatial data of political 
     and administrative divisions of Chile.
--   `r pkg("geobr")` provides easy access to official spatial data sets of 
+-   The former `geobr` package provided easy access to official spatial data sets of 
     Brazil for multiple geographies and years.
 -   `r pkg("geouy")` loads and process geographic information for Uruguay.
 -   `r pkg("rgugik")` allows to search and retrieve data from Polish Head 
@@ -735,7 +735,7 @@ Task View.
 -   The two small packages `r pkg("S2sls")` and `r pkg("spanel")` provide
     alternative implementations without most of the facilities of
     `r pkg("splm")`. 
--   The `r pkg("HSAR")` package provides Hierarchical
+-   The former `HSAR` package provides Hierarchical
     Spatial Autoregressive Models (HSAR), based on a Bayesian Markov Chain
     Monte Carlo (MCMC) algorithm. 
 -   `r pkg("spatialprobit")` makes
