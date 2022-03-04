@@ -3,7 +3,7 @@ name: Spatial
 topic: Analysis of Spatial Data
 maintainer: Roger Bivand, Jakub Nowosad
 email: Roger.Bivand@nhh.no
-version: 2022-01-06
+version: 2022-01-24
 source: https://github.com/cran-task-views/Spatial/
 ---
 
@@ -409,8 +409,8 @@ Visualizing spatial data
     a modern basis for thematic mapping using a Grammar of Graphics syntax.
     It also allows for interactive spatial data mapping.
 -   `r pkg("mapsf")` package allows various cartographic representations 
-    such as proportional symbols, choropleth, or typology maps; however only 
-    for sf objects
+    such as proportional symbols, choropleth, or typology maps; it accepts sf
+    (`r pkg("sf")`) and SpatRaster (`r pkg("terra")`) objects
 -   `r pkg("ggplot2")` package has a built-in support for sf objects with the 
     geom_sf function and additional support for stars object is available
     through the geom_stars function available in the `r pkg("stars")` package.
