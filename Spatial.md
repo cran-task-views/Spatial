@@ -3,7 +3,7 @@ name: Spatial
 topic: Analysis of Spatial Data
 maintainer: Roger Bivand, Jakub Nowosad
 email: Roger.Bivand@nhh.no
-version: 2022-01-24
+version: 2022-03-06
 source: https://github.com/cran-task-views/Spatial/
 ---
 
@@ -858,3 +858,6 @@ on your platform.
 
 ### Links
 -   [R-SIG-Geo mailing list](https://stat.ethz.ch/mailman/listinfo/R-SIG-Geo/)
+-   [r-spatial](https://r-spatial.org/)
+-   [rspatial](https://rspatial.org/)
+-   [Geocomputation with R](https://geocompr.robinlovelace.net/index.html)
