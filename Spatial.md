@@ -99,6 +99,7 @@ geographic metadata in R.
     GDAL through `r pkg("sf")`.
 -   The `r pkg("vapour")` package offers low-level access to GDAL functionality 
     for R packages. 
+-   The `r pkg("geos")` high-performance bindings to the GEOS library.
 -   The `r pkg("spatstat", priority = "core")` contains classes suited to the
     analysis of point patterns, and may be coerced to and from `"sf"`, `"stars"`
     and other spatial classes.
@@ -368,6 +369,8 @@ Handling spatial data
 -   The `r pkg("areal")` package can be used to interpolate overlapping 
     but incongruent polygons, also known as areal weighted interpolation.
 -   The `r pkg("qualmap")` package can be used to digitize qualitative GIS data.
+-   The `r pkg("exactextractr")` for fast and accurate summary of raster values
+    on polygonal areas (known as zonal statistics).
 
 ### Spatial sampling
 
