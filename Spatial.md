@@ -3,7 +3,7 @@ name: Spatial
 topic: Analysis of Spatial Data
 maintainer: Roger Bivand, Jakub Nowosad
 email: Roger.Bivand@nhh.no
-version: 2022-04-06
+version: 2022-04-14
 source: https://github.com/cran-task-views/Spatial/
 ---
 
@@ -99,7 +99,6 @@ geographic metadata in R.
     GDAL through `r pkg("sf")`.
 -   The `r pkg("vapour")` package offers low-level access to GDAL functionality 
     for R packages. 
--   The `r pkg("geos")` high-performance bindings to the GEOS library.
 -   The `r pkg("spatstat", priority = "core")` contains classes suited to the
     analysis of point patterns, and may be coerced to and from `"sf"`, `"stars"`
     and other spatial classes.
@@ -327,13 +326,18 @@ Handling spatial data
 ### Data processing - general
 
 -   `r pkg("sf")` provides an interface to spatial geometry functions using
-    the [GEOS](https://libgeos.org/) and [S2](https://s2geometry.io/) libraries.
+    the [GEOS](https://libgeos.org/) and [S2](https://s2geometry.io/) libraries; S2
+    is bundled in the `r pkg("s2")` package which `r pkg("sf")` methods use for
+    topological predicates and operations on spherical or elliptical coordinates by default.
 -   `r pkg("stars")` contains tools for manipulating raster and vector
     data cubes.
 -   `r pkg("terra")` package introduces many GIS methods for spatial vector
     and raster data.
 -   The `r pkg("gdalUtils")` and `r pkg("gdalUtilities")` packages provide
     wrappers for the Geospatial Data Abstraction Library (GDAL) Utilities.
+-   The `r pkg("geos")` high-performance bindings to the GEOS library, based on
+    `r pkg("libgeos")`; the latter bundles a frozen copy of GEOS, and does not
+    link to system versions, which may possibly be different versions of GEOS.
 -   `r pkg("rmapshaper")` is a wrapper around the 'mapshaper' 'JavaScript'
     library to perform topologically-aware polygon simplification and other 
     operations such as clipping, erasing, dissolving, and converting 
