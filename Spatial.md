@@ -383,8 +383,8 @@ Handling spatial data
 -   `r pkg("Spbsampling")` allows selecting probability samples well spread
     over the population of interest, in any dimension and using 
     any distance function.
--   `r pkg("spatialsample")` is a member of the tidymodel family of packages
-    and contains functions and classes for spatial resampling to use with the
+-   `r pkg("spatialsample")` is a member of the tidymodels family of packages
+    and contains functions and classes for spatial resampling to use with
     `r pkg("rsample")`. 
 -   `r pkg("MBHdesign")` provides spatially survey balanced designs using the
     quasi-random number method.
