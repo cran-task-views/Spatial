@@ -89,7 +89,7 @@ geographic metadata in R.
     libraries, which must be available for source installs together with
     other external software libraries that they in turn depend on.
 -   `r pkg("stars", priority = "core")` is being actively developed here:
-    `r github("rspatial/stars")`, and was supported by the [R
+    `r github("r-spatial/stars")`, and was supported by the [R
     Consortium](https://www.r-consortium.org/); it provides for
     spatiotemporal data in the form of dense arrays. It supercedes the 
     `r pkg("spacetime")` package, which 
