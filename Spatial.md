@@ -102,9 +102,6 @@ geographic metadata in R.
 -   The `r pkg("spatstat", priority = "core")` contains classes suited to the
     analysis of point patterns, and may be coerced to and from `"sf"`, `"stars"`
     and other spatial classes.
--   The `r pkg("rcosmo")` package provides simple access to
-    spherical and HEALPix data. It extends standard dataframes for
-    HEALPix-type data.
 -   `r pkg("inlmisc")` has followed on from Grid2Polygons
     and converts a spatial object from class SpatialGridDataFrame to
     SpatialPolygonsDataFrame among many other possibilities for legacy 
@@ -226,7 +223,6 @@ dealing with open standard formats or proprietary formats.
 <!--Roger, I assume we can keep this information about rgrass7 for now and update it when rgrass is on CRAN (I just discovered the name change using a GitHub search)-->
 -   *GRASS GIS:* Integration with version 7.\* of the leading open source GIS,
     GRASS GIS, is provided in CRAN package `r pkg("rgrass7")`.
-    For GRASS 6.\*, use `r pkg("spgrass6")`.
 -   *SAGA GIS:* `r pkg("RSAGA")` and `r pkg("Rsagacmd")` offer shell-based
     wrapper for SAGA GIS commands.
 -   *Quantum GIS (QGIS):* QGIS2 was supported by RQGIS 
@@ -333,7 +329,7 @@ Handling spatial data
     data cubes.
 -   `r pkg("terra")` package introduces many GIS methods for spatial vector
     and raster data.
--   The `r pkg("gdalUtils")` and `r pkg("gdalUtilities")` packages provide
+-   The`r pkg("gdalUtilities")` package provides
     wrappers for the Geospatial Data Abstraction Library (GDAL) Utilities.
 -   The `r pkg("geos")` high-performance bindings to the GEOS library, based on
     `r pkg("libgeos")`; the latter bundles a frozen copy of GEOS, and does not
@@ -351,8 +347,6 @@ Handling spatial data
 -   `r pkg("magclass")` offers a data class for increased interoperability 
     working with spatial-temporal data together with corresponding functions
     and methods (conversions, basic calculations and basic data manipulation). 
--   The `r pkg("rcosmo")` package offers various tools for geometric
-    transformations, computations, and statistical analysis of spherical data.
 -   The `r pkg("trip")` package extends spatial classes to permit the
     accessing and manipulating of spatial data for animal tracking.
 <!-- Roger, should we link here to papers such as https://besjournals.onlinelibrary.wiley.com/doi/10.1111/1365-2656.13116, https://link.springer.com/article/10.1007%2Fs40823-021-00067-y, https://link.springer.com/article/10.1007/s10109-020-00342-2, etc?-->
@@ -401,8 +395,6 @@ Visualizing spatial data
     the generic plot function.
 -   `r pkg("classInt", priority = "core")` package provides functions for 
     choosing class intervals for thematic cartography.
--   `r pkg("rcosmo")` package provides several tools to interactively visualize
-    HEALPix data, in particular, to plot data in arbitrary spherical windows.
 -   Currently, the grDevices package (included with the R installation) 
     contains a large number of color palettes that can be accessed with 
     the hcl.colors and palette.colors functions; see also New features in this
@@ -525,8 +517,6 @@ interpolate values observed at point to unobserved points
 -   The `r pkg("gstat", priority = "core")` package provides a
     wide range of functions for univariate and multivariate geostatistics,
     also for larger datasets.
--   `r pkg("geoR", priority = "core")` contains
-    functions for model-based geostatistics. 
 -   Variogram diagnostics may be
     carried out with `r pkg("vardiag")`. 
 -   Automated interpolation using `r pkg("gstat")` is available 
@@ -546,25 +536,16 @@ interpolate values observed at point to unobserved points
     some geostatistical and radial basis functions, including prediction and
     cross validation. Besides, it includes functions for the design of
     optimal spatial sampling networks based on geostatistical modelling. 
--   The `r pkg("rcosmo")` package offers various geostatistics
-    methods for spherical data: descriptive statistics, entropy based
-    methods, covariance-variogram methods, etc. Most of rcosmo features were
-    developed for Cosmic Microwave Background data, but they can also be
-    used for any spherical data. 
 -   The `r pkg("FRK")` package is a tool for 
     spatial/spatio-temporal modelling and prediction with large
     datasets. The approach, discussed in Cressie and Johannesson (2008),
     decomposes the field, and hence the covariance function, using a fixed
     set of n basis functions, where n is typically much smaller than the
     number of data points (or polygons) m.
--   The `r pkg("RandomFields", priority = "core")` package
-    provides functions for the simulation and analysis of random fields, and
-    variogram model descriptions can be passed between
-    `r pkg("geoR")`, `r pkg("gstat")` and this package. 
 -   `r pkg("SpatialExtremes")` proposes several
-    approaches for spatial extremes modelling using `r pkg("RandomFields")`. 
--   In addition, `r pkg("CompRandFld")`, `r pkg("constrainedKriging")` and
-    `r pkg("geospt")` provide alternative approaches to geostatistical modelling. 
+    approaches for spatial extremes modelling. 
+-   In addition, `r pkg("geospt")` provides alternative approaches to 
+    geostatistical modelling. 
 -   The `r pkg("spTimer")` package is able to fit, spatially predict and 
     temporally forecast large amounts of space-time data using \[1\] Bayesian 
     Gaussian Process (GP) Models, \[2\] Bayesian Auto-Regressive (AR) Models, 
@@ -572,12 +553,6 @@ interpolate values observed at point to unobserved points
 -   The `r pkg("rtop")` package provides functions for the
     geostatistical interpolation of data with irregular spatial support such
     as runoff related data or data from administrative units. 
--   The `r pkg("georob")` package provides functions for fitting
-    linear models with spatially correlated errors by robust and Gaussian
-    Restricted Maximum Likelihood and for computing robust and customary
-    point and block kriging predictions, along with utility functions for
-    cross-validation and for unbiased back-transformation of kriging
-    predictions of log-transformed data. 
 -   The `r pkg("SpatialTools")` package has an emphasis on kriging,
     and provides functions for prediction and simulation. It is extended by
     `r pkg("ExceedanceTools")`, which provides tools for
@@ -648,19 +623,11 @@ calculated rates that are comparable both in terms of levels and uncertainty.
     cluster detection, and supports strata. 
 -   The `r pkg("smerc")` package provides statistical methods 
     for the analysis of data areal data, with a focus on cluster detection. 
--   The `r pkg("diseasemapping")` package offers the formatting of
-    population and case data, calculation of Standardized Incidence Ratios,
-    and fitting the BYM model using INLA. 
 -   A Markov Random Field `"mrf"` effect may be added to models in the 
     `r pkg("mgcv")` package shipped with base R, providing flexible
     modelling tools in a recommended package.
 -   The `r pkg("hglm")` package also provides SAR and CAR model fitting
     approaches.
--   Regionalization of polygon objects
-    is provided by `r pkg("AMOEBA")`: a function to calculate
-    spatial clusters using the Getis-Ord local statistic. It searches
-    for irregular clusters (ecotopes) on a map, as does `skater()` in
-    `r pkg("spdep")`. 
 -   The `r pkg("seg")`, `r pkg("divseg")` and
     `r pkg("OasisR")` packages provide functions for measuring
     spatial segregation; `r pkg("OasisR")` includes Monte Carlo
