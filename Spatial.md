@@ -3,7 +3,7 @@ name: Spatial
 topic: Analysis of Spatial Data
 maintainer: Roger Bivand, Jakub Nowosad
 email: Roger.Bivand@nhh.no, nowosad.jakub@gmail.com
-version: 2022-04-14
+version: 2022-08-03
 source: https://github.com/cran-task-views/Spatial/
 ---
 
@@ -223,10 +223,10 @@ dealing with open standard formats or proprietary formats.
     (including spatial data frames) into 'PostgreSQL'.
     `r pkg("sf")` also provides an R interface to PostGIS, 
     for both reading and writing, through GDAL.
-<!--Roger, I assume we can keep this information about rgrass7 for now and update it when rgrass is on CRAN (I just discovered the name change using a GitHub search)-->
--   *GRASS GIS:* Integration with version 7.\* of the leading open source GIS,
-    GRASS GIS, is provided in CRAN package `r pkg("rgrass7")`.
-    For GRASS 6.\*, use `r pkg("spgrass6")`.
+-   *GRASS GIS:* Integration with version 7.\* and 8.\* of the leading open source GIS,
+    GRASS GIS, is provided in CRAN package `r pkg("rgrass")`, which uses `r pkg("terra")` for file transfer; 
+    the interface was previously provided in `r pkg("rgrass7")`, 
+    to be archived during 2023 as it used functions in the deprecated `rgrass7` package.
 -   *SAGA GIS:* `r pkg("RSAGA")` and `r pkg("Rsagacmd")` offer shell-based
     wrapper for SAGA GIS commands.
 -   *Quantum GIS (QGIS):* QGIS2 was supported by RQGIS 
