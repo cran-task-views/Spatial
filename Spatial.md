@@ -3,7 +3,7 @@ name: Spatial
 topic: Analysis of Spatial Data
 maintainer: Roger Bivand, Jakub Nowosad
 email: Roger.Bivand@nhh.no, nowosad.jakub@gmail.com
-version: 2022-08-03
+version: 2022-08-08
 source: https://github.com/cran-task-views/Spatial/
 ---
 
@@ -657,10 +657,12 @@ calculated rates that are comparable both in terms of levels and uncertainty.
 -   The `r pkg("hglm")` package also provides SAR and CAR model fitting
     approaches.
 -   Regionalization of polygon objects
-    is provided by `r pkg("AMOEBA")`: a function to calculate
-    spatial clusters using the Getis-Ord local statistic. It searches
-    for irregular clusters (ecotopes) on a map, as does `skater()` in
-    `r pkg("spdep")`. 
+    is no longer provided by archived `AMOEBA`: a function to calculate
+    spatial clusters using the Getis-Ord local statistic. It searched
+    for irregular clusters (ecotopes) on a map. `skater()` in
+    `r pkg("spdep")` does not interpose  a local statistic,
+     being based on distance between features in attribute space,
+     and polygon contiguity. 
 -   The `r pkg("seg")`, `r pkg("divseg")` and
     `r pkg("OasisR")` packages provide functions for measuring
     spatial segregation; `r pkg("OasisR")` includes Monte Carlo
