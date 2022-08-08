@@ -650,9 +650,6 @@ calculated rates that are comparable both in terms of levels and uncertainty.
     cluster detection, and supports strata. 
 -   The `r pkg("smerc")` package provides statistical methods 
     for the analysis of data areal data, with a focus on cluster detection. 
--   The `r pkg("diseasemapping")` package offers the formatting of
-    population and case data, calculation of Standardized Incidence Ratios,
-    and fitting the BYM model using INLA. 
 -   A Markov Random Field `"mrf"` effect may be added to models in the 
     `r pkg("mgcv")` package shipped with base R, providing flexible
     modelling tools in a recommended package.
