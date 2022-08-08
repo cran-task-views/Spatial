@@ -333,7 +333,9 @@ Handling spatial data
     data cubes.
 -   `r pkg("terra")` package introduces many GIS methods for spatial vector
     and raster data.
--   The `r pkg("gdalUtils")` and `r pkg("gdalUtilities")` packages provide
+-   The `r github("cran/gdalUtils")` (see
+    https://stat.ethz.ch/pipermail/r-sig-geo/2022-April/028953.html)
+    and `r pkg("gdalUtilities")` packages provide
     wrappers for the Geospatial Data Abstraction Library (GDAL) Utilities.
 -   The `r pkg("geos")` high-performance bindings to the GEOS library, based on
     `r pkg("libgeos")`; the latter bundles a frozen copy of GEOS, and does not
