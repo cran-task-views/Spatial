@@ -3,7 +3,7 @@ name: Spatial
 topic: Analysis of Spatial Data
 maintainer: Roger Bivand, Jakub Nowosad
 email: Roger.Bivand@nhh.no, nowosad.jakub@gmail.com
-version: 2022-08-08
+version: 2022-08-27
 source: https://github.com/cran-task-views/Spatial/
 ---
 
@@ -604,8 +604,8 @@ interpolate values observed at point to unobserved points
     `r pkg("regress")` package building in part on
     `r pkg("spatialCovariance")`, and the
     `r pkg("tgp")` package. 
--   The `r pkg("Stem")`
-    package provides for the estimation of the parameters of a
+-   The archived `Stem`
+    package provided for the estimation of the parameters of a
     spatio-temporal model using the EM algorithm, and the estimation of the
     parameter standard errors using a spatio-temporal parametric bootstrap.
 -   `r pkg("FieldSim")` is another random fields simulations
