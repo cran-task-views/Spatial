@@ -559,12 +559,8 @@ interpolate values observed at point to unobserved points
     decomposes the field, and hence the covariance function, using a fixed
     set of n basis functions, where n is typically much smaller than the
     number of data points (or polygons) m.
--   The `r pkg("RandomFields", priority = "core")` package
-    provides functions for the simulation and analysis of random fields, and
-    variogram model descriptions can be passed between
-    `r pkg("geoR")`, `r pkg("gstat")` and this package. 
 -   `r pkg("SpatialExtremes")` proposes several
-    approaches for spatial extremes modelling using `r pkg("RandomFields")`. 
+    approaches for spatial extremes. 
 -   In addition, `r pkg("CompRandFld")`, `r pkg("constrainedKriging")` and
     `r pkg("geospt")` provide alternative approaches to geostatistical modelling. 
 -   The `r pkg("spTimer")` package is able to fit, spatially predict and 
