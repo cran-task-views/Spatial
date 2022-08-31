@@ -561,7 +561,7 @@ interpolate values observed at point to unobserved points
     number of data points (or polygons) m.
 -   `r pkg("SpatialExtremes")` proposes several
     approaches for spatial extremes. 
--   In addition, `r pkg("CompRandFld")`, `r pkg("constrainedKriging")` and
+-   In addition, `r pkg("constrainedKriging")` and
     `r pkg("geospt")` provide alternative approaches to geostatistical modelling. 
 -   The `r pkg("spTimer")` package is able to fit, spatially predict and 
     temporally forecast large amounts of space-time data using \[1\] Bayesian 
