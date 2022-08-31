@@ -102,9 +102,6 @@ geographic metadata in R.
 -   The `r pkg("spatstat", priority = "core")` contains classes suited to the
     analysis of point patterns, and may be coerced to and from `"sf"`, `"stars"`
     and other spatial classes.
--   The `r pkg("rcosmo")` package provides simple access to
-    spherical and HEALPix data. It extends standard dataframes for
-    HEALPix-type data.
 -   `r pkg("inlmisc")` has followed on from Grid2Polygons
     and converts a spatial object from class SpatialGridDataFrame to
     SpatialPolygonsDataFrame among many other possibilities for legacy 
@@ -352,10 +349,7 @@ Handling spatial data
     matrices (see [Mapping and Measuring Country Shapes](http://journal.R-project.org/archive/2010-1/RJournal_2010-1_Weidmann+Skrede~Gleditsch.pdf)).
 -   `r pkg("magclass")` offers a data class for increased interoperability 
     working with spatial-temporal data together with corresponding functions
-    and methods (conversions, basic calculations and basic data manipulation). 
--   The `r pkg("rcosmo")` package offers various tools for geometric
-    transformations, computations, and statistical analysis of spherical data.
--   The `r pkg("trip")` package extends spatial classes to permit the
+    and methods (conversions, basic calculations and basic data manipulation). -   The `r pkg("trip")` package extends spatial classes to permit the
     accessing and manipulating of spatial data for animal tracking.
 <!-- Roger, should we link here to papers such as https://besjournals.onlinelibrary.wiley.com/doi/10.1111/1365-2656.13116, https://link.springer.com/article/10.1007%2Fs40823-021-00067-y, https://link.springer.com/article/10.1007/s10109-020-00342-2, etc?-->
 
@@ -403,8 +397,6 @@ Visualizing spatial data
     the generic plot function.
 -   `r pkg("classInt", priority = "core")` package provides functions for 
     choosing class intervals for thematic cartography.
--   `r pkg("rcosmo")` package provides several tools to interactively visualize
-    HEALPix data, in particular, to plot data in arbitrary spherical windows.
 -   Currently, the grDevices package (included with the R installation) 
     contains a large number of color palettes that can be accessed with 
     the hcl.colors and palette.colors functions; see also New features in this
@@ -548,11 +540,6 @@ interpolate values observed at point to unobserved points
     some geostatistical and radial basis functions, including prediction and
     cross validation. Besides, it includes functions for the design of
     optimal spatial sampling networks based on geostatistical modelling. 
--   The `r pkg("rcosmo")` package offers various geostatistics
-    methods for spherical data: descriptive statistics, entropy based
-    methods, covariance-variogram methods, etc. Most of rcosmo features were
-    developed for Cosmic Microwave Background data, but they can also be
-    used for any spherical data. 
 -   The `r pkg("FRK")` package is a tool for 
     spatial/spatio-temporal modelling and prediction with large
     datasets. The approach, discussed in Cressie and Johannesson (2008),
