@@ -312,7 +312,7 @@ in support of spatial data management. Here follows a first tentative
     Office of Geodesy and Cartography ("GUGiK").
 -   `r pkg("mapSpain")` downloads spatial boundary files of administrative 
     regions and other spatial objects of Spain.
--   `r pkg ("mapme.biodiversity")` allows to download and process a number open datasets related to biodiversity conservation providing efficient routines and parallelization options. Datasets include among others the [Global Forest Watch](https://www.globalforestwatch.org/), [ESA/Copernicus Landcover](https://land.copernicus.eu/global/products/lc), [Worldclim ](https://www.worldclim.org/) and [NASA FIRMS](https://firms.modaps.eosdis.nasa.gov/active_fire/).
+-   `r pkg("mapme.biodiversity")` allows to download and process a number open datasets related to biodiversity conservation providing efficient routines and parallelization options. Datasets include among others the [Global Forest Watch](https://www.globalforestwatch.org/), [ESA/Copernicus Landcover](https://land.copernicus.eu/global/products/lc), [Worldclim ](https://www.worldclim.org/) and [NASA FIRMS](https://firms.modaps.eosdis.nasa.gov/active_fire/).
 
 Handling spatial data
 ---------------------
