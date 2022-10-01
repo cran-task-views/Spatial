@@ -717,9 +717,8 @@ Task View.
 -   The `r pkg("spsur")` package provides functions to test and estimate 
     spatial seemingly unrelated regression models (spatial SUR) by maximum 
     likelihood and three-stage least squares. 
--   The two small archived packages `S2sls` and `spanel` provide
-    alternative implementations without most of the facilities of
-    `r pkg("splm")`. 
+-   The two small archived packages `S2sls` and `spanel` provide alternative
+    implementations without most of the facilities of `r pkg("splm")`. 
 -   The former `HSAR` package provides Hierarchical
     Spatial Autoregressive Models (HSAR), based on a Bayesian Markov Chain
     Monte Carlo (MCMC) algorithm. 
