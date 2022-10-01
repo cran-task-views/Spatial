@@ -3,7 +3,7 @@ name: Spatial
 topic: Analysis of Spatial Data
 maintainer: Roger Bivand, Jakub Nowosad
 email: Roger.Bivand@nhh.no, nowosad.jakub@gmail.com
-version: 2022-08-31
+version: 2022-10-01
 source: https://github.com/cran-task-views/Spatial/
 ---
 
@@ -717,7 +717,7 @@ Task View.
 -   The `r pkg("spsur")` package provides functions to test and estimate 
     spatial seemingly unrelated regression models (spatial SUR) by maximum 
     likelihood and three-stage least squares. 
--   The two small packages `r pkg("S2sls")` and `r pkg("spanel")` provide
+-   The two small archived packages `S2sls` and `spanel` provide
     alternative implementations without most of the facilities of
     `r pkg("splm")`. 
 -   The former `HSAR` package provides Hierarchical
