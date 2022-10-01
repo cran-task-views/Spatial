@@ -298,11 +298,7 @@ in support of spatial data management. Here follows a first tentative
     `r pkg("osmextract")` matches, downloads, converts, and reads 
     OpenStreetMap data covering large areas, obtained from Geofabrik 
     and other providers. 
--   `r pkg("OpenStreetMap")` gives access to open street map raster images, 
-    and `r pkg("osmar")` provides an infrastructure to access OpenStreetMap 
-    data from different sources, to work with the data in a common R manner,
-    and to convert data into available infrastructure provided by existing 
-    R packages.
+-   `r pkg("OpenStreetMap")` gives access to open street map raster images.
 -   `r pkg("giscoR")` provides access to spatial elements provided by 
     GISCO - Eurostat, including boundary files of countries,  NUTS regions,
     municipalities, and other spatial objects.
