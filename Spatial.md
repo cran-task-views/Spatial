@@ -580,8 +580,6 @@ interpolate values observed at point to unobserved points
     package provided for the estimation of the parameters of a
     spatio-temporal model using the EM algorithm, and the estimation of the
     parameter standard errors using a spatio-temporal parametric bootstrap.
--   `r pkg("FieldSim")` is another random fields simulations
-    package. 
 -   The `r pkg("SSN")` is for geostatistical modeling
     for data on stream networks, including models based on in-stream
     distance. Models are created using moving average constructions. Spatial
