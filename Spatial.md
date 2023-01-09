@@ -67,7 +67,7 @@ proposed in `r pkg("stars", priority = "core")` and `r pkg("terra", priority = "
 suit overlapping but slightly different requirements. Conversion between objects
 of classes defined by `r pkg("sf")`, `r pkg("stars")`, `r pkg("terra")` and the legacy
 `r pkg("sp")` packages are available, and are described in [Conversions between different 
-spatial classes in R](https://geocompr.github.io/post/2021/spatial-classes-conversion/).
+spatial classes in R](https://geocompx.org/post/2021/spatial-classes-conversion/).
 
 Complementary initiatives are ongoing to support better handling of
 geographic metadata in R.
