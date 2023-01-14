@@ -29,7 +29,7 @@ and information. Two informal organisations curate websites:
 [r-spatial](https://r-spatial.org/) with a hyphen, and 
 [rspatial](https://rspatial.org/) without. R-spatial is more generally 
 geo-informatics based, grew from the legacy `r pkg("sp")` package and 
-now clearly aligned with the modern `r pkg("sf", priority="core")` and 
+is now clearly aligned with the modern `r pkg("sf", priority="core")` and 
 `r pkg("stars", priority="core")` packages. Rspatial has grown from the 
 `r pkg("raster")` package, now moving towards the modern 
 `r pkg("terra", priority="core")` package. It is also worth noting the
