@@ -371,7 +371,8 @@ Handling spatial data
 
 ### Spatial sampling
 
--   `r pkg("spsurvey")` provides functions to select GRTS probability samples
+-   `r pkg("spsurvey")` provides functions to select generalized
+    random-tessellation stratified (GRTS) probability samples
     and analyze survey data.
 -   `r pkg("Spbsampling")` allows selecting probability samples well spread
     over the population of interest, in any dimension and using 
