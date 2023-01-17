@@ -3,7 +3,7 @@ name: Spatial
 topic: Analysis of Spatial Data
 maintainer: Roger Bivand, Jakub Nowosad
 email: Roger.Bivand@nhh.no, nowosad.jakub@gmail.com
-version: 2023-01-09
+version: 2023-01-17
 source: https://github.com/cran-task-views/Spatial/
 ---
 
@@ -371,8 +371,9 @@ Handling spatial data
 
 ### Spatial sampling
 
--   `r pkg("spsurvey")` provides a range of sampling
-    functions.
+-   `r pkg("spsurvey")` provides functions to select generalized
+    random-tessellation stratified (GRTS) probability samples
+    and analyze survey data.
 -   `r pkg("Spbsampling")` allows selecting probability samples well spread
     over the population of interest, in any dimension and using 
     any distance function.
@@ -593,6 +594,14 @@ interpolate values observed at point to unobserved points
 -   `r pkg("RSurvey")` may be used as a processing program for
     spatially distributed data, and is capable of error corrections and data
     visualisation.
+-   `r pkg("sptotal")` uses Finite Population Block Kriging (FPBK) to
+    provide a prediction for a quantity of interest, most commonly a
+    population total or a prediction of total abundance, on a finite number
+    of spatial sites.
+-   `r pkg("spmodel")` fits statistical models to geostatistical
+    and areal spatial data using a variety of covariance structures. 
+    Additional functionality allows for prediction (Kriging), non-spatial
+    random effects, anisotropy, and big data.
 
 ### Disease mapping and areal data analysis
 
