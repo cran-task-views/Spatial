@@ -143,8 +143,6 @@ geographic metadata in R.
 Reading and writing spatial data
 --------------------------------
 
-**Reading and writing spatial data**
-
 Spatial data is most often represented by one of two data models, 
 vector or raster, and both models have many of their own file formats.
 [GDAL (Geospatial Data Abstraction Library)](https://gdal.org/) is a (non-R)
@@ -162,7 +160,7 @@ or install these packages from the source against a version of GDAL with the
 required drivers.
 
 In the past, `r pkg("rgdal")` and `r pkg("raster")` (through `r pkg("rgdal")`) were recommended for reading and writing of spatial data in R.
-However, due to [the retirement of `r pkg("rgdal")` by the end of 2023](https://www.mail-archive.com/r-sig-geo@r-project.org/msg18468.html) new projects should not use it, and existing projects should implement migration to the packages mentioned in the previous paragraph.
+However, due to [the retirement of rgdal by the end of 2023](https://www.mail-archive.com/r-sig-geo@r-project.org/msg18468.html) new projects should not use it, and existing projects should implement migration to the packages mentioned in the previous paragraph.
 
 ### Reading and writing spatial data - data formats
 
@@ -313,6 +311,8 @@ in support of spatial data management. Here follows a first tentative
 -   `r pkg("mapSpain")` downloads spatial boundary files of administrative 
     regions and other spatial objects of Spain.
 -   `r pkg("mapme.biodiversity")` allows to download and process a number open datasets related to biodiversity conservation providing efficient routines and parallelization options. Datasets include among others the [Global Forest Watch](https://www.globalforestwatch.org/), [ESA/Copernicus Landcover](https://land.copernicus.eu/global/products/lc), [Worldclim ](https://www.worldclim.org/) and [NASA FIRMS](https://firms.modaps.eosdis.nasa.gov/active_fire/).
+-    `r pkg("rstac")` package provides functions to access, search and download
+     spacetime earth observation data via [SpatioTemporal Asset Catalog](https://stacspec.org)
 
 Handling spatial data
 ---------------------
@@ -368,6 +368,7 @@ Handling spatial data
 -   The `r pkg("qualmap")` package can be used to digitize qualitative GIS data.
 -   The `r pkg("exactextractr")` for fast and accurate summary of raster values
     on polygonal areas (known as zonal statistics).
+-   The `r pkg("sits")` package for classifying image time series obtained from earth observation data cubes.
 
 ### Spatial sampling
 
