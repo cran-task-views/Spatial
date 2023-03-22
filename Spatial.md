@@ -313,7 +313,7 @@ in support of spatial data management. Here follows a first tentative
 -   `r pkg("mapme.biodiversity")` allows to download and process a number open datasets related to biodiversity conservation providing efficient routines and parallelization options. Datasets include among others the [Global Forest Watch](https://www.globalforestwatch.org/), [ESA/Copernicus Landcover](https://land.copernicus.eu/global/products/lc), [Worldclim ](https://www.worldclim.org/) and [NASA FIRMS](https://firms.modaps.eosdis.nasa.gov/active_fire/).
 -    `r pkg("rstac")` provides functions to access, search and download
      spacetime earth observation data via [SpatioTemporal Asset Catalog](https://stacspec.org).
-     This package supports the version 1.0.0 (and older) of the [STAC specification](https://github.com/radiantearth/stac-spec)
+     This package supports the version 1.0.0 (and older) of the [STAC specification](https://github.com/radiantearth/stac-spec).
 
 Handling spatial data
 ---------------------
