@@ -311,8 +311,9 @@ in support of spatial data management. Here follows a first tentative
 -   `r pkg("mapSpain")` downloads spatial boundary files of administrative 
     regions and other spatial objects of Spain.
 -   `r pkg("mapme.biodiversity")` allows to download and process a number open datasets related to biodiversity conservation providing efficient routines and parallelization options. Datasets include among others the [Global Forest Watch](https://www.globalforestwatch.org/), [ESA/Copernicus Landcover](https://land.copernicus.eu/global/products/lc), [Worldclim ](https://www.worldclim.org/) and [NASA FIRMS](https://firms.modaps.eosdis.nasa.gov/active_fire/).
--    `r pkg("rstac")` package provides functions to access, search and download
+-    `r pkg("rstac")` provides functions to access, search and download
      spacetime earth observation data via [SpatioTemporal Asset Catalog](https://stacspec.org).
+     This package supports the version 1.0.0 (and older) of the [STAC specification](https://github.com/radiantearth/stac-spec)
 
 Handling spatial data
 ---------------------
@@ -346,7 +347,8 @@ Handling spatial data
     matrices (see [Mapping and Measuring Country Shapes](http://journal.R-project.org/archive/2010-1/RJournal_2010-1_Weidmann+Skrede~Gleditsch.pdf)).
 -   `r pkg("magclass")` offers a data class for increased interoperability 
     working with spatial-temporal data together with corresponding functions
-    and methods (conversions, basic calculations and basic data manipulation). -   The `r pkg("trip")` package extends spatial classes to permit the
+    and methods (conversions, basic calculations and basic data manipulation).
+-   The `r pkg("trip")` package extends spatial classes to permit the
     accessing and manipulating of spatial data for animal tracking.
 <!-- Roger, should we link here to papers such as https://besjournals.onlinelibrary.wiley.com/doi/10.1111/1365-2656.13116, https://link.springer.com/article/10.1007%2Fs40823-021-00067-y, https://link.springer.com/article/10.1007/s10109-020-00342-2, etc?-->
 
@@ -368,7 +370,9 @@ Handling spatial data
 -   The `r pkg("qualmap")` package can be used to digitize qualitative GIS data.
 -   The `r pkg("exactextractr")` for fast and accurate summary of raster values
     on polygonal areas (known as zonal statistics).
--   The `r pkg("sits")` package for classifying image time series obtained from earth observation data cubes.
+-   The `r pkg("sits")` is an end-to-end toolkit for land use and land cover
+    classification using big Earth observation data, based on machine learning
+    methods applied to satellite image data cubes.
 
 ### Spatial sampling
 
