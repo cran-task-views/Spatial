@@ -3,7 +3,7 @@ name: Spatial
 topic: Analysis of Spatial Data
 maintainer: Roger Bivand, Jakub Nowosad
 email: Roger.Bivand@nhh.no, nowosad.jakub@gmail.com
-version: 2023-01-17
+version: 2023-03-22
 source: https://github.com/cran-task-views/Spatial/
 ---
 
@@ -102,10 +102,6 @@ geographic metadata in R.
 -   The `r pkg("spatstat", priority = "core")` contains classes suited to the
     analysis of point patterns, and may be coerced to and from `"sf"`, `"stars"`
     and other spatial classes.
--   `r pkg("inlmisc")` has followed on from Grid2Polygons
-    and converts a spatial object from class SpatialGridDataFrame to
-    SpatialPolygonsDataFrame among many other possibilities for legacy 
-    `r pkg("sp")` classes.
 
 
 ### Raster data
@@ -596,9 +592,6 @@ interpolate values observed at point to unobserved points
     georeferenced point data via Inverse Path Distance Weighting. Useful
     for coastal marine applications where barriers in the landscape
     preclude interpolation with Euclidean distances.
--   `r pkg("RSurvey")` may be used as a processing program for
-    spatially distributed data, and is capable of error corrections and data
-    visualisation.
 -   `r pkg("sptotal")` uses Finite Population Block Kriging (FPBK) to
     provide a prediction for a quantity of interest, most commonly a
     population total or a prediction of total abundance, on a finite number
@@ -686,7 +679,7 @@ calculated rates that are comparable both in terms of levels and uncertainty.
     regression, least angle regression (LARS), and lasso models for
     selecting the spatial scale of covariates in regression models.
 -   Spatial microsimulation is offered by `r pkg("rakeR")`, `r pkg("sms")`, 
-    `r pkg("synthACS")`, and `r pkg("NetLogoR")` permits the building and
+    `r pkg("synthACS")` permits the building and
     running of spatially explicit agent-based models.
 
 
@@ -740,10 +733,11 @@ Task View.
 -   The `r pkg("starma")` package provides functions to
     identify, estimate and diagnose a Space-Time AutoRegressive Moving
     Average (STARMA) model.
--   The `r pkg("spgwr")`
-    package contains an implementation of geographically weighted regression
-    methods for exploring possible spatial non-stationarity. The
-    `r pkg("gwrr")` package fits geographically weighted
+-   `r pkg("varycoef")` and `r pkg("spBayes")`provide implementations of
+    spatially varying coefficient (SVC) models, which may be preferred to
+    geographically weighted regression (GWR) models as having proper
+    statistical foundations.
+-   The `r pkg("gwrr")` package fits geographically weighted
     regression (GWR) models and has tools to diagnose and remediate
     collinearity in the GWR models. It also fits geographically weighted ridge
     regression (GWRR) and geographically weighted lasso (GWL) models. The
