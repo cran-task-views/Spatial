@@ -312,7 +312,7 @@ in support of spatial data management. Here follows a first tentative
     regions and other spatial objects of Spain.
 -   `r pkg("mapme.biodiversity")` allows to download and process a number open datasets related to biodiversity conservation providing efficient routines and parallelization options. Datasets include among others the [Global Forest Watch](https://www.globalforestwatch.org/), [ESA/Copernicus Landcover](https://land.copernicus.eu/global/products/lc), [Worldclim ](https://www.worldclim.org/) and [NASA FIRMS](https://firms.modaps.eosdis.nasa.gov/active_fire/).
 -    `r pkg("rstac")` package provides functions to access, search and download
-     spacetime earth observation data via [SpatioTemporal Asset Catalog](https://stacspec.org)
+     spacetime earth observation data via [SpatioTemporal Asset Catalog](https://stacspec.org).
 
 Handling spatial data
 ---------------------
