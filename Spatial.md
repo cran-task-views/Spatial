@@ -681,6 +681,12 @@ calculated rates that are comparable both in terms of levels and uncertainty.
 -   Spatial microsimulation is offered by `r pkg("rakeR")`, `r pkg("sms")`, 
     `r pkg("synthACS")` permits the building and
     running of spatially explicit agent-based models.
+-   The `r pkg("geostan")` package has GLMs, SAR, proper CAR, ICAR, and eigenvector
+    spatial filter (ESF) models for Bayesian disease mapping and spatial regression.
+    The package uses the Stan modeling language for MCMC analysis.
+    The package also contains exploratory spatial analysis tools (Moran scatter plot and
+    various measures of spatial autocorrelation) and measurement error models
+    designed for the use of (noisy) survey estimates as covariates. 
 
 
 ### Spatial regression
