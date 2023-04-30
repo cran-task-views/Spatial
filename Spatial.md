@@ -222,7 +222,7 @@ dealing with open standard formats or proprietary formats.
     wrapper for SAGA GIS commands.
 -   *Quantum GIS (QGIS):* QGIS2 was supported by RQGIS 
     (`r github("r-spatial/RQGIS")`). QGIS3 (version >= 3.16) is supported by 
-    `r github("paleolimbot/qgisprocess")`, which establishes an interface 
+    `r github("r-spatial/qgisprocess")`, which establishes an interface 
     between R and QGIS, i.e., it allows the user to access QGIS 
     functionalities from the R console. It achieves this by using 
     the qgis_process command-line utility.
