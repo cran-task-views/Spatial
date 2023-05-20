@@ -3,7 +3,7 @@ name: Spatial
 topic: Analysis of Spatial Data
 maintainer: Roger Bivand, Jakub Nowosad
 email: Roger.Bivand@nhh.no, nowosad.jakub@gmail.com
-version: 2023-03-22
+version: 2023-05-20
 source: https://github.com/cran-task-views/Spatial/
 ---
 
@@ -85,7 +85,7 @@ geographic metadata in R.
     implementation and standardization of parts of the legacy 
     `r pkg("sp")` package. `r pkg("sf")` is documented in an [R
     Journal](https://journal.R-project.org/archive/2018/RJ-2018-009/index.html)
-    article. `r pkg("sf")` uses the PROJ, GEOS and GDAL external software
+    article. `r pkg("sf")` uses the [PROJ](https://proj.org/), [GEOS](https://libgeos.org/) and [GDAL](https://gdal.org/) external software
     libraries, which must be available for source installs together with
     other external software libraries that they in turn depend on.
 -   `r pkg("stars", priority = "core")` is being actively developed here:
@@ -155,8 +155,15 @@ If other drivers are needed, you need to either use other conversion utilities
 or install these packages from the source against a version of GDAL with the
 required drivers.
 
-In the past, `r pkg("rgdal")` and `r pkg("raster")` (through `r pkg("rgdal")`) were recommended for reading and writing of spatial data in R.
-However, due to [the retirement of rgdal by the end of 2023](https://www.mail-archive.com/r-sig-geo@r-project.org/msg18468.html) new projects should not use it, and existing projects should implement migration to the packages mentioned in the previous paragraph.
+In the past, `r rforge("rgdal")` and `r pkg("raster")` (through `r rforge("rgdal")`) were recommended for reading and writing of spatial data in R.
+However, due to [the retirement of rgdal during October 2023](https://www.mail-archive.com/r-sig-geo@r-project.org/msg18468.html)
+new projects should not use it, and existing projects should implement migration
+to the packages mentioned in the previous paragraph. In addition, `r rforge("rgeos")` and `r rforge("maptools")` will be retired at the same time. Further details and links 
+may be found in [this and earlier reports](https://r-spatial.org/r/2023/05/15/evolution4.html) on the evolution
+project. In June 2023, `r pkg("sp")` will by default switch to using methods 
+from `r pkg("sf")` in place of those from `r rforge("rgdal")` for projection 
+and access to the underlying definitions of coordinate reference systems; this 
+is covered in the linked report.
 
 ### Reading and writing spatial data - data formats
 
@@ -834,11 +841,11 @@ from `github`, the same static-linked
 binary external software libraries, header files, etc. as those used in 
 building CRAN binary packages are available from: Windows 4.0 and 4.1 
 [downloaded on-the-fly](https://github.com/orgs/rwinlib/repositories), 
-Windows 4.2 [forthcoming rtools42](https://www.r-project.org/nosvn/winutf8/ucrt3/) 
+Windows 4.2 [RTools42](https://cran.r-project.org/bin/windows/Rtools/rtools42/rtools.html), Windows 4.3 [RTools43](https://cran.r-project.org/bin/windows/Rtools/rtools43/rtools.html),
 and macOS [both architectures](https://mac.r-project.org/tools/). These 
 external software libraries have been built using the same compile and 
 link settings as R itself, so avoid the risk of possible errors caused by 
-mismatched binaries. 
+mismatched binaries. The current versions may be updated between R releases, in order to give access to more recent versions of GDAL, GEOS or PROJ.
 
 If you are a user (or developer) on systems where `getOption("pkgType")`
 is `"source"`, you will need to ensure that the external software is
