@@ -739,7 +739,7 @@ Task View.
 -   The `r pkg("starma")` package provides functions to
     identify, estimate and diagnose a Space-Time AutoRegressive Moving
     Average (STARMA) model.
--   `r pkg("varycoef")` and `r pkg("spBayes")`provide implementations of
+-   `r pkg("varycoef")` and `r pkg("spBayes")` provide implementations of
     spatially varying coefficient (SVC) models, which may be preferred to
     geographically weighted regression (GWR) models as having proper
     statistical foundations.
