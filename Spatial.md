@@ -182,8 +182,7 @@ dealing with open standard formats or proprietary formats.
     describes a GeoJSON-centred approach to reading GeoJSON and WKT data.
     The entry lists `r pkg("geojson")`, and `r pkg("geojsonio")`, among others.
     The GeoJSON format can also be read and write with `r pkg("sf")`,
-    `r pkg("terra")`, and `r pkg("vapour")`. `r pkg("wellknown")` makes possible
-    conversions from WKT to GeoJSON and GeoJSON to WKT.
+    `r pkg("terra")`, and `r pkg("vapour")`. 
 -   *Geographic Markup Language (GML):* GML format can be read and written
     with `r pkg("sf")`. Additional GML native reader and writer is provided
     by `r pkg("geometa")` model with bindings to the `r pkg("sf")` classes, 
