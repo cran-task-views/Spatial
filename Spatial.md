@@ -97,8 +97,8 @@ geographic metadata in R.
     spatio-temporal data (see [Spatio-Temporal Data in
     R](http://www.jstatsoft.org/v51/i07) ). `r pkg("stars")` uses PROJ and
     GDAL through `r pkg("sf")`.
--   The `r pkg("vapour")` package offers low-level access to GDAL functionality 
-    for R packages. 
+-   The `r pkg("vapour")` and `r pkg("gdalraster")` packages offer low-level
+    access to GDAL functionality for R packages. 
 -   The `r pkg("spatstat", priority = "core")` contains classes suited to the
     analysis of point patterns, and may be coerced to and from `"sf"`, `"stars"`
     and other spatial classes.
