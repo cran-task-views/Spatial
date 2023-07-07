@@ -3,7 +3,7 @@ name: Spatial
 topic: Analysis of Spatial Data
 maintainer: Roger Bivand, Jakub Nowosad
 email: Roger.Bivand@nhh.no, nowosad.jakub@gmail.com
-version: 2023-05-20
+version: 2023-07-07
 source: https://github.com/cran-task-views/Spatial/
 ---
 
@@ -214,10 +214,7 @@ dealing with open standard formats or proprietary formats.
     'PostGIS'-enabled database, as well as convenient wrappers to 
     common 'PostgreSQL' queries. It is documented in an 
     [R Journal](https://journal.R-project.org/archive/2018/RJ-2018-025/index.html)
-    article. `r pkg("postGIStools")` package provides functions to convert 
-    geometry and 'hstore' data types from 'PostgreSQL' into standard R objects,
-    as well as to simplify the import of R data frames 
-    (including spatial data frames) into 'PostgreSQL'.
+    article.
     `r pkg("sf")` also provides an R interface to PostGIS, 
     for both reading and writing, through GDAL.
 -   *GRASS GIS:* Integration with version 7.\* and 8.\* of the leading open source GIS,
