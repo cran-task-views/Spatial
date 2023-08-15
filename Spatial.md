@@ -3,7 +3,7 @@ name: Spatial
 topic: Analysis of Spatial Data
 maintainer: Roger Bivand, Jakub Nowosad
 email: Roger.Bivand@nhh.no, nowosad.jakub@gmail.com
-version: 2023-07-07
+version: 2023-08-15
 source: https://github.com/cran-task-views/Spatial/
 ---
 
@@ -135,6 +135,8 @@ geographic metadata in R.
 -   `r pkg("ncdf4")` provides read and write functions for
     handling metadata (CF conventions) in the self-described NetCDF
     format.
+-   `r pkg("CFtime")` encapsulates the CF time coordinate and allows to deal
+    with the different CF calendars
 
 Reading and writing spatial data
 --------------------------------
