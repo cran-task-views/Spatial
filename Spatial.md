@@ -225,12 +225,12 @@ dealing with open standard formats or proprietary formats.
     to be archived during 2023 as it used functions in the deprecated `rgrass7` package.
 -   *SAGA GIS:* `r pkg("RSAGA")` and `r pkg("Rsagacmd")` offer shell-based
     wrapper for SAGA GIS commands.
--   *Quantum GIS (QGIS):* QGIS2 was supported by RQGIS 
-    (`r github("r-spatial/RQGIS")`). QGIS3 (version >= 3.16) is supported by 
-    `r github("r-spatial/qgisprocess")`, which establishes an interface 
-    between R and QGIS, i.e., it allows the user to access QGIS 
-    functionalities from the R console. It achieves this by using 
-    the qgis_process command-line utility.
+-   *Quantum GIS (QGIS):* QGIS version 2 was supported by RQGIS 
+    (`r github("r-spatial/RQGIS")`). Using QGIS processing algorithms is currently
+    supported by `r pkg("qgisprocess")`, which uses the standalone
+    'qgis_process' command-line utility from QGIS (use
+    recent QGIS versions; may work since >= 3.16).  Both native QGIS and third-party
+    (plugin) processing providers are supported, i.e. GRASS, SAGA, GDAL, ...
 -   *WhiteboxTools:* `r pkg("whitebox")` is an R frontend for 
     the WhiteboxTools software.
 -   *ArcGIS:* `r pkg("RPyGeo")` is a wrapper for Python access 
