@@ -225,7 +225,7 @@ dealing with open standard formats or proprietary formats.
     to be archived during 2023 as it used functions in the deprecated `rgrass7` package.
 -   *SAGA GIS:* `r pkg("RSAGA")` and `r pkg("Rsagacmd")` offer shell-based
     wrapper for SAGA GIS commands.
--   *Quantum GIS (QGIS):* QGIS version 2 was supported by RQGIS 
+-   *QGIS:* QGIS version 2 was supported by RQGIS 
     (`r github("r-spatial/RQGIS")`). Using QGIS processing algorithms is currently
     supported by `r pkg("qgisprocess")`, which uses the standalone
     'qgis_process' command-line utility from QGIS (use
