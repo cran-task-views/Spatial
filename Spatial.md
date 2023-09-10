@@ -44,10 +44,10 @@ name of the package as a string), or directly with package
 maintainers by email. Use may also be made of
 the [R-SIG-Geo](https://stat.ethz.ch/mailman/listinfo/R-SIG-Geo/)
 mailing-list after subscription, or of 
-[stackoverflow](https://stackoverflow.com) with appropriate tags, or of
-[stackexchange](https://gis.stackexchange.com/). Using the
-`#rspatial` tag on [twitter](https://twitter.com) may also be worth trying,
-or browsing traffic using that tag (among others).
+[Stack Overflow](https://stackoverflow.com) with appropriate tags, or of
+[Stack Exchange](https://gis.stackexchange.com/). Using the
+`#rspatial` tag on [Twitter](https://twitter.com) and [Mastodon](https://joinmastodon.org/)
+may also be worth trying, or browsing traffic using that tag (among others).
 
 The packages in this view can be roughly structured into the following
 topics. If you think that some package is missing from the list, please
@@ -127,7 +127,7 @@ geographic metadata in R.
 -   `r pkg("geometa")` provides classes and methods to write
     geographic metadata following the ISO and OGC metadata standards
     (ISO 19115, 19110, 19119) and export it as XML (ISO 19139) for later
-    publication into metadata catalogues. Reverserly, geometa provides a
+    publication into metadata catalogues. Reversely, geometa provides a
     way to read ISO 19139 metadata into R. The package extends
     `r pkg("sf")` to provide GML (ISO 19136) representation
     of geometries. `r pkg("geometa")` is under active development on
@@ -803,8 +803,8 @@ They include:
 -   `r pkg("landscapemetrics")` package calculates landscape
     metrics for categorical landscape patterns. It can be used as a
     drop-in replacement for
-    [FRAGSTATS](https://www.umass.edu/landeco/research/fragstats/fragstats.html)
-    , as it offers a reproducible workflow for landscape analysis in a
+    [FRAGSTATS](https://www.umass.edu/landeco/research/fragstats/fragstats.html),
+    as it offers a reproducible workflow for landscape analysis in a
     single environment. It also provides several visualization
     functions, e.g. to show all labeled patches or the core area of all
     patches.
