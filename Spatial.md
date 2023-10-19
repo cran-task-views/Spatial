@@ -3,7 +3,7 @@ name: Spatial
 topic: Analysis of Spatial Data
 maintainer: Roger Bivand, Jakub Nowosad
 email: Roger.Bivand@nhh.no, nowosad.jakub@gmail.com
-version: 2023-08-15
+version: 2023-10-19
 source: https://github.com/cran-task-views/Spatial/
 ---
 
@@ -158,14 +158,13 @@ or install these packages from the source against a version of GDAL with the
 required drivers.
 
 In the past, `r rforge("rgdal")` and `r pkg("raster")` (through `r rforge("rgdal")`) were recommended for reading and writing of spatial data in R.
-However, due to [the retirement of rgdal during October 2023](https://www.mail-archive.com/r-sig-geo@r-project.org/msg18468.html)
+However, due to [the retirement of rgdal on 16 October 2023](https://stat.ethz.ch/pipermail/r-sig-geo/2023-October/029350.html)
 new projects should not use it, and existing projects should implement migration
-to the packages mentioned in the previous paragraph. In addition, `r rforge("rgeos")` and `r rforge("maptools")` will be retired at the same time. Further details and links 
-may be found in [this and earlier reports](https://r-spatial.org/r/2023/05/15/evolution4.html) on the evolution
-project. In June 2023, `r pkg("sp")` will by default switch to using methods 
+to the packages mentioned in the previous paragraph. In addition, `r rforge("rgeos")` and `r rforge("maptools")` were archived at the same time. Further details and links 
+may be found in [project reports](https://r-spatial.github.io/evolution/) on the evolution
+project. From October 2023, `r pkg("sp")` only uses methods 
 from `r pkg("sf")` in place of those from `r rforge("rgdal")` for projection 
-and access to the underlying definitions of coordinate reference systems; this 
-is covered in the linked report.
+and access to the underlying definitions of coordinate reference systems.
 
 ### Reading and writing spatial data - data formats
 
@@ -195,7 +194,8 @@ dealing with open standard formats or proprietary formats.
     `r pkg("ncdf4")` or `r pkg("RNetCDF")`. Additionally, both `r pkg("terra")`
     and `r pkg("stars")` have capabilities for reading and writing NetCDF files.
 -   *LAS / LAX:* These file formats are designed to work with lidar point
-    cloud data and can be read/write with `r pkg("lidR")` or `r pkg("rLiDAR")`.
+    cloud data and can be read/write with `r pkg("lidR")` or 
+    `r github("carlos-alberto-silva/rLiDAR")`.
 
 *Proprietary Data Formats*
 
@@ -220,9 +220,7 @@ dealing with open standard formats or proprietary formats.
     `r pkg("sf")` also provides an R interface to PostGIS, 
     for both reading and writing, through GDAL.
 -   *GRASS GIS:* Integration with version 7.\* and 8.\* of the leading open source GIS,
-    GRASS GIS, is provided in CRAN package `r pkg("rgrass")`, which uses `r pkg("terra")` for file transfer; 
-    the interface was previously provided in `r pkg("rgrass7")`, 
-    to be archived during 2023 as it used functions in the deprecated `rgrass7` package.
+    GRASS GIS, is provided in CRAN package `r pkg("rgrass")`, which uses `r pkg("terra")` for file transfer.
 -   *SAGA GIS:* `r pkg("RSAGA")` and `r pkg("Rsagacmd")` offer shell-based
     wrapper for SAGA GIS commands.
 -   *QGIS:* QGIS version 2 was supported by RQGIS 
@@ -443,7 +441,8 @@ Visualizing spatial data
 -   `r pkg("RgoogleMaps")` package for accessing Google Maps(TM) may be
     useful if the user wishes to place a map backdrop behind other displays.
 -   `r pkg("ggmap")` may be used for spatial visualization with Google Maps
-    and OpenStreetMap; `r pkg("ggsn")` provides north arrows and scales 
+    and OpenStreetMap; `r github("oswaldosantos/ggsn")` provides north arrows 
+    and scales 
     for such maps.
 -   `r pkg("mapedit")` provides an R shiny widget based on `r pkg("leaflet")`
     for editing or creating sf geometries.
@@ -588,11 +587,12 @@ interpolate values observed at point to unobserved points
     package provided for the estimation of the parameters of a
     spatio-temporal model using the EM algorithm, and the estimation of the
     parameter standard errors using a spatio-temporal parametric bootstrap.
--   The `r pkg("SSN")` is for geostatistical modeling
+-   The `r github("jayverhoef/SSN")` is for geostatistical modeling
     for data on stream networks, including models based on in-stream
     distance. Models are created using moving average constructions. Spatial
     linear models, including covariates, can be fit with ML or REML. Mapping
-    and other graphical functions are included. 
+    and other graphical functions are included. It is due to be replaced by a
+    new version shortly.
 -   The `r pkg("ipdw")` provides functions to interpolate
     georeferenced point data via Inverse Path Distance Weighting. Useful
     for coastal marine applications where barriers in the landscape
@@ -793,7 +793,7 @@ They include:
 -   The `r pkg("SpatialPosition")` computes spatial position
     models: Stewart potentials, Reilly catchment areas, Huff catchment
     areas.
--   The `r pkg("Watersheds")` package provides methods for
+-   The `r github("ArturoTorres/Watersheds")` package provides methods for
     watersheds aggregation and spatial drainage network analysis.
 -   The `r pkg("ngspatial")` package provides tools for
     analyzing spatial data, especially non-Gaussian areal data. It
