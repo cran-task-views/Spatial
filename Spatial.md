@@ -3,7 +3,7 @@ name: Spatial
 topic: Analysis of Spatial Data
 maintainer: Roger Bivand, Jakub Nowosad
 email: Roger.Bivand@nhh.no, nowosad.jakub@gmail.com
-version: 2023-10-19
+version: 2023-12-01
 source: https://github.com/cran-task-views/Spatial/
 ---
 
@@ -587,12 +587,11 @@ interpolate values observed at point to unobserved points
     package provided for the estimation of the parameters of a
     spatio-temporal model using the EM algorithm, and the estimation of the
     parameter standard errors using a spatio-temporal parametric bootstrap.
--   The `r github("jayverhoef/SSN")` is for geostatistical modeling
+-   The `r pkg("SSN2")` is for geostatistical modeling
     for data on stream networks, including models based on in-stream
     distance. Models are created using moving average constructions. Spatial
     linear models, including covariates, can be fit with ML or REML. Mapping
-    and other graphical functions are included. It is due to be replaced by a
-    new version shortly.
+    and other graphical functions are supported.
 -   The `r pkg("ipdw")` provides functions to interpolate
     georeferenced point data via Inverse Path Distance Weighting. Useful
     for coastal marine applications where barriers in the landscape
