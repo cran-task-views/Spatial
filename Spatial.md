@@ -263,6 +263,10 @@ in support of spatial data management. Here follows a first tentative
     importing (exporting) of Earth Engine spatial objects, 
     extraction of time series, interactive map display, 
     assets management interface, and metadata display.
+-   `r pkg("rsi")` provides functions to download, mask, and composite
+    data from [SpatioTemporal Asset Catalogs](https://stacspec.org),
+    with a particular focus on satellite imagery.
+        
 
 ### Specific geospatial data sources of interest
 
@@ -372,6 +376,10 @@ Handling spatial data
 -   The `r pkg("sits")` is an end-to-end toolkit for land use and land cover
     classification using big Earth observation data, based on machine learning
     methods applied to satellite image data cubes.
+-   The `r pkg("rsi")` package provides an interface to the
+    [Awesome Spectral Indices](https://github.com/awesome-spectral-indices/awesome-spectral-indices)
+    project, with functions for filtering the list of available indices and
+    efficiently calculating these from raster inputs.
 
 ### Spatial sampling
 
