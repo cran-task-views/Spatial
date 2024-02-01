@@ -313,6 +313,10 @@ in support of spatial data management. Here follows a first tentative
 -    `r pkg("rstac")` provides functions to access, search and download
      spacetime earth observation data via [SpatioTemporal Asset Catalog](https://stacspec.org).
      This package supports the version 1.0.0 (and older) of the [STAC specification](https://github.com/radiantearth/stac-spec).
+-    `r pkg("terrainr")` provides an interface to the
+     [United States Geological Survey's National Map services](https://apps.nationalmap.gov/services/),
+     providing elevation data and orthoimagery along other basemap tiles
+     for the United States.
 
 Handling spatial data
 ---------------------
