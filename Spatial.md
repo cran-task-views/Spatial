@@ -819,6 +819,14 @@ They include:
     single environment. It also provides several visualization
     functions, e.g. to show all labeled patches or the core area of all
     patches.
+-   `r pkg("waywiser")` helps assess models fit to spatial data, with
+    functions for calculating the spatial autocorrelation of model
+    residuals, for calculating model performance statistics, for 
+    assessing model performance across multiple spatial scales, and for
+    calculating the "area of applicability" of a model. Functions are
+    designed to be compatible with both base R and with the tidymodels
+    modeling framework, and adopt `r pkg("yardstick")` classes and
+    interfaces.
 
 The `r view("Environmetrics")` Task View contains a much more
 complete survey of relevant functions and packages.
