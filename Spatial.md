@@ -263,6 +263,9 @@ in support of spatial data management. Here follows a first tentative
     importing (exporting) of Earth Engine spatial objects, 
     extraction of time series, interactive map display, 
     assets management interface, and metadata display.
+-   `r pkg("rsi")` provides functions to download, mask, and composite
+    data from [SpatioTemporal Asset Catalogs](https://stacspec.org),
+    with a particular focus on satellite imagery.
 -    `r pkg("rstac")` provides functions to access, search and download
      spacetime earth observation data via [SpatioTemporal Asset Catalogs](https://stacspec.org).
      This package supports the version 1.0.0 (and older) of the [STAC specification](https://github.com/radiantearth/stac-spec).
@@ -313,9 +316,6 @@ in support of spatial data management. Here follows a first tentative
 -   `r pkg("mapSpain")` downloads spatial boundary files of administrative 
     regions and other spatial objects of Spain.
 -   `r pkg("mapme.biodiversity")` allows to download and process a number open datasets related to biodiversity conservation providing efficient routines and parallelization options. Datasets include among others the [Global Forest Watch](https://www.globalforestwatch.org/), [ESA/Copernicus Landcover](https://land.copernicus.eu/global/products/lc), [Worldclim ](https://www.worldclim.org/) and [NASA FIRMS](https://firms.modaps.eosdis.nasa.gov/active_fire/)
--    `r pkg("rstac")` provides functions to access, search and download
-     spacetime earth observation data via [SpatioTemporal Asset Catalog](https://stacspec.org).
-     This package supports the version 1.0.0 (and older) of the [STAC specification](https://github.com/radiantearth/stac-spec).
 -    `r pkg("terrainr")` provides an interface to the
      [United States Geological Survey's National Map services](https://apps.nationalmap.gov/services/),
      providing elevation data and orthoimagery along other basemap tiles
@@ -380,6 +380,10 @@ Handling spatial data
 -   The `r pkg("sits")` is an end-to-end toolkit for land use and land cover
     classification using big Earth observation data, based on machine learning
     methods applied to satellite image data cubes.
+-   The `r pkg("rsi")` package provides an interface to the
+    [Awesome Spectral Indices](https://github.com/awesome-spectral-indices/awesome-spectral-indices)
+    project, with functions for filtering the list of available indices and
+    efficiently calculating these from raster inputs.
 
 ### Spatial sampling
 
