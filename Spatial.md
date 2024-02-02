@@ -3,7 +3,7 @@ name: Spatial
 topic: Analysis of Spatial Data
 maintainer: Roger Bivand, Jakub Nowosad
 email: Roger.Bivand@nhh.no, nowosad.jakub@gmail.com
-version: 2023-12-01
+version: 2024-02-02
 source: https://github.com/cran-task-views/Spatial/
 ---
 
@@ -703,6 +703,14 @@ calculated rates that are comparable both in terms of levels and uncertainty.
     The package also contains exploratory spatial analysis tools (Moran scatter plot and
     various measures of spatial autocorrelation) and measurement error models
     designed for the use of (noisy) survey estimates as covariates. 
+-   `r pkg("waywiser")` helps assess models fit to spatial data, with
+    functions for calculating the spatial autocorrelation of model
+    residuals, for calculating model performance statistics, for 
+    assessing model performance across multiple spatial scales, and for
+    calculating the "area of applicability" of a model. Functions are
+    designed to be compatible with both base R and with the tidymodels
+    modeling framework, and adopt `r pkg("yardstick")` classes and
+    interfaces.
 
 
 ### Spatial regression
@@ -769,6 +777,14 @@ Task View.
     and space-time GWR; GW summary statistics, GW PCA and GW discriminant
     analysis; associated tests and diagnostics; and options for a range of
     distance metrics. 
+-   `r pkg("waywiser")` helps assess models fit to spatial data, with
+    functions for calculating the spatial autocorrelation of model
+    residuals, for calculating model performance statistics, for 
+    assessing model performance across multiple spatial scales, and for
+    calculating the "area of applicability" of a model. Functions are
+    designed to be compatible with both base R and with the tidymodels
+    modeling framework, and adopt `r pkg("yardstick")` classes and
+    interfaces.
 
 ### Ecological analysis
 
