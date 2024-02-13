@@ -3,7 +3,7 @@ name: Spatial
 topic: Analysis of Spatial Data
 maintainer: Roger Bivand, Jakub Nowosad
 email: Roger.Bivand@nhh.no, nowosad.jakub@gmail.com
-version: 2024-02-02
+version: 2024-02-13
 source: https://github.com/cran-task-views/Spatial/
 ---
 
@@ -307,7 +307,7 @@ in support of spatial data management. Here follows a first tentative
     municipalities, and other spatial objects.
 -   `r pkg("chilemapas")` provides access to spatial data of political 
     and administrative divisions of Chile.
--   The former `geobr` package provided easy access to official spatial data sets of 
+-   `r pkg("geobr")` provided easy access to official spatial data sets of 
     Brazil for multiple geographies and years.
 -   `r pkg("geouy")` loads and process geographic information for Uruguay.
 -   `r pkg("RCzechia")` downloads spatial boundary files of administrative regions and other spatial objects of the Czech Republic.
