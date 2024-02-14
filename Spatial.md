@@ -277,6 +277,7 @@ in support of spatial data management. Here follows a first tentative
     functions to download a wealth of Natural Earth vector and raster data,
     including cultural (e.g., country boundaries, airports, roads, railroads)
     and physical (e.g., coastline, lakes, glaciated areas) datasets.
+-   `r pkg("elevatr")` provides access to elevation data from several web services. 
 -   Historical country boundaries (1886-today) can be obtained 
     from the `r pkg("cshapes")`.
 -   `r pkg("marmap")` package is designed for downloading, plotting, 
