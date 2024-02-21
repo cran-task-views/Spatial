@@ -3,7 +3,7 @@ name: Spatial
 topic: Analysis of Spatial Data
 maintainer: Roger Bivand, Jakub Nowosad
 email: Roger.Bivand@nhh.no, nowosad.jakub@gmail.com
-version: 2024-02-13
+version: 2024-02-21
 source: https://github.com/cran-task-views/Spatial/
 ---
 
@@ -564,7 +564,8 @@ interpolate values observed at point to unobserved points
     number of data points (or polygons) m.
 -   `r pkg("SpatialExtremes")` proposes several
     approaches for spatial extremes. 
--   In addition, `r pkg("geospt")` provides alternative approaches to geostatistical modelling. 
+-   In addition, `r pkg("constrainedKriging")` and `r pkg("geospt")` provide 
+    alternative approaches to geostatistical modelling. 
 -   The `r pkg("spTimer")` package is able to fit, spatially predict and 
     temporally forecast large amounts of space-time data using \[1\] Bayesian 
     Gaussian Process (GP) Models, \[2\] Bayesian Auto-Regressive (AR) Models, 
@@ -572,6 +573,12 @@ interpolate values observed at point to unobserved points
 -   The `r pkg("rtop")` package provides functions for the
     geostatistical interpolation of data with irregular spatial support such
     as runoff related data or data from administrative units. 
+-   The `r pkg("georob")` package provides functions for fitting
+    linear models with spatially correlated errors by robust and Gaussian
+    Restricted Maximum Likelihood and for computing robust and customary
+    point and block kriging predictions, along with utility functions for
+    cross-validation and for unbiased back-transformation of kriging
+    predictions of log-transformed data.
 -   The `r pkg("SpatialTools")` package has an emphasis on kriging,
     and provides functions for prediction and simulation. It is extended by
     `r pkg("ExceedanceTools")`, which provides tools for
