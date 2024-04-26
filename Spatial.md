@@ -347,7 +347,7 @@ Handling spatial data
     library to perform topologically-aware polygon simplification and other 
     operations such as clipping, erasing, dissolving, and converting 
     'multi-part' to 'single-part' geometries.
--   `r pkg("gdistance")`, provides functions to calculate distances and 
+-   `r pkg("gdistance")` and `r pkg("spaths")` provide functions to calculate distances and 
     routes on geographic grids.
     `r pkg("geosphere")` permits computations of distance and area to be 
     carried out on spatial data in geographical coordinates.
