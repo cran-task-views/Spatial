@@ -3,7 +3,7 @@ name: Spatial
 topic: Analysis of Spatial Data
 maintainer: Roger Bivand, Jakub Nowosad
 email: Roger.Bivand@nhh.no, nowosad.jakub@gmail.com
-version: 2024-02-21
+version: 2024-05-05
 source: https://github.com/cran-task-views/Spatial/
 ---
 
@@ -238,38 +238,6 @@ dealing with open standard formats or proprietary formats.
 -   Various GIS Software, including Orfeo ToolBox and SAGA GIS, can also be
     connected to R using `r pkg("link2GI")`.
 
-### Interfaces to Spatial Web-Services
-
-Some R packages focused on providing interfaces to web-services and web tools 
-in support of spatial data management. Here follows a first tentative 
-(non-exhaustive) list:
-
--   `r pkg("ows4R")` is a package that intends to provide an R interface 
-    to OGC standard Web-Services. It is in active development at 
-    `r github("eblondel/ows4R")` and currently support interfaces to the 
-    Web Feature Service (WFS) for vector data access, with binding to the 
-    `r pkg("sf")` package, and the Catalogue Service (CSW) for geographic
-    metadata discovery and management (including transactions), with binding 
-    to the `r pkg("geometa")` package.
--   `r pkg("geosapi")` is an R client for the [GeoServer](http://geoserver.org) 
-    REST API, an open source implementation used widely for serving 
-    spatial data.
--   `r pkg("geonapi")` provides an interface to the 
-    [GeoNetwork](https://geonetwork-opensource.org/) legacy API, 
-    an open source catalogue for managing geographic metadata. 
--   `r pkg("rgee")` is an [Earth Engine](https://earthengine.google.com/) 
-    client library for R. All of the 'Earth Engine' API classes, modules, 
-    and functions are made available. Additional functions implemented include 
-    importing (exporting) of Earth Engine spatial objects, 
-    extraction of time series, interactive map display, 
-    assets management interface, and metadata display.
--   `r pkg("rsi")` provides functions to download, mask, and composite
-    data from [SpatioTemporal Asset Catalogs](https://stacspec.org),
-    with a particular focus on satellite imagery.
--    `r pkg("rstac")` provides functions to access, search and download
-     spacetime earth observation data via [SpatioTemporal Asset Catalogs](https://stacspec.org).
-     This package supports the version 1.0.0 (and older) of the [STAC specification](https://github.com/radiantearth/stac-spec).
-
 ### Specific geospatial data sources of interest
 
 -   `r pkg("rnaturalearth")` package facilitates interaction with 
@@ -321,8 +289,53 @@ in support of spatial data management. Here follows a first tentative
      [United States Geological Survey's National Map services](https://apps.nationalmap.gov/services/),
      providing elevation data and orthoimagery along other basemap tiles
      for the United States.
--   `r github("rspatial/luna")` has tools for acquiring and processing satellite remote sensing data from NASA's LANDSAT and MODIS data sources. `r pkg("MODISTools")`also provides an interface to the [MODIS Land Products Subsets](https://modis.ornl.gov/data/modis_webservice.html) web services. 
 
+### Interfaces to Spatial Web-Services
+
+Some R packages focused on providing interfaces to web-services and web tools 
+in support of spatial data management. Here follows a first tentative 
+(non-exhaustive) list:
+
+-   `r pkg("ows4R")` is a package that intends to provide an R interface 
+    to OGC standard Web-Services. It is in active development at 
+    `r github("eblondel/ows4R")` and currently support interfaces to the 
+    Web Feature Service (WFS) for vector data access, with binding to the 
+    `r pkg("sf")` package, and the Catalogue Service (CSW) for geographic
+    metadata discovery and management (including transactions), with binding 
+    to the `r pkg("geometa")` package.
+-   `r pkg("geosapi")` is an R client for the [GeoServer](http://geoserver.org) 
+    REST API, an open source implementation used widely for serving 
+    spatial data.
+-   `r pkg("geonapi")` provides an interface to the 
+    [GeoNetwork](https://geonetwork-opensource.org/) legacy API, 
+    an open source catalogue for managing geographic metadata. 
+
+### Remote sensing
+
+-   `r pkg("rstac")` provides functions to access, search and download
+    spacetime earth observation data via [SpatioTemporal Asset Catalogs](https://stacspec.org).
+    This package supports the version 1.0.0 (and older) of the [STAC specification](https://github.com/radiantearth/stac-spec).
+-   The `r pkg("rsi")` package provides an interface to the
+    [Awesome Spectral Indices](https://github.com/awesome-spectral-indices/awesome-spectral-indices)
+    project. It also provides functions to download, mask, and composite data 
+    from [SpatioTemporal Asset Catalogs](https://stacspec.org), with a particular 
+    focus on satellite imagery.
+-   The `r pkg("sits")` is an end-to-end toolkit for land use and land cover
+    classification using big Earth observation data, based on machine learning
+    methods applied to satellite image data cubes.
+-   The `r pkg("landsat")` package with accompanying 
+    [JSS paper](http://www.jstatsoft.org/v43/i04) provides tools for exploring
+    and developing correction tools for remote sensing data.
+-   `r github("rspatial/luna")` has tools for acquiring and processing satellite 
+    remote sensing data from NASA's LANDSAT and MODIS data sources. 
+    `r pkg("MODISTools")`also provides an interface to the 
+    [MODIS Land Products Subsets](https://modis.ornl.gov/data/modis_webservice.html) web services. 
+-   `r pkg("rgee")` is an [Earth Engine](https://earthengine.google.com/) 
+    client library for R. All of the 'Earth Engine' API classes, modules, 
+    and functions are made available. Additional functions implemented include 
+    importing (exporting) of Earth Engine spatial objects, 
+    extraction of time series, interactive map display, 
+    assets management interface, and metadata display.
 
 Handling spatial data
 ---------------------
@@ -371,21 +384,11 @@ Handling spatial data
     
 ### Data processing - specific
 
--   The `r pkg("landsat")` package with accompanying 
-    [JSS paper](http://www.jstatsoft.org/v43/i04) provides tools for exploring
-    and developing correction tools for remote sensing data.
 -   The `r pkg("areal")` package can be used to interpolate overlapping 
     but incongruent polygons, also known as areal weighted interpolation.
 -   The `r pkg("qualmap")` package can be used to digitize qualitative GIS data.
 -   The `r pkg("exactextractr")` for fast and accurate summary of raster values
     on polygonal areas (known as zonal statistics).
--   The `r pkg("sits")` is an end-to-end toolkit for land use and land cover
-    classification using big Earth observation data, based on machine learning
-    methods applied to satellite image data cubes.
--   The `r pkg("rsi")` package provides an interface to the
-    [Awesome Spectral Indices](https://github.com/awesome-spectral-indices/awesome-spectral-indices)
-    project, with functions for filtering the list of available indices and
-    efficiently calculating these from raster inputs.
 
 ### Spatial sampling
 
