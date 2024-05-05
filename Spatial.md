@@ -321,6 +321,7 @@ in support of spatial data management. Here follows a first tentative
      [United States Geological Survey's National Map services](https://apps.nationalmap.gov/services/),
      providing elevation data and orthoimagery along other basemap tiles
      for the United States.
+-   `r github("rspatial/luna")` has tools for acquiring and processing satellite remote sensing data from NASA's LANDSAT and MODIS data sources. `r pkg("MODISTools")`also provides an interface to the [MODIS Land Products Subsets](https://modis.ornl.gov/data/modis_webservice.html) web services. 
 
 
 Handling spatial data
