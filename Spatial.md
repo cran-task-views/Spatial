@@ -3,7 +3,7 @@ name: Spatial
 topic: Analysis of Spatial Data
 maintainer: Roger Bivand, Jakub Nowosad
 email: Roger.Bivand@nhh.no, nowosad.jakub@gmail.com
-version: 2024-05-05
+version: 2024-06-18
 source: https://github.com/cran-task-views/Spatial/
 ---
 
@@ -75,8 +75,7 @@ geographic metadata in R.
 ### Spatial data - general
 
 -   `r pkg("sf", priority = "core")` is a CRAN package for spatial vector data, 
-    and is being actively developed here:
-    `r github("r-spatial/sf")`, providing Simple Features
+    providing Simple Features
     for R, in compliance with the [OGC Simple
     Feature](http://www.opengeospatial.org/standards/sfa) standard. The
     development of the package was supported by the [R
@@ -85,12 +84,13 @@ geographic metadata in R.
     implementation and standardization of parts of the legacy 
     `r pkg("sp")` package. `r pkg("sf")` is documented in an [R
     Journal](https://journal.R-project.org/archive/2018/RJ-2018-009/index.html)
-    article. `r pkg("sf")` uses the [PROJ](https://proj.org/), [GEOS](https://libgeos.org/) and [GDAL](https://gdal.org/) external software
+    article. `r pkg("sf")` uses the [PROJ](https://proj.org/), [GEOS](https://libgeos.org/) 
+    and [GDAL](https://gdal.org/) external software
     libraries, which must be available for source installs together with
     other external software libraries that they in turn depend on.
--   `r pkg("stars", priority = "core")` is being actively developed here:
-    `r github("r-spatial/stars")`, and was supported by the [R
-    Consortium](https://www.r-consortium.org/); it provides for
+-   `r pkg("stars", priority = "core")` is being actively developed and 
+    was initially supported by the [R Consortium](https://www.r-consortium.org/); 
+    it provides for
     spatiotemporal data in the form of dense arrays. It supercedes the 
     `r pkg("spacetime")` package, which 
     extended the shared classes defined in `r pkg("sp")` for
@@ -130,8 +130,7 @@ geographic metadata in R.
     publication into metadata catalogues. Reversely, geometa provides a
     way to read ISO 19139 metadata into R. The package extends
     `r pkg("sf")` to provide GML (ISO 19136) representation
-    of geometries. `r pkg("geometa")` is under active development on
-    Github: `r github("eblondel/geometa")`.
+    of geometries.
 -   `r pkg("ncdf4")` provides read and write functions for
     handling metadata (CF conventions) in the self-described NetCDF
     format.
@@ -157,10 +156,12 @@ If other drivers are needed, you need to either use other conversion utilities
 or install these packages from the source against a version of GDAL with the
 required drivers.
 
-In the past, `r rforge("rgdal")` and `r pkg("raster")` (through `r rforge("rgdal")`) were recommended for reading and writing of spatial data in R.
+In the past, `r rforge("rgdal")` and `r pkg("raster")` (through `r rforge("rgdal")`) 
+were recommended for reading and writing of spatial data in R.
 However, due to [the retirement of rgdal on 16 October 2023](https://stat.ethz.ch/pipermail/r-sig-geo/2023-October/029350.html)
 new projects should not use it, and existing projects should implement migration
-to the packages mentioned in the previous paragraph. In addition, `r rforge("rgeos")` and `r rforge("maptools")` were archived at the same time. Further details and links 
+to the packages mentioned in the previous paragraph. In addition, `r rforge("rgeos")` 
+and `r rforge("maptools")` were archived at the same time. Further details and links 
 may be found in [project reports](https://r-spatial.github.io/evolution/) on the evolution
 project. From October 2023, `r pkg("sp")` only uses methods 
 from `r pkg("sf")` in place of those from `r rforge("rgdal")` for projection 
@@ -194,8 +195,7 @@ dealing with open standard formats or proprietary formats.
     `r pkg("ncdf4")` or `r pkg("RNetCDF")`. Additionally, both `r pkg("terra")`
     and `r pkg("stars")` have capabilities for reading and writing NetCDF files.
 -   *LAS / LAX:* These file formats are designed to work with lidar point
-    cloud data and can be read/write with `r pkg("lidR")` or 
-    `r github("carlos-alberto-silva/rLiDAR")`.
+    cloud data and can be read/write with `r pkg("lidR")`.
 
 *Proprietary Data Formats*
 
@@ -279,16 +279,23 @@ dealing with open standard formats or proprietary formats.
 -   `r pkg("geobr")` provided easy access to official spatial data sets of 
     Brazil for multiple geographies and years.
 -   `r pkg("geouy")` loads and process geographic information for Uruguay.
--   `r pkg("RCzechia")` downloads spatial boundary files of administrative regions and other spatial objects of the Czech Republic.
+-   `r pkg("RCzechia")` downloads spatial boundary files of administrative regions
+    and other spatial objects of the Czech Republic.
 -   `r pkg("rgugik")` allows to search and retrieve data from Polish Head 
     Office of Geodesy and Cartography ("GUGiK").
 -   `r pkg("mapSpain")` downloads spatial boundary files of administrative 
     regions and other spatial objects of Spain.
--   `r pkg("mapme.biodiversity")` allows to download and process a number open datasets related to biodiversity conservation providing efficient routines and parallelization options. Datasets include among others the [Global Forest Watch](https://www.globalforestwatch.org/), [ESA/Copernicus Landcover](https://land.copernicus.eu/global/products/lc), [WorldClim](https://www.worldclim.org/) and [NASA FIRMS](https://firms.modaps.eosdis.nasa.gov/active_fire/).
+-   `r pkg("mapme.biodiversity")` allows to download and process a number open 
+    datasets related to biodiversity conservation providing efficient routines 
+    and parallelization options. Datasets include among others the 
+    [Global Forest Watch](https://www.globalforestwatch.org/), 
+    [ESA/Copernicus Landcover](https://land.copernicus.eu/global/products/lc), 
+    [WorldClim](https://www.worldclim.org/) and 
+    [NASA FIRMS](https://firms.modaps.eosdis.nasa.gov/active_fire/).
 -    `r pkg("terrainr")` provides an interface to the
-     [United States Geological Survey's National Map services](https://apps.nationalmap.gov/services/),
-     providing elevation data and orthoimagery along other basemap tiles
-     for the United States.
+    [United States Geological Survey's National Map services](https://apps.nationalmap.gov/services/),
+    providing elevation data and orthoimagery along other basemap tiles
+    for the United States.
 
 ### Interfaces to Spatial Web-Services
 
@@ -297,8 +304,8 @@ in support of spatial data management. Here follows a first tentative
 (non-exhaustive) list:
 
 -   `r pkg("ows4R")` is a package that intends to provide an R interface 
-    to OGC standard Web-Services. It is in active development at 
-    `r github("eblondel/ows4R")` and currently support interfaces to the 
+    to OGC standard Web-Services. It is in active development and currently 
+    support interfaces to the 
     Web Feature Service (WFS) for vector data access, with binding to the 
     `r pkg("sf")` package, and the Catalogue Service (CSW) for geographic
     metadata discovery and management (including transactions), with binding 
@@ -314,7 +321,8 @@ in support of spatial data management. Here follows a first tentative
 
 -   `r pkg("rstac")` provides functions to access, search and download
     spacetime earth observation data via [SpatioTemporal Asset Catalogs](https://stacspec.org).
-    This package supports the version 1.0.0 (and older) of the [STAC specification](https://github.com/radiantearth/stac-spec).
+    This package supports the version 1.0.0 (and older) of the 
+    [STAC specification](https://github.com/radiantearth/stac-spec).
 -   The `r pkg("rsi")` package provides an interface to the
     [Awesome Spectral Indices](https://github.com/awesome-spectral-indices/awesome-spectral-indices)
     project. It also provides functions to download, mask, and composite data 
@@ -329,7 +337,8 @@ in support of spatial data management. Here follows a first tentative
 -   `r github("rspatial/luna")` has tools for acquiring and processing satellite 
     remote sensing data from NASA's LANDSAT and MODIS data sources. 
     `r pkg("MODISTools")`also provides an interface to the 
-    [MODIS Land Products Subsets](https://modis.ornl.gov/data/modis_webservice.html) web services. 
+    [MODIS Land Products Subsets](https://modis.ornl.gov/data/modis_webservice.html) 
+    web services. 
 -   `r pkg("rgee")` is an [Earth Engine](https://earthengine.google.com/) 
     client library for R. All of the 'Earth Engine' API classes, modules, 
     and functions are made available. Additional functions implemented include 
@@ -351,7 +360,7 @@ Handling spatial data
 -   `r pkg("terra")` package introduces many GIS methods for spatial vector
     and raster data.
 -   The `r github("cran/gdalUtils")` (see
-    https://stat.ethz.ch/pipermail/r-sig-geo/2022-April/028953.html)
+    <https://stat.ethz.ch/pipermail/r-sig-geo/2022-April/028953.html>)
     and `r pkg("gdalUtilities")` packages provide
     wrappers for the Geospatial Data Abstraction Library (GDAL) Utilities.
 -   The `r pkg("geos")` high-performance bindings to the GEOS library, based on
@@ -403,8 +412,8 @@ Handling spatial data
     `r pkg("rsample")`. 
 -   `r pkg("MBHdesign")` provides spatially survey balanced designs using the
     quasi-random number method.
--   `r pkg("SpotSampling")` contains three methods for spatial and temporal
-    sampling. 
+<!---   `r pkg("SpotSampling")` contains three methods for spatial and temporal
+    sampling. -->
 
 Visualizing spatial data
 ------------------------
@@ -458,9 +467,7 @@ Visualizing spatial data
 -   `r pkg("RgoogleMaps")` package for accessing Google Maps(TM) may be
     useful if the user wishes to place a map backdrop behind other displays.
 -   `r pkg("ggmap")` may be used for spatial visualization with Google Maps
-    and OpenStreetMap; `r github("oswaldosantos/ggsn")` provides north arrows 
-    and scales 
-    for such maps.
+    and OpenStreetMap.
 -   `r pkg("mapedit")` provides an R shiny widget based on `r pkg("leaflet")`
     for editing or creating sf geometries.
 
@@ -832,8 +839,8 @@ They include:
 -   The `r pkg("SpatialPosition")` computes spatial position
     models: Stewart potentials, Reilly catchment areas, Huff catchment
     areas.
--   The `r github("ArturoTorres/Watersheds")` package provides methods for
-    watersheds aggregation and spatial drainage network analysis.
+<!-- -   The `r github("ArturoTorres/Watersheds")` package provides methods for -->
+    <!-- watersheds aggregation and spatial drainage network analysis. -->
 -   The `r pkg("ngspatial")` package provides tools for
     analyzing spatial data, especially non-Gaussian areal data. It
     supports the sparse spatial generalized linear mixed model of Hughes
