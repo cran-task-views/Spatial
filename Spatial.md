@@ -270,6 +270,9 @@ dealing with open standard formats or proprietary formats.
     `r pkg("osmextract")` matches, downloads, converts, and reads 
     OpenStreetMap data covering large areas, obtained from Geofabrik 
     and other providers. 
+-   `r pkg("osmapiR")` is an R interface to the [OpenStreetMap API](https://wiki.openstreetmap.org/wiki/API_v0.6) for 
+    fetching and saving all kinds of data from/to the OpenStreetMap database, 
+    including map objects, GPS traces, notes, changesets, and users.
 -   `r pkg("OpenStreetMap")` gives access to open street map raster images.
 -   `r pkg("giscoR")` provides access to spatial elements provided by 
     GISCO - Eurostat, including boundary files of countries,  NUTS regions,
