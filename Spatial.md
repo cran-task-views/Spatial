@@ -3,7 +3,7 @@ name: Spatial
 topic: Analysis of Spatial Data
 maintainer: Roger Bivand, Jakub Nowosad
 email: Roger.Bivand@nhh.no, nowosad.jakub@gmail.com
-version: 2024-06-18
+version: 2024-11-15
 source: https://github.com/cran-task-views/Spatial/
 ---
 
@@ -339,7 +339,7 @@ in support of spatial data management. Here follows a first tentative
     and developing correction tools for remote sensing data.
 -   `r github("rspatial/luna")` has tools for acquiring and processing satellite 
     remote sensing data from NASA's LANDSAT and MODIS data sources. 
-    `r pkg("MODISTools")`also provides an interface to the 
+    `r pkg("MODISTools")` also provides an interface to the 
     [MODIS Land Products Subsets](https://modis.ornl.gov/data/modis_webservice.html) 
     web services.
     `r pkg("modisfast")`, on its side, provides an interface to some MODIS, VIIRS 
