@@ -341,7 +341,10 @@ in support of spatial data management. Here follows a first tentative
     remote sensing data from NASA's LANDSAT and MODIS data sources. 
     `r pkg("MODISTools")`also provides an interface to the 
     [MODIS Land Products Subsets](https://modis.ornl.gov/data/modis_webservice.html) 
-    web services. 
+    web services.
+    `r pkg("modisfast")`, on its side, provides an interface to some MODIS, VIIRS 
+    and GPM [OPeNDAP](https://www.opendap.org/) servers, enabling to subset the datacubes
+    directly at the download phase. 
 -   `r pkg("rgee")` is an [Earth Engine](https://earthengine.google.com/) 
     client library for R. All of the 'Earth Engine' API classes, modules, 
     and functions are made available. Additional functions implemented include 
