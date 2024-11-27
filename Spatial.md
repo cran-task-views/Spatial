@@ -378,9 +378,12 @@ Handling spatial data
     'multi-part' to 'single-part' geometries.
 -   `r pkg("gdistance")` and `r pkg("spaths")` provide functions to calculate distances and 
     routes on geographic grids.
-    `r pkg("geosphere")` permits computations of distance and area to be 
+-   `r pkg("geosphere")` permits computations of distance and area to be 
     carried out on spatial data in geographical coordinates.
-    `r pkg("cshapes")` package provides functions for calculating distance
+-   `r pkg("dggridR", priority = "core")` provides a discrete global grid system
+    via DGGRID. These grids are extremely useful for spatial statistics because
+    they tile the Earth with _equally_-sized hexagons, triangles, or diamonds.
+-   `r pkg("cshapes")` package provides functions for calculating distance
     matrices (see [Mapping and Measuring Country Shapes](http://journal.R-project.org/archive/2010-1/RJournal_2010-1_Weidmann+Skrede~Gleditsch.pdf)).
 -   `r pkg("magclass")` offers a data class for increased interoperability 
     working with spatial-temporal data together with corresponding functions
