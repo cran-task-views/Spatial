@@ -381,7 +381,7 @@ Handling spatial data
 -   `r pkg("geosphere")` permits computations of distance and area to be 
     carried out on spatial data in geographical coordinates.
 -   `r pkg("dggridR", priority = "core")` provides a discrete global grid system
-    via DGGRID. These grids are extremely useful for spatial statistics because
+    via DGGRID. These grids are useful for spatial statistics because
     they tile the Earth with _equally_-sized hexagons, triangles, or diamonds.
 -   `r pkg("cshapes")` package provides functions for calculating distance
     matrices (see [Mapping and Measuring Country Shapes](http://journal.R-project.org/archive/2010-1/RJournal_2010-1_Weidmann+Skrede~Gleditsch.pdf)).
