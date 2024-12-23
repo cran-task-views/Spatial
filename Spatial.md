@@ -95,7 +95,7 @@ geographic metadata in R.
     `r pkg("spacetime")` package, which 
     extended the shared classes defined in `r pkg("sp")` for
     spatio-temporal data (see [Spatio-Temporal Data in
-    R](http://www.jstatsoft.org/v51/i07) ). `r pkg("stars")` uses PROJ and
+    R](http://www.jstatsoft.org/v51/i07)). `r pkg("stars")` uses PROJ and
     GDAL through `r pkg("sf")`.
 -   The `r pkg("vapour")` and `r pkg("gdalraster")` packages offer low-level
     access to GDAL functionality for R packages. 
@@ -227,7 +227,7 @@ dealing with open standard formats or proprietary formats.
     (`r github("r-spatial/RQGIS")`). Using QGIS processing algorithms is currently
     supported by `r pkg("qgisprocess")`, which uses the standalone
     'qgis_process' command-line utility from QGIS (use
-    recent QGIS versions; may work since >= 3.16).  Both native QGIS and third-party
+    recent QGIS versions; may work since >= 3.16). Both native QGIS and third-party
     (plugin) processing providers are supported, i.e. GRASS, SAGA, GDAL, ...
 -   *WhiteboxTools:* `r pkg("whitebox")` is an R frontend for 
     the WhiteboxTools software.
@@ -251,7 +251,7 @@ dealing with open standard formats or proprietary formats.
 -   `r pkg("marmap")` package is designed for downloading, plotting, 
     and manipulating bathymetric and topographic data in R. It allows to query 
     the ETOPO1 bathymetry and topography database hosted by the NOAA, 
-    use simple latitude-longitude-depth data in ascii format, and take 
+    use simple latitude-longitude-depth data in ASCII format, and take 
     advantage of the advanced plotting tools available in R to build 
     publication-quality bathymetric maps (see the
     [PLOS](http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0073051)
@@ -275,7 +275,7 @@ dealing with open standard formats or proprietary formats.
     including map objects, GPS traces, notes, changesets, and users.
 -   `r pkg("OpenStreetMap")` gives access to open street map raster images.
 -   `r pkg("giscoR")` provides access to spatial elements provided by 
-    GISCO - Eurostat, including boundary files of countries,  NUTS regions,
+    GISCO - Eurostat, including boundary files of countries, NUTS regions,
     municipalities, and other spatial objects.
 -   `r pkg("chilemapas")` provides access to spatial data of political 
     and administrative divisions of Chile.
@@ -395,7 +395,7 @@ Handling spatial data
 ### Data cleaning
 
 -   `r pkg("sf")` has a built-in functions st_is_valid to check whether 
-    an sf geometry is valid and st_make_valid to fix invalid geometry (from GEOS 3.8).
+    a sf geometry is valid and st_make_valid to fix invalid geometry (from GEOS 3.8).
 -   `r pkg("lwgeom")` may also be used to facilitate handling and reporting
     of topology errors and geometry validity issues
     in sf objects.
@@ -436,7 +436,7 @@ Visualizing spatial data
     choosing class intervals for thematic cartography.
 -   Currently, the grDevices package (included with the R installation) 
     contains a large number of color palettes that can be accessed with 
-    the hcl.colors and palette.colors functions; see also New features in this
+    the `hcl.colors` and `palette.colors` functions; see also New features in this
     [blog](https://developer.r-project.org/Blog/public/2019/11/21/a-new-palette-for-r/index.html).
     Some of these color palettes can be also retrieved using separate packages,
     such as `r pkg("RColorBrewer")`, `r pkg("viridis")`, 
@@ -681,7 +681,7 @@ calculated rates that are comparable both in terms of levels and uncertainty.
     is no longer provided by archived `AMOEBA`: a function to calculate
     spatial clusters using the Getis-Ord local statistic. It searched
     for irregular clusters (ecotopes) on a map. `skater()` in
-    `r pkg("spdep")` does not interpose  a local statistic,
+    `r pkg("spdep")` does not interpose a local statistic,
      being based on distance between features in attribute space,
      and polygon contiguity. 
 -   The `r pkg("seg")`, `r pkg("divseg")` and
