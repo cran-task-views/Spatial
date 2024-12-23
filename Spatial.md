@@ -394,8 +394,8 @@ Handling spatial data
 
 ### Data cleaning
 
--   `r pkg("sf")` has a built-in functions st_is_valid to check whether 
-    a sf geometry is valid and st_make_valid to fix invalid geometry (from GEOS 3.8).
+-   `r pkg("sf")` has a built-in functions `st_is_valid` to check whether 
+    a sf geometry is valid and `st_make_valid` to fix invalid geometry (from GEOS 3.8).
 -   `r pkg("lwgeom")` may also be used to facilitate handling and reporting
     of topology errors and geometry validity issues
     in sf objects.
@@ -451,8 +451,8 @@ Visualizing spatial data
     such as proportional symbols, choropleth, or typology maps; it accepts sf
     (`r pkg("sf")`) and SpatRaster (`r pkg("terra")`) objects
 -   `r pkg("ggplot2")` package has a built-in support for sf objects with the 
-    geom_sf function and additional support for stars object is available
-    through the geom_stars function available in the `r pkg("stars")` package.
+    `geom_sf` function and additional support for stars object is available
+    through the `geom_stars` function available in the `r pkg("stars")` package.
     Its spatial visualization capabilities can be further extended with 
     `r pkg("ggspatial")`, which adds support for more spatial classes 
     (including classes from the raster package), allows adding north arrows
