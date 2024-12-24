@@ -3,7 +3,7 @@ name: Spatial
 topic: Analysis of Spatial Data
 maintainer: Roger Bivand, Jakub Nowosad
 email: Roger.Bivand@nhh.no, nowosad.jakub@gmail.com
-version: 2024-11-15
+version: 2024-12-24
 source: https://github.com/cran-task-views/Spatial/
 ---
 
@@ -46,8 +46,9 @@ the [R-SIG-Geo](https://stat.ethz.ch/mailman/listinfo/R-SIG-Geo/)
 mailing-list after subscription, or of 
 [Stack Overflow](https://stackoverflow.com) with appropriate tags, or of
 [Stack Exchange](https://gis.stackexchange.com/). Using the
-`#rspatial` tag on [Twitter](https://twitter.com) and [Mastodon](https://joinmastodon.org/)
-may also be worth trying, or browsing traffic using that tag (among others).
+`#rspatial` tag on [Mastodon](https://joinmastodon.org/)
+may also be worth trying, or browsing traffic using that tag (among others);
+BlueSky currently is emerging.
 
 The packages in this view can be roughly structured into the following
 topics. If you think that some package is missing from the list, please
