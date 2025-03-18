@@ -406,7 +406,7 @@ Handling spatial data
 -   The `r pkg("areal")` package can be used to interpolate overlapping 
     but incongruent polygons, also known as areal weighted interpolation.
 -   The `r pkg("centerline")` package can be used for centerline (or median-axis) estimation of closed polygons,
-    such as lakes, landslides, or rivers (see [web vignettes](https://centerline.anatolii.nz/)). The package also
+    such as lakes, landslides, or rivers. The package also
     provides extensions to `ggplot2`, allowing users to place `geom_text` and `geom_label` at the center of a spatial
     polygon, which can be useful for map-making.
 -   The `r pkg("qualmap")` package can be used to digitize qualitative GIS data.
