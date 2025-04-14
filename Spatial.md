@@ -894,6 +894,7 @@ In general, machine learning of spatial data can be performed through one of the
 -   `r pkg("tidymodels")` with `r pkg("spatialsample")` and `r pkg("waywiser")` introduces spatial sampling strategies and model evaluation tools following tidyverse principles, including `spatialsample::spatial_resample` and `waywiser::ww_area_of_applicability`.
 -   `r pkg("RandomForestsGLS")` and `r pkg("spatialRF")` extend Random Forests to incorporate spatial dependence, offering specialized functions for spatial estimation, feature selection, and model assessment.
 -   `r pkg("meteo")` implements Random Forest Spatial Interpolation by incorporating nearest observations and distances into the prediction process.
+-   `r pkg("GPBoost")` captures complex non-linear dependencies by combining gradient boosting with Gaussian processes.
 -   `r pkg("sperrorest")` and `r pkg("blockCV")` provide frameworks for spatial resampling and validation, supporting methods like k-means clustering and block-based approaches to account for spatial dependencies in model evaluation.
 
 The `r view("Environmetrics")` Task View contains a much more
