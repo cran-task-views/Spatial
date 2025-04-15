@@ -3,10 +3,9 @@ name: Spatial
 topic: Analysis of Spatial Data
 maintainer: Roger Bivand, Jakub Nowosad
 email: Roger.Bivand@nhh.no, nowosad.jakub@gmail.com
-version: 2025-03-18
+version: 2025-04-14
 source: https://github.com/cran-task-views/Spatial/
 ---
-
 
 Base R includes many functions that can be used for reading,
 visualising, and analysing spatial data. The focus in this view is on
@@ -507,7 +506,10 @@ areal/lattice data, is widely accepted. However, areal data
 analysis can be split into disease mapping and spatial regression 
 (also partly overlapping). In addition, ecological analyses often 
 approach spatial data in particular ways, giving rise to a specific 
-topical cluster of packages. All of these approaches to analysing spatial data
+topical cluster of packages. Moreover, machine learning for spatial data 
+is a growing area of interest, and there are packages that
+provide tools for this.
+All of these approaches to analysing spatial data
 treat the spatial relationships between observations as a way of exploring
 and making use of important sources of information about the observations over
 and above what is known when assuming that they are independent of each other.
@@ -876,6 +878,24 @@ They include:
     designed to be compatible with both base R and with the tidymodels
     modeling framework, and adopt `r pkg("yardstick")` classes and
     interfaces.
+    
+### Machine learning of spatial data
+
+Machine learning of spatial data requires specialized methods to account for spatial dependencies like spatial autocorrelation -- where nearby observations tend to be similar. 
+Ignoring these dependencies during model training and evaluation risks information leakage.
+For example, randomly splitting spatial data into training and testing subsets, without considering spatial autocorrelation, can result in test samples being spatially close to training samples. 
+This violates the assumption of independence between training and test sets and can lead to inflated performance metrics and poor model generalization.
+
+To address this, various approaches and methods to account for spatial dependencies and relationships when building models were developed.
+In general, machine learning of spatial data can be performed through one of the existing machine learning frameworks in R, such as `r pkg("caret")`, `r pkg("mlr3")`, and `r pkg("tidymodels")` or through specialized spatial machine learning packages.
+
+- The `r pkg("caret")` package provides a consistent interface for training models but requires additional packages like `r pkg("blockCV")` or `r pkg("CAST")` to implement spatial methodologies. Functions like `CAST::knndm` and `CAST::ffs` enable spatially aware feature selection and cross-validation, while `CAST::aoa` assesses the area of applicability for spatial models.
+-   `r pkg("mlr3")` with `r pkg("mlr3spatial")` and `r pkg("mlr3spatiotempcv")` takes an object-oriented approach with R6 classes for direct spatial object handling and cross-validation within its structured syntax.
+-   `r pkg("tidymodels")` with `r pkg("spatialsample")` and `r pkg("waywiser")` introduces spatial sampling strategies and model evaluation tools following tidyverse principles, including `spatialsample::spatial_resample` and `waywiser::ww_area_of_applicability`.
+-   `r pkg("RandomForestsGLS")` and `r pkg("spatialRF")` extend Random Forests to incorporate spatial dependence, offering specialized functions for spatial estimation, feature selection, and model assessment.
+-   `r pkg("meteo")` implements Random Forest Spatial Interpolation by incorporating nearest observations and distances into the prediction process.
+-   `r pkg("GPBoost")` captures complex non-linear dependencies by combining gradient boosting with Gaussian processes.
+-   `r pkg("sperrorest")` and `r pkg("blockCV")` provide frameworks for spatial resampling and validation, supporting methods like k-means clustering and block-based approaches to account for spatial dependencies in model evaluation.
 
 The `r view("Environmetrics")` Task View contains a much more
 complete survey of relevant functions and packages.
