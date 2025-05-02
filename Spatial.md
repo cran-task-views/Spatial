@@ -562,6 +562,9 @@ interpolate values observed at point to unobserved points
 -   The `r pkg("gstat", priority = "core")` package provides a
     wide range of functions for univariate and multivariate geostatistics,
     also for larger datasets.
+-   `r pkg("mbg")` offers a [streamlined interface](https://henryspatialanalysis.github.io/mbg/)
+    for running model-based geostatistics with optional covariates and discrete spatial
+    effects.
 -   `r pkg("geoR", priority = "core")` contains
     functions for model-based geostatistics. 
 -   Variogram diagnostics may be
@@ -889,7 +892,8 @@ This violates the assumption of independence between training and test sets and 
 To address this, various approaches and methods to account for spatial dependencies and relationships when building models were developed.
 In general, machine learning of spatial data can be performed through one of the existing machine learning frameworks in R, such as `r pkg("caret")`, `r pkg("mlr3")`, and `r pkg("tidymodels")` or through specialized spatial machine learning packages.
 
-- The `r pkg("caret")` package provides a consistent interface for training models but requires additional packages like `r pkg("blockCV")` or `r pkg("CAST")` to implement spatial methodologies. Functions like `CAST::knndm` and `CAST::ffs` enable spatially aware feature selection and cross-validation, while `CAST::aoa` assesses the area of applicability for spatial models.
+- The `r pkg("caret")` package provides a consistent interface for training models but requires additional packages like `r pkg("blockCV")` or `r pkg("CAST")` to implement spatial methodologies. Functions like `CAST::knndm` and `CAST::ffs` enable spatially aware feature selection and cross-validation, while `CAST::aoa` assesses the area of applicability for spatial models. The `r pkg("mbg")` package offers [convenience functions](https://henryspatialanalysis.github.io/mbg/articles/spatial-ml-models.html) for fitting caret models with point-referenced outcomes and raster features.
+
 -   `r pkg("mlr3")` with `r pkg("mlr3spatial")` and `r pkg("mlr3spatiotempcv")` takes an object-oriented approach with R6 classes for direct spatial object handling and cross-validation within its structured syntax.
 -   `r pkg("tidymodels")` with `r pkg("spatialsample")` and `r pkg("waywiser")` introduces spatial sampling strategies and model evaluation tools following tidyverse principles, including `spatialsample::spatial_resample` and `waywiser::ww_area_of_applicability`.
 -   `r pkg("RandomForestsGLS")` and `r pkg("spatialRF")` extend Random Forests to incorporate spatial dependence, offering specialized functions for spatial estimation, feature selection, and model assessment.
