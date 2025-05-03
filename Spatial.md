@@ -3,7 +3,7 @@ name: Spatial
 topic: Analysis of Spatial Data
 maintainer: Roger Bivand, Jakub Nowosad
 email: Roger.Bivand@nhh.no, nowosad.jakub@gmail.com
-version: 2025-04-14
+version: 2025-05-03
 source: https://github.com/cran-task-views/Spatial/
 ---
 
@@ -878,7 +878,10 @@ They include:
     designed to be compatible with both base R and with the tidymodels
     modeling framework, and adopt `r pkg("yardstick")` classes and
     interfaces.
-    
+
+The `r view("Environmetrics")` Task View contains a much more
+complete survey of relevant functions and packages.
+
 ### Machine learning of spatial data
 
 Machine learning of spatial data requires specialized methods to account for spatial dependencies like spatial autocorrelation -- where nearby observations tend to be similar. 
@@ -896,10 +899,6 @@ In general, machine learning of spatial data can be performed through one of the
 -   `r pkg("meteo")` implements Random Forest Spatial Interpolation by incorporating nearest observations and distances into the prediction process.
 -   `r pkg("gpboost")` captures complex non-linear dependencies by combining gradient boosting with Gaussian processes.
 -   `r pkg("sperrorest")` and `r pkg("blockCV")` provide frameworks for spatial resampling and validation, supporting methods like k-means clustering and block-based approaches to account for spatial dependencies in model evaluation.
-
-The `r view("Environmetrics")` Task View contains a much more
-complete survey of relevant functions and packages.
-
 
 Installing packages linking to PROJ, GDAL or GEOS
 -------------------------------------------------
