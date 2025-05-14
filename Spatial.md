@@ -562,7 +562,7 @@ interpolate values observed at point to unobserved points
 -   The `r pkg("gstat", priority = "core")` package provides a
     wide range of functions for univariate and multivariate geostatistics,
     also for larger datasets.
--   `r pkg("mbg")` offers a [streamlined interface](https://henryspatialanalysis.github.io/mbg/)
+-   `r pkg("mbg")` offers an [interface](https://henryspatialanalysis.github.io/mbg/)
     for running model-based geostatistics with optional covariates and discrete spatial
     effects.
 -   `r pkg("geoR", priority = "core")` contains
