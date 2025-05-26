@@ -97,8 +97,17 @@ geographic metadata in R.
     spatio-temporal data (see [Spatio-Temporal Data in
     R](http://www.jstatsoft.org/v51/i07)). `r pkg("stars")` uses PROJ and
     GDAL through `r pkg("sf")`.
--   The `r pkg("vapour")` and `r pkg("gdalraster")` packages offer low-level
-    access to GDAL functionality for R packages. 
+-   `r pkg("gdalraster")` provides API bindings to GDAL. Since `r pkg("gdalraster")`
+    2.0.0, bindings are provided for both the Raster and Vector [APIs](https://gdal.org/en/stable/api/index.html),
+    the Geometry API ([GEOS](https://libgeos.org/) via GDAL headers) and Spatial
+    Reference Systems API ([PROJ](https://proj.org/) via GDAL). Bindings are
+    also provided for the low-level Virtual Systems Interface ([VSI](https://gdal.org/en/stable/api/cpl.html#cpl-vsi-h))
+    which abstracts file system operations and binary I/O on URLs, cloud storage
+    services, compressed files (.zip, .gz, .tar, .tar.gz, .7z archives) and
+    in-memory files, as well as regular file systems. Calling signatures
+    resemble the native C, C++ and Python APIs provided by the GDAL project.
+-   The `r pkg("vapour")` package also offers low-level access to GDAL
+    functionality for R packages. 
 -   The `r pkg("spatstat", priority = "core")` contains classes suited to the
     analysis of point patterns, and may be coerced to and from `"sf"`, `"stars"`
     and other spatial classes.
@@ -121,6 +130,9 @@ geographic metadata in R.
     climate model results.
 -   The `r pkg("gdalcubes")` package also provides classes for data cubes,
     including proxy data cubes, it links to PROJ, GDAL and NetCDF4.
+-   `r pkg("gdalraster")` provides an R implementation of the [GDAL Raster Data
+    Model](https://gdal.org/en/stable/user/raster_data_model.html), along with
+    several utilities and algorithms for processing and analyzing raster data.
 
 ### Geographic metadata
 
@@ -147,14 +159,16 @@ library that provides a unified way to read and write hundreds of
 spatial data formats. Formats supported by GDAL include both OGC standard 
 data formats (e.g., GeoPackage) and proprietary formats (e.g., ESRI Shapefile).
 GDAL is used by a large number of GIS software and also many R packages,
-such as `r pkg("sf")`, `r pkg("terra")`, and `r pkg("vapour")`.
-This allows us to read and write spatial data in R from and to various 
-spatial file formats. Important note: CRAN offers binary versions of packages 
-`r pkg("sf")`, `r pkg("terra")`, and `r pkg("vapour")` for Windows and macOS,
-that contain specific GDAL version with a subset of possible data source drivers.
-If other drivers are needed, you need to either use other conversion utilities 
-or install these packages from the source against a version of GDAL with the
-required drivers.
+such as `r pkg("sf")`, `r pkg("terra")`, and `r pkg("vapour")`, and the
+`r pkg("gdalraster")` package explicitly implements the GDAL [Raster](https://gdal.org/en/stable/user/raster_data_model.html)
+and [Vector](https://gdal.org/en/stable/user/vector_data_model.html) Data
+Models. This allows us to read and write spatial data in R from and to various
+spatial file formats. Important note: CRAN offers binary versions of packages
+`r pkg("gdalraster")`, `r pkg("sf")`, `r pkg("terra")`, and `r pkg("vapour")`
+for Windows and macOS, that contain specific GDAL version with a subset of
+possible data source drivers. If other drivers are needed, you need to either
+use other conversion utilities or install these packages from the source against
+a version of GDAL with the required drivers.
 
 In the past, `r rforge("rgdal")` and `r pkg("raster")` (through `r rforge("rgdal")`) 
 were recommended for reading and writing of spatial data in R.
@@ -183,8 +197,8 @@ dealing with open standard formats or proprietary formats.
 -   *GeoJSON:* An rOpenSci [blog entry](http://ropensci.org/blog/blog/2016/11/22/geospatial-suite) 
     describes a GeoJSON-centred approach to reading GeoJSON and WKT data.
     The entry lists `r pkg("geojson")`, and `r pkg("geojsonio")`, among others.
-    The GeoJSON format can also be read and write with `r pkg("sf")`,
-    `r pkg("terra")`, and `r pkg("vapour")`. 
+    The GeoJSON format can also be read and written with `r pkg("gdalraster")`,
+    `r pkg("sf")`, `r pkg("terra")`, and `r pkg("vapour")`. 
 -   *Geographic Markup Language (GML):* GML format can be read and written
     with `r pkg("sf")`. Additional GML native reader and writer is provided
     by `r pkg("geometa")` model with bindings to the `r pkg("sf")` classes, 
@@ -369,6 +383,8 @@ Handling spatial data
     <https://stat.ethz.ch/pipermail/r-sig-geo/2022-April/028953.html>)
     and `r pkg("gdalUtilities")` packages provide
     wrappers for the Geospatial Data Abstraction Library (GDAL) Utilities.
+-   `r pkg("gdalraster")` provides access to GDAL utilities and algorithms via
+    API bindings, including GDAL facilities for [vector overlay operations](https://en.wikipedia.org/wiki/Vector_overlay).
 -   The `r pkg("geos")` high-performance bindings to the GEOS library, based on
     `r pkg("libgeos")`; the latter bundles a frozen copy of GEOS, and does not
     link to system versions, which may possibly be different versions of GEOS.
@@ -906,13 +922,13 @@ In general, machine learning of spatial data can be performed through one of the
 Installing packages linking to PROJ, GDAL or GEOS
 -------------------------------------------------
 
-Installation of packages like `r pkg("sf")` and `r pkg("terra")` which use
-external software libraries such as PROJ, GDAL or GEOS requires care. For
-most users on platforms such as Windows or macOS who are not themselves 
-package developers, it is always better to avoid what are known as 
-source installs, because CRAN binary packages include all of the external 
-software required. Because `getOption("pkgType")` on these platforms is
-usually `"both"`, you may be asked to choose to install a source package
+Installation of packages like `r pkg("gdalraster")`, `r pkg("sf")` and
+`r pkg("terra")` which use external software libraries such as PROJ, GDAL or
+GEOS requires care. For most users on platforms such as Windows or macOS who
+are not themselves package developers, it is always better to avoid what are
+known as source installs, because CRAN binary packages include all of the
+external software required. Because `getOption("pkgType")` on these platforms
+is usually `"both"`, you may be asked to choose to install a source package
 if it is more recent than the latest binary. 
 
 Please do not be tempted to choose a source install for `r pkg("sf")` or 
