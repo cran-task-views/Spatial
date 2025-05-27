@@ -765,6 +765,13 @@ calculated rates that are comparable both in terms of levels and uncertainty.
     designed to be compatible with both base R and with the tidymodels
     modeling framework, and adopt `r pkg("yardstick")` classes and
     interfaces.
+-   The `r pkg("gdverse")` package provides 
+    an integrated and extensible toolkit for analyzing spatial stratified heterogeneity 
+    and spatial associations using the geographical detector methodology. It includes 
+    core functions for computing the q-statistic, performing spatial factor exploration, 
+    and detecting spatial interactions between variables. The package supports various 
+    geographical detector models and provides high-performance implementations for their
+    efficient execution.
 
 
 ### Spatial regression
