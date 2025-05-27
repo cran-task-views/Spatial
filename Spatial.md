@@ -3,7 +3,7 @@ name: Spatial
 topic: Analysis of Spatial Data
 maintainer: Roger Bivand, Jakub Nowosad
 email: Roger.Bivand@nhh.no, nowosad.jakub@gmail.com
-version: 2025-05-14
+version: 2025-05-27
 source: https://github.com/cran-task-views/Spatial/
 ---
 
@@ -441,8 +441,6 @@ Handling spatial data
     `r pkg("rsample")`. 
 -   `r pkg("MBHdesign")` provides spatially survey balanced designs using the
     quasi-random number method.
-<!---   `r pkg("SpotSampling")` contains three methods for spatial and temporal
-    sampling. -->
 
 Visualizing spatial data
 ------------------------
@@ -681,7 +679,7 @@ calculated rates that are comparable both in terms of levels and uncertainty.
 -   `r pkg("DCluster", priority = "core")` is a package for the
     detection of spatial clusters of diseases. It is complemented by
     `r pkg("DClusterm")` for model-based cluster detection, and by 
-    `r pkg("rflexscan")` and `r pkg("FlexScan")`, two implementations
+    `r github("tkhrotn/rflexscan")` and `r pkg("FlexScan")`, two implementations
     of flexible scan statistics.
 -   `r pkg("DCluster")` extends and depends on the
     `r pkg("spdep", priority = "core")` package, which provides
@@ -710,7 +708,7 @@ calculated rates that are comparable both in terms of levels and uncertainty.
     `r pkg("spdep")` does not interpose a local statistic,
      being based on distance between features in attribute space,
      and polygon contiguity. 
--   The `r pkg("seg")`, `r pkg("divseg")` and
+-   The `r pkg("divseg")` and
     `r pkg("OasisR")` packages provide functions for measuring
     spatial segregation; `r pkg("OasisR")` includes Monte Carlo
     simulations to test the indices. 
@@ -749,7 +747,7 @@ calculated rates that are comparable both in terms of levels and uncertainty.
     regression, least angle regression (LARS), and lasso models for
     selecting the spatial scale of covariates in regression models.
 -   Spatial microsimulation is offered by `r pkg("rakeR")`, `r pkg("sms")`, 
-    `r pkg("synthACS")` permits the building and
+    `r github("alexWhitworth/synthACS")` permits the building and
     running of spatially explicit agent-based models.
 -   The `r pkg("geostan")` package has GLMs, SAR, proper CAR, ICAR, and eigenvector
     spatial filter (ESF) models for Bayesian disease mapping and spatial regression.
