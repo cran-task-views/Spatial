@@ -3,7 +3,7 @@ name: Spatial
 topic: Analysis of Spatial Data
 maintainer: Roger Bivand, Jakub Nowosad
 email: Roger.Bivand@nhh.no, nowosad.jakub@gmail.com
-version: 2025-05-27
+version: 2025-06-02
 source: https://github.com/cran-task-views/Spatial/
 ---
 
@@ -97,6 +97,9 @@ geographic metadata in R.
     spatio-temporal data (see [Spatio-Temporal Data in
     R](http://www.jstatsoft.org/v51/i07)). `r pkg("stars")` uses PROJ and
     GDAL through `r pkg("sf")`.
+-   `r pkg("terra", priority = "core")` provides classes for spatial vector and
+    raster data, linking directly to PROJ, GDAL and GEOS. 
+    access to GDAL functionality for R packages. 
 -   `r pkg("gdalraster")` provides API bindings to GDAL. Since `r pkg("gdalraster")`
     2.0.0, bindings are provided for both the Raster and Vector [APIs](https://gdal.org/en/stable/api/index.html),
     the Geometry API ([GEOS](https://libgeos.org/) via GDAL headers) and Spatial
@@ -116,12 +119,11 @@ geographic metadata in R.
 ### Raster data
 
 -   `r pkg("terra", priority = "core")` is a re-implementation of
-    `r pkg("raster")` functionality, linking directly to
-    PROJ, GDAL and GEOS, and introducing new S4 classes for raster and
+    `r pkg("raster")` functionality and introducing new S4 classes for raster and
     vector data. See the [manual and
     tutorials](https://rspatial.org/terra/) to get started.
     `r pkg("terra")` is very similar to the `r pkg("raster")` package; but
-    `r pkg("terra")` is simpler, better, and faster.
+    `r pkg("terra")` is simpler and faster.
 -   `r pkg("stars", priority = "core")` provides for spatiotemporal data in the
     form of dense arrays, with space and time being array dimensions.
     Examples include socio-economic or demographic data, environmental
@@ -313,6 +315,9 @@ dealing with open standard formats or proprietary formats.
     [United States Geological Survey's National Map services](https://apps.nationalmap.gov/services/),
     providing elevation data and orthoimagery along other basemap tiles
     for the United States.
+-   `r pkg("geodata")` facilitates access to climate, elevation, soil, crop, 
+    species occurrence, and administrative boundary data, and is a successor of
+    the `getData()` function from the `r pkg("raster")` package.
 
 ### Interfaces to Spatial Web-Services
 
@@ -902,6 +907,7 @@ They include:
     designed to be compatible with both base R and with the tidymodels
     modeling framework, and adopt `r pkg("yardstick")` classes and
     interfaces.
+-   `r pkg("dismo")` provides functions for species distribution modelling.
 
 The `r view("Environmetrics")` Task View contains a much more
 complete survey of relevant functions and packages.
