@@ -99,7 +99,6 @@ geographic metadata in R.
     GDAL through `r pkg("sf")`.
 -   `r pkg("terra", priority = "core")` provides classes for spatial vector and
     raster data, linking directly to PROJ, GDAL and GEOS. 
--   The `r pkg("vapour")` and `r pkg("gdalraster")` packages offer low-level
     access to GDAL functionality for R packages. 
 -   `r pkg("gdalraster")` provides API bindings to GDAL. Since `r pkg("gdalraster")`
     2.0.0, bindings are provided for both the Raster and Vector [APIs](https://gdal.org/en/stable/api/index.html),
