@@ -3,7 +3,7 @@ name: Spatial
 topic: Analysis of Spatial Data
 maintainer: Roger Bivand, Jakub Nowosad
 email: Roger.Bivand@nhh.no, nowosad.jakub@gmail.com
-version: 2025-06-02
+version: 2025-07-29
 source: https://github.com/cran-task-views/Spatial/
 ---
 
@@ -578,7 +578,13 @@ study area.
     simple computation of a full set of spatial statistic functions of
     distance, including classical ones (Ripley's K and others) and more
     recent ones used by spatial economists (Duranton and Overman's Kd,
-    Marcon and Puech's M). It relies on `r pkg("spatstat")` for core calculation.
+    Marcon and Puech's M). It relies on `r pkg("spatstat")` for core 
+    calculation.
+-   `r pkg("sfhotspot")` provides functions for descriptive hotspot analysis and
+    mapping of spatial concentrations of points, including kernel-density 
+    estimation, Getis--Ord Gi*, hotspot classification, etc. The package 
+    attempts to provide sensible default values to assist with analysis
+    and mapping for students and non-experts.
 
 ### Geostatistics
 
