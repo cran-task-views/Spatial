@@ -584,7 +584,7 @@ study area.
     mapping of spatial concentrations of points, including kernel-density 
     estimation, Getis--Ord Gi*, hotspot classification, etc. The package 
     attempts to provide sensible default values to assist with analysis
-    easy for students and non-experts.
+    and mapping for students and non-experts.
 
 ### Geostatistics
 
