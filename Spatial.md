@@ -583,7 +583,7 @@ study area.
 -   `r pkg("sfhotspot")` provides functions for descriptive hotspot analysis and
     mapping of spatial concentrations of points, including kernel-density 
     estimation, Getis--Ord Gi*, hotspot classification, etc. The package 
-    attempts to provide sensible default values to make analysis and mapping 
+    attempts to provide sensible default values to assist with analysis
     easy for students and non-experts.
 
 ### Geostatistics
