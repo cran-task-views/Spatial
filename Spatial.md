@@ -391,7 +391,7 @@ in support of spatial data management. Here follows a first tentative
     images for just the area of interest based on selected spectral bands.
 -   The `r pkg("rsat")` is designed for automatically downloading, pre-processing, and
     managing time series of satellite imagery from multiple platforms (i.e., Landsat,
-    Sentinel, MODIS). 
+    Sentinel and MODIS). 
 
 Handling spatial data
 ---------------------
