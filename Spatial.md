@@ -377,6 +377,21 @@ in support of spatial data management. Here follows a first tentative
     importing (exporting) of Earth Engine spatial objects, 
     extraction of time series, interactive map display, 
     assets management interface, and metadata display.
+-   The `r pkg("openEO")` is an R client package that allows users to interact with
+    openEO-compliant back-ends for processing Earth observation data (e.g., services
+    offered by European Space Agency or VITO Remote Sensing) <https://openeo.org/>.
+    It enables to define and execute workflows remotely on cloud infrastructures
+    without having to download large amounts of data locally.
+-   The `r pkg("Rstoolbox")` is a remote sensing toolbox covering many aspects
+    including data import, pre-processing, data analysis, image classification
+    and graphical display.
+-   The `r pkg("CDSE")` provides the interface to the 'Copernicus Data Space Ecosystem'
+    API <https://dataspace.copernicus.eu/analyse/apis/sentinel-hub>, mainly for searching
+    the catalogue of available data from Copernicus Sentinel missions and obtaining the
+    images for just the area of interest based on selected spectral bands.
+-   The `r pkg("rsat")` is designed for automatically downloading, pre-processing, and
+    managing time series of satellite imagery from multiple platforms (i.e., Landsat,
+    Sentinel and MODIS). 
 
 Handling spatial data
 ---------------------
