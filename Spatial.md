@@ -3,7 +3,7 @@ name: Spatial
 topic: Analysis of Spatial Data
 maintainer: Roger Bivand, Jakub Nowosad
 email: Roger.Bivand@nhh.no, nowosad.jakub@gmail.com
-version: 2025-07-29
+version: 2025-08-20
 source: https://github.com/cran-task-views/Spatial/
 ---
 
@@ -357,6 +357,9 @@ in support of spatial data management. Here follows a first tentative
     project. It also provides functions to download, mask, and composite data 
     from [SpatioTemporal Asset Catalogs](https://stacspec.org), with a particular 
     focus on satellite imagery.
+-   The `r pkg("Rstoolbox")` is a remote sensing toolbox covering many aspects
+    including data import, pre-processing, data analysis, image classification
+    and graphical display.
 -   The `r pkg("sits")` is an end-to-end toolkit for land use and land cover
     classification using big Earth observation data, based on machine learning
     methods applied to satellite image data cubes.
@@ -371,6 +374,13 @@ in support of spatial data management. Here follows a first tentative
     `r pkg("modisfast")`, on its side, provides an interface to some MODIS, VIIRS 
     and GPM [OPeNDAP](https://www.opendap.org/) servers, enabling to subset the datacubes
     directly at the download phase. 
+-   The `r pkg("CDSE")` provides the interface to the 'Copernicus Data Space Ecosystem'
+    API <https://dataspace.copernicus.eu/analyse/apis/sentinel-hub>, mainly for searching
+    the catalogue of available data from Copernicus Sentinel missions and obtaining the
+    images for the area of interest based on selected spectral bands.
+-   The `r pkg("rsat")` is designed for automatically downloading, pre-processing, and
+    managing time series of satellite imagery from multiple platforms (i.e., Landsat,
+    Sentinel and MODIS). 
 -   `r pkg("rgee")` is an [Earth Engine](https://earthengine.google.com/) 
     client library for R. All of the 'Earth Engine' API classes, modules, 
     and functions are made available. Additional functions implemented include 
@@ -382,16 +392,6 @@ in support of spatial data management. Here follows a first tentative
     offered by European Space Agency or VITO Remote Sensing) <https://openeo.org/>.
     It enables to define and execute workflows remotely on cloud infrastructures
     without having to download large amounts of data locally.
--   The `r pkg("Rstoolbox")` is a remote sensing toolbox covering many aspects
-    including data import, pre-processing, data analysis, image classification
-    and graphical display.
--   The `r pkg("CDSE")` provides the interface to the 'Copernicus Data Space Ecosystem'
-    API <https://dataspace.copernicus.eu/analyse/apis/sentinel-hub>, mainly for searching
-    the catalogue of available data from Copernicus Sentinel missions and obtaining the
-    images for just the area of interest based on selected spectral bands.
--   The `r pkg("rsat")` is designed for automatically downloading, pre-processing, and
-    managing time series of satellite imagery from multiple platforms (i.e., Landsat,
-    Sentinel and MODIS). 
 
 Handling spatial data
 ---------------------
