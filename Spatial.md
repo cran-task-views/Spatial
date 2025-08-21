@@ -387,7 +387,7 @@ in support of spatial data management. Here follows a first tentative
     importing (exporting) of Earth Engine spatial objects, 
     extraction of time series, interactive map display, 
     assets management interface, and metadata display.
--   The `r pkg("openEO")` is an R client package that allows users to interact with
+-   The `r pkg("openeo")` is an R client package that allows users to interact with
     openEO-compliant back-ends for processing Earth observation data (e.g., services
     offered by European Space Agency or VITO Remote Sensing) <https://openeo.org/>.
     It enables to define and execute workflows remotely on cloud infrastructures
