@@ -357,7 +357,7 @@ in support of spatial data management. Here follows a first tentative
     project. It also provides functions to download, mask, and composite data 
     from [SpatioTemporal Asset Catalogs](https://stacspec.org), with a particular 
     focus on satellite imagery.
--   The `r pkg("Rstoolbox")` is a remote sensing toolbox covering many aspects
+-   The `r pkg("RStoolbox")` is a remote sensing toolbox covering many aspects
     including data import, pre-processing, data analysis, image classification
     and graphical display.
 -   The `r pkg("sits")` is an end-to-end toolkit for land use and land cover
