@@ -375,7 +375,7 @@ in support of spatial data management. Here follows a first tentative
     and GPM [OPeNDAP](https://www.opendap.org/) servers, enabling to subset the datacubes
     directly at the download phase. 
 -   The `r pkg("CDSE")` provides the interface to the 'Copernicus Data Space Ecosystem'
-    API <https://dataspace.copernicus.eu/analyse/apis/sentinel-hub>, mainly for searching
+    API (<https://dataspace.copernicus.eu/analyse/apis/sentinel-hub>), mainly for searching
     the catalogue of available data from Copernicus Sentinel missions and obtaining the
     images for the area of interest based on selected spectral bands.
 -   The `r pkg("rsat")` is designed for automatically downloading, pre-processing, and
@@ -388,8 +388,8 @@ in support of spatial data management. Here follows a first tentative
     extraction of time series, interactive map display, 
     assets management interface, and metadata display.
 -   The `r pkg("openeo")` is an R client package that allows users to interact with
-    openEO-compliant back-ends for processing Earth observation data (e.g., services
-    offered by European Space Agency or VITO Remote Sensing) <https://openeo.org/>.
+    openEO-compliant back-ends (<https://openeo.org/>) for processing Earth observation
+    data (e.g., services offered by European Space Agency or VITO Remote Sensing).
     It enables to define and execute workflows remotely on cloud infrastructures
     without having to download large amounts of data locally.
 
