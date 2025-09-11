@@ -3,7 +3,7 @@ name: Spatial
 topic: Analysis of Spatial Data
 maintainer: Roger Bivand, Jakub Nowosad
 email: Roger.Bivand@nhh.no, nowosad.jakub@gmail.com
-version: 2025-08-20
+version: 2025-09-11
 source: https://github.com/cran-task-views/Spatial/
 ---
 
