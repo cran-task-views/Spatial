@@ -100,15 +100,20 @@ geographic metadata in R.
 -   `r pkg("terra", priority = "core")` provides classes for spatial vector and
     raster data, linking directly to PROJ, GDAL and GEOS. 
     access to GDAL functionality for R packages. 
--   `r pkg("gdalraster")` provides API bindings to GDAL. Since `r pkg("gdalraster")`
-    2.0.0, bindings are provided for both the Raster and Vector [APIs](https://gdal.org/en/stable/api/index.html),
-    the Geometry API ([GEOS](https://libgeos.org/) via GDAL headers) and Spatial
-    Reference Systems API ([PROJ](https://proj.org/) via GDAL). Bindings are
-    also provided for the low-level Virtual Systems Interface ([VSI](https://gdal.org/en/stable/api/cpl.html#cpl-vsi-h))
-    which abstracts file system operations and binary I/O on URLs, cloud storage
-    services, compressed files (.zip, .gz, .tar, .tar.gz, .7z archives) and
-    in-memory files, as well as regular file systems. Calling signatures
-    resemble the native C, C++ and Python APIs provided by the GDAL project.
+-   `r pkg("gdalraster")` provides API bindings to GDAL. Since
+    `r pkg("gdalraster")` 2.0.0, bindings are provided for both the Raster and
+    Vector [APIs](https://gdal.org/en/stable/api/index.html), the Geometry API
+    ([GEOS](https://libgeos.org/) via GDAL headers) and Spatial Reference
+    Systems API ([PROJ](https://proj.org/) via GDAL). Bindings are provided for
+    the low-level Virtual Systems Interface
+    ([VSI](https://gdal.org/en/stable/api/cpl.html#cpl-vsi-h)) which abstracts
+    file system operations and binary I/O on URLs, cloud storage services,
+    compressed files (.zip, .gz, .tar, .tar.gz, .7z archives) and in-memory
+    files, as well as regular file systems. When built against GDAL >= 3.11.3,
+    `r pkg("gdalraster")` also provides bindings to GDAL's unified command
+    line interface framework, enabling
+    [the use of CLI algorithms](https://usdaforestservice.github.io/gdalraster/articles/use-gdal-cli-from-r.html)
+    and pipeline processing from R.
 -   The `r pkg("vapour")` package also offers low-level access to GDAL
     functionality for R packages. 
 -   The `r pkg("spatstat", priority = "core")` contains classes suited to the
@@ -410,8 +415,11 @@ Handling spatial data
     <https://stat.ethz.ch/pipermail/r-sig-geo/2022-April/028953.html>)
     and `r pkg("gdalUtilities")` packages provide
     wrappers for the Geospatial Data Abstraction Library (GDAL) Utilities.
--   `r pkg("gdalraster")` provides access to GDAL utilities and algorithms via
-    API bindings, including GDAL facilities for [vector overlay operations](https://en.wikipedia.org/wiki/Vector_overlay).
+-   `r pkg("gdalraster")` provides access to "traditional" GDAL utilities and
+    algorithms via API bindings. When built against GDAL >= 3.11.3, bindings to
+    GDAL's unified CLI framework provide access to CLI algorithms and GDAL
+    facilities for pipeline processing (see
+    [Using gdal CLI algorithms from R](https://usdaforestservice.github.io/gdalraster/articles/use-gdal-cli-from-r.html)).
 -   The `r pkg("geos")` high-performance bindings to the GEOS library, based on
     `r pkg("libgeos")`; the latter bundles a frozen copy of GEOS, and does not
     link to system versions, which may possibly be different versions of GEOS.
