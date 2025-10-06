@@ -713,7 +713,9 @@ interpolate values observed at point to unobserved points
     models for point-referenced Gaussian, Poisson, binomial, and binary data
     using stacking of predictive densities. By eliminating the need for MCMC and 
     leveraging parallel computation, it offers a fast and practical alternative 
-    to traditional Bayesian inference methods.
+    to traditional iterative methods that struggle to converge due to 
+    high-dimensional parameter space and weakly identified covariance 
+    parameters.
 
 ### Disease mapping and areal data analysis
 
