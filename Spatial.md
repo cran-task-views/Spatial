@@ -715,7 +715,9 @@ interpolate values observed at point to unobserved points
     leveraging parallel computation, it offers a fast and practical alternative 
     to traditional iterative methods that struggle to converge due to 
     high-dimensional parameter space and weakly identified covariance 
-    parameters.
+    parameters. See the 
+    [spStack website](https://span-18.github.io/spStack-dev/index.html) for more 
+    details.
 
 ### Disease mapping and areal data analysis
 
@@ -896,7 +898,9 @@ Task View.
     spatially-temporally varying coefficients (STVC) using predictive stacking.
     It completely avoids iterative algorithms such as MCMC, offering a more 
     practical and faster alternative that delivers competitive predictive 
-    performance.
+    performance. See the 
+    [spStack website](https://span-18.github.io/spStack-dev/index.html) for more 
+    details.
 
 ### Ecological analysis
 
