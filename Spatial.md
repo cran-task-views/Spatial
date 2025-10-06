@@ -892,6 +892,11 @@ Task View.
     designed to be compatible with both base R and with the tidymodels
     modeling framework, and adopt `r pkg("yardstick")` classes and
     interfaces.
+-   `r pkg("spStack")` fits Bayesian generalized linear models with 
+    spatially-temporally varying coefficients (STVC) using predictive stacking.
+    It completely avoids iterative algorithms such as MCMC, offering a more 
+    practical and faster alternative that delivers competitive predictive 
+    performance.
 
 ### Ecological analysis
 
