@@ -709,15 +709,9 @@ interpolate values observed at point to unobserved points
     and areal spatial data using a variety of covariance structures. 
     Additional functionality allows for prediction (Kriging), non-spatial
     random effects, anisotropy, and big data.
--   `r pkg("spStack")` fits Bayesian hierarchical spatial and spatial-temporal
-    models for point-referenced Gaussian, Poisson, binomial, and binary data
-    using stacking of predictive densities. By eliminating the need for MCMC and 
-    leveraging parallel computation, it offers a fast and practical alternative 
-    to traditional iterative methods that struggle to converge due to 
-    high-dimensional parameter space and weakly identified covariance 
-    parameters. See the 
-    [spStack website](https://span-18.github.io/spStack-dev/index.html) for more 
-    details.
+-   `r pkg("spStack")` uses predictive stacking to fit Bayesian spatial and 
+    spatial-temporal models for point-referenced Gaussian, Poisson, binomial, 
+    and binary data without using MCMC.
 
 ### Disease mapping and areal data analysis
 
@@ -894,13 +888,9 @@ Task View.
     designed to be compatible with both base R and with the tidymodels
     modeling framework, and adopt `r pkg("yardstick")` classes and
     interfaces.
--   `r pkg("spStack")` fits Bayesian generalized linear models with 
-    spatially-temporally varying coefficients (STVC) using predictive stacking.
-    It completely avoids iterative algorithms such as MCMC, offering a more 
-    practical and faster alternative that delivers competitive predictive 
-    performance. See the 
-    [spStack website](https://span-18.github.io/spStack-dev/index.html) for more 
-    details.
+-   `r pkg("spStack")` fits Bayesian spatially-temporally varying 
+    coefficients (STVC) generalized linear models without MCMC using stacking of
+    predictive densities.
 
 ### Ecological analysis
 
