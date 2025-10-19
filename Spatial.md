@@ -54,6 +54,37 @@ topics. If you think that some package is missing from the list, please
 e-mail the maintainer or submit an issue or pull request in the GitHub
 repository linked above.
 
+**Table of contents**
+
+- [Classes for spatial data and metadata](#classes-for-spatial-data-and-metadata)
+  - [Spatial data - general](#spatial-data---general)
+  - [Raster data](#raster-data)
+  - [Geographic metadata](#geographic-metadata)
+- [Reading and writing spatial data](#reading-and-writing-spatial-data)
+  - [Reading and writing spatial data - data formats](#reading-and-writing-spatial-data---data-formats)
+  - [Reading and writing spatial data - GIS software connectors](#reading-and-writing-spatial-data---gis-software-connectors)
+  - [Specific geospatial data sources of interest](#specific-geospatial-data-sources-of-interest)
+  - [Interfaces to Spatial Web-Services](#interfaces-to-spatial-web-services)
+  - [Remote sensing](#remote-sensing)
+- [Handling spatial data](#handling-spatial-data)
+  - [Data processing - general](#data-processing---general)
+  - [Data cleaning](#data-cleaning)
+  - [Data processing - specific](#data-processing---specific)
+  - [Spatial sampling](#spatial-sampling)
+- [Visualizing spatial data](#visualizing-spatial-data)
+  - [Base visualization packages](#base-visualization-packages)
+  - [Thematic cartography packages](#thematic-cartography-packages)
+  - [Packages based on web-mapping frameworks](#packages-based-on-web-mapping-frameworks)
+  - [Building cartograms](#building-cartograms)
+- [Analyzing spatial data](#analyzing-spatial-data)
+  - [Point pattern analysis](#point-pattern-analysis)
+  - [Geostatistics](#geostatistics)
+  - [Disease mapping and areal data analysis](#disease-mapping-and-areal-data-analysis)
+  - [Spatial regression](#spatial-regression)
+  - [Ecological analysis](#ecological-analysis)
+  - [Machine learning of spatial data](#machine-learning-of-spatial-data)
+- [Installing packages linking to PROJ, GDAL or GEOS](#installing-packages-linking-to-proj-gdal-or-geos)
+
 Classes for spatial data and metadata
 -------------------------------------
 
@@ -230,7 +261,7 @@ dealing with open standard formats or proprietary formats.
 -   *Others:* The `r pkg("gmt")` package gives a simple interface 
     between GMT map-making software and R.
 
-### Reading and writing spatial data - GIS Software connectors
+### Reading and writing spatial data - GIS software connectors
 
 -   *PostGIS:* The `r pkg("rpostgis")` package provides additional functions
     to the `r pkg("RPostgreSQL")` package to interface R with a 
@@ -533,7 +564,7 @@ Visualizing spatial data
 -   `r pkg("mapedit")` provides an R shiny widget based on `r pkg("leaflet")`
     for editing or creating sf geometries.
 
-### Building Cartograms
+### Building cartograms
 
 -   `r pkg("cartogram")` package allows for constructions of a continuous 
     area cartogram by a rubber sheet distortion algorithm, non-contiguous
