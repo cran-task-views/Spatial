@@ -67,8 +67,8 @@ repository linked above.
   - [Interfaces to Spatial Web-Services](#interfaces-to-spatial-web-services)
   - [Remote sensing](#remote-sensing)
 - [Handling spatial data](#handling-spatial-data)
-  - [Data processing - general](#data-processing---general)
   - [Data cleaning](#data-cleaning)
+  - [Data processing - general](#data-processing---general)
   - [Data processing - specific](#data-processing---specific)
   - [Spatial sampling](#spatial-sampling)
 - [Visualizing spatial data](#visualizing-spatial-data)
@@ -432,6 +432,14 @@ in support of spatial data management. Here follows a first tentative
 Handling spatial data
 ---------------------
 
+### Data cleaning
+
+-   `r pkg("sf")` has a built-in functions `st_is_valid` to check whether 
+    a sf geometry is valid and `st_make_valid` to fix invalid geometry (from GEOS 3.8).
+-   `r pkg("lwgeom")` may also be used to facilitate handling and reporting
+    of topology errors and geometry validity issues
+    in sf objects.
+
 ### Data processing - general
 
 -   `r pkg("sf")` provides an interface to spatial geometry functions using
@@ -474,14 +482,6 @@ Handling spatial data
     accessing and manipulating of spatial data for animal tracking.
 <!-- Roger, should we link here to papers such as https://besjournals.onlinelibrary.wiley.com/doi/10.1111/1365-2656.13116, https://link.springer.com/article/10.1007%2Fs40823-021-00067-y, https://link.springer.com/article/10.1007/s10109-020-00342-2, etc?-->
 
-### Data cleaning
-
--   `r pkg("sf")` has a built-in functions `st_is_valid` to check whether 
-    a sf geometry is valid and `st_make_valid` to fix invalid geometry (from GEOS 3.8).
--   `r pkg("lwgeom")` may also be used to facilitate handling and reporting
-    of topology errors and geometry validity issues
-    in sf objects.
-    
 ### Data processing - specific
 
 -   The `r pkg("areal")` package can be used to interpolate overlapping 
