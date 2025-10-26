@@ -3,7 +3,7 @@ name: Spatial
 topic: Analysis of Spatial Data
 maintainer: Roger Bivand, Jakub Nowosad
 email: Roger.Bivand@nhh.no, nowosad.jakub@gmail.com
-version: 2025-09-11
+version: 2025-10-26
 source: https://github.com/cran-task-views/Spatial/
 ---
 
@@ -65,11 +65,11 @@ repository linked above.
   - [Reading and writing spatial data - GIS software connectors](#reading-and-writing-spatial-data---gis-software-connectors)
   - [Specific geospatial data sources of interest](#specific-geospatial-data-sources-of-interest)
   - [Interfaces to Spatial Web-Services](#interfaces-to-spatial-web-services)
-  - [Remote sensing](#remote-sensing)
 - [Handling spatial data](#handling-spatial-data)
   - [Data cleaning](#data-cleaning)
   - [Data processing - general](#data-processing---general)
   - [Data processing - specific](#data-processing---specific)
+  - [Remote sensing](#remote-sensing)
   - [Spatial sampling](#spatial-sampling)
 - [Visualizing spatial data](#visualizing-spatial-data)
   - [Base visualization packages](#base-visualization-packages)
@@ -382,53 +382,6 @@ in support of spatial data management. Here follows a first tentative
     [GeoNetwork](https://geonetwork-opensource.org/) legacy API, 
     an open source catalogue for managing geographic metadata. 
 
-### Remote sensing
-
--   `r pkg("rstac")` provides functions to access, search and download
-    spacetime earth observation data via [SpatioTemporal Asset Catalogs](https://stacspec.org).
-    This package supports the version 1.0.0 (and older) of the 
-    [STAC specification](https://github.com/radiantearth/stac-spec).
--   The `r pkg("rsi")` package provides an interface to the
-    [Awesome Spectral Indices](https://github.com/awesome-spectral-indices/awesome-spectral-indices)
-    project. It also provides functions to download, mask, and composite data 
-    from [SpatioTemporal Asset Catalogs](https://stacspec.org), with a particular 
-    focus on satellite imagery.
--   The `r pkg("RStoolbox")` is a remote sensing toolbox covering many aspects
-    including data import, pre-processing, data analysis, image classification
-    and graphical display.
--   The `r pkg("sits")` is an end-to-end toolkit for land use and land cover
-    classification using big Earth observation data, based on machine learning
-    methods applied to satellite image data cubes.
--   The `r pkg("landsat")` package with accompanying 
-    [JSS paper](http://www.jstatsoft.org/v43/i04) provides tools for exploring
-    and developing correction tools for remote sensing data.
--   `r github("rspatial/luna")` has tools for acquiring and processing satellite 
-    remote sensing data from NASA's LANDSAT and MODIS data sources. 
-    `r pkg("MODISTools")` also provides an interface to the 
-    [MODIS Land Products Subsets](https://modis.ornl.gov/data/modis_webservice.html) 
-    web services.
-    `r pkg("modisfast")`, on its side, provides an interface to some MODIS, VIIRS 
-    and GPM [OPeNDAP](https://www.opendap.org/) servers, enabling to subset the datacubes
-    directly at the download phase. 
--   The `r pkg("CDSE")` provides the interface to the 'Copernicus Data Space Ecosystem'
-    API (<https://dataspace.copernicus.eu/analyse/apis/sentinel-hub>), mainly for searching
-    the catalogue of available data from Copernicus Sentinel missions and obtaining the
-    images for the area of interest based on selected spectral bands.
--   The `r pkg("rsat")` is designed for automatically downloading, pre-processing, and
-    managing time series of satellite imagery from multiple platforms (i.e., Landsat,
-    Sentinel and MODIS). 
--   `r pkg("rgee")` is an [Earth Engine](https://earthengine.google.com/) 
-    client library for R. All of the 'Earth Engine' API classes, modules, 
-    and functions are made available. Additional functions implemented include 
-    importing (exporting) of Earth Engine spatial objects, 
-    extraction of time series, interactive map display, 
-    assets management interface, and metadata display.
--   The `r pkg("openeo")` is an R client package that allows users to interact with
-    openEO-compliant back-ends (<https://openeo.org/>) for processing Earth observation
-    data (e.g., services offered by European Space Agency or VITO Remote Sensing).
-    It enables to define and execute workflows remotely on cloud infrastructures
-    without having to download large amounts of data locally.
-
 Handling spatial data
 ---------------------
 
@@ -493,6 +446,53 @@ Handling spatial data
 -   The `r pkg("qualmap")` package can be used to digitize qualitative GIS data.
 -   The `r pkg("exactextractr")` for fast and accurate summary of raster values
     on polygonal areas (known as zonal statistics).
+
+### Remote sensing
+
+-   `r pkg("rstac")` provides functions to access, search and download
+    spacetime earth observation data via [SpatioTemporal Asset Catalogs](https://stacspec.org).
+    This package supports the version 1.0.0 (and older) of the 
+    [STAC specification](https://github.com/radiantearth/stac-spec).
+-   The `r pkg("rsi")` package provides an interface to the
+    [Awesome Spectral Indices](https://github.com/awesome-spectral-indices/awesome-spectral-indices)
+    project. It also provides functions to download, mask, and composite data 
+    from [SpatioTemporal Asset Catalogs](https://stacspec.org), with a particular 
+    focus on satellite imagery.
+-   The `r pkg("RStoolbox")` is a remote sensing toolbox covering many aspects
+    including data import, pre-processing, data analysis, image classification
+    and graphical display.
+-   The `r pkg("sits")` is an end-to-end toolkit for land use and land cover
+    classification using big Earth observation data, based on machine learning
+    methods applied to satellite image data cubes.
+-   The `r pkg("landsat")` package with accompanying 
+    [JSS paper](http://www.jstatsoft.org/v43/i04) provides tools for exploring
+    and developing correction tools for remote sensing data.
+-   `r github("rspatial/luna")` has tools for acquiring and processing satellite 
+    remote sensing data from NASA's LANDSAT and MODIS data sources. 
+    `r pkg("MODISTools")` also provides an interface to the 
+    [MODIS Land Products Subsets](https://modis.ornl.gov/data/modis_webservice.html) 
+    web services.
+    `r pkg("modisfast")`, on its side, provides an interface to some MODIS, VIIRS 
+    and GPM [OPeNDAP](https://www.opendap.org/) servers, enabling to subset the datacubes
+    directly at the download phase. 
+-   The `r pkg("CDSE")` provides the interface to the 'Copernicus Data Space Ecosystem'
+    API (<https://dataspace.copernicus.eu/analyse/apis/sentinel-hub>), mainly for searching
+    the catalogue of available data from Copernicus Sentinel missions and obtaining the
+    images for the area of interest based on selected spectral bands.
+-   The `r pkg("rsat")` is designed for automatically downloading, pre-processing, and
+    managing time series of satellite imagery from multiple platforms (i.e., Landsat,
+    Sentinel and MODIS). 
+-   `r pkg("rgee")` is an [Earth Engine](https://earthengine.google.com/) 
+    client library for R. All of the 'Earth Engine' API classes, modules, 
+    and functions are made available. Additional functions implemented include 
+    importing (exporting) of Earth Engine spatial objects, 
+    extraction of time series, interactive map display, 
+    assets management interface, and metadata display.
+-   The `r pkg("openeo")` is an R client package that allows users to interact with
+    openEO-compliant back-ends (<https://openeo.org/>) for processing Earth observation
+    data (e.g., services offered by European Space Agency or VITO Remote Sensing).
+    It enables to define and execute workflows remotely on cloud infrastructures
+    without having to download large amounts of data locally.
 
 ### Spatial sampling
 
