@@ -740,6 +740,9 @@ interpolate values observed at point to unobserved points
     and areal spatial data using a variety of covariance structures. 
     Additional functionality allows for prediction (Kriging), non-spatial
     random effects, anisotropy, and big data.
+-   `r pkg("spStack")` uses predictive stacking to fit Bayesian spatial and 
+    spatial-temporal models for point-referenced Gaussian, Poisson, binomial, 
+    and binary data without using MCMC.
 
 ### Disease mapping and areal data analysis
 
@@ -916,6 +919,9 @@ Task View.
     designed to be compatible with both base R and with the tidymodels
     modeling framework, and adopt `r pkg("yardstick")` classes and
     interfaces.
+-   `r pkg("spStack")` fits Bayesian spatially-temporally varying 
+    coefficients (STVC) generalized linear models without MCMC using stacking of
+    predictive densities.
 
 ### Ecological analysis
 
