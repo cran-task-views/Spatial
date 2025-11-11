@@ -1,9 +1,9 @@
 ---
 name: Spatial
 topic: Analysis of Spatial Data
-maintainer: Roger Bivand, Jakub Nowosad
-email: Roger.Bivand@nhh.no, nowosad.jakub@gmail.com
-version: 2025-10-26
+maintainer: Roger Bivand, Jakub Nowosad, Krzysztof Dyba
+email: Roger.Bivand@nhh.no, nowosad.jakub@gmail.com, adres7@gmail.com
+version: 2025-11-11
 source: https://github.com/cran-task-views/Spatial/
 ---
 
@@ -229,9 +229,9 @@ dealing with open standard formats or proprietary formats.
 -   *Well-Known Text (WKT) / Well-Known Binary (WKB):* These standards are 
     part of the OGC Simple Feature specification. Both WKT/WKB formats are 
     supported by the `r pkg("sf")` package that implements the whole
-    OGC Simple Feature specification in R. Additionally, `r pkg("wk")` and 
-    `r pkg("wkutils")` may be used to parse well-known binary and
-    well-known text representation of geometries to and from R-native formats.
+    OGC Simple Feature specification in R. Additionally, `r pkg("wk")`
+    may be used to parse well-known binary and well-known text
+    representation of geometries to and from R-native formats.
 -   *GeoJSON:* An rOpenSci [blog entry](http://ropensci.org/blog/blog/2016/11/22/geospatial-suite) 
     describes a GeoJSON-centred approach to reading GeoJSON and WKT data.
     The entry lists `r pkg("geojson")`, and `r pkg("geojsonio")`, among others.
