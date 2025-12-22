@@ -967,7 +967,7 @@ They include:
 -   `r pkg("landscapemetrics")` package calculates landscape
     metrics for categorical landscape patterns. It can be used as a
     drop-in replacement for
-    [FRAGSTATS](https://www.umass.edu/landeco/research/fragstats/fragstats.html),
+    [FRAGSTATS](https://www.fragstats.org/),
     as it offers a reproducible workflow for landscape analysis in a
     single environment. It also provides several visualization
     functions, e.g. to show all labeled patches or the core area of all
