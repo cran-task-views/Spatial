@@ -143,7 +143,7 @@ geographic metadata in R.
     files, as well as regular file systems. When built against GDAL >= 3.11.3,
     `r pkg("gdalraster")` also provides bindings to GDAL's unified command
     line interface framework, enabling
-    [the use of CLI algorithms](https://usdaforestservice.github.io/gdalraster/articles/use-gdal-cli-from-r.html)
+    [the use of CLI algorithms](https://firelab.github.io/gdalraster/articles/use-gdal-cli-from-r.html)
     and pipeline processing from R.
 -   The `r pkg("vapour")` package also offers low-level access to GDAL
     functionality for R packages. 
