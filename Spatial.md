@@ -392,6 +392,10 @@ Handling spatial data
 -   `r pkg("lwgeom")` may also be used to facilitate handling and reporting
     of topology errors and geometry validity issues
     in sf objects.
+-   `r pkg("parzer")` is a tool designed to clean and standardize messy geographic
+    coordinate data. It automatically parses character strings representing latitudes
+    and longitudes (which often arrive in inconsistent formats) and converts them into
+    standardized decimal degree values suitable for spatial analysis and mapping.
 
 ### Data processing - general
 
