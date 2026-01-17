@@ -185,7 +185,7 @@ geographic metadata in R.
     handling metadata (CF conventions) in the self-described NetCDF
     format.
 -   `r pkg("CFtime")` encapsulates the CF time coordinate and allows to deal
-    with the different CF calendars
+    with the different CF calendars.
 
 Reading and writing spatial data
 --------------------------------
