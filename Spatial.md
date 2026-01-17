@@ -3,7 +3,7 @@ name: Spatial
 topic: Analysis of Spatial Data
 maintainer: Roger Bivand, Jakub Nowosad, Krzysztof Dyba
 email: Roger.Bivand@nhh.no, nowosad.jakub@gmail.com, krzysztof.dyba@amu.edu.pl
-version: 2025-11-11
+version: 2026-01-17
 source: https://github.com/cran-task-views/Spatial/
 ---
 
@@ -185,7 +185,7 @@ geographic metadata in R.
     handling metadata (CF conventions) in the self-described NetCDF
     format.
 -   `r pkg("CFtime")` encapsulates the CF time coordinate and allows to deal
-    with the different CF calendars
+    with the different CF calendars.
 
 Reading and writing spatial data
 --------------------------------
@@ -392,6 +392,10 @@ Handling spatial data
 -   `r pkg("lwgeom")` may also be used to facilitate handling and reporting
     of topology errors and geometry validity issues
     in sf objects.
+-   `r pkg("parzer")` is a tool designed to clean and standardize messy geographic
+    coordinate data. It automatically parses character strings representing latitudes
+    and longitudes (which often arrive in inconsistent formats) and converts them into
+    standardized decimal degree values suitable for spatial analysis and mapping.
 
 ### Data processing - general
 
