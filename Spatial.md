@@ -34,7 +34,8 @@ is now clearly aligned with the modern `r pkg("sf", priority="core")` and
 `r pkg("terra", priority="core")` package. It is also worth noting the
 wealth of online book projects, which may be helpful for users seeking
 an introduction, including 
-[Geocomputation with R](https://r.geocompx.org/index.html).
+[Geocomputation with R](https://r.geocompx.org/index.html) and
+[Spatial Data Science With Applications in R](https://r-spatial.org/book/).
 
 Specific questions or issues may be raised where 
 `packageDescription(<pkg>)$BugReports` returns an URL for bug 
