@@ -536,7 +536,7 @@ Visualizing spatial data
     It also allows for interactive spatial data mapping.
 -   `r pkg("mapsf")` package allows various cartographic representations 
     such as proportional symbols, choropleth, or typology maps; it accepts sf
-    (`r pkg("sf")`) and SpatRaster (`r pkg("terra")`) objects
+    (`r pkg("sf")`) and SpatRaster (`r pkg("terra")`) objects.
 -   `r pkg("ggplot2")` package has a built-in support for sf objects with the 
     `geom_sf` function and additional support for stars object is available
     through the `geom_stars` function available in the `r pkg("stars")` package.
@@ -800,8 +800,8 @@ calculated rates that are comparable both in terms of levels and uncertainty.
     Weighted Regression techniques and other Spatial Analysis tools (other
     geographically weighted statistics). This package also contains
     functions for measuring the significance of each statistic calculated,
-    mainly based on Monte Carlo simulations. The
--   `r pkg("sparr")` package provides another approach to
+    mainly based on Monte Carlo simulations.
+-   The `r pkg("sparr")` package provides another approach to
     relative risks. 
 -   The `r pkg("CARBayes")` package implements
     Bayesian hierarchical spatial areal unit models. In such models, the
