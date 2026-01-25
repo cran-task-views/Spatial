@@ -3,7 +3,7 @@ name: Spatial
 topic: Analysis of Spatial Data
 maintainer: Roger Bivand, Jakub Nowosad, Krzysztof Dyba
 email: Roger.Bivand@nhh.no, nowosad.jakub@gmail.com, krzysztof.dyba@amu.edu.pl
-version: 2026-01-17
+version: 2026-01-24
 source: https://github.com/cran-task-views/Spatial/
 ---
 
@@ -34,7 +34,8 @@ is now clearly aligned with the modern `r pkg("sf", priority="core")` and
 `r pkg("terra", priority="core")` package. It is also worth noting the
 wealth of online book projects, which may be helpful for users seeking
 an introduction, including 
-[Geocomputation with R](https://r.geocompx.org/index.html).
+[Geocomputation with R](https://r.geocompx.org/index.html) and
+[Spatial Data Science With Applications in R](https://r-spatial.org/book/).
 
 Specific questions or issues may be raised where 
 `packageDescription(<pkg>)$BugReports` returns an URL for bug 
@@ -129,8 +130,7 @@ geographic metadata in R.
     R](http://www.jstatsoft.org/v51/i07)). `r pkg("stars")` uses PROJ and
     GDAL through `r pkg("sf")`.
 -   `r pkg("terra", priority = "core")` provides classes for spatial vector and
-    raster data, linking directly to PROJ, GDAL and GEOS. 
-    access to GDAL functionality for R packages. 
+    raster data, linking directly to PROJ, GDAL and GEOS.
 -   `r pkg("gdalraster")` provides API bindings to GDAL. Since
     `r pkg("gdalraster")` 2.0.0, bindings are provided for both the Raster and
     Vector [APIs](https://gdal.org/en/stable/api/index.html), the Geometry API
@@ -243,11 +243,11 @@ dealing with open standard formats or proprietary formats.
     for extension of geographic metadata with GML data and metadata 
     elements (GML 3.2.1 and 3.3) and interfacing OGC web-services 
     in `r pkg("ows4R")` package.
--   *NetCDF files:* NetCDF files can be read and write with 
+-   *NetCDF files:* NetCDF files can be read and written with 
     `r pkg("ncdf4")` or `r pkg("RNetCDF")`. Additionally, both `r pkg("terra")`
     and `r pkg("stars")` have capabilities for reading and writing NetCDF files.
 -   *LAS / LAX:* These file formats are designed to work with lidar point
-    cloud data and can be read/write with `r pkg("lidR")`.
+    cloud data and can be read and written with `r pkg("lidR")`.
 
 *Proprietary Data Formats*
 
@@ -337,14 +337,14 @@ dealing with open standard formats or proprietary formats.
     and administrative divisions of Chile.
 -   `r pkg("geobr")` provided easy access to official spatial data sets of 
     Brazil for multiple geographies and years.
--   `r pkg("geouy")` loads and process geographic information for Uruguay.
+-   `r pkg("geouy")` loads and processes geographic information for Uruguay.
 -   `r pkg("RCzechia")` downloads spatial boundary files of administrative regions
     and other spatial objects of the Czech Republic.
 -   `r pkg("rgugik")` allows to search and retrieve data from Polish Head 
     Office of Geodesy and Cartography ("GUGiK").
 -   `r pkg("mapSpain")` downloads spatial boundary files of administrative 
     regions and other spatial objects of Spain.
--   `r pkg("mapme.biodiversity")` allows to download and process a number open 
+-   `r pkg("mapme.biodiversity")` allows to download and process a number of open 
     datasets related to biodiversity conservation providing efficient routines 
     and parallelization options. Datasets include among others the 
     [Global Forest Watch](https://www.globalforestwatch.org/), 
@@ -359,7 +359,7 @@ dealing with open standard formats or proprietary formats.
     species occurrence, and administrative boundary data, and is a successor of
     the `getData()` function from the `r pkg("raster")` package.
 -   `r pkg("forestdata")` allows to download forest and land cover data from
-    various sources, includying forest inventory data, forest cover maps, and
+    various sources, including forest inventory data, forest cover maps, and
     global canopy height models.
 
 ### Interfaces to Spatial Web-Services
@@ -370,7 +370,7 @@ in support of spatial data management. Here follows a first tentative
 
 -   `r pkg("ows4R")` is a package that intends to provide an R interface 
     to OGC standard Web-Services. It is in active development and currently 
-    support interfaces to the 
+    supports interfaces to the 
     Web Feature Service (WFS) for vector data access, with binding to the 
     `r pkg("sf")` package, and the Catalogue Service (CSW) for geographic
     metadata discovery and management (including transactions), with binding 
@@ -387,7 +387,7 @@ Handling spatial data
 
 ### Data cleaning
 
--   `r pkg("sf")` has a built-in functions `st_is_valid` to check whether 
+-   `r pkg("sf")` has built-in functions `st_is_valid` to check whether 
     a sf geometry is valid and `st_make_valid` to fix invalid geometry (from GEOS 3.8).
 -   `r pkg("lwgeom")` may also be used to facilitate handling and reporting
     of topology errors and geometry validity issues
@@ -477,7 +477,7 @@ Handling spatial data
     [MODIS Land Products Subsets](https://modis.ornl.gov/data/modis_webservice.html) 
     web services.
     `r pkg("modisfast")`, on its side, provides an interface to some MODIS, VIIRS 
-    and GPM [OPeNDAP](https://www.opendap.org/) servers, enabling to subset the datacubes
+    and GPM [OPeNDAP](https://www.opendap.org/) servers, enabling to subset the data cubes
     directly at the download phase. 
 -   The `r pkg("CDSE")` provides the interface to the 'Copernicus Data Space Ecosystem'
     API (<https://dataspace.copernicus.eu/analyse/apis/sentinel-hub>), mainly for searching
@@ -537,7 +537,7 @@ Visualizing spatial data
     It also allows for interactive spatial data mapping.
 -   `r pkg("mapsf")` package allows various cartographic representations 
     such as proportional symbols, choropleth, or typology maps; it accepts sf
-    (`r pkg("sf")`) and SpatRaster (`r pkg("terra")`) objects
+    (`r pkg("sf")`) and SpatRaster (`r pkg("terra")`) objects.
 -   `r pkg("ggplot2")` package has a built-in support for sf objects with the 
     `geom_sf` function and additional support for stars object is available
     through the `geom_stars` function available in the `r pkg("stars")` package.
@@ -801,8 +801,8 @@ calculated rates that are comparable both in terms of levels and uncertainty.
     Weighted Regression techniques and other Spatial Analysis tools (other
     geographically weighted statistics). This package also contains
     functions for measuring the significance of each statistic calculated,
-    mainly based on Monte Carlo simulations. The
--   `r pkg("sparr")` package provides another approach to
+    mainly based on Monte Carlo simulations.
+-   The `r pkg("sparr")` package provides another approach to
     relative risks. 
 -   The `r pkg("CARBayes")` package implements
     Bayesian hierarchical spatial areal unit models. In such models, the
