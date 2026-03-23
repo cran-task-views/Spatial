@@ -3,7 +3,7 @@ name: Spatial
 topic: Analysis of Spatial Data
 maintainer: Roger Bivand, Jakub Nowosad, Krzysztof Dyba
 email: Roger.Bivand@nhh.no, nowosad.jakub@gmail.com, krzysztof.dyba@amu.edu.pl
-version: 2026-01-24
+version: 2026-03-21
 source: https://github.com/cran-task-views/Spatial/
 ---
 
@@ -38,7 +38,7 @@ an introduction, including
 [Spatial Data Science With Applications in R](https://r-spatial.org/book/).
 
 Specific questions or issues may be raised where 
-`packageDescription(<pkg>)$BugReports` returns an URL for bug 
+`packageDescription(<pkg>)$BugReports` returns a URL for bug 
 reports or issues (where `<pkg>` is the
 name of the package as a string), or directly with package
 maintainers by email. Use may also be made of
@@ -96,7 +96,7 @@ preceded more modern and efficient international standards for spatial vector da
 From the release of `r pkg("sf", priority = "core")`, these modern vector
 representations are to be preferred. For spatial raster data, the representations
 proposed in `r pkg("stars", priority = "core")` and `r pkg("terra", priority = "core")`
-suit overlapping but slightly different requirements. Conversion between objects
+suit overlapping but slightly different requirements. Conversions between objects
 of classes defined by `r pkg("sf")`, `r pkg("stars")`, `r pkg("terra")` and the legacy
 `r pkg("sp")` packages are available, and are described in [Conversions between different 
 spatial classes in R](https://geocompx.org/post/2021/spatial-classes-conversion/).
@@ -109,7 +109,7 @@ geographic metadata in R.
 -   `r pkg("sf", priority = "core")` is a CRAN package for spatial vector data, 
     providing Simple Features
     for R, in compliance with the [OGC Simple
-    Feature](http://www.opengeospatial.org/standards/sfa) standard. The
+    Feature](https://www.ogc.org/standards/sfa/) standard. The
     development of the package was supported by the [R
     Consortium](https://www.r-consortium.org/). It provides simple
     features access for vector data, and as such is a modern
@@ -127,7 +127,7 @@ geographic metadata in R.
     `r pkg("spacetime")` package, which 
     extended the shared classes defined in `r pkg("sp")` for
     spatio-temporal data (see [Spatio-Temporal Data in
-    R](http://www.jstatsoft.org/v51/i07)). `r pkg("stars")` uses PROJ and
+    R](https://www.jstatsoft.org/article/view/v051i07)). `r pkg("stars")` uses PROJ and
     GDAL through `r pkg("sf")`.
 -   `r pkg("terra", priority = "core")` provides classes for spatial vector and
     raster data, linking directly to PROJ, GDAL and GEOS.
@@ -232,7 +232,7 @@ dealing with open standard formats or proprietary formats.
     OGC Simple Feature specification in R. Additionally, `r pkg("wk")`
     may be used to parse well-known binary and well-known text
     representation of geometries to and from R-native formats.
--   *GeoJSON:* An rOpenSci [blog entry](http://ropensci.org/blog/blog/2016/11/22/geospatial-suite) 
+-   *GeoJSON:* An rOpenSci [blog entry](https://ropensci.org/blog/2016/11/22/geospatial-suite/) 
     describes a GeoJSON-centred approach to reading GeoJSON and WKT data.
     The entry lists `r pkg("geojson")`, and `r pkg("geojsonio")`, among others.
     The GeoJSON format can also be read and written with `r pkg("gdalraster")`,
@@ -246,7 +246,7 @@ dealing with open standard formats or proprietary formats.
 -   *NetCDF files:* NetCDF files can be read and written with 
     `r pkg("ncdf4")` or `r pkg("RNetCDF")`. Additionally, both `r pkg("terra")`
     and `r pkg("stars")` have capabilities for reading and writing NetCDF files.
--   *LAS / LAX:* These file formats are designed to work with lidar point
+-   *LAS / LAZ:* These file formats are designed to work with lidar point
     cloud data and can be read and written with `r pkg("lidR")`.
 
 *Proprietary Data Formats*
@@ -297,7 +297,7 @@ dealing with open standard formats or proprietary formats.
 ### Specific geospatial data sources of interest
 
 -   `r pkg("rnaturalearth")` package facilitates interaction with 
-    [Natural Earth](http://www.naturalearthdata.com/) map data. It includes 
+    [Natural Earth](https://www.naturalearthdata.com/) map data. It includes 
     functions to download a wealth of Natural Earth vector and raster data,
     including cultural (e.g., country boundaries, airports, roads, railroads)
     and physical (e.g., coastline, lakes, glaciated areas) datasets.
@@ -310,7 +310,7 @@ dealing with open standard formats or proprietary formats.
     use simple latitude-longitude-depth data in ASCII format, and take 
     advantage of the advanced plotting tools available in R to build 
     publication-quality bathymetric maps (see the
-    [PLOS](http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0073051)
+    [PLOS](https://doi.org/10.1371/journal.pone.0073051)
     paper).
 -   `r pkg("tidycensus")` provides access to US Census Bureau data in a 
     tidy format, including the option to bind the data spatially on import.
@@ -320,7 +320,7 @@ dealing with open standard formats or proprietary formats.
 -   `r pkg("rgbif")` package is used to access Global Biodiversity 
     Information Facility (GBIF) occurrence data
 -   `r pkg("geonames")` is an interface to the 
-    [www.geonames.org](http://www.geonames.org/) service.
+    [www.geonames.org](https://www.geonames.org/) service.
 -   `r pkg("osmdata")` is an R package for accessing relatively 
     small datasets from OpenStreetMap (OSM), delivered via the Overpass API.
     `r pkg("osmextract")` matches, downloads, converts, and reads 
@@ -335,7 +335,7 @@ dealing with open standard formats or proprietary formats.
     municipalities, and other spatial objects.
 -   `r pkg("chilemapas")` provides access to spatial data of political 
     and administrative divisions of Chile.
--   `r pkg("geobr")` provided easy access to official spatial data sets of 
+-   `r pkg("geobr")` provides easy access to official spatial data sets of 
     Brazil for multiple geographies and years.
 -   `r pkg("geouy")` loads and processes geographic information for Uruguay.
 -   `r pkg("RCzechia")` downloads spatial boundary files of administrative regions
@@ -353,7 +353,7 @@ dealing with open standard formats or proprietary formats.
     [NASA FIRMS](https://firms.modaps.eosdis.nasa.gov/active_fire/).
 -    `r pkg("terrainr")` provides an interface to the
     [United States Geological Survey's National Map services](https://apps.nationalmap.gov/services/),
-    providing elevation data and orthoimagery along other basemap tiles
+    providing elevation data and orthoimagery along with other basemap tiles
     for the United States.
 -   `r pkg("geodata")` facilitates access to climate, elevation, soil, crop, 
     species occurrence, and administrative boundary data, and is a successor of
@@ -375,7 +375,7 @@ in support of spatial data management. Here follows a first tentative
     `r pkg("sf")` package, and the Catalogue Service (CSW) for geographic
     metadata discovery and management (including transactions), with binding 
     to the `r pkg("geometa")` package.
--   `r pkg("geosapi")` is an R client for the [GeoServer](http://geoserver.org) 
+-   `r pkg("geosapi")` is an R client for the [GeoServer](https://geoserver.org/) 
     REST API, an open source implementation used widely for serving 
     spatial data.
 -   `r pkg("geonapi")` provides an interface to the 
@@ -431,7 +431,7 @@ Handling spatial data
     via DGGRID. These grids are useful for spatial statistics because
     they tile the Earth with _equally_-sized hexagons, triangles, or diamonds.
 -   `r pkg("cshapes")` package provides functions for calculating distance
-    matrices (see [Mapping and Measuring Country Shapes](http://journal.R-project.org/archive/2010-1/RJournal_2010-1_Weidmann+Skrede~Gleditsch.pdf)).
+    matrices (see [Mapping and Measuring Country Shapes](https://journal.r-project.org/articles/RJ-2010-004/)).
 -   `r pkg("magclass")` offers a data class for increased interoperability 
     working with spatial-temporal data together with corresponding functions
     and methods (conversions, basic calculations and basic data manipulation).
@@ -469,7 +469,7 @@ Handling spatial data
     classification using big Earth observation data, based on machine learning
     methods applied to satellite image data cubes.
 -   The `r pkg("landsat")` package with accompanying 
-    [JSS paper](http://www.jstatsoft.org/v43/i04) provides tools for exploring
+    [JSS paper](https://www.jstatsoft.org/article/view/v043i04) provides tools for exploring
     and developing correction tools for remote sensing data.
 -   `r github("rspatial/luna")` has tools for acquiring and processing satellite 
     remote sensing data from NASA's LANDSAT and MODIS data sources. 
@@ -578,8 +578,7 @@ Visualizing spatial data
 -   `r pkg("micromap")` package provides linked micromaps using ggplot2.
 -   `r pkg("recmap")` package provides rectangular cartograms with rectangle
     sizes reflecting for example population.
--   `r pkg("geogrid")` turns spatial polygons into regular or hexagonal grids. 
-    `r pkg("statebins")` provides a simple binning approach to US states.
+-   `r pkg("statebins")` provides a simple binning approach to US states.
 
 Analyzing spatial data
 ----------------------
@@ -610,7 +609,7 @@ study area.
     statistical inference. It allows freedom in defining the region(s)
     of interest, and makes extensions to marked processes and spatial
     covariates. Its strengths are model-fitting and simulation, and it has a
-    useful [homepage](http://www.spatstat.org/); it is 
+    useful [homepage](https://spatstat.org/); it is 
     [actively developed](https://github.com/spatstat/spatstat). It is the only package
     that will enable the user to fit inhomogeneous point process models with
     interpoint interactions. 
@@ -628,10 +627,9 @@ study area.
     Public Health Data by Waller and Gotway (2004).
 -   `r pkg("ecespa")` provides wrappers, functions and data for
     spatial point pattern analysis, used in the book on Spatial Ecology of
-    the ECESPA/AEET. The functions for binning points on grids in
--   `r pkg("ads")` may also be of interest. The ads package
-    performs first- and second-order multi-scale analyses derived from
-    Ripley's K-function. 
+    the ECESPA/AEET. The functions for binning points on grids in `pkg("ads")`
+    may also be of interest. The ads package prforms first- and second-order
+    multi-scale analyses derived from Ripley's K-function. 
 -   The `r pkg("dbmss")` package allows
     simple computation of a full set of spatial statistic functions of
     distance, including classical ones (Ripley's K and others) and more
@@ -774,7 +772,7 @@ calculated rates that are comparable both in terms of levels and uncertainty.
     cluster detection and disease mapping functions, including Bayesian
     cluster detection, and supports strata. 
 -   The `r pkg("smerc")` package provides statistical methods 
-    for the analysis of data areal data, with a focus on cluster detection. 
+    for the analysis of areal data, with a focus on cluster detection. 
 -   A Markov Random Field `"mrf"` effect may be added to models in the 
     `r pkg("mgcv")` package shipped with base R, providing flexible
     modelling tools in a recommended package.
