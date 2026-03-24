@@ -627,8 +627,8 @@ study area.
     Public Health Data by Waller and Gotway (2004).
 -   `r pkg("ecespa")` provides wrappers, functions and data for
     spatial point pattern analysis, used in the book on Spatial Ecology of
-    the ECESPA/AEET. The functions for binning points on grids in `pkg("ads")`
-    may also be of interest. The ads package prforms first- and second-order
+    the ECESPA/AEET. The functions for binning points on grids in `r pkg("ads")`
+    may also be of interest. The `r pkg("ads")` package prforms first- and second-order
     multi-scale analyses derived from Ripley's K-function. 
 -   The `r pkg("dbmss")` package allows
     simple computation of a full set of spatial statistic functions of
