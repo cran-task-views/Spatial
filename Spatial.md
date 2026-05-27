@@ -289,8 +289,9 @@ dealing with open standard formats or proprietary formats.
     to the ArcGIS GeoProcessor. The ESRI company also offers their 
     own package (`r github("R-ArcGIS/r-bridge")`) that allows transferring data
     from ArcGIS to R.
--   *DuckDB*: `r pkg("duckspatial")` is a package that allows and simplifies the process of writing
-    and reading vector data into a DuckDB database through the SPATIAL extension.
+-   *DuckDB*: `r pkg("duckspatial")` provides fast, memory-efficient functions
+    for analyzing and manipulating large spatial datasets. It leverages the DuckDB
+    engine and its spatial extension while maintaining compatibility with `sf` for vector data.
 -   Various GIS Software, including Orfeo ToolBox and SAGA GIS, can also be
     connected to R using `r pkg("link2GI")`.
 -   *Orfeo ToolBox* segmentation module: `r pkg("OTBsegm")` simplifies the process of applying 
