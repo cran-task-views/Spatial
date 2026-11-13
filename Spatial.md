@@ -26,11 +26,11 @@ spatial data in R. Because the contributed packages constitute an evolving
 ecosystem, there are several points of entry for users looking for help
 and information. Two informal organisations curate websites: 
 [r-spatial](https://r-spatial.org/) with a hyphen, and 
-[rspatial](https://rspatial.org/) without. R-spatial is more generally 
-geo-informatics based, grew from the legacy `r pkg("sp")` package and 
-is now clearly aligned with the modern `r pkg("sf", priority="core")` and 
+[rspatial](https://rspatial.org/) without. R-spatial is more generally
+geo-informatics based, grew from the legacy `r pkg("sp")` package and
+is aligned with the modern `r pkg("sf", priority="core")` and
 `r pkg("stars", priority="core")` packages. Rspatial has grown from the 
-`r pkg("raster")` package, now moving towards the modern 
+`r pkg("raster")` package and is centred on the modern
 `r pkg("terra", priority="core")` package. It is also worth noting the
 wealth of online book projects, which may be helpful for users seeking
 an introduction, including 
@@ -48,7 +48,7 @@ mailing-list after subscription, or of
 [Stack Exchange](https://gis.stackexchange.com/). Using the
 `#rspatial` tag on [Mastodon](https://joinmastodon.org/)
 may also be worth trying, or browsing traffic using that tag (among others);
-Bluesky is also emerging.
+Bluesky may also be worth trying.
 
 The packages in this view can be roughly structured into the following
 topics. If you think that some package is missing from the list, please
@@ -120,8 +120,8 @@ geographic metadata in R.
     and [GDAL](https://gdal.org/) external software
     libraries, which must be available for source installs together with
     other external software libraries that they in turn depend on.
--   `r pkg("stars", priority = "core")` is being actively developed and 
-    was initially supported by the [R Consortium](https://www.r-consortium.org/); 
+-   `r pkg("stars", priority = "core")`
+    was initially supported by the [R Consortium](https://www.r-consortium.org/);
     it provides for
     spatiotemporal data in the form of dense arrays. It supersedes the
     `r pkg("spacetime")` package, which 
@@ -215,7 +215,7 @@ new projects should not use it, and existing projects should implement migration
 to the packages mentioned in the previous paragraph. In addition, `r rforge("rgeos")` 
 and `r rforge("maptools")` were archived at the same time. Further details and links 
 may be found in [project reports](https://r-spatial.github.io/evolution/) on the evolution
-project. From October 2023, `r pkg("sp")` only uses methods 
+project. Since October 2023, `r pkg("sp")` has used methods
 from `r pkg("sf")` in place of those from `r rforge("rgdal")` for projection 
 and access to the underlying definitions of coordinate reference systems.
 
@@ -272,15 +272,14 @@ dealing with open standard formats or proprietary formats.
     article.
     `r pkg("sf")` also provides an R interface to PostGIS, 
     for both reading and writing, through GDAL.
--   *GRASS GIS:* Integration with versions 7.\* and 8.\* of the open-source GIS,
-    GRASS GIS, is provided in CRAN package `r pkg("rgrass")`, which uses `r pkg("terra")` for file transfer.
+-   *GRASS GIS:* Integration with GRASS GIS is provided by the CRAN package
+    `r pkg("rgrass")`, which uses `r pkg("terra")` for file transfer.
 -   *SAGA GIS:* `r pkg("RSAGA")` and `r pkg("Rsagacmd")` offer shell-based
     wrappers for SAGA GIS commands.
--   *QGIS:* QGIS version 2 was supported by RQGIS 
-    (`r github("r-spatial/RQGIS")`). Using QGIS processing algorithms is currently
+-   *QGIS:* QGIS version 2 was supported by RQGIS
+    (`r github("r-spatial/RQGIS")`). Using QGIS processing algorithms is
     supported by `r pkg("qgisprocess")`, which uses the standalone
-    'qgis_process' command-line utility from QGIS (use
-    recent QGIS versions; may work since >= 3.16). Both native QGIS and third-party
+    'qgis_process' command-line utility from QGIS. Both native QGIS and third-party
     (plugin) processing providers are supported, i.e. GRASS, SAGA, GDAL, ...
 -   *WhiteboxTools:* `r pkg("whitebox")` is an R frontend for 
     the WhiteboxTools software.
@@ -365,13 +364,10 @@ Some R packages focus on providing interfaces to web-services and web tools
 in support of spatial data management. Here follows a first tentative 
 (non-exhaustive) list:
 
--   `r pkg("ows4R")` is a package that intends to provide an R interface 
-    to OGC standard Web-Services. It is in active development and currently 
-    supports interfaces to the 
-    Web Feature Service (WFS) for vector data access, with binding to the 
-    `r pkg("sf")` package, and the Catalogue Service (CSW) for geographic
-    metadata discovery and management (including transactions), with binding 
-    to the `r pkg("geometa")` package.
+-   `r pkg("ows4R")` provides an R interface to OGC standard Web-Services,
+    including the Web Feature Service (WFS), Web Coverage Service (WCS),
+    Catalogue Service (CSW), and Web Processing Service (WPS), with partial
+    support for the Web Map Service (WMS).
 -   `r pkg("geosapi")` is an R client for the [GeoServer](https://geoserver.org/) 
     REST API, an open source implementation used widely for serving 
     spatial data.
@@ -531,7 +527,7 @@ Visualizing spatial data
     the generic plot function.
 -   `r pkg("classInt", priority = "core")` package provides functions for 
     choosing class intervals for thematic cartography.
--   Currently, the grDevices package (included with the R installation) 
+-   The grDevices package (included with the R installation)
     contains a large number of color palettes that can be accessed with 
     the `hcl.colors` and `palette.colors` functions; see also New features in this
     [blog](https://developer.r-project.org/Blog/public/2019/11/21/a-new-palette-for-r/index.html).
@@ -628,7 +624,7 @@ study area.
     statistical inference. It allows freedom in defining the region(s)
     of interest, and makes extensions to marked processes and spatial
     covariates. Its [homepage](https://spatstat.org/) provides further
-    information; it is [actively developed](https://github.com/spatstat/spatstat).
+    information, and development takes place on [GitHub](https://github.com/spatstat/spatstat).
     It supports inhomogeneous point process models with interpoint interactions.
 -   The `r pkg("splancs")` package allows
     point data to be analysed within a polygonal region of interest, and
@@ -1013,9 +1009,9 @@ external software required. Because `getOption("pkgType")` on these platforms
 is usually `"both"`, you may be asked to choose to install a source package
 if it is more recent than the latest binary. 
 
-Please do not be tempted to choose a source install for `r pkg("sf")` or 
-`r pkg("terra")` or similar; the binary package will be generated within a
-day or two. To avoid being asked, you may see from `?options` 
+Please do not be tempted to choose a source install for `r pkg("sf")` or
+`r pkg("terra")` or similar when a binary is available. To avoid being asked,
+you may see from `?options`
 under options provided by the utils package that the default 
 behaviour of your installation of R may be controlled
 by setting options `install.packages.check.source` and
@@ -1025,10 +1021,9 @@ by setting options `install.packages.check.source` and
 If you are a developer using Windows or macOS or installing 
 from GitHub, the same statically linked
 binary external software libraries, header files, etc. as those used in 
-building CRAN binary packages are available from: Windows 4.0 and 4.1 
-[downloaded on-the-fly](https://github.com/orgs/rwinlib/repositories), 
-Windows 4.2 [RTools42](https://cran.r-project.org/bin/windows/Rtools/rtools42/rtools.html), Windows 4.3 [RTools43](https://cran.r-project.org/bin/windows/Rtools/rtools43/rtools.html),
-and macOS [both architectures](https://mac.r-project.org/tools/). These 
+building CRAN binary packages are available from
+[Rtools](https://cran.r-project.org/bin/windows/Rtools/) for Windows and
+[macOS tools](https://mac.r-project.org/tools/) for both architectures. These
 external software libraries have been built using the same compile and 
 link settings as R itself, so avoid the risk of possible errors caused by 
 mismatched binaries. The current versions may be updated between R releases, in order to give access to more recent versions of GDAL, GEOS or PROJ.
