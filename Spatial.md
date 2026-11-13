@@ -237,7 +237,7 @@ dealing with open standard formats or proprietary formats.
     The entry lists `r pkg("geojson")`, and `r pkg("geojsonio")`, among others.
     The GeoJSON format can also be read and written with `r pkg("gdalraster")`,
     `r pkg("sf")`, `r pkg("terra")`, and `r pkg("vapour")`. `r pkg("yyjsonr")`
-    provides an fast alternative implementation for GeoJSON parsing and serialization.
+    provides a fast alternative implementation for GeoJSON parsing and serialization.
 -   *Geographic Markup Language (GML):* GML can be read and written
     with `r pkg("sf")`. An additional native GML reader and writer is provided
     by the `r pkg("geometa")` model, with bindings to the `r pkg("sf")` classes
