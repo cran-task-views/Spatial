@@ -3,7 +3,7 @@ name: Spatial
 topic: Analysis of Spatial Data
 maintainer: Roger Bivand, Jakub Nowosad, Krzysztof Dyba
 email: Roger.Bivand@nhh.no, nowosad.jakub@gmail.com, krzysztof.dyba@amu.edu.pl
-version: 2026-05-26
+version: 2026-11-13
 source: https://github.com/cran-task-views/Spatial/
 ---
 
@@ -361,10 +361,6 @@ dealing with open standard formats or proprietary formats.
 -   `r pkg("geodata")` facilitates access to climate, elevation, soil, crop, 
     species occurrence, and administrative boundary data, and is a successor of
     the `getData()` function from the `r pkg("raster")` package.
--   `r pkg("forestdata")` allows to download forest and land cover data from
-    various sources, including forest inventory data, forest cover maps, and
-    global canopy height models.
-
 ### Interfaces to Spatial Web-Services
 
 Some R packages focused on providing interfaces to web-services and web tools 
