@@ -48,7 +48,7 @@ mailing-list after subscription, or of
 [Stack Exchange](https://gis.stackexchange.com/). Using the
 `#rspatial` tag on [Mastodon](https://joinmastodon.org/)
 may also be worth trying, or browsing traffic using that tag (among others);
-BlueSky currently is emerging.
+Bluesky is also emerging.
 
 The packages in this view can be roughly structured into the following
 topics. If you think that some package is missing from the list, please
@@ -123,7 +123,7 @@ geographic metadata in R.
 -   `r pkg("stars", priority = "core")` is being actively developed and 
     was initially supported by the [R Consortium](https://www.r-consortium.org/); 
     it provides for
-    spatiotemporal data in the form of dense arrays. It supercedes the 
+    spatiotemporal data in the form of dense arrays. It supersedes the
     `r pkg("spacetime")` package, which 
     extended the shared classes defined in `r pkg("sp")` for
     spatio-temporal data (see [Spatio-Temporal Data in
@@ -155,11 +155,11 @@ geographic metadata in R.
 ### Raster data
 
 -   `r pkg("terra", priority = "core")` is a re-implementation of
-    `r pkg("raster")` functionality and introducing new S4 classes for raster and
+    `r pkg("raster")` functionality and introduces new S4 classes for raster and
     vector data. See the [manual and
     tutorials](https://rspatial.org/terra/) to get started.
-    `r pkg("terra")` is very similar to the `r pkg("raster")` package; but
-    `r pkg("terra")` is simpler and faster.
+    `r pkg("terra")` provides functionality similar to that of the
+    `r pkg("raster")` package, while simplified and generally faster.
 -   `r pkg("stars", priority = "core")` provides for spatiotemporal data in the
     form of dense arrays, with space and time being array dimensions.
     Examples include socio-economic or demographic data, environmental
@@ -167,7 +167,7 @@ geographic metadata in R.
     images with multiple spectral bands, spatial simulations, and
     climate model results.
 -   The `r pkg("gdalcubes")` package also provides classes for data cubes,
-    including proxy data cubes, it links to PROJ, GDAL and NetCDF4.
+    including proxy data cubes, and links to PROJ, GDAL and NetCDF4.
 -   `r pkg("gdalraster")` provides an R implementation of the [GDAL Raster Data
     Model](https://gdal.org/en/stable/user/raster_data_model.html), along with
     several utilities and algorithms for processing and analyzing raster data.
@@ -177,15 +177,15 @@ geographic metadata in R.
 -   `r pkg("geometa")` provides classes and methods to write
     geographic metadata following the ISO and OGC metadata standards
     (ISO 19115, 19110, 19119) and export it as XML (ISO 19139) for later
-    publication into metadata catalogues. Reversely, geometa provides a
+    publication into metadata catalogues. Conversely, geometa provides a
     way to read ISO 19139 metadata into R. The package extends
     `r pkg("sf")` to provide GML (ISO 19136) representation
     of geometries.
 -   `r pkg("ncdf4")` provides read and write functions for
     handling metadata (CF conventions) in the self-described NetCDF
     format.
--   `r pkg("CFtime")` encapsulates the CF time coordinate and allows to deal
-    with the different CF calendars.
+-   `r pkg("CFtime")` encapsulates the CF time coordinate and supports
+    the different CF calendars.
 
 Reading and writing spatial data
 --------------------------------
@@ -203,7 +203,7 @@ and [Vector](https://gdal.org/en/stable/user/vector_data_model.html) Data
 Models. This allows us to read and write spatial data in R from and to various
 spatial file formats. Important note: CRAN offers binary versions of packages
 `r pkg("gdalraster")`, `r pkg("sf")`, `r pkg("terra")`, and `r pkg("vapour")`
-for Windows and macOS, that contain specific GDAL version with a subset of
+for Windows and macOS that contain a specific GDAL version with a subset of
 possible data source drivers. If other drivers are needed, you need to either
 use other conversion utilities or install these packages from the source against
 a version of GDAL with the required drivers.
@@ -231,20 +231,19 @@ dealing with open standard formats or proprietary formats.
     supported by the `r pkg("sf")` package that implements the whole
     OGC Simple Feature specification in R. Additionally, `r pkg("wk")`
     may be used to parse well-known binary and well-known text
-    representation of geometries to and from R-native formats.
+    representations of geometries to and from R-native formats.
 -   *GeoJSON:* An rOpenSci [blog entry](https://ropensci.org/blog/2016/11/22/geospatial-suite/) 
     describes a GeoJSON-centred approach to reading GeoJSON and WKT data.
     The entry lists `r pkg("geojson")`, and `r pkg("geojsonio")`, among others.
     The GeoJSON format can also be read and written with `r pkg("gdalraster")`,
     `r pkg("sf")`, `r pkg("terra")`, and `r pkg("vapour")`. `r pkg("yyjsonr")`
-    provides fast GeoJSON parsing and serialization compared to
-    aforementioned packages.
--   *Geographic Markup Language (GML):* GML format can be read and written
-    with `r pkg("sf")`. Additional GML native reader and writer is provided
-    by `r pkg("geometa")` model with bindings to the `r pkg("sf")` classes, 
-    for extension of geographic metadata with GML data and metadata 
-    elements (GML 3.2.1 and 3.3) and interfacing OGC web-services 
-    in `r pkg("ows4R")` package.
+    provides an fast alternative implementation for GeoJSON parsing and serialization.
+-   *Geographic Markup Language (GML):* GML can be read and written
+    with `r pkg("sf")`. An additional native GML reader and writer is provided
+    by the `r pkg("geometa")` model, with bindings to the `r pkg("sf")` classes
+    for extending geographic metadata with GML data and metadata elements
+    (GML 3.2.1 and 3.3) and interfacing with OGC web services through the
+    `r pkg("ows4R")` package.
 -   *NetCDF files:* NetCDF files can be read and written with 
     `r pkg("ncdf4")` or `r pkg("RNetCDF")`. Additionally, both `r pkg("terra")`
     and `r pkg("stars")` have capabilities for reading and writing NetCDF files.
@@ -253,7 +252,7 @@ dealing with open standard formats or proprietary formats.
 
 *Proprietary Data Formats*
 
--   *ESRI formats:* Many of spatial data saved into ESRI file formats
+-   *ESRI formats:* Many spatial datasets saved in ESRI file formats
     can be read with GDAL, and thus also with `r pkg("sf")`, 
     `r pkg("terra")`, and `r pkg("vapour")`. Additionally, 
     `r pkg("shapefiles")` reads and writes ESRI ArcGIS/ArcView shapefiles.
@@ -273,10 +272,10 @@ dealing with open standard formats or proprietary formats.
     article.
     `r pkg("sf")` also provides an R interface to PostGIS, 
     for both reading and writing, through GDAL.
--   *GRASS GIS:* Integration with version 7.\* and 8.\* of the leading open source GIS,
+-   *GRASS GIS:* Integration with versions 7.\* and 8.\* of the open-source GIS,
     GRASS GIS, is provided in CRAN package `r pkg("rgrass")`, which uses `r pkg("terra")` for file transfer.
 -   *SAGA GIS:* `r pkg("RSAGA")` and `r pkg("Rsagacmd")` offer shell-based
-    wrapper for SAGA GIS commands.
+    wrappers for SAGA GIS commands.
 -   *QGIS:* QGIS version 2 was supported by RQGIS 
     (`r github("r-spatial/RQGIS")`). Using QGIS processing algorithms is currently
     supported by `r pkg("qgisprocess")`, which uses the standalone
@@ -289,30 +288,29 @@ dealing with open standard formats or proprietary formats.
     to the ArcGIS GeoProcessor. The ESRI company also offers their 
     own package (`r github("R-ArcGIS/r-bridge")`) that allows transferring data
     from ArcGIS to R.
--   *DuckDB*: `r pkg("duckspatial")` provides fast, memory-efficient functions
+-   *DuckDB*: `r pkg("duckspatial")` provides functions
     for analyzing and manipulating large spatial datasets. It leverages the DuckDB
     engine and its spatial extension while maintaining compatibility with `sf` for vector data.
 -   Various GIS Software, including Orfeo ToolBox and SAGA GIS, can also be
     connected to R using `r pkg("link2GI")`.
 -   *Orfeo ToolBox* segmentation module: `r pkg("OTBsegm")` simplifies the process of applying 
-    unsupervised segmentation algorithms available in *Orfeo Toolbox* via the `r pkg("link2GI")`
+    unsupervised segmentation algorithms available in *Orfeo Toolbox* via the `r pkg("link2GI")`.
 
 ### Specific geospatial data sources of interest
 
 -   `r pkg("rnaturalearth")` package facilitates interaction with 
     [Natural Earth](https://www.naturalearthdata.com/) map data. It includes 
-    functions to download a wealth of Natural Earth vector and raster data,
+    functions to download Natural Earth vector and raster data,
     including cultural (e.g., country boundaries, airports, roads, railroads)
     and physical (e.g., coastline, lakes, glaciated areas) datasets.
 -   `r pkg("elevatr")` provides access to elevation data from several web services. 
 -   Historical country boundaries (1886-today) can be obtained 
     from the `r pkg("cshapes")`.
--   `r pkg("marmap")` package is designed for downloading, plotting, 
-    and manipulating bathymetric and topographic data in R. It allows to query 
-    the ETOPO1 bathymetry and topography database hosted by the NOAA, 
-    use simple latitude-longitude-depth data in ASCII format, and take 
-    advantage of the advanced plotting tools available in R to build 
-    publication-quality bathymetric maps (see the
+-   `r pkg("marmap")` package is designed for downloading, plotting,
+    and manipulating bathymetric and topographic data in R. It supports queries
+    to the ETOPO1 bathymetry and topography database hosted by the NOAA,
+    simple latitude-longitude-depth data in ASCII format, and plotting tools to build
+    bathymetric maps (see the
     [PLOS](https://doi.org/10.1371/journal.pone.0073051)
     paper).
 -   `r pkg("tidycensus")` provides access to US Census Bureau data in a 
@@ -321,7 +319,7 @@ dealing with open standard formats or proprietary formats.
     the US Census Bureau TIGER, including cartographic boundaries, roads, 
     and water.
 -   `r pkg("rgbif")` package is used to access Global Biodiversity 
-    Information Facility (GBIF) occurrence data
+    Information Facility (GBIF) occurrence data.
 -   `r pkg("geonames")` is an interface to the 
     [www.geonames.org](https://www.geonames.org/) service.
 -   `r pkg("osmdata")` is an R package for accessing relatively 
@@ -338,17 +336,17 @@ dealing with open standard formats or proprietary formats.
     municipalities, and other spatial objects.
 -   `r pkg("chilemapas")` provides access to spatial data of political 
     and administrative divisions of Chile.
--   `r pkg("geobr")` provides easy access to official spatial data sets of 
+-   `r pkg("geobr")` provides access to official spatial data sets of
     Brazil for multiple geographies and years.
 -   `r pkg("geouy")` loads and processes geographic information for Uruguay.
 -   `r pkg("RCzechia")` downloads spatial boundary files of administrative regions
     and other spatial objects of the Czech Republic.
--   `r pkg("rgugik")` allows to search and retrieve data from Polish Head 
+-   `r pkg("rgugik")` supports searching for and retrieving data from the Polish Head
     Office of Geodesy and Cartography ("GUGiK").
 -   `r pkg("mapSpain")` downloads spatial boundary files of administrative 
     regions and other spatial objects of Spain.
--   `r pkg("mapme.biodiversity")` allows to download and process a number of open 
-    datasets related to biodiversity conservation providing efficient routines 
+-   `r pkg("mapme.biodiversity")` supports downloading and processing a number of open
+    datasets related to biodiversity conservation, providing routines
     and parallelization options. Datasets include among others the 
     [Global Forest Watch](https://www.globalforestwatch.org/), 
     [ESA/Copernicus Landcover](https://land.copernicus.eu/global/products/lc), 
@@ -363,7 +361,7 @@ dealing with open standard formats or proprietary formats.
     the `getData()` function from the `r pkg("raster")` package.
 ### Interfaces to Spatial Web-Services
 
-Some R packages focused on providing interfaces to web-services and web tools 
+Some R packages focus on providing interfaces to web-services and web tools
 in support of spatial data management. Here follows a first tentative 
 (non-exhaustive) list:
 
@@ -386,8 +384,8 @@ Handling spatial data
 
 ### Data cleaning
 
--   `r pkg("sf")` has built-in functions `st_is_valid` to check whether 
-    a sf geometry is valid and `st_make_valid` to fix invalid geometry (from GEOS 3.8).
+-   `r pkg("sf")` has built-in functions `st_is_valid` to check whether
+    an sf geometry is valid and `st_make_valid` to fix invalid geometry (from GEOS 3.8).
 -   `r pkg("lwgeom")` may also be used to facilitate handling and reporting
     of topology errors and geometry validity issues
     in sf objects.
@@ -420,7 +418,7 @@ Handling spatial data
     GDAL's unified CLI framework provide access to CLI algorithms and GDAL
     facilities for pipeline processing (see
     [Using gdal CLI algorithms from R](https://usdaforestservice.github.io/gdalraster/articles/use-gdal-cli-from-r.html)).
--   The `r pkg("geos")` high-performance bindings to the GEOS library, based on
+-   The `r pkg("geos")` package provides bindings to the GEOS library, based on
     `r pkg("libgeos")`; the latter bundles a frozen copy of GEOS, and does not
     link to system versions, which may possibly be different versions of GEOS.
 -   `r pkg("rmapshaper")` is a wrapper around the 'mapshaper' 'JavaScript'
@@ -436,11 +434,11 @@ Handling spatial data
     they tile the Earth with _equally_-sized hexagons, triangles, or diamonds.
 -   `r pkg("cshapes")` package provides functions for calculating distance
     matrices (see [Mapping and Measuring Country Shapes](https://journal.r-project.org/articles/RJ-2010-004/)).
--   `r pkg("magclass")` offers a data class for increased interoperability 
-    working with spatial-temporal data together with corresponding functions
+-   `r pkg("magclass")` offers a data class for increased interoperability
+    when working with spatial-temporal data, together with corresponding functions
     and methods (conversions, basic calculations and basic data manipulation).
--   The `r pkg("trip")` package extends spatial classes to permit the
-    accessing and manipulating of spatial data for animal tracking.
+-   The `r pkg("trip")` package extends spatial classes to permit access to
+    and manipulation of spatial data for animal tracking.
 -   `r pkg("sfnetworks")` connects the `r pkg("sf")` and the `r pkg("tidygraph")`
     packages for geospatial network analysis, supporting tasks such as shortest
     path calculation, routing or spatial joins.
@@ -455,12 +453,12 @@ Handling spatial data
     provides extensions to `r pkg("ggplot2")`, allowing users to place `geom_text` and `geom_label` at the center of a spatial
     polygon, which can be useful for map-making.
 -   The `r pkg("qualmap")` package can be used to digitize qualitative GIS data.
--   The `r pkg("exactextractr")` for fast and accurate summary of raster values
+-   The `r pkg("exactextractr")` package summarizes raster values
     on polygonal areas (known as zonal statistics).
--   The `r pkg("geodist")` is a fast and lightweight package for computing
+-   The `r pkg("geodist")` package computes
     geographic distances between sets of coordinates (longitude and latitude).
-    It supports Haversine, Vincenty, and geodesic distance metrics, and is
-    optimized for high-performance computing on large spatial datasets.
+    It supports Haversine, Vincenty, and geodesic distance metrics and
+    computations on large spatial datasets.
 
 ### Remote sensing
 
@@ -487,8 +485,8 @@ Handling spatial data
     `r pkg("MODISTools")` also provides an interface to the 
     [MODIS Land Products Subsets](https://modis.ornl.gov/data/modis_webservice.html) 
     web services.
-    `r pkg("modisfast")`, on its side, provides an interface to some MODIS, VIIRS 
-    and GPM [OPeNDAP](https://www.opendap.org/) servers, enabling to subset the data cubes
+    `r pkg("modisfast")`, on its side, provides an interface to some MODIS, VIIRS
+    and GPM [OPeNDAP](https://www.opendap.org/) servers, permitting data-cube subsetting
     directly at the download phase. 
 -   The `r pkg("CDSE")` provides the interface to the 'Copernicus Data Space Ecosystem'
     API (<https://dataspace.copernicus.eu/analyse/apis/sentinel-hub>), mainly for searching
@@ -500,13 +498,13 @@ Handling spatial data
 -   `r pkg("rgee")` is an [Earth Engine](https://earthengine.google.com/) 
     client library for R. All of the 'Earth Engine' API classes, modules, 
     and functions are made available. Additional functions implemented include 
-    importing (exporting) of Earth Engine spatial objects, 
+    importing and exporting Earth Engine spatial objects,
     extraction of time series, interactive map display, 
     assets management interface, and metadata display.
 -   The `r pkg("openeo")` is an R client package that allows users to interact with
     openEO-compliant back-ends (<https://openeo.org/>) for processing Earth observation
     data (e.g., services offered by European Space Agency or VITO Remote Sensing).
-    It enables to define and execute workflows remotely on cloud infrastructures
+    It supports defining and executing workflows remotely on cloud infrastructures
     without having to download large amounts of data locally.
 
 ### Spatial sampling
@@ -544,28 +542,28 @@ Visualizing spatial data
 ### Thematic cartography packages
 
 -   `r pkg("tmap")` package accepts most spatial data classes and provides
-    a modern basis for thematic mapping using a Grammar of Graphics syntax.
+    a basis for thematic mapping using a Grammar of Graphics syntax.
     It also allows for interactive spatial data mapping.
 -   `r pkg("mapsf")` package allows various cartographic representations 
     such as proportional symbols, choropleth, or typology maps; it accepts sf
     (`r pkg("sf")`) and SpatRaster (`r pkg("terra")`) objects.
--   `r pkg("ggplot2")` package has a built-in support for sf objects with the 
-    `geom_sf` function and additional support for stars object is available
+-   `r pkg("ggplot2")` package has built-in support for sf objects with the
+    `geom_sf` function and additional support for stars objects is available
     through the `geom_stars` function available in the `r pkg("stars")` package.
     Its spatial visualization capabilities can be further extended with 
     `r pkg("ggspatial")`, which adds support for more spatial classes 
     (including classes from the raster package), allows adding north arrows
     and scale bars, etc.
--   The `r pkg("mapmisc")` package is a minimal, light-weight set of tools
-    for producing nice-looking maps in R, with support for map projections.
+-   The `r pkg("mapmisc")` package provides tools for producing maps in R,
+    with support for map projections.
 -   Additional processing and mapping functions are available in 
     `r pkg("PBSmapping")` package; `r pkg("PBSmodelling")` provides 
     modelling support. In addition, `r pkg("GEOmap")` provides mapping
     facilities directed to meet the needs of geologists and uses 
     the `r pkg("geomapdata")` package.
--   `r pkg("rayshader")` for creating 2D and 3D visualizations of elevation
+-   `r pkg("rayshader")` creates 2D and 3D visualizations of elevation
     data and maps. It uses ray tracing, hillshading, and ambient occlusion
-    techniques to produce highly detailed representations of terrain.
+    techniques to produce representations of terrain.
 -   `r pkg("tidyterra")` extends `r pkg("ggplot2")` to work natively with
     `r pkg("terra")` objects (rasters and vectors), providing dedicated
     `geom_spatraster()` and `geom_spatvector()` functions. 
@@ -577,7 +575,7 @@ Visualizing spatial data
     Additionally, `r pkg("tmap")` has a view mode that allows for interactive 
     spatial data mapping.
 -   `r pkg("mapdeck")` package provides a mechanism to plot interactive maps
-    through javascript libraries 'Mapbox GL' and 'Deck.gl'.
+    through JavaScript libraries 'Mapbox GL' and 'Deck.gl'.
 -   `r pkg("RgoogleMaps")` package for accessing Google Maps(TM) may be
     useful if the user wishes to place a map backdrop behind other displays.
 -   `r pkg("ggmap")` may be used for spatial visualization with Google Maps
@@ -586,14 +584,14 @@ Visualizing spatial data
     for editing or creating sf geometries.
 -   `r pkg("mapgl")` provides an R interface to [Mapbox GL JS](https://www.mapbox.com/mapbox-gljs)
     and [MapLibre GL JS](https://maplibre.org/projects/gl-js/), enabling interactive,
-    high-performance web maps rendered via WebGL. It allows users to build
-    customizable web maps and it integrates well with Shiny applications.
+    web maps rendered via WebGL. It supports customizable web maps and
+    integrates with Shiny applications.
 
 ### Building cartograms
 
--   `r pkg("cartogram")` package allows for constructions of a continuous 
+-   `r pkg("cartogram")` package allows for the construction of a continuous
     area cartogram by a rubber sheet distortion algorithm, non-contiguous
-    area cartograms, and non-overlapping circles cartogram.
+    area cartograms, and non-overlapping circle cartograms.
 -   `r pkg("geogrid")` package turns polygons into rectangular or hexagonal
     cartograms.
 -   `r pkg("micromap")` package provides linked micromaps using ggplot2.
@@ -604,9 +602,9 @@ Visualizing spatial data
 Analyzing spatial data
 ----------------------
 
-The division of spatial statistics into three partly overlapping 
-areas: point pattern analysis, geostatistics and the analysis of 
-areal/lattice data, is widely accepted. However, areal data 
+The division of spatial statistics into three partly overlapping
+areas, namely point pattern analysis, geostatistics and the analysis of
+areal/lattice data, is widely accepted. However, areal data
 analysis can be split into disease mapping and spatial regression 
 (also partly overlapping). In addition, ecological analyses often 
 approach spatial data in particular ways, giving rise to a specific 
@@ -625,23 +623,21 @@ where the set of observations is expected to encompass all such entities in the
 study area.
 
 -   `r pkg("spatstat", priority = "core")` is a family of R packages for analysing
-    spatial point pattern data (and other kinds of spatial data). It has extensive
-    capabilities for exploratory analysis, statistical modelling, simulation and
+    spatial point pattern data (and other kinds of spatial data). It supports
+    exploratory analysis, statistical modelling, simulation and
     statistical inference. It allows freedom in defining the region(s)
     of interest, and makes extensions to marked processes and spatial
-    covariates. Its strengths are model-fitting and simulation, and it has a
-    useful [homepage](https://spatstat.org/); it is 
-    [actively developed](https://github.com/spatstat/spatstat). It is the only package
-    that will enable the user to fit inhomogeneous point process models with
-    interpoint interactions. 
+    covariates. Its [homepage](https://spatstat.org/) provides further
+    information; it is [actively developed](https://github.com/spatstat/spatstat).
+    It supports inhomogeneous point process models with interpoint interactions.
 -   The `r pkg("splancs")` package allows
     point data to be analysed within a polygonal region of interest, and
     covers many methods, including 2D kernel densities. 
 -   The `r pkg("spatial")` package 
     is a recommended package shipped with base R, and contains several core functions,
     including an implementation of Khat by its author, Prof. Ripley. 
--   The `r pkg("spatgraphs")` package provides graphs, graph visualisation 
-    and graph based summaries to be used with spatial point pattern analysis. 
+-   The `r pkg("spatgraphs")` package provides graphs, graph visualisation
+    and graph-based summaries to be used with spatial point pattern analysis.
 -   The `r pkg("smacpod")` package provides various statistical
     methods for analyzing case-control point data. The methods available
     closely follow those in chapter 6 of Applied Spatial Statistics for
@@ -651,8 +647,7 @@ study area.
     the ECESPA/AEET. The functions for binning points on grids in `r pkg("ads")`
     may also be of interest. The `r pkg("ads")` package performs first- and second-order
     multi-scale analyses derived from Ripley's K-function. 
--   The `r pkg("dbmss")` package allows
-    simple computation of a full set of spatial statistic functions of
+-   The `r pkg("dbmss")` package computes spatial statistic functions of
     distance, including classical ones (Ripley's K and others) and more
     recent ones used by spatial economists (Duranton and Overman's Kd,
     Marcon and Puech's M). It relies on `r pkg("spatstat")` for core 
@@ -660,13 +655,13 @@ study area.
 -   `r pkg("sfhotspot")` provides functions for descriptive hotspot analysis and
     mapping of spatial concentrations of points, including kernel-density 
     estimation, Getis--Ord Gi*, hotspot classification, etc. The package 
-    attempts to provide sensible default values to assist with analysis
+    provides default values to assist with analysis
     and mapping for students and non-experts.
 
 ### Geostatistics
 
 Geostatistics uses a model fitted using the distances between observations to
-interpolate values observed at point to unobserved points
+interpolate values observed at points to unobserved points.
 
 -   The `r pkg("gstat", priority = "core")` package provides a
     wide range of functions for univariate and multivariate geostatistics,
@@ -723,9 +718,8 @@ interpolate values observed at point to unobserved points
     `r pkg("ExceedanceTools")`, which provides tools for
     constructing confidence regions for exceedance regions and contour
     lines. 
--   The `r pkg("gear")` package implements common
-    geostatistical methods in a clean, straightforward, efficient manner,
-    and is said to be a quasi reboot of `r pkg("SpatialTools")`.
+-   The `r pkg("gear")` package implements common geostatistical methods
+    and is described as a quasi reboot of `r pkg("SpatialTools")`.
 -   The `r pkg("sperrorest")` package implements spatial error
     estimation and permutation-based spatial variable importance using
     different spatial cross-validation and spatial block bootstrap methods, used by
@@ -751,8 +745,8 @@ interpolate values observed at point to unobserved points
     distance. Models are created using moving average constructions. Spatial
     linear models, including covariates, can be fit with ML or REML. Mapping
     and other graphical functions are supported.
--   The `r pkg("ipdw")` provides functions to interpolate
-    georeferenced point data via Inverse Path Distance Weighting. Useful
+-   The `r pkg("ipdw")` package provides functions to interpolate
+    georeferenced point data via Inverse Path Distance Weighting. It is intended
     for coastal marine applications where barriers in the landscape
     preclude interpolation with Euclidean distances.
 -   `r pkg("sptotal")` uses Finite Population Block Kriging (FPBK) to
@@ -771,7 +765,7 @@ interpolate values observed at point to unobserved points
 
 Both point pattern analysis and geostatistics enter into disease mapping, which
 is concerned with representing public health information over space and
-time in a communicative and responsible way. Estimation is important to present
+time in a communicative and responsible way. Estimation is important for presenting
 calculated rates that are comparable both in terms of levels and uncertainty.
 
 -   `r pkg("DCluster", priority = "core")` is a package for the
@@ -785,10 +779,10 @@ calculated rates that are comparable both in terms of levels and uncertainty.
 -   `r pkg("spdep")` also provides global and local tests for spatial
     autocorrelation, including join-count tests, Moran's I, Geary's C,
     Getis-Ord G and others.
--   `r pkg("rgeoda")` is a wrapper for GeoDa and provides efficient alternatives
+-   `r pkg("rgeoda")` is a wrapper for GeoDa and provides alternatives
     for calculating global and local tests for spatial autocorrelation.
 -   Some functions for fitting spatial regression models, such as SAR and CAR 
-    models are in `r pkg("spatialreg", priority = "core")`, see below.
+    models, are in `r pkg("spatialreg", priority = "core")`, see below.
 -   The `r pkg("SpatialEpi")` package provides implementations of
     cluster detection and disease mapping functions, including Bayesian
     cluster detection, and supports strata. 
@@ -800,20 +794,19 @@ calculated rates that are comparable both in terms of levels and uncertainty.
 -   The `r pkg("hglm")` package also provides SAR and CAR model fitting
     approaches.
 -   Regionalization of polygon objects
-    is no longer provided by archived `AMOEBA`: a function to calculate
+    is no longer provided by the archived `AMOEBA`, which included a function to calculate
     spatial clusters using the Getis-Ord local statistic. It searched
     for irregular clusters (ecotopes) on a map. `skater()` in
     `r pkg("spdep")` does not interpose a local statistic,
-     being based on distance between features in attribute space,
+     as it is based on distance between features in attribute space
      and polygon contiguity. 
 -   The `r pkg("divseg")` and
     `r pkg("OasisR")` packages provide functions for measuring
     spatial segregation; `r pkg("OasisR")` includes Monte Carlo
     simulations to test the indices. 
--   The `r pkg("lctools")` package provides
-    researchers and educators with easy-to-learn user friendly tools for
-    calculating key spatial statistics and to apply simple as well as
-    advanced methods of spatial analysis in real data. These include: Local
+-   The `r pkg("lctools")` package provides tools for
+    calculating spatial statistics and applying methods of spatial analysis
+    to real data. These include local
     Pearson and Geographically Weighted Pearson Correlation Coefficients,
     Spatial Inequality Measures (Gini, Spatial Gini, LQ, Focal LQ), Spatial
     Autocorrelation (Global and Local Moran's I), several Geographically
@@ -831,11 +824,11 @@ calculated rates that are comparable both in terms of levels and uncertainty.
     localised spatial smoothing model. 
 -   The `r pkg("spaMM")`
     package fits spatial GLMMs, using the Matern correlation function as the
-    basic model for spatial random effects. 
+    basic model for spatial random effects.
 -   The `r pkg("PReMiuM")` package is for profile regression, which
     is a Dirichlet process Bayesian clustering model; it provides a spatial
     CAR term that can be included in the fixed effects (which are global,
-    ie. non-cluster specific, parameters) to account for any spatial
+    i.e., non-cluster-specific, parameters) to account for any spatial
     correlation in the residuals. 
 -   Spatial survival analysis is provided by the
     `r pkg("spBayesSurv")` package: Bayesian Modeling and
@@ -844,7 +837,7 @@ calculated rates that are comparable both in terms of levels and uncertainty.
     based on forward stepwise regression, incremental forward stagewise
     regression, least angle regression (LARS), and lasso models for
     selecting the spatial scale of covariates in regression models.
--   Spatial microsimulation is offered by `r pkg("rakeR")`, `r pkg("sms")`, 
+-   Spatial microsimulation is offered by `r pkg("rakeR")` and `r pkg("sms")`.
     `r github("alexWhitworth/synthACS")` permits the building and
     running of spatially explicit agent-based models.
 -   The `r pkg("geostan")` package has GLMs, SAR, proper CAR, ICAR, and eigenvector
@@ -861,21 +854,20 @@ calculated rates that are comparable both in terms of levels and uncertainty.
     designed to be compatible with both base R and with the tidymodels
     modeling framework, and adopt `r pkg("yardstick")` classes and
     interfaces.
--   The `r pkg("gdverse")` package provides 
-    an integrated and extensible toolkit for analyzing spatial stratified heterogeneity 
+-   The `r pkg("gdverse")` package provides
+    tools for analyzing spatial stratified heterogeneity
     and spatial associations using the geographical detector methodology. It includes 
     core functions for computing the q-statistic, performing spatial factor exploration, 
     and detecting spatial interactions between variables. The package supports various 
-    geographical detector models and provides high-performance implementations for their
-    efficient execution.
+    geographical detector models.
 
 
 ### Spatial regression
 
-Many packages providing functions for fitting spatial regression models have 
-already been given as they are used in disease mapping. In this subsection, 
-more attention is given to the subset of methods used in spatial econometrics, and
-so complements general econometric methods covered in the `r view("Econometrics")` 
+Many packages providing functions for fitting spatial regression models have
+already been given as they are used in disease mapping. In this subsection,
+more attention is given to the subset of methods used in spatial econometrics, which
+complements the general econometric methods covered in the `r view("Econometrics")`
 Task View.
 
 -   The choice of function for spatial regression will depend on the support
@@ -892,7 +884,7 @@ Task View.
     tests. Spatial regression models that can be fitted using maximum
     likelihood and Bayesian MCMC methods in
     `r pkg("spatialreg")` include spatial lag models, spatial
-    error models, two parameter models, their Durbin variants and SLX models.
+    error models, two-parameter models, their Durbin variants and SLX models.
     For larger data sets, sparse
     matrix techniques can be used for maximum likelihood fits. In
     `r pkg("spatialreg")`, the `ME` and `SpatialFiltering`
@@ -921,9 +913,8 @@ Task View.
     identify, estimate and diagnose a Space-Time AutoRegressive Moving
     Average (STARMA) model.
 -   `r pkg("varycoef")` and `r pkg("spBayes")` provide implementations of
-    spatially varying coefficient (SVC) models, which may be preferred to
-    geographically weighted regression (GWR) models as having proper
-    statistical foundations.
+    spatially varying coefficient (SVC) models as alternatives to
+    geographically weighted regression (GWR) models.
 -   The `r pkg("gwrr")` package fits geographically weighted
     regression (GWR) models and has tools to diagnose and remediate
     collinearity in the GWR models. It also fits geographically weighted ridge
@@ -963,7 +954,7 @@ They include:
 -   `r pkg("vegan")` for ordination methods and other useful
     functions for community and vegetation ecologists, and many other
     functions in other contributed packages. One such is
-    `r pkg("tripEstimation")`, basing on the classes
+    `r pkg("tripEstimation")`, based on the classes
     provided by `r pkg("trip")`. 
 -   `r pkg("ncf")` provides a range of spatial
     nonparametric covariance functions.
@@ -977,7 +968,7 @@ They include:
     models.
 -   `r pkg("ModelMap")` builds on other packages to create
     models using underlying GIS data.
--   The `r pkg("SpatialPosition")` computes spatial position
+-   The `r pkg("SpatialPosition")` package computes spatial position
     models: Stewart potentials, Reilly catchment areas, Huff catchment
     areas.
 <!-- -   The `r github("ArturoTorres/Watersheds")` package provides methods for -->
@@ -1048,7 +1039,7 @@ by setting options `install.packages.check.source` and
 `R_COMPILE_AND_INSTALL_PACKAGES`, see also this [helpful comment](https://github.com/r-spatial/sf/issues/1848#issuecomment-1005038753).
 
 If you are a developer using Windows or macOS or installing 
-from `github`, the same static-linked 
+from GitHub, the same statically linked
 binary external software libraries, header files, etc. as those used in 
 building CRAN binary packages are available from: Windows 4.0 and 4.1 
 [downloaded on-the-fly](https://github.com/orgs/rwinlib/repositories), 
