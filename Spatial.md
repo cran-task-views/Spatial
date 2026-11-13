@@ -698,8 +698,8 @@ interpolate values observed at points to unobserved points.
     number of data points (or polygons) m.
 -   `r pkg("SpatialExtremes")` proposes several
     approaches for spatial extremes. 
--   In addition, `r pkg("constrainedKriging")` and `r pkg("geospt")` provide 
-    alternative approaches to geostatistical modelling. 
+-   In addition, `r pkg("constrainedKriging")` provides an alternative
+    approach to geostatistical modelling.
 -   The `r pkg("spTimer")` package is able to fit, spatially predict and 
     temporally forecast large amounts of space-time data using \[1\] Bayesian 
     Gaussian Process (GP) Models, \[2\] Bayesian Auto-Regressive (AR) Models, 
@@ -925,14 +925,6 @@ Task View.
     and space-time GWR; GW summary statistics, GW PCA and GW discriminant
     analysis; associated tests and diagnostics; and options for a range of
     distance metrics. 
--   `r pkg("waywiser")` helps assess models fit to spatial data, with
-    functions for calculating the spatial autocorrelation of model
-    residuals, for calculating model performance statistics, for 
-    assessing model performance across multiple spatial scales, and for
-    calculating the "area of applicability" of a model. Functions are
-    designed to be compatible with both base R and with the tidymodels
-    modeling framework, and adopt `r pkg("yardstick")` classes and
-    interfaces.
 -   `r pkg("spStack")` fits Bayesian spatially-temporally varying 
     coefficients (STVC) generalized linear models without MCMC using stacking of
     predictive densities.
@@ -986,14 +978,6 @@ They include:
     single environment. It also provides several visualization
     functions, e.g. to show all labeled patches or the core area of all
     patches.
--   `r pkg("waywiser")` helps assess models fit to spatial data, with
-    functions for calculating the spatial autocorrelation of model
-    residuals, for calculating model performance statistics, for 
-    assessing model performance across multiple spatial scales, and for
-    calculating the "area of applicability" of a model. Functions are
-    designed to be compatible with both base R and with the tidymodels
-    modeling framework, and adopt `r pkg("yardstick")` classes and
-    interfaces.
 -   `r pkg("dismo")` provides functions for species distribution modelling.
 
 The `r view("Environmetrics")` Task View contains a much more
