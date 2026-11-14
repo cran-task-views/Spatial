@@ -159,7 +159,7 @@ geographic metadata in R.
     vector data. See the [manual and
     tutorials](https://rspatial.org/terra/) to get started.
     `r pkg("terra")` provides functionality similar to that of the
-    `r pkg("raster")` package, while simplified and generally faster.
+    `r pkg("raster")` package, but is simpler and generally faster.
 -   `r pkg("stars", priority = "core")` provides for spatiotemporal data in the
     form of dense arrays, with space and time being array dimensions.
     Examples include socio-economic or demographic data, environmental
@@ -237,7 +237,7 @@ dealing with open standard formats or proprietary formats.
     The entry lists `r pkg("geojson")`, and `r pkg("geojsonio")`, among others.
     The GeoJSON format can also be read and written with `r pkg("gdalraster")`,
     `r pkg("sf")`, `r pkg("terra")`, and `r pkg("vapour")`. `r pkg("yyjsonr")`
-    provides an fast alternative implementation for GeoJSON parsing and serialization.
+    provides a fast alternative implementation for GeoJSON parsing and serialization.
 -   *Geographic Markup Language (GML):* GML can be read and written
     with `r pkg("sf")`. An additional native GML reader and writer is provided
     by the `r pkg("geometa")` model, with bindings to the `r pkg("sf")` classes
@@ -449,13 +449,9 @@ Handling spatial data
     provides extensions to `r pkg("ggplot2")`, allowing users to place `geom_text` and `geom_label` at the center of a spatial
     polygon, which can be useful for map-making.
 -   The `r pkg("qualmap")` package can be used to digitize qualitative GIS data.
--   The `r pkg("exactextractr")` package summarizes raster values
-    on polygonal areas (known as zonal statistics).
--   `r pkg("supercells")` partitions single- or multilayer raster objects from `r pkg("terra")` and `r pkg("stars")` into spatially coherent regions using an extended Simple Linear Iterative Clustering (SLIC) algorithm.
-    It includes compactness tuning, diagnostics, and evaluation metrics.
--   The `r pkg("geodist")` package computes
-    geographic distances between sets of coordinates (longitude and latitude).
-    It supports Haversine, Vincenty, and geodesic distance metrics and
+-   `r pkg("exactextractr")` quickly and accurately summarizes raster values over polygonal areas (known as zonal statistics).
+-   `r pkg("geodist")` provides fast, dependency-free calculations of geographic distances between sets of longitude-latitude coordinates.
+    It supports Haversine, Vincenty, and geodesic distance methods  and
     computations on large spatial datasets.
 
 ### Remote sensing
@@ -580,10 +576,8 @@ Visualizing spatial data
     and OpenStreetMap.
 -   `r pkg("mapedit")` provides an R shiny widget based on `r pkg("leaflet")`
     for editing or creating sf geometries.
--   `r pkg("mapgl")` provides an R interface to [Mapbox GL JS](https://www.mapbox.com/mapbox-gljs)
-    and [MapLibre GL JS](https://maplibre.org/projects/gl-js/), enabling interactive,
-    web maps rendered via WebGL. It supports customizable web maps and
-    integrates with Shiny applications.
+-   `r pkg("mapgl")` provides an R interface to [Mapbox GL JS](https://www.mapbox.com/mapbox-gljs) and [MapLibre GL JS](https://maplibre.org/projects/gl-js/) for creating customizable interactive maps rendered with WebGL.
+    It also supports use in Shiny applications.
 
 ### Building cartograms
 
@@ -923,6 +917,8 @@ Task View.
     and space-time GWR; GW summary statistics, GW PCA and GW discriminant
     analysis; associated tests and diagnostics; and options for a range of
     distance metrics. 
+-   `r pkg("waywiser")` provides spatial model assessment tools, including
+    measures of spatial autocorrelation in model residuals.
 -   `r pkg("spStack")` fits Bayesian spatially-temporally varying 
     coefficients (STVC) generalized linear models without MCMC using stacking of
     predictive densities.
@@ -976,6 +972,7 @@ They include:
     single environment. It also provides several visualization
     functions, e.g. to show all labeled patches or the core area of all
     patches.
+-   `r pkg("waywiser")` supports multiscale model assessment.
 -   `r pkg("dismo")` provides functions for species distribution modelling.
 
 The `r view("Environmetrics")` Task View contains a much more
