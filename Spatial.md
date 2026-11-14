@@ -996,6 +996,8 @@ In general, machine learning of spatial data can be performed through one of the
 -   `r pkg("meteo")` implements Random Forest Spatial Interpolation by incorporating nearest observations and distances into the prediction process.
 -   `r pkg("gpboost")` captures complex non-linear dependencies by combining gradient boosting with Gaussian processes.
 -   `r pkg("sperrorest")` and `r pkg("blockCV")` provide frameworks for spatial resampling and validation, supporting methods like k-means clustering and block-based approaches to account for spatial dependencies in model evaluation.
+-   -   The `r pkg("spconform")` package provides distribution-free, model-agnostic prediction intervals for spatially and spatio-temporally dependent data using localized conformal calibration, accommodating both geostatistical distance kernels and areal adjacency structures.
+
 
 Installing packages linking to PROJ, GDAL or GEOS
 -------------------------------------------------
