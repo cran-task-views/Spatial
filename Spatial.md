@@ -449,11 +449,9 @@ Handling spatial data
     provides extensions to `r pkg("ggplot2")`, allowing users to place `geom_text` and `geom_label` at the center of a spatial
     polygon, which can be useful for map-making.
 -   The `r pkg("qualmap")` package can be used to digitize qualitative GIS data.
--   The `r pkg("exactextractr")` package summarizes raster values
-    on polygonal areas (known as zonal statistics).
--   The `r pkg("geodist")` package computes
-    geographic distances between sets of coordinates (longitude and latitude).
-    It supports Haversine, Vincenty, and geodesic distance metrics and
+-   `r pkg("exactextractr")` quickly and accurately summarizes raster values over polygonal areas (known as zonal statistics).
+-   `r pkg("geodist")` provides fast, dependency-free calculations of geographic distances between sets of longitude-latitude coordinates.
+    It supports Haversine, Vincenty, and geodesic distance methods  and
     computations on large spatial datasets.
 
 ### Remote sensing
@@ -578,10 +576,8 @@ Visualizing spatial data
     and OpenStreetMap.
 -   `r pkg("mapedit")` provides an R shiny widget based on `r pkg("leaflet")`
     for editing or creating sf geometries.
--   `r pkg("mapgl")` provides an R interface to [Mapbox GL JS](https://www.mapbox.com/mapbox-gljs)
-    and [MapLibre GL JS](https://maplibre.org/projects/gl-js/), enabling interactive,
-    web maps rendered via WebGL. It supports customizable web maps and
-    integrates with Shiny applications.
+-   `r pkg("mapgl")` provides an R interface to [Mapbox GL JS](https://www.mapbox.com/mapbox-gljs) and [MapLibre GL JS](https://maplibre.org/projects/gl-js/) for creating customizable interactive maps rendered with WebGL.
+    It also supports use in Shiny applications.
 
 ### Building cartograms
 
