@@ -921,6 +921,8 @@ Task View.
     and space-time GWR; GW summary statistics, GW PCA and GW discriminant
     analysis; associated tests and diagnostics; and options for a range of
     distance metrics. 
+-   `r pkg("waywiser")` provides spatial model assessment tools, including
+    measures of spatial autocorrelation in model residuals.
 -   `r pkg("spStack")` fits Bayesian spatially-temporally varying 
     coefficients (STVC) generalized linear models without MCMC using stacking of
     predictive densities.
@@ -974,6 +976,7 @@ They include:
     single environment. It also provides several visualization
     functions, e.g. to show all labeled patches or the core area of all
     patches.
+-   `r pkg("waywiser")` supports multiscale model assessment.
 -   `r pkg("dismo")` provides functions for species distribution modelling.
 
 The `r view("Environmetrics")` Task View contains a much more
