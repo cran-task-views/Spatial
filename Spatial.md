@@ -159,7 +159,7 @@ geographic metadata in R.
     vector data. See the [manual and
     tutorials](https://rspatial.org/terra/) to get started.
     `r pkg("terra")` provides functionality similar to that of the
-    `r pkg("raster")` package, while simplified and generally faster.
+    `r pkg("raster")` package, but is simpler and generally faster.
 -   `r pkg("stars", priority = "core")` provides for spatiotemporal data in the
     form of dense arrays, with space and time being array dimensions.
     Examples include socio-economic or demographic data, environmental
