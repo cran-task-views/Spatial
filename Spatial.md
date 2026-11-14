@@ -451,7 +451,7 @@ Handling spatial data
 -   The `r pkg("qualmap")` package can be used to digitize qualitative GIS data.
 -   The `r pkg("exactextractr")` package summarizes raster values
     on polygonal areas (known as zonal statistics).
--   `r pkg("supercells")` partitions single- or multi-layer rasters into spatially coherent regions using an extended Simple Linear Iterative Clustering (SLIC) algorithm.
+-   `r pkg("supercells")` partitions single- or multilayer raster objects from `r pkg("terra")` and `r pkg("stars")` into spatially coherent regions using an extended Simple Linear Iterative Clustering (SLIC) algorithm.
     It includes compactness tuning, diagnostics, and evaluation metrics.
 -   The `r pkg("geodist")` package computes
     geographic distances between sets of coordinates (longitude and latitude).
