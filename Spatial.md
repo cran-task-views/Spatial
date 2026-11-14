@@ -450,6 +450,10 @@ Handling spatial data
     polygon, which can be useful for map-making.
 -   The `r pkg("qualmap")` package can be used to digitize qualitative GIS data.
 -   `r pkg("exactextractr")` quickly and accurately summarizes raster values over polygonal areas (known as zonal statistics).
+-   `r pkg("supercells")` partitions single- or multilayer raster objects from
+    `r pkg("terra")` and `r pkg("stars")` into spatially coherent regions using 
+    an extended Simple Linear Iterative Clustering (SLIC) algorithm.
+    It includes compactness tuning, diagnostics, and evaluation metrics.
 -   `r pkg("geodist")` provides fast, dependency-free calculations of geographic distances between sets of longitude-latitude coordinates.
     It supports Haversine, Vincenty, and geodesic distance methods  and
     computations on large spatial datasets.
