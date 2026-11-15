@@ -616,7 +616,7 @@ and above what is known when assuming that they are independent of each other.
 
 Point pattern analysis examines the distance relationships between observed points,
 where the set of observations is expected to encompass all such entities in the 
-study area.
+study area. Please refer also to the **Disease mapping and areal data analysis** section for additional approaches aggregating points into areal units.
 
 -   `r pkg("spatstat", priority = "core")` is a family of R packages for analysing
     spatial point pattern data (and other kinds of spatial data). It supports
@@ -650,7 +650,7 @@ study area.
     calculation.
 -   `r pkg("sfhotspot")` provides functions for descriptive hotspot analysis and
     mapping of spatial concentrations of points, including kernel-density 
-    estimation, Getis--Ord Gi*, hotspot classification, etc. The package 
+    estimation, Getis--Ord Gi, hotspot classification, etc. The package 
     provides default values to assist with analysis
     and mapping for students and non-experts.
 
@@ -782,6 +782,10 @@ calculated rates that are comparable both in terms of levels and uncertainty.
 -   The `r pkg("SpatialEpi")` package provides implementations of
     cluster detection and disease mapping functions, including Bayesian
     cluster detection, and supports strata. 
+-   The `r pkg("hopkins")` package calculates the Hopkins statistic to
+    assess the clusterability of multivariate numeric data, including
+    spatial point coordinates; use of the package is described in
+    `r doi("10.32614/RJ-2022-055")`.
 -   The `r pkg("smerc")` package provides statistical methods 
     for the analysis of areal data, with a focus on cluster detection. 
 -   A Markov Random Field `"mrf"` effect may be added to models in the 
