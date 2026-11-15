@@ -782,6 +782,8 @@ calculated rates that are comparable both in terms of levels and uncertainty.
 -   The `r pkg("SpatialEpi")` package provides implementations of
     cluster detection and disease mapping functions, including Bayesian
     cluster detection, and supports strata. 
+-   The `r pkg("hopkins")` package calculates Hopkins statistic to assess
+    the clusterability of aspatial data.
 -   The `r pkg("smerc")` package provides statistical methods 
     for the analysis of areal data, with a focus on cluster detection. 
 -   A Markov Random Field `"mrf"` effect may be added to models in the 
